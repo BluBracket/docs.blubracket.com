@@ -1,1 +1,4 @@
 canonifyURLs = false
+[params]
+    googleAnalyticsUserID = "UA-158750084-1"
+    hubSpotUserID = "5254096"
