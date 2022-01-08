@@ -1,7 +1,7 @@
-# securitysurvey.dev
-DevOps Security Survey website (securitysurvey.dev)
+# docs.blubracket.com
 
-Imported as a copy of https://github.com/h-enk/doks without history
+BluBracket documentation website [https://docs.blubracket.com
+](docs.blubracket.com).
 
 This repo uses [Hugo, a static site generator written in Golang](https://gohugo.io), and the [Docs theme](https://github.com/h-enk/doks). 
 
@@ -48,3 +48,7 @@ npm test
 ```
 
 The extent of testing is currently limited to ensuring the JS integrates cleanly. It does not meaningfully test the templates or any aspect of the site content.
+
+### Credits
+
+The theme in this repo is based on https://github.com/h-enk/doks by [Henk Verlinde](https://github.com/h-enk) and used under the [terms of the MIT license](https://github.com/h-enk/doks/blob/b91e6494de91b1f137013be07314ae360b8ff65c/LICENSE).
