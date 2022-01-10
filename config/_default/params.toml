@@ -1,42 +1,41 @@
 # Meta Data for SEO
 
 ## Homepage
-title = "Doks"
+title = "BluBracket"
 titleSeparator = "-"
-titleAddition = "Modern Documentation Theme"
-description = "Doks is a Hugo theme for building secure, fast, and SEO-ready documentation websites, which you can easily update and customize."
+titleAddition = "documentation front page"
+description = "asdasd"
 
 ## Documentation
 # docsVersion = "0.3"
 
 ## Open Graph
-images = ["doks.png"]
+images = ["blubracket-logo.png"]
 ogLocale = "en_US"
-domainTLD = "doks.netlify.app"
-titleHome = "Doks Theme"
+domainTLD = "blubracket.com"
+titleHome = "BluBracket documentation"
 
 ## Twitter Cards
-twitterSite = "@getdoks"
-twitterCreator = "@henkverlinde"
+twitterSite = "@blubracket"
+twitterCreator = "@blubracket"
 
 ## JSON-LD
-# schemaType = "Person"
 schemaType = "Organization"
-schemaName = "Doks"
-schemaAuthor = "Henk Verlinde"
-schemaAuthorTwitter = "https://twitter.com/henkverlinde"
-schemaAuthorLinkedIn = "https://www.linkedin.com/in/henkverlinde/"
-schemaAuthorGitHub = "https://github.com/h-enk"
+schemaName = "BluBracket"
+schemaAuthor = "Casey Bisson"
+schemaAuthorTwitter = "https://twitter.com/misterbisson"
+schemaAuthorLinkedIn = "https://www.linkedin.com/in/casey-bisson-b033072/"
+schemaAuthorGitHub = "https://github.com/misterbisson"
 schemaLocale = "en-US"
-schemaLogo = "logo-doks.png"
-schemaLogoWidth = 512
-schemaLogoHeight = 512
-schemaImage = "doks.png"
-schemaImageWidth = 1280
-schemaImageHeight = 640
-schemaTwitter = "https://twitter.com/getdoks"
+schemaLogo = "blubracket-logo.png"
+schemaLogoWidth = 808
+schemaLogoHeight = 90
+schemaImage = "blubracket-logo.png"
+schemaImageWidth = 808
+schemaImageHeight = 90
+schemaTwitter = "https://twitter.com/blubracket"
 schemaLinkedIn = ""
-schemaGitHub = "https://github.com/h-enk/doks"
+schemaGitHub = "https://github.com/bluBracket/docs.blubracket.com/"
 schemaSection = "blog"
 
 ## Sitelinks Search Box
@@ -54,10 +53,10 @@ lqipWidth = "20x"
 smallLimit = "300"
 
 # Footer
-footer = "Powered by <a href=\"https://www.netlify.com/\">Netlify</a>, <a href=\"https://gohugo.io/\">Hugo</a>, and <a href=\"https://getdoks.org/\">Doks</a>"
+footer = "<a href=\"https://blubracket.com/\">BluBracket</a> code security tracks what's in your code, who has access, and where it goes"
 
 # Feed
-copyRight = "Copyright (c) 2020-2021 Henk Verlinde"
+copyRight = "Copyright (c) 2019-2021 BluBracket"
 
 # Alert
 alert = false
@@ -68,10 +67,9 @@ alertText = "Introducing the Doks child theme, several DX + UX updates, and more
 # Edit Page
 # repoHost [Github | Gitea | GitLab] is used for building the edit link based on git hoster
 repoHost = "GitHub"
-#repoHost = "Gitea"
-docsRepo = "https://github.com/h-enk/doks"
-docsRepoBranch = "master"
-editPage = false
+docsRepo = "http://github.com/bluBracket/docs.blubracket.com"
+docsRepoBranch = "main"
+editPage = true
 
 [options]
   lazySizes = true
@@ -80,7 +78,7 @@ editPage = false
   flexSearch = true
   darkMode = true
   bootStrapJs = true
-  breadCrumb = false
+  breadCrumb = true
   highLight = true
   kaTex = false
   collapsibleSidebar = true
