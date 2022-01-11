@@ -1,0 +1,16 @@
+node_modules
+
+# Hugo-generated items
+public
+resources
+
+# Local Netlify folder
+.netlify
+
+TODO
+
+# MacOS
+.DS_Store
+._.DS_Store
+**/.DS_Store
+**/._.DS_Store
