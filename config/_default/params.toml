@@ -1,13 +1,10 @@
 # Meta Data for SEO
 
 ## Homepage
-title = "BluBracket"
+title = "BluBracket Documentation"
 titleSeparator = "-"
-titleAddition = "documentation front page"
-description = "asdasd"
-
-## Documentation
-# docsVersion = "0.3"
+titleAddition = "front page"
+description = "Usage guide for BluBracket"
 
 ## Open Graph
 images = ["blubracket-logo.png"]
