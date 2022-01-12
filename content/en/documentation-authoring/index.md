@@ -13,14 +13,14 @@ resources:
 
 ## Filesystem organization
 
-Each page is a [Hugo page bundle](https://gohugo.io/content-management/page-bundles/), a directory with a `index.md` and any attachments/images used in the page. 
+Each page is a [Hugo page bundle](https://gohugo.io/content-management/page-bundles/), a directory with a `index.md` and any attachments/images used in the page.
 
 - The directory name is the URL slug
 - The page title and other metadata are set in the [yaml-formatted front matter](https://gohugo.io/content-management/front-matter/)
 
 Pages can be nested to create a hierarchical structure. If a directory contains multiple pages, the `index.md` must be prefixed with an underscore (`_index.md`) to tell Hugo to recurse into the directory for additional pages. Example:
 
-```
+```text
 .
 └── content
     ├── _index.md <- https://example.com/
@@ -36,7 +36,6 @@ Pages can be nested to create a hierarchical structure. If a directory contains 
         └── index.md <- https://example.com/faq/
 ```
 
-
 ## Content markup
 
 Content is formatted as [Markdown](https://www.markdownguide.org/basic-syntax/), with support for many of the more advanced Markdown features, as well as a number of [shortcodes supported by Hugo](https://gohugo.io/content-management/shortcodes/).
@@ -49,7 +48,7 @@ Standard Markdown link syntax is preferred
 
 Hugo also provides a shortcode that can be used to make it easier to link to pages within the site:
 
-```
+```markdown
 [Quick Start →]({{</* relref "intro" */>}})
 ```
 
@@ -59,14 +58,14 @@ Small images can be embedded using normal Markdown syntax, but Hugo also provide
 
 For either syntax, the image should be committed in the directory with the page it appears on, and identified in the front matter `resources` object:
 
-```
+```text
 resources:
   - src: demo-figure.jpg
 ```
 
 #### Markdown syntax for small images
 
-```
+```markdown
 ![This kitten icon](demo-img.png)
 ```
 
@@ -76,12 +75,11 @@ Output:
 
 This adorable kitten icon used as a demo img was [downloaded from The Noun Project](https://thenounproject.com/icon/kitten-612280/).
 
-#### Figure shortcode for large images 
+#### Figure shortcode for large images
 
-```
+```text
 {{</* figure src="demo-figure.jpg" caption="This adorable kitten used as the demo figure was [downloaded from Unsplash](https://unsplash.com/photos/tuomgxdoIP4)." */>}}
 ```
-
 
 [All available options documented here](https://gohugo.io/content-management/shortcodes/#figure).
 
@@ -97,7 +95,7 @@ Many modern browsers accept videos in the `img` element (via the `{{</* figure *
 
 For a given YouTube URL such as `https://www.youtube.com/watch?v=w7Ft2ymGmfc`, the YouTube shortcode should be:
 
-```
+```text
 {{</* youtube w7Ft2ymGmfc */>}}
 ```
 
@@ -109,7 +107,7 @@ Output:
 
 For a given Vimeo URL such as `https://vimeo.com/channels/staffpicks/146022717`, the Vimeo shortcode should be:
 
-```
+```text
 {{</* vimeo 146022717 */>}}
 ```
 
@@ -121,7 +119,7 @@ Output:
 
 Standard code fencing with single and triple backticks works as expected. Hugo also supports code highlighting with the following shortcode:
 
-```
+```html
 {{</* highlight html */>}}
 <section id="main">
   <div>
@@ -149,7 +147,7 @@ Output:
 
 ### In-page emphasis
 
-```
+```text
 {{</* alert icon="👉" text="The Alert shortcode should be used sparingly." */>}}
 ```
 
