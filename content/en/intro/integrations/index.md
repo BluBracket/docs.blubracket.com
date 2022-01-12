@@ -1,13 +1,11 @@
 ---
-title: "What is BluBracket?"
+title: "Integrations"
 description: ""
 lead: ""
 date: 2022-01-12T02:48:57+00:00
 draft: false
-weight: 100
+weight: 500
 toc: true
 resources:
   - src:
 ---
-
-This is the new text
