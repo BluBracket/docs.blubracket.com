@@ -12,13 +12,13 @@ resources:
 
 BluBracket is most often used to identify risks in code, who has access, and where it goes:
 
-- Risks in code
+- Identifying, blocking, and removing risks in code
 	- [Secrets](#secrets-in-code)
 	- [Personally identifiable information (PII)](#personally-identifiable-information-pii)
 	- [Non-inclusive language (NIL)](#non-inclusive-language-nil)
 	- [Infrastructure-as-code (IAC) risks](#infrastructure-as-code-iac-risks)
-- [Who has access](#access-auditing)
-- [Where it goes](#code-leaks)
+- [Auditing who has access](#access-auditing)
+- [Auditing where it goes](#code-leaks)
 
 ## Secrets in code
 
