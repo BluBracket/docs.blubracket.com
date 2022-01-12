@@ -6,8 +6,6 @@
     </div>
     <div class="col-lg-9 col-xl-8 text-center">
       <p class="lead">{{ .Params.lead | safeHTML }}</p>
-      <a class="btn btn-primary btn-lg px-4 mb-2" href="/docs/{{ if .Site.Params.options.docsVersioning }}{{ .Site.Params.docsVersion }}/{{ end }}prologue/introduction/" role="button">Dive In</a>
-      <p class="meta">Open-source MIT Licensed. <a href="https://github.com/h-enk/doks">GitHub v{{ $data := getJSON "/package.json" }}{{ $data.version }}</a></p>
     </div>
   </div>
 </section>
@@ -24,7 +22,8 @@
         </div>
         <div class="col-lg-5">
           <h2 class="h4">Who has access️</h2>
-          <p>Audit who and what systems have access to enable easy collaboration across the organization while protecting against unmanaged access-creep.</p>
+          <p>Audit who and what systems have access to your code and enable easy collaboration across the organization while protecting against unmanaged access-creep.</p>
+
         </div>
         <div class="col-lg-5">
           <h2 class="h4">Where it goes</h2>
