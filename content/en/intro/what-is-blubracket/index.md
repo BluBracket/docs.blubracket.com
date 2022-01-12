@@ -9,5 +9,3 @@ toc: true
 resources:
   - src:
 ---
-
-This is the new text

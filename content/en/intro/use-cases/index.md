@@ -13,10 +13,10 @@ resources:
 BluBracket is most often used to identify risks in code, who has access, and where it goes:
 
 - Identifying, blocking, and removing risks in code
-	- [Secrets](#secrets-in-code)
-	- [Personally identifiable information (PII)](#personally-identifiable-information-pii)
-	- [Non-inclusive language (NIL)](#non-inclusive-language-nil)
-	- [Infrastructure-as-code (IAC) risks](#infrastructure-as-code-iac-risks)
+  - [Secrets](#secrets-in-code)
+  - [Personally identifiable information (PII)](#personally-identifiable-information-pii)
+  - [Non-inclusive language (NIL)](#non-inclusive-language-nil)
+  - [Infrastructure-as-code (IAC) risks](#infrastructure-as-code-iac-risks)
 - [Auditing who has access](#access-auditing)
 - [Auditing where it goes](#code-leaks)
 
@@ -34,7 +34,6 @@ Unlike secrets, personally identifiable information can't be changed or rotated.
 
 BluBracket's deep scans identify PII in git history, show teams the PII risk across their codebase, and help remediate. Just as with BluBracket's secret detection tools, BluBracket can block commits of new PII, block PRs with PII, and alert teams any time PII is committed to monitored repos.
 
-
 ## Non-inclusive language (NIL)
 
 Companies and open source communities are both increasingly aware of the role inclusive language plays in attracting and retaining team members in all roles. Non-inclusive language creates both significant brand risks, as well as retention risks.
@@ -51,7 +50,7 @@ BluBracket's tools audit IaC throughout the development process, but teams value
 
 Auditing who and what systems have access to code is critical to supporting modern workflows that often require broad access across the organization, while also protecting organizations and teams against stale permissions and misconfigurations that can emerge over time.
 
-Identifying who has access to what, and calling out best-practice configuration of everything from git hooks to branch protection rules helps guide teams to continuous improvement and ongoing operational security. When teams know they can easily audit access, they're both more productive because they can more easily grant access, and more secure because they have tools to 
+Identifying who has access to what, and calling out best-practice configuration of everything from git hooks to branch protection rules helps guide teams to continuous improvement and ongoing operational security. When teams know they can easily audit access, they're both more productive because they can more easily grant access, and more secure because they have tools to
 
 ## Code leaks
 
