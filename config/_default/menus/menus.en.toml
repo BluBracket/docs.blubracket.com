@@ -1,12 +1,12 @@
 [[main]]
-  name = "Docs"
-  url = "/docs/prologue/introduction/"
-  weight = 10
-
-[[main]]
   name = "Blog"
   url = "https://blubracket.com/blog/"
   weight = 20
+
+[[main]]
+  name = "Start free"
+  url = "https://blubracket.com/contact/get-started/"
+  weight = 30
 
 [[social]]
   name = "GitHub"
