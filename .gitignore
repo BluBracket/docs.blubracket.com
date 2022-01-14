@@ -3,6 +3,7 @@ node_modules
 # Hugo-generated items
 public
 resources
+.hugo_build.lock
 
 # Local Netlify folder
 .netlify
