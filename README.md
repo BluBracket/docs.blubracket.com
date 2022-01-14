@@ -3,7 +3,7 @@
 BluBracket documentation website [https://docs.blubracket.com
 ](docs.blubracket.com).
 
-This repo uses [Hugo, a static site generator written in Golang](https://gohugo.io), and the [Docs theme](https://github.com/h-enk/doks). 
+This repo uses [Hugo, a static site generator written in Golang](https://gohugo.io), and the [Doks theme](https://github.com/h-enk/doks).
 
 Hugo has its own [documentation](https://gohugo.io/documentation/) for the template structure, functions, variables, and more. The Doks theme extends Hugo in an opinionated way that uses Node.js and `npm` to automate the few things that Hugo left undone.
 
