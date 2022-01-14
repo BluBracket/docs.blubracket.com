@@ -56,7 +56,7 @@ footer = "<a href=\"https://blubracket.com/\">BluBracket</a> code security track
 copyRight = "Copyright (c) 2019-2021 BluBracket"
 
 # Alert
-alert = false
+alert = true
 alertDismissable = true
 # alertText = "Introducing the Doks child theme, several DX + UX updates, and more! <a class=\"alert-link stretched-link\" href=\"https://getdoks.org/blog/doks-v0.2/\" target=\"_blank\" rel=\"noopener\">Check out Doks v0.2</a>"
 alertText = "Introducing the Doks child theme, several DX + UX updates, and more! <a class=\"alert-link stretched-link\" href=\"https://getdoks.org/blog/doks-v0.2/\">Check out Doks v0.2</a>"
