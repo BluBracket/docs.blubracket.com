@@ -2,6 +2,12 @@
   <meta charset="utf-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  {{ if .Params.redirectref }}
+    <meta http-equiv="refresh" content="0;url={{ ref . .Params.redirectref }}"/>
+  {{end}}
+  {{ if .Params.redirecturl }}
+    <meta http-equiv="refresh" content="0;url={{ .Params.redirecturl }}"/>
+  {{end}}
   {{ block "head/resource-hints" . }}{{ partial "head/resource-hints.html" . }}{{ end }}
   {{ block "head/analytics" . }}{{ partial "head/analytics.html" . }}{{ end }}
   {{ block "head/script-header" . }}{{ partial "head/script-header.html" . }}{{ end }}

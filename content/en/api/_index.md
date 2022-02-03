@@ -8,4 +8,5 @@ weight: 300
 toc: true
 resources:
   - src:
+redirectref: intro-auth-keys
 ---
