@@ -37,14 +37,14 @@ One or more filters
             "value":["ENTERPRISE_PUBLIC","PUBLIC"],
             "exact_match":true
         },
-        {   
+        {
             "id":"state",
             "value":["ACTIVE"],
             "exact_match":true
         }
     ]
 }
-``` 
+```
 
 #### Response
 
