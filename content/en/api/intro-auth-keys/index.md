@@ -23,21 +23,22 @@ portal-generate-api-key.png
 1. Select Generate Key
 1. Save the JSON/CSV file to your desktop
 1. Open the JSON/CSV file and copy the value of the token
-		```json
-		{
-		  "api_keys": {
-		    "https://mycompany.blubracket.com": {
-		      "id": "BLU-a492144b-f118-4598-991e-f1d4d6209edf",
-		      "key": "TofsB.....EqwGg",
-		      "token": "QkxVL....xd0dn"
-		    }
-		  }
-		}
-		```
+
+    ```json
+    {
+      "api_keys": {
+        "https://mycompany.blubracket.com": {
+          "id": "BLU-a492144b-f118-4598-991e-f1d4d6209edf",
+          "key": "TofsB.....EqwGg",
+          "token": "QkxVL....xd0dn"
+        }
+      }
+    }
+    ```
 
 ### Testing and using the API token
 
-With the generated token, you can make requests directly to BluBracket APIs. You will need to set the Authorization header and use the provided token as Bearer token. 
+With the generated token, you can make requests directly to BluBracket APIs. You will need to set the Authorization header and use the provided token as Bearer token.
 
 Here are some examples using curl:
 
@@ -46,7 +47,7 @@ curl -H "Authorization: Bearer TOKEN_FROM_STEP_2" --data '{"filters":[]}' https:
 
 curl -H "Authorization: Bearer TOKEN_FROM_STEP_2" --data '{"filters":[]}' https://mycompany.blubracket.com/api/public/alert/search
 ```
- 
+
 Note: As per ISO 8601, date formatting requires either the Z or the +00:00 be supplied at the end. This is required to determine that the datetime is in the UTC timezone.
 
 Example Python code is shown below:
