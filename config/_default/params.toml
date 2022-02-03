@@ -58,12 +58,12 @@ copyRight = "Copyright (c) 2019-2021 BluBracket"
 # Alert
 alert = true
 alertDismissable = true
-alertText = "These docs are in alpha. We're actively developing them, and we invite you to <a class=\"alert-link stretched-link\" href=\"https://github.com/BluBracket/docs.blubracket.com\">open an issue or PR with any suggestions</a>, but we're not currently allowing indexing and recommend <a class=\"alert-link stretched-link\" href=\"https://support.blubracket.com\">the docs at support.blubracket.com</a> for any production questionsat this time."
+alertText = "This preview of our new documentation site is in active development. We recommend <a class=\"alert-link stretched-link\" href=\"https://support.blubracket.com\">the docs at support.blubracket.com</a> for any production questions at this time."
 
 # Edit Page
 # repoHost [Github | Gitea | GitLab] is used for building the edit link based on git hoster
 repoHost = "GitHub"
-docsRepo = "http://github.com/bluBracket/docs.blubracket.com"
+docsRepo = "http://github.com/BluBracket/docs.blubracket.com"
 docsRepoBranch = "main"
 editPage = true
 
