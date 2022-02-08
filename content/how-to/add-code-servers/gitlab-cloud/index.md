@@ -1,7 +1,7 @@
 ---
-title: "Adding A GitLab Cloud Server To Your Tenant"
+title: "Adding a GitLab cloud server to your tenant"
 description: "How to add code servers to your tenant"
-lead: "How to add A GitLab Cloud Server To Your Tenant"
+lead: "How to add a GitLab cloud Server to your tenant"
 date: 2022-01-12T02:48:57+00:00
 draft: false
 weight: 200

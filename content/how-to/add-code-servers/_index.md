@@ -1,5 +1,5 @@
 ---
-title: "Adding Code Servers"
+title: "Adding code servers"
 description: "How to add code servers to your tenant"
 lead: "How to add code servers to your tenant"
 date: 2022-01-12T02:48:57+00:00
@@ -9,8 +9,6 @@ toc: true
 resources:
   - src:
 ---
-
-## Adding Code Servers
 
 The first step in setting up a BluBracket tenant is adding code servers.  This enables the BluBracket servers to communicate with a company’s Git services, which are necessary to generate alerts, insights, and reports.  In this document, select the service that you are using for set up instructions:
 

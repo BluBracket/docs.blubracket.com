@@ -1,7 +1,7 @@
 ---
-title: "Setup Ignore Rules"
-description: "How to Set Ignore Rules"
-lead: "How To Set Ignore Rules"
+title: "Setup ignore rules"
+description: "How to set ignore rules"
+lead: "How to set ignore rules"
 date: 2022-01-12T02:48:57+00:00
 draft: false
 weight: 200
