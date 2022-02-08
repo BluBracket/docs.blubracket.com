@@ -66,6 +66,11 @@ And BluBracket integrates at multiple points in the SDLC workflow:
   - Bitbucket
   - Azure DevOps ([contact us for beta]({{< ref contact-support >}}))
   - Gerrit (coming soon)
+- CI servers
+  - GitHub Checks
+  - Bitbucket Code Insights
+  - Jenkins
+  - and more via open API
 - Identity, authentication, and authorization
   - Azure AD
   - Okta
