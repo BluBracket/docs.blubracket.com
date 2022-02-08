@@ -23,52 +23,49 @@ Note: This will not change any existing alerts/events in the platform.
 
 3. Create blubracket-ignore.yaml
 
-        ```yaml
-        ignores any of the paths below
-        - paths:
-          - oanda_connector.py
-          - MachLearn-23.py
+    ```yaml
+    # ignores any of the paths below
+    - paths:
+      - oanda_connector.py
+      - MachLearn-23.py
 
-        # ignores any secret values below
+    # ignores any secret values below
+    - secret_values:
+      - My$uperDuperP@ssw0rd!
+
+    # ignores any secret types below
+    - secret_types:
+      - aws_access_key_id
+
+    # per repo-rules
+    - repo_url: (?i)github.com/blubracket/bludemogh/(apache_tomcat_2.0|crm_order_management)
+      rules:
         - secret_values:
-          - My$uperDuperP@ssw0rd!
-
-        # ignores any secret types below
-        - secret_types: 
-          - aws_access_key_id
-
-        # per repo-rules
-        - repo_url: (?i)github.com/blubracket/bludemogh/(apache_tomcat_2.0|crm_order_management)
-          rules:
-            - secret_values:
-              - My$uperDuperS3cret!
-            - secret_types:
-              - google_oauth
-            - paths:
-              - helm/values.yaml
-        ```
+          - My$uperDuperS3cret!
+        - secret_types:
+          - google_oauth
+        - paths:
+          - helm/values.yaml
+    ```
 
 4. Upload yaml file via API using curl:
 
-        POST
+    ```bash
+    curl -H "Authorization: Bearer ${BLUBRACKET_INTEGRATION_KEY}" --data-binary "@blubracket-ignore.yaml" https://TENANT.blubracket.com/api/public/blubracket-ignore
 
-         ```bash
-          curl -H "Authorization: Bearer ${BLUBRACKET_INTEGRATION_KEY}" --data-binary "@blubracket-ignore.yaml" https://TENANT.blubracket.com/api/public/blubracket-ignore
-          ```
+    ```
 
 5. Confirm upload using:
 
-        GET
-
-        ```bash
-        curl -i -H "Authorization: Bearer ${BLUBRACKET_INTEGRATION_KEY}" https://TENANT.blubracket.com/api/public/blubracket-ignore
-        ```
+    ```bash
+    curl -i -H "Authorization: Bearer ${BLUBRACKET_INTEGRATION_KEY}" https://TENANT.blubracket.com/api/public/blubracket-ignore
+    ```
 
 To delete blubracket-ignore:
 
-DELETE
-
-`curl -i -X DELETE -H "Authorization: Bearer ${BLUBRACKET_INTEGRATION_KEY}" https://TENANT.blubracket.com/api/public/blubracket-ignore`
+```bash
+curl -i -X DELETE -H "Authorization: Bearer ${BLUBRACKET_INTEGRATION_KEY}" https://TENANT.blubracket.com/api/public/blubracket-ignore
+```
 
 Any new secrets, PII or Non-inclusive language ignored will automatically be annotated as “Reviewed as Not Important” and labeled as “Ignore rule”
 
