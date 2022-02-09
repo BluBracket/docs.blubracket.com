@@ -1,5 +1,5 @@
 ---
-title: "Configuring infrastructure as code on GitHub"
+title: "GitHub"
 description: "Configuring infrastructure as code on GitHub"
 lead: "Configuring infrastructure as code on GitHub"
 date: 2022-01-12T02:48:57+00:00

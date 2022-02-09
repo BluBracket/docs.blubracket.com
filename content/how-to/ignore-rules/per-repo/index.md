@@ -1,5 +1,5 @@
 ---
-title: "Set Ignore Rules For All Users of A Repository"
+title: "Per repo"
 description: "How to Set Ignore Rules Ignore Rules For All Users of A Repository"
 lead: "How to Set Ignore Rules Ignore Rules For All Users of A Repository"
 date: 2022-01-12T02:48:57+00:00

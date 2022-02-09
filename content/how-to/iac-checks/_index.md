@@ -1,5 +1,5 @@
 ---
-title: "Setup infrastructure as code (IaC) scanning"
+title: "IaC checks"
 description: "How to setup infrastructure as code (IaC) scanning"
 lead: "How to setup infrastructure as code (IaC) scanning"
 date: 2022-01-12T02:48:57+00:00
