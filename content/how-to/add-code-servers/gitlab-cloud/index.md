@@ -1,39 +1,24 @@
 ---
-title: "Adding a GitLab cloud server to your tenant"
-description: "How to add code servers to your tenant"
-lead: "How to add a GitLab cloud Server to your tenant"
+title: "GitLab Cloud"
+description: "How to add a GitLab Cloud code server to your tenant"
+lead: "How to add a GitLab Cloud code server to your tenant"
 date: 2022-01-12T02:48:57+00:00
 draft: false
-weight: 200
+weight: 100
 toc: true
 resources:
-  - src: add-server.jpg, select-server.jpg, group.jpg, add-token.jpg, select.jpg
+  - src: group.jpg
+  - src: add-token.jpg
+  - src: select.jpg
 ---
-The first step in setting up a BluBracket tenant is adding your code servers.  This enables the BluBracket servers to communicate with your companies GitLab services, which are necessary to generate alerts/events and reports.  In this document, we will walk through the necessary steps to successfully add your GitLab enterprise code server to BluBracket. The following is a breakdown of the steps:
 
-1. Navigating to the Enterprise Code Servers section of the Settings page
+After [selecting to add a GitLab Cloud code server]({{< relref "/how-to/add-code-servers/#selecting-a-server-type" >}}), follow the instructions below to add a GitLab XXX as a code server in BluBracket.
 
-2. Selecting a Server Type
+GitLab uses the term "GitLab Cloud" to differentiate repositories hosted at gitlab.com from their self-hosted enterprise offering.
 
-3. Entering a Group Name
+Each GitLab XXX is a different code server in BluBracket ([see GitLab docs on XXX](https://example.com)).
 
-4. Entering a Token and Creating a GitLab Personal Access Token
-
-##### Navigating to the Enterprise Code Servers section of the Settings page
-
-Adding an Enterprise Code Server starts with navigating to the appropriate section in the Settings section of the tenant portal.  After authenticating into the portal, select the Settings option in the left navigation bar.
-
-Once the Setting section is exposed, select the “Enterprise code servers” section.  This will expose any code servers that have already been configured as well as the “Add Code Server” button for adding new code servers.  Click on the “Add Code Server” button to expose the configuration bar at the right of the page.
-
-![add server screenshot](add-server.jpg)
-
-##### Selecting a Server Type
-
-Now that the configuration bar is exposed, the first thing we want to do is select a Server Type.  We will be setting up a GitLab Cloud server, so select the “GitLab Cloud” option.
-
-![select server screenshot](select-server.jpg)
-
-##### Entering a Group name
+### Entering a Group name
 
 The next thing to do is select a Group to point the server to.  Groups are usually, but not always, set up as lines of business or projects.  For example, Google may have Groups for Nest, Android, Add Words, etc., all under the same server.  It is possible to point a server at multiple Groups. Enter the targeted Group into the input field.
 
@@ -43,7 +28,7 @@ If you don’t know the Group name you can find them in the Gitlab administrator
 
 ![gitlab screenshot](gitlab.jpg)
 
-##### Entering a Personal Access Token (PAT)
+### Entering a Personal Access Token (PAT)
 
 The next step in adding the code server is adding the Personal Access Token (PAT). In order for BluBracket to access information within a given repository, an access token must be uploaded into the tenant.
 
