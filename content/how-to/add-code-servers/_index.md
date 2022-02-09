@@ -14,6 +14,6 @@ The first step in setting up a BluBracket tenant is adding code servers.  This e
 
 [Adding Code Servers - GitHub Cloud](/how-to/add-code-servers/github-cloud/)
 
-[Adding Code Servers - BitBucket Cloud](/how-to/add-code-servers/github-cloud/)
+[Adding Code Servers - Bitbucket Cloud](/how-to/add-code-servers/github-cloud/)
 
 [Adding Code Servers - GitLab Cloud](/how-to/add-code-servers/gitlab-cloud/)

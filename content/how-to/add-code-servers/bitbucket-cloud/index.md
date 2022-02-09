@@ -1,7 +1,7 @@
 ---
-title: "Adding A BitBucket Cloud Server To Your Tenant"
+title: "Adding A Bitbucket Cloud Server To Your Tenant"
 description: "How to add code servers to your tenant"
-lead: "How to add A BitBucket Cloud Server To Your Tenant"
+lead: "How to add A Bitbucket Cloud Server To Your Tenant"
 date: 2022-01-12T02:48:57+00:00
 draft: false
 weight: 200
@@ -52,7 +52,7 @@ The next step in adding the code server is adding the Personal Access Token (PAT
 **username:token**
 Example: holland:Vgc9Kw8w5zQu58989Uxz
 
-[How To Generate A Personal Access Token On BitBucket](https://support.blubracket.com/hc/en-us/articles/4404687343124-How-to-Generate-an-App-Password-or-Personal-Access-Token-PAT-in-Bitbucket)
+[How To Generate A Personal Access Token On Bitbucket](https://support.blubracket.com/hc/en-us/articles/4404687343124-How-to-Generate-an-App-Password-or-Personal-Access-Token-PAT-in-Bitbucket)
 
 Enter the token in the location indicated below:
 

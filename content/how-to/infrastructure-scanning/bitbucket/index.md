@@ -1,7 +1,7 @@
 ---
-title: "Configuring infrastructure as code on BitBucket"
-description: "Configuring infrastructure as code on BitBucket"
-lead: "Configuring infrastructure as code on BitBucket"
+title: "Configuring infrastructure as code on Bitbucket"
+description: "Configuring infrastructure as code on Bitbucket"
+lead: "Configuring infrastructure as code on Bitbucket"
 date: 2022-01-12T02:48:57+00:00
 draft: false
 weight: 200
