@@ -46,15 +46,15 @@ BluBracket is for individual developers, development and appsec teams of all siz
 
 BluBracket has two parallel modes of operation:
 
-1. As a SaaS suite providing protection and alerts across a codebase, supporting the detection, analysis, and remediation of security risks in the code and related to code access
-1. As a local CLI tool scanning code locally, to support immediate identification of potential risks in the code, without the risk of sending that code to remote servers
+1. As a SaaS suite providing protection and alerts across a codebase, supporting the [detection, analysis, and remediation of security risks in the code]({{< relref "key-workflows/#understanding-and-taking-action-on-existing-risks" >}}) and related to [code access]({{< relref "key-workflows/#auditing-git-access--configuration" >}})
+1. As a [local CLI tool scanning code locally]({{< relref "key-workflows/#pre-commit-hooks" >}}), to support immediate identification of potential risks in the code, without the risk of sending that code to remote servers
 
 And BluBracket integrates at multiple points in the SDLC workflow:
 
-- Before code is committed, via the CLI and pre-commit hooks
-- Before code is merged, via CI checks (GitHub Checks, Bitbucket Code Insights, Jenkins, etc.)
-- Actionable alerts in Slack and other tools when new risks are detected
-- Tools to analyze and understand existing risks, and trend reports to see improvement over time
+- [Before code is committed]({{< relref "key-workflows/#pre-commit-hooks" >}}), via the CLI and pre-commit hooks, and in popular IDEs
+- [Before code is merged]({{< relref "key-workflows/#ci-checks" >}}), via CI checks (GitHub Checks, Bitbucket Code Insights, Jenkins, etc.)
+- [Actionable alerts]({{< relref "key-workflows/#alerts" >}}) in Slack and other tools when new risks are detected
+- [Tools to analyze and understand existing risks]({{< relref "key-workflows/#pre-commit-hooks" >}}), and trend reports to see improvement over time
 
 ### What does BluBracket integrate with?
 
