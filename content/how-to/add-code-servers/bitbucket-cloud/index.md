@@ -33,11 +33,9 @@ If you don’t know the workspace name you can find them in the Bitbucket admini
 
 The next step in adding the code server is adding the Personal Access Token (PAT). In order for BluBracket to access information within a given repository, an access token must be uploaded into the tenant.
 
-**Note: The personal access token but be entered in the following format:**
+**Note:** The personal access token but be entered in the following format: `username:token`.
 
-**username:token**
-
-Example: holland:Vgc9Kw8w5zQu58989Uxz
+Example: `holland:Vgc9Kw8w5zQu58989Uxz`
 
 [how to generate a personal access token on Bitbucket](https://support.blubracket.com/hc/en-us/articles/4404687343124-How-to-Generate-an-App-Password-or-Personal-Access-Token-PAT-in-Bitbucket)
 
