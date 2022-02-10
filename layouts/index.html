@@ -6,6 +6,10 @@
     </div>
     <div class="col-lg-9 col-xl-8 text-center">
       <p class="lead">{{ .Params.lead | safeHTML }}</p>
+      <form class="doks-search position-relative flex-grow-1 me-auto">
+        <input id="search" class="form-control is-search" type="search" placeholder="Search docs..." aria-label="Search docs..." autocomplete="off">
+        <div id="suggestions" class="shadow bg-white rounded d-none"></div>
+      </form>
     </div>
   </div>
 </section>
@@ -17,23 +21,31 @@
     <div class="container">
       <div class="row justify-content-center text-center">
         <div class="col-lg-5">
+          <h2 class="h4">Get started</h2>
+          <p><a href="{{ relref . "/intro/what-is-blubracket" }}">What BluBracket is</a>, <a href="{{ relref . "/intro/key-workflows" }}">how it works</a>, <br />and <a href="{{ relref . "/intro/getting-started" }}">how to try it out</a>.</p>
+        </div>
+        <div class="col-lg-5">
+          <h2 class="h4">Get details</h2>
+          <p><a href="{{ relref . "/how-to/add-code-servers" }}">Add code servers</a>, <a href="{{ relref . "/how-to/add-user" }}">invite users</a>, <br /><a href="{{ relref . "/how-to" }}">setup the CLI</a>, and <a href="{{ relref . "/how-to" }}">more</a>.</p>
+        </div>
+        <div class="col-lg-5">
+          <h2 class="h4">Get help</h2>
+          <p><a href="#search">Search the docs</a>, <a href="{{ relref . "/faq" }}">check the FAQs</a>, <br />or <a href="{{ relref . "/contact-support" }}">contact our customer success team</a>.</p>
+        </div>
+      </div>
+      <div class="row justify-content-center text-center">
+        <div class="col-lg-5">
           <h2 class="h4">What's in your code</h2>
-          <p>Find secrets, PII, non-inclusive language (NIL), and infrastructure as code (IaC) risks before commit, before merge, and before they propagate to others.</p>
+          <p><a href="{{ relref . "/intro/use-cases#secrets-in-code" }}">Find secrets</a>, <a href="{{ relref . "/intro/use-cases#personally-identifiable-information-pii" }}">PII</a>, <a href="{{ relref . "/intro/use-cases#non-inclusive-language-nil" }}">non-inclusive language (NIL)</a>, and <a href="{{ relref . "/intro/use-cases#infrastructure-as-code-iac-risks" }}">infrastructure as code (IaC) risks</a> before commit, before merge, and before they propagate to others.</p>
         </div>
         <div class="col-lg-5">
           <h2 class="h4">Who has access️</h2>
-          <p>Audit who and what systems have access to your code and enable easy collaboration across the organization while protecting against unmanaged access-creep.</p>
+          <p><a href="{{ relref . "/intro/use-cases#access-auditing" }}">Audit who and what systems have access to your code</a> and enable easy collaboration across the organization while protecting against unmanaged access-creep.</p>
 
         </div>
         <div class="col-lg-5">
           <h2 class="h4">Where it goes</h2>
-          <p>Code is a fluid asset, always moving where it needs and finding its own level across the org. BluBracket Enterprise tracks where it goes when it leaks outside the org.</p>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-lg-5">
-          <h2 class="h4">Contents</h2>
-          {{ partial "sidebar/docs-menu.html" . }}
+          <p>Code is a fluid asset, always moving where it needs and finding its own level across the org. <a href="{{ relref . "/intro/use-cases#code-leaks" }}">BluBracket Enterprise tracks where it goes when it leaks outside the org</a>.</p>
         </div>
       </div>
     </div>
