@@ -79,7 +79,7 @@
   {{ end -}}
 {{ else -}}
   {{ $js := $js | minify | fingerprint "sha512" -}}
-  {{ $index := $index | minify | fingerprint "sha512" -}}
+  {{ $index := $index | fingerprint "sha512" -}}
   {{ $bs := $bs | minify | fingerprint "sha512" -}}
   {{ $highlight := $highlight | minify | fingerprint "sha512" -}}
   {{ $katex := $katex | minify | fingerprint "sha512" -}}
