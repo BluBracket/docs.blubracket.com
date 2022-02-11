@@ -1,5 +1,5 @@
 ---
-title: "Configuring infrastructure as code on GitLab"
+title: "GitLab"
 description: "Configuring infrastructure as code on GitLab"
 lead: "Configuring infrastructure as code on GitLab"
 date: 2022-01-12T02:48:57+00:00
