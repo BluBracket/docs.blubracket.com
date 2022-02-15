@@ -7,7 +7,7 @@ draft: false
 weight: 500
 toc: true
 resources:
-- src:
+  - src:
 ---
 
 ### Local workflow tools
