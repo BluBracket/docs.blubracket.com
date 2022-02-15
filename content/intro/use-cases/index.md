@@ -12,15 +12,15 @@ resources:
 
 BluBracket is most often used to identify risks in code, who has access, and where it goes:
 
-- Identifying, blocking, and removing risks in code
+- Identifying, preventing, and removing risks in code
   - [Secrets](#secrets-in-code)
   - [Personally identifiable information (PII)](#personally-identifiable-information-pii)
   - [Non-inclusive language (NIL)](#non-inclusive-language-nil)
   - [Infrastructure-as-code (IAC) risks](#infrastructure-as-code-iac-risks)
-- [Auditing who has access](#access-auditing)
-- [Auditing where it goes](#code-leaks)
+- [Monitoring who and what has access to your code](#access-auditing)
+- [Monitoring where your code goes](#code-leaks)
 
-## Secrets in code
+## Secrets in code {#secrets}
 
 Passwords, keys, and other secrets in code are no longer secret when code is shared across teams, repos are made public, or when employees leave with copies of the code.
 
@@ -28,31 +28,31 @@ BluBracket's tools identify and help eliminate secrets throughout the developmen
 
 BluBracket's deep scans identify secrets in git history, and can even identify active secrets so you know which ones are most important.
 
-## Personally identifiable information (PII)
+## Personally identifiable information (PII) {#pii}
 
 Unlike secrets, personally identifiable information can't be changed or rotated. As companies face growing liability for mishandling PII, finding and excising it from code is becoming a growing need.
 
 BluBracket's deep scans identify PII in git history, show teams the PII risk across their codebase, and help remediate. Just as with BluBracket's secret detection tools, BluBracket can block commits of new PII, block PRs with PII, and alert teams any time PII is committed to monitored repos.
 
-## Non-inclusive language (NIL)
+## Non-inclusive language (NIL) {#inclusive-language}
 
 Companies and open source communities are both increasingly aware of the role inclusive language plays in attracting and retaining team members in all roles. Non-inclusive language creates both significant brand risks, as well as retention risks.
 
 BluBracket's tools help identify non-inclusive language throughout the development process, and guide teams to continuous improvement over time.
 
-## Infrastructure as code (IaC) risks
+## Infrastructure as code (IaC) risks {#iac}
 
-Auditing infrastructure-as-code for proper configuration before it's applied to the infrastructure reduces risk and improves productivity for teams of all sizes.
+Monitoring infrastructure-as-code for proper configuration before it's applied to the infrastructure reduces risk and improves productivity for teams of all sizes.
 
-BluBracket's tools audit IaC throughout the development process, but teams value the guidance most when reviewing pull requests.
+BluBracket's tools automatically and continuously audit IaC throughout the development process, but teams value the guidance most when reviewing pull requests.
 
-## Access auditing
+## Monitoring git access & configuration {#access-auditing}
 
-Auditing who and what systems have access to code is critical to supporting modern workflows that often require broad access across the organization, while also protecting organizations and teams against stale permissions and misconfigurations that can emerge over time.
+Knowing who and what systems have access to code is critical to supporting modern workflows that often require broad access across the organization, while also protecting organizations and teams against stale permissions and misconfigurations that can emerge over time.
 
-Identifying who has access to what, and calling out best-practice configuration of everything from git hooks to branch protection rules helps guide teams to continuous improvement and ongoing operational security. When teams know they can easily audit access, they're both more productive because they can more easily grant access, and more secure because they have tools to
+Identifying who has access to what, and calling out the best-practice configuration of everything from git hooks to branch protection rules helps guide teams to continuous improvement and ongoing operational security. When teams know they can automatically and continuously audit access, they're both more productive because they can more easily grant access, and more secure because they have tools to
 
-## Code leaks
+## Code leaks {#code-leaks}
 
 {{< alert icon="👉" text="This feature is only available to Enterprise customers." />}}
 
