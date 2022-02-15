@@ -56,7 +56,7 @@ footer = "<a href=\"https://blubracket.com/\">BluBracket</a> code security track
 copyRight = "Copyright (c) 2019-2021 BluBracket"
 
 # Alert
-alert = true
+alert = false
 alertDismissable = true
 alertText = "This preview of our new documentation site is in active development. We recommend <a class=\"alert-link stretched-link\" href=\"https://support.blubracket.com\">the docs at support.blubracket.com</a> for any production questions at this time."
 
