@@ -1,0 +1,21 @@
+{{ with .Page.Pages }}
+<ul class="small">
+    {{ range . }}
+        <li>
+          <a class="docs-link rounded" href="{{ .Permalink }}">{{ .Title }}</a>
+          {{ template "dokschildren" dict "Page" . }}
+        </li>
+    {{ end }}
+</ul>
+{{ end }}
+
+{{ define "dokschildren" }}
+  {{ range $.Page.Pages }}
+    <ul class="small">
+      <li>
+        <a class="docs-link rounded" href="{{ .Permalink }}">{{ .Title }}</a>
+        {{ template "dokschildren" dict "Page" . }}
+      </li>
+    </ul>
+  {{ end }}
+{{ end }}
