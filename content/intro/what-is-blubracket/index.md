@@ -10,17 +10,17 @@ resources:
   - src:
 ---
 
-BluBracket is a code and git security suite that identifies risks in your code, audits who and what has access to your code, and tracks where your code goes outside your git repos.
+BluBracket is a code and git security suite that identifies risks in your code, monitors who and what has access to your code, and tracks where your code goes outside your git repos.
 
 ### BluBracket use-cases
 
-- Identifying, blocking, and removing risks in code
-  - [Secrets]({{< relref "use-cases#secrets-in-code" >}})
-  - [Personally identifiable information (PII)]({{< relref "use-cases#personally-identifiable-information-pii" >}})
-  - [Non-inclusive language (NIL)]({{< relref "use-cases#non-inclusive-language-nil" >}})
-  - [Infrastructure-as-code (IAC) risks]({{< relref "use-cases#infrastructure-as-code-iac-risks" >}})
-- [Auditing who has access]({{< relref "use-cases#access-auditing" >}})
-- [Auditing where it goes]({{< relref "use-cases#code-leaks" >}})
+- Identifying, preventing, and removing risks in code
+  - [Secrets]({{< relref "use-cases#secrets" >}})
+  - [Personally identifiable information (PII)]({{< relref "use-cases#pii" >}})
+  - [Non-inclusive language (NIL)]({{< relref "use-cases#inclusive-language" >}})
+  - [Infrastructure-as-code (IAC) risks]({{< relref "use-cases#iac" >}})
+- [Monitoring who and what has access to your code]({{< relref "use-cases#access-auditing" >}})
+- [Monitoring where your code goes]({{< relref "use-cases#code-leaks" >}})
 
 ### Who is BluBracket for?
 

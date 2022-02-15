@@ -50,7 +50,7 @@ BluBracket can send alerts any time it finds new risks committed to monitored re
 
 Preventing new risks from getting into your code is one of the most important steps to continuous improvement. Understanding your overall code health so you can prioritize and track your efforts at continuous improvement is the next most critical step.
 
-BluBracket scans your code, including every historical commit, to identify [secrets](/intro/use-cases/#secrets-in-code), [PII](/intro/use-cases/#personally-identifiable-information-pii), [non-inclusive language](/intro/use-cases/#non-inclusive-language-nil), and [infrastructure-as-code risks](/intro/use-cases/#infrastructure-as-code-iac-risks) lurking within.
+BluBracket scans your code, including every historical commit, to identify [secrets](/intro/use-cases/#secrets), [PII](/intro/use-cases/#pii), [non-inclusive language](/intro/use-cases/#inclusive-language), and [infrastructure-as-code risks](/intro/use-cases/#iac) lurking within.
 
 [screenshot: risk categories in a single repo]
 
