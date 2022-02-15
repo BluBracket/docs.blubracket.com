@@ -50,7 +50,7 @@ BluBracket's tools audit IaC throughout the development process, but teams value
 
 Auditing who and what systems have access to code is critical to supporting modern workflows that often require broad access across the organization, while also protecting organizations and teams against stale permissions and misconfigurations that can emerge over time.
 
-Identifying who has access to what, and calling out best-practice configuration of everything from git hooks to branch protection rules helps guide teams to continuous improvement and ongoing operational security. When teams know they can easily audit access, they're both more productive because they can more easily grant access, and more secure because they have tools to
+Identifying who has access to what, and calling out the best-practice configuration of everything from git hooks to branch protection rules helps guide teams to continuous improvement and ongoing operational security. When teams know they can easily audit access, they're both more productive because they can more easily grant access, and more secure because they have tools to
 
 ## Code leaks
 

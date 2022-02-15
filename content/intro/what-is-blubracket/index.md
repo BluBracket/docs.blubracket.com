@@ -56,38 +56,15 @@ And BluBracket integrates at multiple points in the SDLC workflow:
 - [Actionable alerts]({{< relref "key-workflows/#alerts" >}}) in Slack and other tools when new risks are detected
 - [Tools to analyze and understand existing risks]({{< relref "key-workflows/#pre-commit-hooks" >}}), and trend reports to see improvement over time
 
-### What does BluBracket integrate with?
+### Where does BluBracket integrate?
 
-- Local/workstation tools
-  - CLI
-- Code servers
-  - GitHub
-  - GitLab
-  - Bitbucket
-  - Azure DevOps ([contact us for beta]({{< ref contact-support >}}))
-  - Gerrit (coming soon)
-- CI servers
-  - GitHub Checks
-  - Bitbucket Code Insights
-  - Jenkins
-  - and more via open API
-- Identity, authentication, and authorization
-  - Azure AD
-  - Okta
-  - Ping
-  - SAML
-  - OAuth (coming soon)
-- Messaging
-  - Slack
-  - Microsoft Teams
-- Ticketing & incident management
-  - Jira
-  - ServiceNow
-  - PagerDuty
-  - Splunk
-- Build your own
-  - APIs
-  - Webhooks (coming soon)
+- [Local/workstation](/intro/integrations/) tools
+- [Code servers](/intro/integrations/), like GitHub and Bitbucket
+- [CI servers](/intro/integrations/), like GitHub Actions and Jenkins
+- [Identity, authentication, and authorization systems](/intro/integrations/) like SAML and Active Directory
+- [Messaging systems](/intro/integrations/), like Slack
+- [Ticketing & incident management systems](/intro/integrations/), like Jira and PagerDuty
+- [Build your own with APIs and webhooks](/intro/integrations/)
 
 ### How to get started with BluBracket
 
