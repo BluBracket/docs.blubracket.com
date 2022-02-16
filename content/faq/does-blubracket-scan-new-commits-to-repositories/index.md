@@ -1,5 +1,5 @@
 ---
-title: "An example question"
+title: "Does BluBracket scan new commits to repositories?"
 description: ""
 lead: ""
 date: 2022-01-12T02:48:57+00:00
