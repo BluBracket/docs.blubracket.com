@@ -5,7 +5,7 @@ lead: "Configuring infrastructure as code on GitLab"
 date: 2022-01-12T02:48:57+00:00
 draft: false
 weight: 200
-toc: true
+toc: false
 resources:
   - src: integrate.jpg, cicd.jpg, execute.jpg, checker1.jpg, checker2.jpg, checker3.jpg
 ---

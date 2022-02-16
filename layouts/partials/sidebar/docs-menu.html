@@ -5,7 +5,9 @@
       {{ $active := (eq $currentPage.Permalink .Permalink) }}
         <li class="mb-1">
           <h3 class="h6 text-uppercase"><a class="docs-link rounded{{ if $active }} active{{ end }}" href="{{ .Permalink }}">{{ .Title }}</a></h3>
-          {{ template "dokschildren" dict "Page" . "currentPage" $currentPage }}
+          {{ if or (not (isset .Params "toc")) (not (eq .Params.toc false)) }}
+            {{ template "dokschildren" dict "Page" . "currentPage" $currentPage }}
+          {{ end }}
         </li>
     {{ end }}
 </ul>
@@ -13,12 +15,14 @@
 
 {{ define "dokschildren" }}
   {{ range $.Page.Pages }}
-    {{ $active := (eq $.currentPage.Permalink .Permalink) }}
-    <ul class="small">
-      <li class="{{ if $active }}active{{ end }}">
-        <a class="docs-link rounded{{ if $active }} active{{ end }}" href="{{ .Permalink }}">{{ .Title }}</a>
-        {{ template "dokschildren" dict "Page" . "currentPage" $.currentPage }}
-      </li>
-    </ul>
+    {{ if or (not (isset .Params "toc")) (not (eq .Params.toc false)) }}
+      {{ $active := (eq $.currentPage.Permalink .Permalink) }}
+      <ul class="small">
+        <li class="{{ if $active }}active{{ end }}">
+          <a class="docs-link rounded{{ if $active }} active{{ end }}" href="{{ .Permalink }}">{{ .Title }}</a>
+          {{ template "dokschildren" dict "Page" . "currentPage" $.currentPage }}
+        </li>
+      </ul>
+    {{ end }}
   {{ end }}
 {{ end }}

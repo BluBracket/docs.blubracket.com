@@ -5,7 +5,7 @@ lead: "How to add a GitLab Cloud code server to your tenant"
 date: 2022-01-12T02:48:57+00:00
 draft: false
 weight: 100
-toc: true
+toc: false
 resources:
   - src: group.jpg
   - src: add-token.jpg

@@ -3,13 +3,13 @@
     {{ range . }}
         <li>
           <a class="docs-link rounded" href="{{ .Permalink }}">{{ .Title }}</a>
-          {{ template "dokschildren" dict "Page" . }}
+          {{ template "dokschildrenmain" dict "Page" . }}
         </li>
     {{ end }}
 </ul>
 {{ end }}
 
-{{ define "dokschildren" }}
+{{ define "dokschildrenmain" }}
   {{ range $.Page.Pages }}
     <ul class="small">
       <li>
