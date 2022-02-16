@@ -10,7 +10,7 @@ resources:
   - src:
 ---
 
-Signing up for a BluBracket account is simple and takes only a few minutes. We aim to help you find the risks in your code, improve code security, and dig deeper into the information provided by our scanning tool.
+Signing up for a BluBracket account takes only a few minutes. We aim to help you find the risks in your code, improve code security, and dig deeper into the information provided by our scanning tool.
 
 Once you have signed up, you can immediately start scanning repositories and commits for vulnerabilities.
 
