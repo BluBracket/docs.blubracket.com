@@ -10,7 +10,7 @@ resources:
   - src:
 ---
 
-The BluBracket CLI tool is supported on the following platforms: 
+The BluBracket CLI tool is supported on the following platforms:
 
 - Mac OSX 10.12 and later
 - Linux
