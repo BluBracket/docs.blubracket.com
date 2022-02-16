@@ -10,3 +10,4 @@ resources:
   - src:
 ---
 
+This page is a stub.
