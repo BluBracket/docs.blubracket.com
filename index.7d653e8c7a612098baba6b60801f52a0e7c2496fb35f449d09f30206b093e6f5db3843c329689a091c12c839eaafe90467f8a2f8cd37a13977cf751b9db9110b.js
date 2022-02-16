@@ -88,54 +88,14 @@ Source:
   index.add(
     {
         id: 0,
-        href: "/faq/supported-ide/",
+        href: "/faq/what-alerts-are-shown/",
         title: "An example question",
-        description: "",
-        content: ""
+        description: "This page is a stub.",
+        content: "This page is a stub.\n"
       })
       .add(
       {
         id: 1,
-        href: "/faq/what-alerts-are-shown/",
-        title: "An example question",
-        description: "",
-        content: ""
-      })
-      .add(
-      {
-        id: 2,
-        href: "/faq/what-does-the-cli-tool-do/",
-        title: "An example question",
-        description: "",
-        content: ""
-      })
-      .add(
-      {
-        id: 3,
-        href: "/faq/what-permissions-do-you-require/",
-        title: "An example question",
-        description: "",
-        content: ""
-      })
-      .add(
-      {
-        id: 4,
-        href: "/faq/what-sensitive-words-does-you-search-for/",
-        title: "An example question",
-        description: "",
-        content: ""
-      })
-      .add(
-      {
-        id: 5,
-        href: "/faq/why-should-i-use-blubracket-discover-secrets/",
-        title: "An example question",
-        description: "",
-        content: ""
-      })
-      .add(
-      {
-        id: 6,
         href: "/how-to/add-code-servers/bitbucket-cloud/",
         title: "Bitbucket Cloud",
         description: "How to add a Bitbucket Cloud server to your tenant",
@@ -143,7 +103,7 @@ Source:
       })
       .add(
       {
-        id: 7,
+        id: 2,
         href: "/faq/can-i-customize-secrets-detected-by-the-cli/",
         title: "Can I customize what secrets are detected by the CLI tool?",
         description: "Yes. BluBracket can identify hundreds of different types of secrets in code, including tokens, keys, IDs and passwords, but the BluBracket CLI tool also supports user-defined regular expressions to match and alert on.\nFor more detailed information on how to add regular expressions to the CLI, look here.",
@@ -151,7 +111,7 @@ Source:
       })
       .add(
       {
-        id: 8,
+        id: 3,
         href: "/faq/can-i-find-secrets-before-committed/",
         title: "Can I find secrets before they are committed?",
         description: "Yes. With the BluBracket Command Line Interface (CLI) tool, you can catch secrets before the code is committed to a repository. Once downloaded and configured, the tool will report any risks found in commits and optionally block commits until they\u0026rsquo;re addressed.\nThe BluBracket CLI tool works with pre-commit hooks, and with any IDEs where the pre-commit hooks are supported.",
@@ -159,7 +119,7 @@ Source:
       })
       .add(
       {
-        id: 9,
+        id: 4,
         href: "/faq/does-blubracket-scan-new-commits-to-repositories/",
         title: "Does BluBracket scan new commits to repositories?",
         description: "Yes. Each time a new commit is made to a monitored repository, BluBracket immediately scans the commit for any new risks. Any risks that are found will be displayed in the web dashboard, and alerted through any configured alert integrations.",
@@ -167,7 +127,7 @@ Source:
       })
       .add(
       {
-        id: 10,
+        id: 5,
         href: "/faq/does-blubracket-store-modify-my-code/",
         title: "Does BluBracket store/modify my code or any part of my code?",
         description: "No. BluBracket clones repositories, scans them, creates a hash of each of the files (for later comparisons), then the entire checkout from the BluBracket servers. All of this happens within a few seconds, depending on the repository size.\nAfter the scan, BluBracket saves specific metadata to support alerting and reporting on any found risks—things like repository names, file names, contributor IDs, commit IDs and times, etc.\nBluBracket never stores any code after the scan.",
@@ -175,7 +135,7 @@ Source:
       })
       .add(
       {
-        id: 11,
+        id: 6,
         href: "/how-to/add-code-servers/github-cloud/",
         title: "GitHub Cloud",
         description: "How to add a GitHub cloud code server to your tenant",
@@ -183,7 +143,7 @@ Source:
       })
       .add(
       {
-        id: 12,
+        id: 7,
         href: "/how-to/add-code-servers/gitlab-cloud/",
         title: "GitLab Cloud",
         description: "How to add a GitLab Cloud code server to your tenant",
@@ -191,7 +151,7 @@ Source:
       })
       .add(
       {
-        id: 13,
+        id: 8,
         href: "/faq/how-long-does-it-take-to-scan-new-commits/",
         title: "How long does it take for BB to scan new commits?",
         description: "The time it takes for BluBracket to scan new commits depends on the size of the commit. In most cases though the scan is perceived as immediate.",
@@ -199,7 +159,7 @@ Source:
       })
       .add(
       {
-        id: 14,
+        id: 9,
         href: "/api/intro-auth-keys/",
         title: "Intro to BluBracket APIs and API keys",
         description: "How to access and use the BluBracket API.",
@@ -207,7 +167,7 @@ Source:
       })
       .add(
       {
-        id: 15,
+        id: 10,
         href: "/intro/",
         title: "Introduction to BluBracket ",
         description: "",
@@ -215,7 +175,7 @@ Source:
       })
       .add(
       {
-        id: 16,
+        id: 11,
         href: "/faq/what-can-i-do-with-blubracket-apis/",
         title: "What can I do with BluBracket APIs?",
         description: "Use BluBracket APIs to integrate with your CI/DC solution. This will help make sure that there are no secrets accidentally checked in to code by any of your team members.\nYou may also leverage BluBracket APIs to export secret found events to other systems in addition to our support for Slack, Splunk, and others.",
@@ -223,7 +183,31 @@ Source:
       })
       .add(
       {
-        id: 17,
+        id: 12,
+        href: "/faq/what-does-the-cli-tool-do/",
+        title: "What does the BluBracket CLI tool do?",
+        description: "The BluBracket CLI tool provides a number of developer conveniences, and is optimized to check for the following at git pre-commit:\n Secrets:the tool identifies hundreds of types of tokens, keys, IDs as well as passwords. Non-inclusive language: the tool identifies non-inclusive language like master, slave, dummy, and blacklist. Custom RegEx: you can configure your own regular expressions that the tool will identify and alert on. Commit Signing:the CLI can check that the commit is going to be signed or not.",
+        content: "The BluBracket CLI tool provides a number of developer conveniences, and is optimized to check for the following at git pre-commit:\n Secrets:the tool identifies hundreds of types of tokens, keys, IDs as well as passwords. Non-inclusive language: the tool identifies non-inclusive language like master, slave, dummy, and blacklist. Custom RegEx: you can configure your own regular expressions that the tool will identify and alert on. Commit Signing:the CLI can check that the commit is going to be signed or not. Large Binary Files - the CLI tool can check that a “large” binary file is going to be committed. By default binary files less than 500 KB will be ignored; if more than 500 KB but less than 10 MB, CLI will warn but allow the commit; if more than 10 MB then the commit will be blocked.  The tool can be configured to ignore, warn, or block when it finds any of the above during a git commit attempt.\n"
+      })
+      .add(
+      {
+        id: 13,
+        href: "/faq/what-permissions-do-you-require/",
+        title: "What GitHub permissions does the BluBracket app require?",
+        description: "When you authenticate into BluBracket using GitHub Oauth you will see and approve the following permissions:\n Read access to administration, code, members, metadata, organization administration, and pull requests Read and write access to checks, organization hooks, and repository hooks  These permissions allow BluBracket to monitor the repositories that you select and present you with any secrets found as well as contributor/commit information.",
+        content: "When you authenticate into BluBracket using GitHub Oauth you will see and approve the following permissions:\n Read access to administration, code, members, metadata, organization administration, and pull requests Read and write access to checks, organization hooks, and repository hooks  These permissions allow BluBracket to monitor the repositories that you select and present you with any secrets found as well as contributor/commit information.\n"
+      })
+      .add(
+      {
+        id: 14,
+        href: "/faq/supported-ide/",
+        title: "What IDEs are supported by the CLI tool?",
+        description: "In our testing, any IDE (integrated developer environment) with built-in support for git and pre-commit hooks supports supports the feedback and alerts from the BluBracket CLI tool.\nBluBracket officially supports the following IDEs:\n IntelliJ VS Code  ",
+        content: "In our testing, any IDE (integrated developer environment) with built-in support for git and pre-commit hooks supports supports the feedback and alerts from the BluBracket CLI tool.\nBluBracket officially supports the following IDEs:\n IntelliJ VS Code  "
+      })
+      .add(
+      {
+        id: 15,
         href: "/intro/what-is-blubracket/",
         title: "What is BluBracket?",
         description: "BluBracket is a code and git security suite that identifies risks in your code, monitors who and what has access to your code, and tracks where your code goes outside your git repos.\nBluBracket use-cases #  Identifying, preventing, and removing risks in code  Secrets Personally identifiable information (PII) Non-inclusive language (NIL) Infrastructure-as-code (IAC) risks   Monitoring who and what has access to your code Monitoring where your code goes  Who is BluBracket for?",
@@ -231,7 +215,7 @@ Source:
       })
       .add(
       {
-        id: 18,
+        id: 16,
         href: "/faq/what-kinds-of-secrets-do-you-search-for/",
         title: "What kinds of secrets does BluBracket search for?",
         description: "BluBracket uses a variety of technologies, including pattern matching and AI/ML to detect hundreds of different types of secrets in code, including tokens, keys, IDs, credentials and passwords. BluBracket also allows developers to specify additional alert triggers using regular expressions.\nA sample of secrets BluBracket commonly detects includes:\npassword_assignment # Potential password assignment\n'PaSswOrd' = '13579'  secret_assignment # Potential secret assignment\n\u0026quot;test_token_123\u0026quot; = \u0026quot;my_secret_token\u0026quot;  credential_assignment # Potential credential assignment",
@@ -239,7 +223,15 @@ Source:
       })
       .add(
       {
-        id: 19,
+        id: 17,
+        href: "/faq/what-sensitive-words-does-you-search-for/",
+        title: "What non-inclusive language does the BluBracket search for?",
+        description: "It has become increasingly important lately to make sure specific sensitive words are not included in code or documentation. These would be words like: master, slave, dummy, blacklist, etc. Just as with secrets, the BluBracket code scanner and CLI tool automatically search for these sensitive words and notifies the developer before they are committed to repositories.\nExample non-inclusive language includes the following words:\n master slave whitelist blacklist whitebox blackbox whitehat blackhat  Let us know if there are any others that you or your company think should be added to the list.",
+        content: "It has become increasingly important lately to make sure specific sensitive words are not included in code or documentation. These would be words like: master, slave, dummy, blacklist, etc. Just as with secrets, the BluBracket code scanner and CLI tool automatically search for these sensitive words and notifies the developer before they are committed to repositories.\nExample non-inclusive language includes the following words:\n master slave whitelist blacklist whitebox blackbox whitehat blackhat  Let us know if there are any others that you or your company think should be added to the list. You can always add your own via the regex configuration as well.\n"
+      })
+      .add(
+      {
+        id: 18,
         href: "/faq/cli-supported-platforms/",
         title: "What platforms are supported by the BluBracket CLI tool?",
         description: "The BluBracket CLI tool is supported on the following platforms:\n Mac OSX 10.12 and later Linux  Alpine 5 and later Ubuntu 16.04 and later CentOS 7 and later   Windows 10  ",
@@ -247,11 +239,19 @@ Source:
       })
       .add(
       {
-        id: 20,
+        id: 19,
         href: "/faq/what-repositories-can-i-monitor/",
         title: "What repositories can I monitor?",
         description: "BluBracket can monitor any repositories on a supported code server that you have access to. Fully supported code servers include cloud and enterprise versions of:\n GitHub GitLab Bitbucket  Support for additional code servers is in development, and may be available in private beta.\nOn GitHub, for example, you can monitor repos in your personal GitHub org as well as company/group orgs where you have permission to add apps.",
         content: "BluBracket can monitor any repositories on a supported code server that you have access to. Fully supported code servers include cloud and enterprise versions of:\n GitHub GitLab Bitbucket  Support for additional code servers is in development, and may be available in private beta.\nOn GitHub, for example, you can monitor repos in your personal GitHub org as well as company/group orgs where you have permission to add apps.\n"
+      })
+      .add(
+      {
+        id: 20,
+        href: "/faq/why-should-i-use-blubracket-discover-secrets/",
+        title: "Why should I use the BluBracket to discover secrets in code when there are so many other tools available?",
+        description: "Best in class secret detection # Testing demonstrates that BluBracket can identify more tokens, keys and IDs than the other tools. Additionally, it supports user-defined custom patterns so you can match whatever is important to you.\nFewest false positives # Expansive detection is critical to ensuring secrets are found, but BluBracket’s rules engine also actively eliminates potential false positives allowing developers to focus on the most important findings.\nComprehensive threat detection # In addition to secrets, BluBracket scans for the following risks in code:",
+        content: "Best in class secret detection # Testing demonstrates that BluBracket can identify more tokens, keys and IDs than the other tools. Additionally, it supports user-defined custom patterns so you can match whatever is important to you.\nFewest false positives # Expansive detection is critical to ensuring secrets are found, but BluBracket’s rules engine also actively eliminates potential false positives allowing developers to focus on the most important findings.\nComprehensive threat detection # In addition to secrets, BluBracket scans for the following risks in code:\n Personally identifiable information (PII) Non-inclusive language (NIL) Infrastructure as code (IaC) best practices  Additionally, BluBracket monitors who and what has access to your code, and where your code is going.\nComplete workflow # Detection is easy, but building workflows and tools that help prevent risks from getting into code, and support continuous improvement through risk scoring, filtering, and reporting is what makes BluBracket an indispensable part of modern development practices.\n"
       })
       .add(
       {
