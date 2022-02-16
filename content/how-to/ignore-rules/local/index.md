@@ -1,5 +1,5 @@
 ---
-title: "Locally"
+title: "Configuring local ignore rules"
 description: ""
 lead: ""
 date: 2022-01-12T02:48:57+00:00

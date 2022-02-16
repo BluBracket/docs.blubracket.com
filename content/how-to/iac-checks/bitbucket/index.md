@@ -1,5 +1,5 @@
 ---
-title: "Bitbucket"
+title: "Setting up IAC scanning in Bitbucket"
 description: "Configuring infrastructure as code on Bitbucket"
 lead: "Configuring infrastructure as code on Bitbucket"
 date: 2022-01-12T02:48:57+00:00

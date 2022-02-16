@@ -1,5 +1,5 @@
 ---
-title: "Globally"
+title: "Configuring global ignore rules"
 description: "How to Set Ignore Rules Globally for Tenant"
 lead: "How to Ignore Rules Globally for Tenant"
 date: 2022-01-12T02:48:57+00:00
