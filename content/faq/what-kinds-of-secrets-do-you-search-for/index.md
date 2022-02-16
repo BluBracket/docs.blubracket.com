@@ -110,7 +110,6 @@ Potential GitHub access token or OAuth client secret
 
     gIthub-access_token = '2b30cc694989f335a4298067c4753a6c09ccfe5e'
 
-
 ### github_oauth_client_secret
 
 Potential GitHub OAuth client secret
@@ -118,7 +117,9 @@ Potential GitHub OAuth client secret
     gIthub-oAuth_token = '2b30cc694989f335a4298067c4753a6c09ccfe5e'
 
 ### github_token_base64
+
 ### github_access_token_base64
+
 ### github_oauth_client_secret_base64
 
 Potential GitHub Personal Access Token or OAuth Client Secret (base64)
@@ -156,6 +157,7 @@ Potential GitHub refresh token
     ghr_1B4a2e77838347a7E420ce178F2E7c6912E169246c34E1ccbF66C46812d16D5B1A9Dc86A1498
 
 ### gitlab_oauth_application_id_base64
+
 ### gitlab_oauth_secret_base64
 
 Potential Base64 Encoded GitLab OAuth application id or secret
@@ -169,6 +171,7 @@ Potential GitLab Access Token
     gitLab= "y-WttoALkwHn_vWJ72DB"
 
 ### gitlab_oauth_application_id
+
 ### gitlab_oauth_secret
 
 Potential GitLab OAuth Applicaiton ID or GitLab OAuth Secret
@@ -337,7 +340,8 @@ Potential Slack App Client ID
 
     slack_client_id='559859041733.752727218102'
 
-### slack_app_client_secret\
+### slack_app_client_secret
+
 ### slack_app_signing_secret
 
 Potential Slack App Client Secret or Slack App Signing Secret
@@ -412,7 +416,7 @@ Potential Stripe live secret key (base64)
 
 ### stripe_test_restricted_key
 
-Potential Stripe Test Restricted Key 
+Potential Stripe Test Restricted Key
 
     rk_test_Zu9Vz12eIYFNdGoFKe8aYiQn00gcclUvS0
 
@@ -483,6 +487,7 @@ Potential Sendgrid API Key (base64)
     U0cucFcyWFhnNi1UY2E4YkNCVEMwRWlZUS5ZNXBDOFNqZmJ3WWxNTURSaVQ5TTZxN0VmOWIzX0RDSGtQNS0zaXNYM3dN
 
 ### twilio_auth_token
+
 ### twilio_api_key
 
 Potential Twilio Auth Token or API Key
@@ -543,7 +548,7 @@ Potential Alibaba Cloud Access Key Secret (base64)
 
     alibaba_access_key ='M2lodkdsa2xEUFNYcjIyZG51bnJIVHBaTzRhS21T'
 
-###  codeship_aes_key
+### codeship_aes_key
 
 Potential Cloudbees Codeship AES Key Secret
 
@@ -601,7 +606,7 @@ Potential password in function
 
 Potential secret in function
 
-    setApiKey ( 'api_key' ) 
+    setApiKey ( 'api_key' )
 
 ### password_in_url
 
