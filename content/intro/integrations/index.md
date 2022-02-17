@@ -7,12 +7,12 @@ draft: false
 weight: 500
 toc: true
 resources:
-  - src:
+  - src: blubracket-blocks-secrets-git-pre-commit.pngx
 ---
 
 ### Local workflow tools
 
-[screenshot: pre-commit check via CLI tool]
+{{< figure src="blubracket-blocks-secrets-git-pre-commit.png" caption="The BluBracket CLI tool can identify and block secrets before they're committed." >}}
 
 Available local tools and integrations
 
