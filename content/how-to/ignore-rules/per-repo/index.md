@@ -1,5 +1,5 @@
 ---
-title: "Per repo"
+title: "Configuring ignore rules per repo"
 description: "How to Set Ignore Rules Ignore Rules For All Users of A Repository"
 lead: "How to Set Ignore Rules Ignore Rules For All Users of A Repository"
 date: 2022-01-12T02:48:57+00:00
@@ -10,11 +10,11 @@ resources:
   - src: ignore.jpg
 ---
 
-In some cases a repo administrator may want to ignore specific secret types, secret values, or paths. This can be achieved by creating an ignore.yaml file. This file is then placed into the root directory of the repository, within a .blubracket folder.
+In some cases a repo administrator may want to ignore specific secret types, secret values, or paths for all commits by any contributor to that repo. This can be achieved by creating an ignore.yaml file. This file is then placed into the root directory of the repository, within a `.blubracket` directory at the repo root.
 
 When a match of the ignore file is made, an alert will not be created (but an event will still be generated).
 
-Example below is a repository called Test1, which has a .blubracket folder and within the folder is the ignore.yaml file.
+Example below is a repository called Test1, which has a `.blubracket` directory and within the folder is the `ignore.yaml` file.
 
 ![ignore](ignore.jpg)
 
