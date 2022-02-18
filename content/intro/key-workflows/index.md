@@ -7,7 +7,10 @@ draft: false
 weight: 400
 toc: true
 resources:
-  - src:
+  - src: blubracket-blocks-secrets-git-pre-commit.pngx
+  - src: secret-detection-in-github-checks-ci-via-blubracket.png
+  - src: code-risk-alerts-in-slack-via-blubracket.png
+  - src: git-repos-scanned-for-security-risks-by-blubracket.png
 ---
 
 BluBracket code security tools are optimized to prevent risks from getting into code, and to promote the process of continuous improvement that reduces existing risks from code over time.
@@ -20,7 +23,7 @@ As developers, we depend on a quick feedback loop to understand if our code is w
 
 The BluBracket CLI scan for secrets, PII, and non-inclusive language before commits, to prevent risks from ever getting into repos from the start.
 
-[screenshot: BluBracket CLI warning of found secret]
+{{< figure src="blubracket-blocks-secrets-git-pre-commit.png" caption="The BluBracket CLI tool can identify and optionally block secrets before they're committed." >}}
 
 The CLI supports local configuration with directives in `~/.blubracket/`, repo-level configuration for all committers to the repo with directives in `.blubracket/` at the repo root, and global configuration for all users of a BluBracket account with directives set at that level. Additionally, inline directives inserted as code comments can be used to mark specific items to ignore, putting decisions about how to handle selected code risks in context with the code.
 
@@ -34,7 +37,7 @@ Popular IDEs, such as VS Code and IntelliJ, present messages from pre-commit hoo
 
 Pre-commit hooks prevent most risks before they ever get into a repo, but CI checks provide an extra layer of guidance for teams.
 
-[screenshot: GitHub Checks blocking on found secret]
+{{< figure src="secret-detection-in-github-checks-ci-via-blubracket.png" caption="BluBracket can identify risks in the CI workflow via GitHub Checks and others." >}}
 
 GitHub is just one [supported code server and CI environment]({{< relref integrations >}}).
 
@@ -44,7 +47,7 @@ As with pre-commit hooks, CI checks and all BluBracket's server-side code scanni
 
 BluBracket can send alerts any time it finds new risks committed to monitored repos. Messaging a Slack channel is just one option, [see the full list of configurations for more]({{< relref integrations >}}).
 
-[screenshot: BluBracket alert in Slack]
+{{< figure src="code-risk-alerts-in-slack-via-blubracket.png" caption="BluBracket integration with Slack can alert teams about code risks in new commits in real time." >}}
 
 ### Understanding and taking action on existing risks
 
@@ -58,7 +61,7 @@ Reviewing those risks in the BluBracket dashboard allows you to see the overall 
 
 #### Repo risk scores
 
-[screenshot: risk ranking across repos]
+{{< figure src="git-repos-scanned-for-security-risks-by-blubracket.png" caption="BluBracket risk scores make it easy to see code health and prioritize effort." >}}
 
 BluBracket evaluates the health of every scanned repo and sums it up in an easy-to-understand score so you can rank and prioritize effort across your codebase.
 
