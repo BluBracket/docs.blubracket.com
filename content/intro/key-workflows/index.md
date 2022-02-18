@@ -10,7 +10,10 @@ resources:
   - src: blubracket-blocks-secrets-git-pre-commit.pngx
   - src: secret-detection-in-github-checks-ci-via-blubracket.png
   - src: code-risk-alerts-in-slack-via-blubracket.png
+  - src: comparing-code-and-access-risks-for-repository-in-blubracket.png
   - src: git-repos-scanned-for-security-risks-by-blubracket.png
+  - src: filtering-alerts-in-blubracket.png
+  - src: git-access-and-configuration-monitoring-by-blubracket.png
 ---
 
 BluBracket code security tools are optimized to prevent risks from getting into code, and to promote the process of continuous improvement that reduces existing risks from code over time.
@@ -55,7 +58,7 @@ Preventing new risks from getting into your code is one of the most important st
 
 BluBracket scans your code, including every historical commit, to identify [secrets](/intro/use-cases/#secrets), [PII](/intro/use-cases/#pii), [non-inclusive language](/intro/use-cases/#inclusive-language), and [infrastructure-as-code risks](/intro/use-cases/#iac) lurking within.
 
-[screenshot: risk categories in a single repo]
+{{< figure src="comparing-code-and-access-risks-for-repository-in-blubracket.png" caption="BluBracket categorizes risks so you can understand your code health and areas of highest risk." >}}
 
 Reviewing those risks in the BluBracket dashboard allows you to see the overall health of your scanned codebase, the areas of highest risk, and find specific issues you can act on now to improve your code security.
 
@@ -67,7 +70,7 @@ BluBracket evaluates the health of every scanned repo and sums it up in an easy-
 
 #### Detailed filtering and reporting
 
-[screenshot: filtering by risk detail]
+{{< figure src="filtering-alerts-in-blubracket.png" caption="Filter risks to understand code health and find actionable issues." >}}
 
 Filtering tools allow you to take control to see exactly what risks exist in your codebase and where to target and prioritize efforts based on your specific code condition and threat model.
 
@@ -79,6 +82,6 @@ Privilege models that grant developers broad access to code and workflow configu
 
 Least privilege models can maximize security, but enforcing it with common git code servers can be difficult without automated, continuous audits of access and configuration.
 
-[screenshot: git access and configuration alerts]
+{{< figure src="git-access-and-configuration-monitoring-by-blubracket.png" caption="A sample of BluBracket's automated git access & configuration monitoring alerts." >}}
 
 BluBracket's git access and configuration monitoring tools make it easy to see who and what has access across the codebase, and alert when access permissions don't conform to policy.
