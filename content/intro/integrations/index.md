@@ -8,6 +8,10 @@ weight: 500
 toc: true
 resources:
   - src: blubracket-blocks-secrets-git-pre-commit.pngx
+  - src: git-repos-scanned-for-security-risks-by-blubracket.png
+  - src: secret-detection-in-github-checks-ci-via-blubracket.png
+  - src: okta-saml-single-sign-on-to-blubracket-code-scanner.png
+  - src: code-risk-alerts-in-slack-via-blubracket.png
 ---
 
 ### Local workflow tools
@@ -22,7 +26,7 @@ Available local tools and integrations
 
 ### Code servers
 
-[screenshot: list of repos imported and scanned in BluBracket]
+{{< figure src="git-repos-scanned-for-security-risks-by-blubracket.png" caption="BluBracket scans repositories hosted in GitHub, GitLab, Bitbucket, and others." >}}
 
 Certified & supported code servers:
 
@@ -34,7 +38,7 @@ Certified & supported code servers:
 
 ### CI servers
 
-[screenshot: GitHub check]
+{{< figure src="secret-detection-in-github-checks-ci-via-blubracket.png" caption="BluBracket can identify risks in the CI workflow via GitHub Checks and others." >}}
 
 Certified & supported CI servers:
 
@@ -46,7 +50,7 @@ Additional integrations are available via [our open CI API](/api/ci-cd).
 
 ### Identity, authentication, and authorization
 
-[screenshot: SAML sign-in]
+{{< figure src="okta-saml-single-sign-on-to-blubracket-code-scanner.png" caption="BluBracket supports Okta and other single sign-on solutions." >}}
 
 Certified & supported identity integrations:
 
@@ -60,7 +64,7 @@ Certified & supported identity integrations:
 
 ### Messaging
 
-[screenshot: alert via Slack]
+{{< figure src="code-risk-alerts-in-slack-via-blubracket.png" caption="BluBracket integration with Slack can alert teams about code risks in new commits in real time." >}}
 
 Certified & supported messaging integrations:
 
