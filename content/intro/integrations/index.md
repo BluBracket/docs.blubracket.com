@@ -12,6 +12,7 @@ resources:
   - src: secret-detection-in-github-checks-ci-via-blubracket.png
   - src: okta-saml-single-sign-on-to-blubracket-code-scanner.png
   - src: code-risk-alerts-in-slack-via-blubracket.png
+  - src: automatic-jira-ticket-when-risk-found-in-code-with-blubracket.png
 ---
 
 ### Local workflow tools
@@ -73,7 +74,7 @@ Certified & supported messaging integrations:
 
 ### Ticketing & incident management
 
-[screenshot: Jira ticket created from alert]
+{{< figure src="automatic-jira-ticket-when-risk-found-in-code-with-blubracket.png" caption="BluBracket can automatically create a Jira ticket when risks are found in new commits." >}}
 
 Certified & supported ticketing & incident management integrations:
 
