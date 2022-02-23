@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>User guide on</title><link>https://docs.blubracket.com/how-to/</link><description>Recent content in User guide on</description><generator>Hugo -- gohugo.io</generator><language>en-US</language><lastBuildDate>Wed, 12 Jan 2022 02:48:57 +0000</lastBuildDate><atom:link href="https://docs.blubracket.com/how-to/index.xml" rel="self" type="application/rss+xml"/><item><title>Adding a BluBracket user</title><link>https://docs.blubracket.com/how-to/add-user/</link><pubDate>Wed, 12 Jan 2022 02:48:57 +0000</pubDate><guid>https://docs.blubracket.com/how-to/add-user/</guid><description>The first thing you might want to do is add your team members to assist with the setup and management. As soon as you log into your BluBracket tenant, you should create at least one additional user for the admin portal:
 Go to Settings.
-Click Users.
-Click Create User Assign a unique username.
+Click Account Tab.
+Click Add User Assign a unique username.
 Enter the user’s email address.</description></item><item><title>Remediate Alerts</title><link>https://docs.blubracket.com/how-to/remediate-alerts/</link><pubDate>Wed, 12 Jan 2022 02:48:57 +0000</pubDate><guid>https://docs.blubracket.com/how-to/remediate-alerts/</guid><description>There are a number of best practices when it comes to handling secrets in code. Below are a few:
 Encrypt your secrets
 Use environmental variables
