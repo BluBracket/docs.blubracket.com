@@ -2,7 +2,7 @@
 title: "CLI tool installation"
 description: "How do I install the BluBracket Command Line Interface (CLI) Tool?"
 lead: "How do I install the BluBracket Command Line Interface (CLI) Tool?"
-date: 2022-01-12T02:48:57+00:00
+date: 2022-02-23T02:48:57+00:00
 draft: false
 weight: 200
 toc: true
