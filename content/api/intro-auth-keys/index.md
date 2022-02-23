@@ -12,8 +12,6 @@ resources:
 
 In order to make requests into the event and alert APIs, you have to generate an API key, which you use to generate a token, and then you can setup any kind of integration that you would like to make authenticated requests into the Blu Event and Alert APIS.
 
-portal-generate-api-key.png
-
 ### Generating an auth token
 
 1. Create an API key by navigating to Settings > API Keys

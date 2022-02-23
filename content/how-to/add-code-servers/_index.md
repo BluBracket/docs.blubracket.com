@@ -8,7 +8,7 @@ weight: 200
 toc: true
 resources:
   - src: add-server.jpg
-  - src: repo-type.jpg
+  - src: repo-type.png
 ---
 
 The first step in setting up a BluBracket tenant is adding code servers.  This enables the BluBracket servers to communicate with a company’s Git services, which are necessary to generate alerts, insights, and reports.  
@@ -25,4 +25,4 @@ Once the setting section is exposed, select the “enterprise code servers” se
 
 Now that the configuration bar is exposed, the first thing we want to do is select a Server Type.  We will be setting up a GitHub Cloud server, so select the “GitHub Cloud” option.
 
-![Choose repo type Screenshot](repo-type.jpg)
+![Choose repo type Screenshot](repo-type.png)
