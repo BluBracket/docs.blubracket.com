@@ -51,11 +51,11 @@ Installing the BluBracket CLI Tool is simple! Download the tool from the BluBrac
 2. Open a terminal and add the BluBracket path to your bash profile:
      * If you selected **Install for all users of this computer:**
 
-     echo 'export PATH="/Applications/blubracket:$PATH"' >>~/.bash_profile source ~/.bash_profile
+     `echo 'export PATH="/Applications/blubracket:$PATH"' >>~/.bash_profile source ~/.bash_profile`
 
      * Alternatively, if you selected Install for me only:
 
-     echo 'export PATH="~/Applications/blubracket:$PATH"' >>~/.bash_profile; source ~/.bash_profile
+     `echo 'export PATH="~/Applications/blubracket:$PATH"' >>~/.bash_profile; source ~/.bash_profile`
 
 3. If your IDE is open you may need to restart it in order to pick up the new bash profile changes.
 
