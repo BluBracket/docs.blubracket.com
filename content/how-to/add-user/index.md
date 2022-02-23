@@ -8,7 +8,7 @@ weight: 300
 toc: true
 resources:
   - src: newportal.png
-  - src: user.png
+  - src: newuser.png
 ---
 
 The first thing you might want to do is add your team members to assist with the setup and management. As soon as you log into your BluBracket tenant, you should create at least  one additional user for the admin portal:
@@ -21,7 +21,7 @@ The first thing you might want to do is add your team members to assist with the
 
 1. Click Add User
 
-![user screenshot](user.png)
+![user screenshot](newuser.png)
 
 1. Assign a unique username.
 
