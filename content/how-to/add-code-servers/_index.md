@@ -25,4 +25,4 @@ Once the setting section is exposed, select the “enterprise code servers” se
 
 Now that the configuration bar is exposed, the first thing we want to do is select a Server Type.  We will be setting up a GitHub Cloud server, so select the “GitHub Cloud” option.
 
-![Choose repo type Screenshot](repo-type.jpg)
+<img width="1572" alt="code-server-selection" src="https://user-images.githubusercontent.com/30603989/155418346-fd2d17f1-5d6b-497a-bc91-1c51b4adf94f.png">
