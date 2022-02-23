@@ -14,13 +14,13 @@ The first thing you might want to do is add your team members to assist with the
 
 1. Go to Settings.
 
-2. Click Users.
+2. Click Account Tab.
 
-![portal screenshot](portal.png)
+<img width="1772" alt="blubracket-add-user" src="https://user-images.githubusercontent.com/30603989/155419212-f4199cd1-3304-4634-b627-aa72c5b88eaf.png">
 
-1. Click Create User
+1. Click Add User
 
-![user screenshot](user.png)
+<img width="340" alt="create-user" src="https://user-images.githubusercontent.com/30603989/155419245-a189a73d-c4d0-46ea-9e18-9e4139c05a2c.png">
 
 1. Assign a unique username.
 
