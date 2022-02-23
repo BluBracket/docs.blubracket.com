@@ -80,7 +80,9 @@ secret_value:my_test_gcp_token
 
 * .blubraket-ignore is read only from the root repo directory, placing it in a sub directory will have no effect.
 
-##### Inline comments
+
+##### Inline Comments
+
 
 In addition to .blubracket-ignore file, it is possible to mark a secret to be ignored by placing a “comment” on the **same** line as the secret. The comment/line has to have `BluBracketIgnore` string in it, please note that CLI will do case-sensitive comparison.
 
@@ -88,7 +90,7 @@ In addition to .blubracket-ignore file, it is possible to mark a secret to be ig
 
 Ignoring whole folders and/or secret type all the time could be dangerous as it can be easy to miss secrets. The recommended ways to deal with false positives are inline comments or ignoring the particular secret using `secret_value` rule in the `.blubracket-ignore` file.
 
-##### Adding Checks for your own secrets
+##### Adding Checks for your Own Secrets
 
 Out of the box BluBracket does support around 50 different secret types. If you want to check other secret types, it is easy. In a repo/clone folder create a file `.blubracket/customregex.yml` (if you want new secret checks be applicable for any repo, create the file in $HOME folder instead). The content of the file is a list of secrets to check. Each secret is defined by two properties: `description` and `pattern`. Description is textual name for the secret that will be displayed by CLI if the secret is detected. Pattern is a regex to match the secret. Here is an example of how to a check for SSNs:
 
@@ -97,7 +99,8 @@ Out of the box BluBracket does support around 50 different secret types. If you 
   description: simple_ssn
   ```
 
-##### PII secrets
+
+##### PII Secrets
 
 In addition to built-in secrets and custom secrets, CLI does support the ability to define a different group of “secrets” related to PII (Personally Identifiable Information) such as Social Security Numbers (SSN), emails, URLs, IP-addresses, etc. This feature is fully customizable. Out of the box CLI defines several patterns but all can be disabled, or the corresponded action changed. Here is the default configuration file:
 
@@ -147,7 +150,7 @@ patterns:
 
 Configuration file can be global, for all the repos, it is located in `~/.blubracket/pii.yaml`, or local, in repo’s `.blubracket/pii.yaml` file. If repo-local file exists, it will be used, otherwise the global file will be used. Upon launch, CLI with create the global file if it does not exist yet. After file has been created, it is OK to fully change it, CLI will not touch it anymore.
 
-#### Sensitive words
+#### Sensitive Words
 
 In addition to checking secrets, CLI can check for sensitive/offensive words that might be good idea to avoid. Examples includes master, slave, etc. By default CLI only warns if a sensitive word has been found but allows commit to proceed. Sensitive Words can be configured in the similar way as PII Secrets. The configuration file name is `~/.blubracket/sensitive-words.yaml` (or a repo-local alternative). Here is the default file:
 
@@ -199,7 +202,7 @@ BluBracket allowed 1 sensitive word(s):
 C:\Users\vbuzu\projects\sandbox\test2:8:4: Master: config: sensitive_keywords.action: allow
 ```
 
-#### Commit signing
+#### Commit Signing
 
 BluBracket can check that the commit is going to be signed or not and warn or block in case the commit is not signed. By default BluBracket only warns if commit is not signed.
 
@@ -215,7 +218,7 @@ Use `blubracket commit-signing configure` to enable commit signing
  1 file changed, 2 insertions(+), 1 deletion(-)
 ```
 
-##### Configure commit signing
+##### Configure Commit Signing
 
 In addition to checking is commit signed or not, BluBracket helps configuring signing if it is not done already. To do that use `blubracket commit-signing configure command`. This should be run inside a clone directory as it will configure the signing only for the one current repo/clone. To configure signing globally, for all the current and future clones, add `--global` flag. Internally CLI will create a gpg key if needed, will configure git to use it, and will point how to upload the key’s public key to git providers, like GitHub and GitLab.
 
@@ -308,7 +311,7 @@ For GitHub: navigate to https://github.com/settings/keys
 For GitLab: navigate to https://gitlab.com/-/profile/gpg_keys
 ```
 
-#### Binary files
+#### Binary Files
 
 CLI can check that a “large” binary file is going to be committed and ether ignore, warn, or block the commit depending on the file size. By default binary files less than 500 KB will be ignored; if more than 500 KB but less than 10 MB, CLI will warn but allow the commit; if more than 10 MB then the commit will be blocked. To disable only warning or blocking the size can be set to 0 (see configuration options below).
 
@@ -322,7 +325,7 @@ C:\Users\vbuzu\projects\test-repo\bluscanner.exe: 81.2 MB
 Consider using git-lfs to manage large binary files, https://git-lfs.github.com/
 ```
 
-#### CLI configuration
+#### CLI Configuration
 
 By default CLI blocks secrets and allows sensitive words. It is possible to customize this behavior using config files. CLI loads config files from `<repo>/.blubracket/config.yaml` and `~/.blubracket/config.yaml`. CLI mimics `git config` behavior where settings in a repo-local config overwrite settings in global config. Here is an example of the config file that has all the default values:
 
