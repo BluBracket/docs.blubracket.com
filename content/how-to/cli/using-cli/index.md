@@ -14,7 +14,7 @@ resources:
 
 [How do I Install the BluBracket Command Line Interface (CLI) Tool?](/how-to/cli/installation/)
 
-#### Setting Git Hooks {#hooks}
+#### Setting Git Hooks
 
 In terminal, `cd` to the repo dir, then `blubracket install-git-hooks`
 
@@ -31,7 +31,7 @@ Currently CLI will set only one hook, `pre-commit`.
 
 CLI will install the pre-commit hook automatically only if the hook does not exist yet or the hook does exist and is implemented as a shell script (determined by the presence of `#!/bin/sh` or `#!/usr/bin/env bash` lines). In all other cases, e.g. if the hook is a python script, the CLI invocation must be added to the hook manually. It should be an equivalent of the follow shell command `blubracket pre-commit "$@" || { exit "$?"; }:` run `blubracket` command with `pre-commit` as the first parameter followed by all other parameters passed to the hook itself; exit/stop the hook on any non-zero exit codes from `blubracket`.
 
-##### Pre-commit.com Integration {#precommit}
+##### Pre-commit.com Integration
 
 The CLI tool integrates with the [https://pre-commit.com](https://pre-commit.com) hook management tool now. If it is detected that the pre-commit tool is used to manager the hooks, the CLI will add itself as one of the hooks to `.pre-commit-config.yaml`.
 
@@ -64,7 +64,7 @@ C:\Users\vbuzu\projects\sandbox\tests\dir2\tests\file1.txt:12:11: password_assig
 C:\Users\vbuzu\projects\sandbox\tests\dir2\tests\file1.txt:13:14: password_in_url
 ```
 
-##### .blubracket-ignore {#ignore}
+##### .blubracket-ignore
 
 Sometimes it might be necessary to ignore secrets in some files or secrets of some types. To achieve this just create a `.blubracket-ignore` file in the root directory of the repo. The format of the file is similar to `.gitignore`. Empty lines and lines started with # are ignored. To ignore all secrets in a file, put a glob pattern, e.g. `**/tests` will ignore secrets found in all files in any tests directory and sub-directories. To ignore specific a secret type, e.g. any password like secrets, add a line like `secret_type:password.*`, where `password.*` is perl compatible regular expression. To ignore specific secret, add a line like `secret_value:my_test_gcp_token` where `my_test_gcp_token` is the real secret/token you want to ignore.
 
