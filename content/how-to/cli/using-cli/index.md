@@ -80,13 +80,7 @@ secret_value:my_test_gcp_token
 
 * .blubraket-ignore is read only from the root repo directory, placing it in a sub directory will have no effect.
 
-<<<<<<< HEAD
 ##### Inline Comments
-=======
-
-##### Inline Comments
-
->>>>>>> 09a8d4e75e4a75475e2110d6bce7b1d326267638
 
 In addition to .blubracket-ignore file, it is possible to mark a secret to be ignored by placing a “comment” on the **same** line as the secret. The comment/line has to have `BluBracketIgnore` string in it, please note that CLI will do case-sensitive comparison.
 
@@ -94,11 +88,7 @@ In addition to .blubracket-ignore file, it is possible to mark a secret to be ig
 
 Ignoring whole folders and/or secret type all the time could be dangerous as it can be easy to miss secrets. The recommended ways to deal with false positives are inline comments or ignoring the particular secret using `secret_value` rule in the `.blubracket-ignore` file.
 
-<<<<<<< HEAD
-##### Adding Checks for your Own secrets
-=======
 ##### Adding Checks for your Own Secrets
->>>>>>> 09a8d4e75e4a75475e2110d6bce7b1d326267638
 
 Out of the box BluBracket does support around 50 different secret types. If you want to check other secret types, it is easy. In a repo/clone folder create a file `.blubracket/customregex.yml` (if you want new secret checks be applicable for any repo, create the file in $HOME folder instead). The content of the file is a list of secrets to check. Each secret is defined by two properties: `description` and `pattern`. Description is textual name for the secret that will be displayed by CLI if the secret is detected. Pattern is a regex to match the secret. Here is an example of how to a check for SSNs:
 
@@ -107,10 +97,6 @@ Out of the box BluBracket does support around 50 different secret types. If you 
   description: simple_ssn
   ```
 
-<<<<<<< HEAD
-=======
-
->>>>>>> 09a8d4e75e4a75475e2110d6bce7b1d326267638
 ##### PII Secrets
 
 In addition to built-in secrets and custom secrets, CLI does support the ability to define a different group of “secrets” related to PII (Personally Identifiable Information) such as Social Security Numbers (SSN), emails, URLs, IP-addresses, etc. This feature is fully customizable. Out of the box CLI defines several patterns but all can be disabled, or the corresponded action changed. Here is the default configuration file:
