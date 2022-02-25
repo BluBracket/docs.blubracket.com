@@ -10,9 +10,8 @@ resources:
   - src:
 ---
 
-The CI/CD Scan APIs can be used to integrate BluBracket Scan into Pull Request builds and 
+The CI/CD Scan APIs can be used to integrate BluBracket Scan into Pull Request builds and
 help prevent risks being committed to a protected branch.
-
 
 ## Start a scan
 
@@ -32,12 +31,12 @@ Start a scan for a list of commits or a pull request
 
 ### Sample Request Body
 
-For scanning a Pull Request 
+For scanning a Pull Request
 
 ```json
 {
-	"repo_url": "https://github.com/my_org/my_repo",
-	"pull_request_number": 3891
+ "repo_url": "https://github.com/my_org/my_repo",
+ "pull_request_number": 3891
 }
 ```
 
@@ -45,8 +44,8 @@ For scanning a list of commits
 
 ```json
 {
-	"repo_url": "https://github.com/my_org/my_repo",
-	"commit_shas": [
+ "repo_url": "https://github.com/my_org/my_repo",
+ "commit_shas": [
       "a20cb4ca5c14ff27bdf16989d450c83b22f156d8",
       "d0d6593d1d4e81acd073244f42b6893fa65c99d8"
     ]
@@ -63,7 +62,6 @@ For scanning a list of commits
 
 Note: The `scan_uuid` returned in the response can be used to query the result once it’s ready.
 
-
 ## Get the Scan Result
 
 Get the result of the scan with a given id
@@ -71,7 +69,6 @@ Get the result of the scan with a given id
 ### Endpoint
 
 `GET /api/analyzer/commit/scan/{scan_uuid}`
-
 
 where `scan_uuid` is the ID of the scan
 
@@ -108,4 +105,3 @@ where `scan_uuid` is the ID of the scan
     "message": ""
 }
 ```
-
