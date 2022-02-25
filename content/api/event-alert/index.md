@@ -24,21 +24,28 @@ One or more filters
 
 ```json
 {
-    "filters":[
+    "filters": [
         {
-            "id":"alert_type",
-            "value":["REPO_SCAN_MATCH"],
-            "exact_match":true
+            "id": "alert_type",
+            "value": [
+                "REPO_SCAN_MATCH"
+            ],
+            "exact_match": true
         },
         {
-            "id":"repo_type",
-            "value":["ENTERPRISE_PUBLIC","PUBLIC"],
-            "exact_match":true
+            "id": "repo_type",
+            "value": [
+                "ENTERPRISE_PUBLIC",
+                "PUBLIC"
+            ],
+            "exact_match": true
         },
         {
-            "id":"state",
-            "value":["ACTIVE"],
-            "exact_match":true
+            "id": "state",
+            "value": [
+                "ACTIVE"
+            ],
+            "exact_match": true
         }
     ]
 }

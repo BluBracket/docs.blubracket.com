@@ -35,8 +35,8 @@ For scanning a Pull Request
 
 ```json
 {
- "repo_url": "https://github.com/my_org/my_repo",
- "pull_request_number": 3891
+    "repo_url": "https://github.com/my_org/my_repo",
+    "pull_request_number": 3891
 }
 ```
 
@@ -44,10 +44,10 @@ For scanning a list of commits
 
 ```json
 {
- "repo_url": "https://github.com/my_org/my_repo",
- "commit_shas": [
-      "a20cb4ca5c14ff27bdf16989d450c83b22f156d8",
-      "d0d6593d1d4e81acd073244f42b6893fa65c99d8"
+    "repo_url": "https://github.com/my_org/my_repo",
+    "commit_shas": [
+        "a20cb4ca5c14ff27bdf16989d450c83b22f156d8",
+        "d0d6593d1d4e81acd073244f42b6893fa65c99d8"
     ]
 }
 ```
@@ -95,7 +95,9 @@ where `scan_uuid` is the ID of the scan
                         29
                     ],
                     "secret_checker_results": {
-                        "tags": ["active_secret"]
+                        "tags": [
+                            "active_secret"
+                        ]
                     }
                 }
             ]
