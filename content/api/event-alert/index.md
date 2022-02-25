@@ -1,5 +1,5 @@
 ---
-title: "Event & alert API"
+title: "Event & Alert"
 description: "Reading and searching events and alerts."
 lead: "Reading and searching events and alerts."
 date: 2022-01-12T02:48:57+00:00
@@ -18,9 +18,7 @@ Search alerts using filters over attributes
 
 `POST /api/public/alert/count`
 
-#### Request
-
-##### `body`
+#### Request Body
 
 One or more filters
 
