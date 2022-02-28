@@ -1,5 +1,5 @@
 ---
-title: "CI scan"
+title: "CI checks"
 description: ""
 lead: ""
 date: 2022-01-12T02:48:57+00:00
@@ -10,8 +10,7 @@ resources:
   - src:
 ---
 
-These APIs can be used to integrate BluBracket scan into a Continuous integration (CI) workflow and
-help prevent risks being committed to a protected branch.
+These APIs can be used to integrate BluBracket checks into a continuous integration (CI) workflow and help prevent risks being committed to a protected branch.
 
 ## Start a scan
 
