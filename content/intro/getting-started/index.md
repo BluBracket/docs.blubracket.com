@@ -14,13 +14,11 @@ resources:
 - src: signup5.png
 ---
 
-Signing up for a BluBracket account takes only a few minutes. We aim to help you find the risks in your code, improve code security, and dig deeper into the information provided by our scanning tool.
+Getting started with BluBracket is a three step process: sign up, add a code server, then start improving security. Using our scanning tool, you you find the risks in your code and dig deeper into the information provided.
 
 Once you have signed up, you can immediately start scanning repositories and commits for vulnerabilities.
 
 If you are ready to improve your code's security, please read below to get started for free.
-
-**Note**: *If you are a BluBracket Teams or Enterprise Editions, please refer to the Getting Started with BluBracket Teams and Enterprise Editions section*.
 
 ## Signing up with BluBracket
 
@@ -36,10 +34,11 @@ Once you have submitted your email, you should receive a confirmation page that 
 
 ![Sign Up Page 3](signup3.png)
 
-Next, check your email for a link to confirm your account and create a password.
-In your email, you will find the following link. Click the **Set Password** button to set the password of your BluBracket login account.
+### Check your email
 
-**Note**: *This login link will be how you will access your BluBracket account.
+Next, check your email for a link to confirm your account and create a password.
+
+In your email, you will find the following link. Click the **Set Password** button to set the password of your BluBracket login account.
 
 ![Sign Up Page 4](signup4.png)
 
