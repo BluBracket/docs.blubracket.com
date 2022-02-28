@@ -45,3 +45,11 @@ In your email, you will find the following link. Click the **Set Password** butt
 Once you have set your password, you are ready to get started with connecting your repositories to BluBracket.
 
 ![Sign Up Page 5](signup5.png)
+
+### Set your password
+
+## Signing in
+
+## Adding your first code server
+
+## Improve your code security with every commit
