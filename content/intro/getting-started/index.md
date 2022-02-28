@@ -40,6 +40,8 @@ Next, check your email for a link to confirm your account and create a password.
 
 In your email, you will find the following link. Click the **Set Password** button to set the password of your BluBracket login account.
 
+NOTE: This password request expires in 48 hours.
+
 ![Sign Up Page 4](signup4.png)
 
 Once you have set your password, you are ready to get started with connecting your repositories to BluBracket.
@@ -47,6 +49,15 @@ Once you have set your password, you are ready to get started with connecting yo
 ![Sign Up Page 5](signup5.png)
 
 ### Set your password
+
+[set password screenshot]
+
+Fill in your email address and password.
+
+**Password Criteria**:
+
+- Passwords must be at least eight characters.
+- Passwords must include at least 1 number, a special character or symbol, and one uppercase letter.
 
 ## Signing in
 
