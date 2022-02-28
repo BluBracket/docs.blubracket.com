@@ -61,6 +61,20 @@ Fill in your email address and password.
 
 ## Signing in
 
+Refer to your welcome email when you first signed in to BluBracket for your personalized dashboard URL. You must use this URL in order to sign in.
+
+[email screenshot]
+
+[login page screenshot]
+
 ## Adding your first code server
 
+Go to Settings > Code Servers in the BluBracket web console to add one or more code repositories hosted on GitHub, GitLab, Bitbucket, or another supported code server.
+
+Full details about [how to add a code server are available in the usage guide](https://docs.blubracket.com/how-to/add-code-servers/).
+
 ## Improve your code security with every commit
+
+1. Add BluBracket to your workflow with the CLI tool, GitHub Checks (or other CI checks) so you can identify risks before your next commit.
+2. Review existing risks to understand your overall code health and make a plan for what is urgent and what can wait.
+3. Track your security health improvements with every commit.
