@@ -1,5 +1,5 @@
 ---
-title: "Event & alert API"
+title: "Event & alert"
 description: "Reading and searching events and alerts."
 lead: "Reading and searching events and alerts."
 date: 2022-01-12T02:48:57+00:00
@@ -18,29 +18,34 @@ Search alerts using filters over attributes
 
 `POST /api/public/alert/count`
 
-#### Request
-
-##### `body`
+#### Request body
 
 One or more filters
 
 ```json
 {
-    "filters":[
+    "filters": [
         {
-            "id":"alert_type",
-            "value":["REPO_SCAN_MATCH"],
-            "exact_match":true
+            "id": "alert_type",
+            "value": [
+                "REPO_SCAN_MATCH"
+            ],
+            "exact_match": true
         },
         {
-            "id":"repo_type",
-            "value":["ENTERPRISE_PUBLIC","PUBLIC"],
-            "exact_match":true
+            "id": "repo_type",
+            "value": [
+                "ENTERPRISE_PUBLIC",
+                "PUBLIC"
+            ],
+            "exact_match": true
         },
         {
-            "id":"state",
-            "value":["ACTIVE"],
-            "exact_match":true
+            "id": "state",
+            "value": [
+                "ACTIVE"
+            ],
+            "exact_match": true
         }
     ]
 }
