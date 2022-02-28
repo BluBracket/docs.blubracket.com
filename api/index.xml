@@ -4,7 +4,7 @@ Endpoint # POST /api/public/alert/count
 Request body # One or more filters
 { &amp;quot;filters&amp;quot;: [ { &amp;quot;id&amp;quot;: &amp;quot;alert_type&amp;quot;, &amp;quot;value&amp;quot;: [ &amp;quot;REPO_SCAN_MATCH&amp;quot; ], &amp;quot;exact_match&amp;quot;: true }, { &amp;quot;id&amp;quot;: &amp;quot;repo_type&amp;quot;, &amp;quot;value&amp;quot;: [ &amp;quot;ENTERPRISE_PUBLIC&amp;quot;, &amp;quot;PUBLIC&amp;quot; ], &amp;quot;exact_match&amp;quot;: true }, { &amp;quot;id&amp;quot;: &amp;quot;state&amp;quot;, &amp;quot;value&amp;quot;: [ &amp;quot;ACTIVE&amp;quot; ], &amp;quot;exact_match&amp;quot;: true } ] } Response # Success: 200
 Number of alerts
-Searching alerts # Updating an alert # Update the state of one or more alerts.</description></item><item><title>CI scan</title><link>https://docs.blubracket.com/api/ci-cd-scan/</link><pubDate>Wed, 12 Jan 2022 02:48:57 +0000</pubDate><guid>https://docs.blubracket.com/api/ci-cd-scan/</guid><description>These APIs can be used to integrate BluBracket scan into a Continuous integration (CI) workflow and help prevent risks being committed to a protected branch.
+Searching alerts # Updating an alert # Update the state of one or more alerts.</description></item><item><title>CI checks</title><link>https://docs.blubracket.com/api/ci-checks/</link><pubDate>Wed, 12 Jan 2022 02:48:57 +0000</pubDate><guid>https://docs.blubracket.com/api/ci-checks/</guid><description>These APIs can be used to integrate BluBracket checks into a continuous integration (CI) workflow and help prevent risks being committed to a protected branch.
 Start a scan # Start a scan for a list of commits or a pull request
 Endpoint # POST /api/analyzer/commit/scan
 Parameters # repo_url (string, required): URL of the repo
