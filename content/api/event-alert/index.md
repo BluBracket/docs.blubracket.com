@@ -1,5 +1,5 @@
 ---
-title: "Event & Alert"
+title: "Event & alert"
 description: "Reading and searching events and alerts."
 lead: "Reading and searching events and alerts."
 date: 2022-01-12T02:48:57+00:00
