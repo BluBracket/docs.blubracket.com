@@ -1,5 +1,5 @@
 ---
-title: "CI/CD Scan"
+title: "CI Scan"
 description: ""
 lead: ""
 date: 2022-01-12T02:48:57+00:00
@@ -10,7 +10,7 @@ resources:
   - src:
 ---
 
-The CI/CD Scan APIs can be used to integrate BluBracket Scan into Pull Request builds and
+These APIs can be used to integrate BluBracket scan into a Continuous integration (CI) workflow and
 help prevent risks being committed to a protected branch.
 
 ## Start a scan
@@ -29,9 +29,9 @@ Start a scan for a list of commits or a pull request
 
 1. `commit_shas` (a list of strings, optional): full SHA of the commits to be scanned
 
-### Sample Request Body
+### Sample request body
 
-For scanning a Pull Request
+For scanning a pull request
 
 ```json
 {
@@ -62,7 +62,7 @@ For scanning a list of commits
 
 Note: The `scan_uuid` returned in the response can be used to query the result once it’s ready.
 
-## Get the Scan Result
+## Get the scan result
 
 Get the result of the scan with a given id
 
@@ -72,13 +72,13 @@ Get the result of the scan with a given id
 
 where `scan_uuid` is the ID of the scan
 
-### Response Code
+### Response code
 
 `200` - Scan is completed
 
 `202` - Scan is still in progress
 
-### Sample Response
+### Sample response
 
 ```json
 {

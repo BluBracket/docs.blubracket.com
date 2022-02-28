@@ -18,7 +18,7 @@ Search alerts using filters over attributes
 
 `POST /api/public/alert/count`
 
-#### Request Body
+#### Request body
 
 One or more filters
 
