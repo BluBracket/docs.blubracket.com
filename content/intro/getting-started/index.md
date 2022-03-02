@@ -12,7 +12,8 @@ resources:
 - src: signup3.png
 - src: signup4.png
 - src: signup5.png
-- src: signupwithpw.jpg
+- src: signup6.jpg
+- src: signup7.png
 ---
 
 Getting started with BluBracket is a three step process: sign up, add a code server, then start improving security. Using our scanning tool, you you find the risks in your code and dig deeper into the information provided.
@@ -51,7 +52,7 @@ Once you have set your password, you are ready to get started with connecting yo
 
 ### Set your password
 
-![Sign Up Page 6](signupwithpw.jpg)
+![Sign Up Page 6](signup6.jpg)
 
 Fill in your email address and password.
 
@@ -64,9 +65,9 @@ Fill in your email address and password.
 
 Refer to your welcome email when you first signed in to BluBracket for your personalized dashboard URL. You must use this URL in order to sign in.
 
-[email screenshot]
+![Sign up Page 7](signup7.png)
 
-[login page screenshot]
+![Sign Up Page 8](signup8.png)
 
 ## Adding your first code server
 
@@ -76,6 +77,6 @@ Full details about [how to add a code server are available in the usage guide](h
 
 ## Improve your code security with every commit
 
-1. Add BluBracket to your workflow with the CLI tool, [GitHub Checks (or other CI checks)](https://github.com/BluBracket/docs.blubracket.com)) so you can identify risks before your next commit.
+1. Add BluBracket to your workflow with the CLI tool, [GitHub Checks (or other CI checks)](https://github.com/BluBracket/docs.blubracket.com) so you can identify risks before your next commit.
 2. Review [existing risks](https://docs.blubracket.com/intro/key-workflows/#understanding-and-taking-action-on-existing-risks) to understand your overall code health and make a plan for what is urgent and what can wait.
 3. Track your security health improvements with every commit.
