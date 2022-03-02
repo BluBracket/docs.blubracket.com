@@ -51,7 +51,7 @@ Once you have set your password, you are ready to get started with connecting yo
 
 ### Set your password
 
-![Sign Up Page 6](/signup6.png)
+![Sign Up Page 6](/signupwithpw.png)
 
 Fill in your email address and password.
 
