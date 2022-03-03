@@ -31,11 +31,9 @@ Enter your email. Then, click the **Start Trial** button.
 
 {{< figure src="enter-email-get-started.png" caption="Enter your email to get started with your account with BluBracket." >}}
 
-
 Once you have submitted your email, you should receive a confirmation page that asks you to check your email for your login link.  
 
 {{< figure src="submit-email-and-get-confirmation-page.png" caption="BluBracket gives a confirmation page after receiving email." >}}
-
 
 ### Check your email
 
