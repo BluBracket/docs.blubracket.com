@@ -7,13 +7,12 @@ draft: false
 weight: 300
 toc: true
 resources:
-- src: signup.png
-- src: signup2.png
-- src: signup3.png
-- src: signup4.png
-- src: signup5.png
+- src: three-step-process-sign-up.png
+- src: enter-email-get-started.png
+- src: submit-email-and-get-confirmation-page.png
+- src: getting-to-set-your-blubracket-password.png
 - src: signup6.jpg
-- src: signup7.png
+- src: login-blubracket-page.png
 ---
 
 Getting started with BluBracket is a three step process: sign up, add a code server, then start improving security. Using our scanning tool, you you find the risks in your code and dig deeper into the information provided.
@@ -26,15 +25,17 @@ If you are ready to improve your code's security, please read below to get start
 
 To create a user account, visit [https://blubracket.com/contact/get-started/](https://blubracket.com/contact/get-started/). Click the **Start for Free** button.
 
-![Sign Up Page 1](signup.png)
+{{< figure src="three-step-process-sign-up.png" caption="Begin your three-step process by clicking the yellow Start for Free button. ">}}
 
 Enter your email. Then, click the **Start Trial** button.
 
-![Sign Up Page 2](signup2.png)
+{{< figure src="enter-email-get-started.png" caption="Enter your email to get started with your account with BluBracket." >}}
+
 
 Once you have submitted your email, you should receive a confirmation page that asks you to check your email for your login link.  
 
-![Sign Up Page 3](signup3.png)
+{{< figure src="submit-email-and-get-confirmation-page.png" caption="BluBracket gives a confirmation page after receiving email." >}}
+
 
 ### Check your email
 
@@ -44,15 +45,13 @@ In your email, you will find the following link. Click the **Set Password** butt
 
 NOTE: This password request expires in 48 hours.
 
-![Sign Up Page 4](signup4.png)
+{{< figure src="getting-to-set-your-blubracket-password.png" caption="Click the blue Set Your Password button to set your password." >}}
 
 Once you have set your password, you are ready to get started with connecting your repositories to BluBracket.
 
-![Sign Up Page 5](signup5.png)
-
 ### Set your password
 
-![Sign Up Page 6](signup6.jpg)
+{{< figure src="set-your-blubracket-password.jpg" caption="Follow the password requirements to set your new password for your BluBracket account." >}}
 
 Fill in your email address and password.
 
@@ -65,9 +64,7 @@ Fill in your email address and password.
 
 Refer to your welcome email when you first signed in to BluBracket for your personalized dashboard URL. You must use this URL in order to sign in.
 
-![Sign up Page 7](signup7.png)
-
-![Sign Up Page 8](signup8.png)
+{{< figure src="login-blubracket-page.png" caption="BluBracket provides your login link through email." >}}
 
 ## Adding your first code server
 
@@ -77,6 +74,6 @@ Full details about [how to add a code server are available in the usage guide](h
 
 ## Improve your code security with every commit
 
-1. Add BluBracket to your workflow with the CLI tool, [GitHub Checks (or other CI checks)](https://github.com/BluBracket/docs.blubracket.com) so you can identify risks before your next commit.
+1. Add BluBracket to your workflow with the CLI tool, [GitHub Checks (or other CI checks)](https://docs.blubracket.com/api/ci-checks/) so you can identify risks before your next commit.
 2. Review [existing risks](https://docs.blubracket.com/intro/key-workflows/#understanding-and-taking-action-on-existing-risks) to understand your overall code health and make a plan for what is urgent and what can wait.
 3. Track your security health improvements with every commit.
