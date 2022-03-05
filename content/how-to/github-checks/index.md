@@ -17,7 +17,7 @@ resources:
 
 To install GitHub checks permissions to install a GitHub App on an org are required.  This would be an [organization owner or someone with admin level permissions in a repository](https://docs.github.com/en/developers/apps/differences-between-github-apps-and-oauth-apps#who-can-install-github-apps-and-authorize-oauth-apps)
 
-#### GitHub cloud checks setup for BluBracket free trial edition
+#### GitHub cloud checks setup for BluBracket free trial edition {#freetrial}
 
 This version of GitHub Checks is for customers using a BluBracket Free Trial tenant.
 
@@ -29,7 +29,7 @@ This version of GitHub Checks is for customers using a BluBracket Free Trial ten
 
 [![Github Checks Free Install](gitchecks.png)](https://github.com/apps/blubracket-standard)
 
-#### GitHub Cloud Checks Setup For BluBracket Enterprise Tenants
+#### GitHub cloud checks setup for BluBracket enterprise tenants {#enterprise}
 
 This version of GitHub Checks is for paid customers running on the BluBracket production servers
 
@@ -41,7 +41,7 @@ This version of GitHub Checks is for paid customers running on the BluBracket pr
 
 [![Github Checks Paid Install](gitchecks2.png)](https://github.com/apps/blubracket-checks-app)
 
-#### GitHub enterprise server checks setup
+#### GitHub enterprise server checks setup {#onpremise}
 
 This version of GitHub Checks is for paid customers using the on-premise GitHub Enterprise Server
 
@@ -57,7 +57,7 @@ Future PRs + commits to PRs should automatically run the scans via GitHub Checks
 
 [![GitHub Checks Enterprise](gitchecks3.png)](https://github.com/BluBracket/blubracket-tools/tree/main/github-checks-app)
 
-#### GitHub checks workflow
+#### GitHub checks workflow {#workflow}
 
 The BluBracket GitHub checks workflow will run on your CI/CD workflow within GitHub.  For example when a pull request is made the BluBracket GitHub checks will scan the pull request for secrets.  
 
