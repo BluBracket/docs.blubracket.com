@@ -4,7 +4,7 @@ description: "How to setup infrastructure as code (IaC) scanning"
 lead: "How to setup infrastructure as code (IaC) scanning"
 date: 2022-01-12T02:48:57+00:00
 draft: false
-weight: 200
+weight: 300
 toc: true
 resources:
   - src:
