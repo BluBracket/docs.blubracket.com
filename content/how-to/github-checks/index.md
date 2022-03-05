@@ -65,6 +65,6 @@ For example when a secret is found within a pull request, the check will fail an
 
 {{< figure src="gitchecks5.png" caption="Example of a failing check on a pull request" >}}
 
-If the BluBracket checks app doesn't find any items such as secrets, PII, or non-inclusive language, the check will pass and the pull request can be successfully merged.
+If the BluBracket checks app doesn't find any blocking items such as secrets, the check will pass and the pull request can be successfully merged.
 
 {{< figure src="gitchecks4.png" caption="Example of a passing check on a pull request" >}}
