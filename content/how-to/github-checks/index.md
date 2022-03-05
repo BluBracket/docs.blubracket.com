@@ -61,10 +61,10 @@ Future PRs + commits to PRs should automatically run the scans via GitHub Checks
 
 The BluBracket GitHub checks workflow will run on your CI/CD workflow within GitHub.  For example when a pull request is made the BluBracket GitHub checks will scan the pull request for secrets.  
 
-For example when a secret is found within a pull request, the check will fail and will give details on where and what type of secret was found. 
+For example when a secret is found within a pull request, the check will fail and will give details on where and what type of secret was found.
 
 {{< figure src="gitchecks5.png" caption="Example of a failing check on a pull request" >}}
 
-If the BluBracket checks app doesn't find any items such as secrets, PII, or non-inclusive language, the check will pass and the pull request can be successfully merged. 
+If the BluBracket checks app doesn't find any items such as secrets, PII, or non-inclusive language, the check will pass and the pull request can be successfully merged.
 
 {{< figure src="gitchecks4.png" caption="Example of a passing check on a pull request" >}}
