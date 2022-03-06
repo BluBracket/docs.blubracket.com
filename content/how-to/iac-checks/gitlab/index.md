@@ -20,21 +20,21 @@ resources:
 
 * Create four new variables:
 
-Name: DOCKER_HUB_USERNAME
+Name: **DOCKER_HUB_USERNAME**
 
 value: blusupport
 
-Name: DOCKER_HUB_TOKEN
+Name: **DOCKER_HUB_TOKEN**
 
 value: 085ef825-b366-4636-be2a-8babaf65064f
 
-Name: BLUBRACKET_SERVICE_ENDPOINT
+Name: **BLUBRACKET_SERVICE_ENDPOINT**
 
-value: BluBracket Tenant name
+value: **BluBracket Tenant name**
 
 Example: https://acme.blubracket.com
 
-Name: BLUBRACKET_INTEGRATION_KEY
+Name: **BLUBRACKET_INTEGRATION_KEY**
 
 value: BluBracket Integration API key
 

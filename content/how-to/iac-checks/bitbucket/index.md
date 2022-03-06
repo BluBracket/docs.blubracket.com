@@ -1,5 +1,5 @@
 ---
-title: "Setting up IAC scanning in Bitbucket"
+title: "Setting up IaC scanning in Bitbucket"
 description: "Configuring infrastructure as code on Bitbucket"
 lead: "Configuring infrastructure as code on Bitbucket"
 date: 2022-01-12T02:48:57+00:00
@@ -10,7 +10,7 @@ resources:
   - src: docker.jpg, pipe.jpg
 ---
 
-#### Step 1: Create Bitbucket Repository Variables:**
+#### Step 1: Create Bitbucket Repository Variables:
 
 * Log into Bitbucket and select a repository where you want to enable Infrastructure as Code scanning.
 

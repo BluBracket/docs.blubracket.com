@@ -10,4 +10,4 @@ resources:
   - src:
 ---
 
-Azure DevOps support us available in private beta at this time. [Please contact our team for a demo or to join the beta](http://blubracket.com/contact-sales/).
+Azure DevOps support is available in private beta at this time. [Please contact our team for a demo or to join the beta](http://blubracket.com/contact-sales/).
