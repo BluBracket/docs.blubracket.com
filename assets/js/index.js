@@ -166,4 +166,16 @@ Source:
         if(suggestions.childElementCount == maxResult) break;
     }
   }
+
+  var searchQuery = param("s");
+  if(searchQuery){
+//    alert(searchQuery);
+    document.getElementById("search").value = searchQuery;
+    show_results();
+  }
+
+  function param(name) {
+      return decodeURIComponent((location.search.split(name + '=')[1] || '').split('&')[0]).replace(/\+/g, ' ');
+  }
+
 }());
