@@ -298,8 +298,8 @@ Source:
         id: 26,
         href: "/how-to/cli/",
         title: "CLI tool",
-        description: "",
-        content: ""
+        description: "The BluBracket CLI tool enables the detection of risks before they are committed. Utilizing pre-commit hooks and a configurable .blubracket-ignore file, the CLI tool can be customized to detect and prevent risks from being committed into a project.",
+        content: "The BluBracket CLI tool enables the detection of risks before they are committed. Utilizing pre-commit hooks and a configurable .blubracket-ignore file, the CLI tool can be customized to detect and prevent risks from being committed into a project.\n"
       })
       .add(
       {
@@ -344,22 +344,14 @@ Source:
       .add(
       {
         id: 32,
-        href: "/how-to/iac-checks/",
-        title: "IaC checks",
-        description: "How to setup infrastructure as code (IaC) scanning",
-        content: "Infrastructure as code (IaC) scanning operates differently from other checks in BluBracket. It runs as a job within the CI tool of your choice, and reports its findings back to BluBracket where you can evaluate any found risks. Despite the different operation model, any alerts related to IaC risks are processed by BluBracket as usual, and trigger messages in Slack for example.\nOfficially supported CI systems for IaC scanning include:\n"
+        href: "/how-to/iac-checks/bitbucket/",
+        title: "Setting up IaC scanning in Bitbucket",
+        description: "Configuring infrastructure as code on Bitbucket",
+        content: "Step 1: Create Bitbucket Repository Variables: #   Log into Bitbucket and select a repository where you want to enable Infrastructure as Code scanning.\n  Within the repository, select Repository settings, then Repository variables\n  Create five new Repositories variables\n  Name: DOCKER_HUB_EMAIL\nvalue: blusupport@blubracket.com\nName: DOCKER_HUB_USERNAME\nvalue: blusupport\nName: DOCKER_HUB_TOKEN\nvalue: 085ef825-b366-4636-be2a-8babaf65064f\nName: BLUBRACKET_SERVICE_ENDPOINT\nvalue: BluBracket Tenant name\nExample: https://acme.blubracket.com\nName: BLUBRACKET_INTEGRATION_KEY\nvalue: BluBracket Integration API key\nSteps to create a BluBracket API token: https://support.blubracket.com/hc/en-us/articles/4403018405140-Event-and-Alert-APIs\n  Step 2: Create Pipeline Workflow: #   Within the repository, select Pipelines and either update an existing pipelines.yaml script or create a new one\n  Add the following script to enable Infrastructure as Code scanning:\n  pipelines: pull-requests: '**': - step: name: 'Run BluBracket IaC Scan' image: name: blubracket/iac-checker:0.0.4-beta username: $DOCKER_HUB_USERNAME password: $DOCKER_HUB_TOKEN email: $DOCKER_HUB_EMAIL script: - echo \u0026quot;Running BluBracket IaC scan\u0026quot; - env - cd /home/blubracket/iac-checker - pipenv run run --repo-directory ${BITBUCKET_CLONE_DIR} --source-branch ${BITBUCKET_BRANCH} -target-branch ${BITBUCKET_PR_DESTINATION_BRANCH} --do-not-fail-on-misconfigurations branches: main: - step: name: 'Run Blubracket IaC Scan' image: name: blubracket/iac-checker:0.0.4-beta username: $DOCKER_HUB_USERNAME password: $DOCKER_HUB_TOKEN email: $DOCKER_HUB_EMAIL script: - echo \u0026quot;Running BluBracket IaC scan\u0026quot; - env - cd /home/blubracket/iac-checker - pipenv run run --repo-directory ${BITBUCKET_CLONE_DIR} --do-not-fail-on-misconfigurations --source-branch ${BITBUCKET_BRANCH}  Step 3: Run Workflow #  Ensure workflow runs successfully. This can be verified by expanding the pipenv run karat:     If Infrastructure as Code was detected, you will see entries that indicate a check has been performed (green check indicating scan passed, a red “x” indicating a risk has been detected).       For all detected risks (red “x”), an alert will be posted to the BluBracket portal.    "
       })
       .add(
       {
         id: 33,
-        href: "/how-to/iac-checks/bitbucket/",
-        title: "Setting up IAC scanning in Bitbucket",
-        description: "Configuring infrastructure as code on Bitbucket",
-        content: "Step 1: Create Bitbucket Repository Variables:** #   Log into Bitbucket and select a repository where you want to enable Infrastructure as Code scanning.\n  Within the repository, select Repository settings, then Repository variables\n  Create five new Repositories variables\n  Name: DOCKER_HUB_EMAIL\nvalue: blusupport@blubracket.com\nName: DOCKER_HUB_USERNAME\nvalue: blusupport\nName: DOCKER_HUB_TOKEN\nvalue: 085ef825-b366-4636-be2a-8babaf65064f\nName: BLUBRACKET_SERVICE_ENDPOINT\nvalue: BluBracket Tenant name\nExample: https://acme.blubracket.com\nName: BLUBRACKET_INTEGRATION_KEY\nvalue: BluBracket Integration API key\nSteps to create a BluBracket API token: https://support.blubracket.com/hc/en-us/articles/4403018405140-Event-and-Alert-APIs\n  Step 2: Create Pipeline Workflow: #   Within the repository, select Pipelines and either update an existing pipelines.yaml script or create a new one\n  Add the following script to enable Infrastructure as Code scanning:\n  pipelines: pull-requests: '**': - step: name: 'Run BluBracket IaC Scan' image: name: blubracket/iac-checker:0.0.4-beta username: $DOCKER_HUB_USERNAME password: $DOCKER_HUB_TOKEN email: $DOCKER_HUB_EMAIL script: - echo \u0026quot;Running BluBracket IaC scan\u0026quot; - env - cd /home/blubracket/iac-checker - pipenv run run --repo-directory ${BITBUCKET_CLONE_DIR} --source-branch ${BITBUCKET_BRANCH} -target-branch ${BITBUCKET_PR_DESTINATION_BRANCH} --do-not-fail-on-misconfigurations branches: main: - step: name: 'Run Blubracket IaC Scan' image: name: blubracket/iac-checker:0.0.4-beta username: $DOCKER_HUB_USERNAME password: $DOCKER_HUB_TOKEN email: $DOCKER_HUB_EMAIL script: - echo \u0026quot;Running BluBracket IaC scan\u0026quot; - env - cd /home/blubracket/iac-checker - pipenv run run --repo-directory ${BITBUCKET_CLONE_DIR} --do-not-fail-on-misconfigurations --source-branch ${BITBUCKET_BRANCH}  Step 3: Run Workflow #  Ensure workflow runs successfully. This can be verified by expanding the pipenv run karat:     If Infrastructure as Code was detected, you will see entries that indicate a check has been performed (green check indicating scan passed, a red “x” indicating a risk has been detected).       For all detected risks (red “x”), an alert will be posted to the BluBracket portal.    "
-      })
-      .add(
-      {
-        id: 34,
         href: "/how-to/iac-checks/github/",
         title: "Setting up IaC scanning in GitHub",
         description: "Configuring infrastructure as code on GitHub",
@@ -367,7 +359,7 @@ Source:
       })
       .add(
       {
-        id: 35,
+        id: 34,
         href: "/how-to/iac-checks/gitlab/",
         title: "Setting up IaC scanning in GitLab",
         description: "Configuring infrastructure as code on GitLab",
@@ -375,11 +367,19 @@ Source:
       })
       .add(
       {
-        id: 36,
+        id: 35,
         href: "/how-to/",
         title: "User guide",
         description: "",
         content: ""
+      })
+      .add(
+      {
+        id: 36,
+        href: "/how-to/github-checks/",
+        title: "Configure GitHub checks",
+        description: "GitHub checks setup instructions",
+        content: "Prerequisites # To install GitHub checks permissions to install a GitHub App on an org are required. This would be an organization owner or someone with admin level permissions in a repository\nGitHub cloud checks setup for BluBracket free trial edition # This version of GitHub Checks is for customers using a BluBracket Free Trial tenant.\n  Navigate to BluBracket portal, import code server, track repos\n  Install the following app on the organization (should be done by someone who has permissions to install the app): https://github.com/apps/blubracket-standard\n  Future PRs + commits to PRs should automatically run the scans via GitHub Checks\n    \nGitHub cloud checks setup for BluBracket enterprise tenants # This version of GitHub Checks is for paid customers running on the BluBracket production servers\n  Navigate to BluBracket portal, import code server, track repos\n  Install the following app on the organization (should be done by someone who has permissions to install the app): https://github.com/apps/blubracket-checks-app\n  Future PRs + commits to PRs should automatically run the scans via GitHub Checks\n    \nGitHub enterprise server checks setup # This version of GitHub Checks is for paid customers using the on-premise GitHub Enterprise Server\n  Navigate to the BluBracket portal, import code server, track repos\n  Create the GitHub Enterprise Server Checks app (follow the instructions at https://github.com/BluBracket/blubracket-tools/tree/main/github-checks-app )\n As part of the last step in that README.md file, send over the relevant configuration details. Wait for confirmation from us that our internal set up has been completed before proceeding.    Install the app created from step 2 on the organization (should be done by someone who has permissions to install the app).\n  Future PRs + commits to PRs should automatically run the scans via GitHub Checks\n  \nGitHub checks workflow # The BluBracket GitHub checks workflow will run on your CI/CD workflow within GitHub. For example when a pull request is made the BluBracket GitHub checks will scan the pull request for secrets.\nFor example when a secret is found within a pull request, the check will fail and will give details on where and what type of secret was found.\n Example of a failing check on a pull request\n  If the BluBracket checks app doesn\u0026rsquo;t find any blocking items such as secrets, the check will pass and the pull request can be successfully merged.\n Example of a passing check on a pull request\n  "
       })
       .add(
       {
@@ -416,14 +416,22 @@ Source:
       .add(
       {
         id: 41,
-        href: "/how-to/remediate-alerts/",
-        title: "Remediate Alerts",
-        description: "How to Remediate Alerts",
-        content: "There are a number of best practices when it comes to handling secrets in code. Below are a few:\n  Encrypt your secrets\n  Use environmental variables\n  Use a secret manager to store your secrets, like HashiCorp Vault, Azure Key Vault, etc.\n  Once BluBracket has found a secret and you have had a chance to remediate the secret in code, marking it as reviewed will help you easily differentiate it from those that still require action.\n"
+        href: "/how-to/iac-checks/",
+        title: "IaC checks",
+        description: "How to setup infrastructure as code (IaC) scanning",
+        content: "Infrastructure as code (IaC) scanning operates differently from other checks in BluBracket. It runs as a job within the CI tool of your choice, and reports its findings back to BluBracket where you can evaluate any found risks. Despite the different operation model, any alerts related to IaC risks are processed by BluBracket as usual, and trigger messages in Slack for example.\nOfficially supported CI systems for IaC scanning include:\n"
       })
       .add(
       {
         id: 42,
+        href: "/how-to/remediate-alerts/",
+        title: "Remediate alerts",
+        description: "How to remediate alerts",
+        content: "There are a number of best practices when it comes to handling secrets in code. Below are a few:\n  Encrypt your secrets\n  Use environmental variables\n  Use a secret manager to store your secrets, like HashiCorp Vault, Azure Key Vault, etc.\n  Once BluBracket has found a secret and you have had a chance to remediate the secret in code, marking it as reviewed will help you easily differentiate it from those that still require action.\n"
+      })
+      .add(
+      {
+        id: 43,
         href: "/faq/",
         title: "Frequently asked questions",
         description: "",
@@ -431,7 +439,7 @@ Source:
       })
       .add(
       {
-        id: 43,
+        id: 44,
         href: "/intro/key-workflows/",
         title: "Key workflows",
         description: "BluBracket code security tools are optimized to prevent risks from getting into code, and to promote the process of continuous improvement that reduces existing risks from code over time.\nPreventing risks in code # As developers, we depend on a quick feedback loop to understand if our code is working and does what is expected. BluBracket tools can offer automated security guidance as part of that feedback loop, in the IDE of your choice, pre-commit, and as part of the CI flow.",
@@ -439,7 +447,7 @@ Source:
       })
       .add(
       {
-        id: 44,
+        id: 45,
         href: "/intro/integrations/",
         title: "Integrations",
         description: "Local workflow tools #  The BluBracket CLI tool can identify and block secrets before they\u0026rsquo;re committed.\n  Available local tools and integrations\n CLI IntelliJ (via CLI, full plugin coming soon) VS Code (via CLI)  Code servers #  BluBracket scans repositories hosted in GitHub, GitLab, Bitbucket, and others.\n  Certified \u0026amp; supported code servers:\n GitHub GitLab Bitbucket Azure DevOps (contact us for beta) Gerrit (coming soon)  CI servers #  BluBracket can identify risks in the CI workflow via GitHub Checks and others.",
@@ -447,15 +455,15 @@ Source:
       })
       .add(
       {
-        id: 45,
+        id: 46,
         href: "/how-to/add-code-servers/azure-devops/",
         title: "Adding an Azure DevOps code server",
         description: "How to add an Azure DevOps code server to your tenant",
-        content: "Azure DevOps support us available in private beta at this time. Please contact our team for a demo or to join the beta.\n"
+        content: "Azure DevOps support is available in private beta at this time. Please contact our team for a demo or to join the beta.\n"
       })
       .add(
       {
-        id: 46,
+        id: 47,
         href: "/contact-support/",
         title: "Contact support",
         description: "",
@@ -463,7 +471,7 @@ Source:
       })
       .add(
       {
-        id: 47,
+        id: 48,
         href: "/authoring-documentation/",
         title: "Authoring documentation",
         description: "How do write and edits the docs in this site.",
@@ -471,7 +479,7 @@ Source:
       })
       .add(
       {
-        id: 48,
+        id: 49,
         href: "/",
         title: "BluBracket Documentation",
         description: "Track what's in your code, who has access, and where it goes.",
@@ -479,7 +487,7 @@ Source:
       })
       .add(
       {
-        id: 49,
+        id: 50,
         href: "/contributors/",
         title: "Contributors",
         description: "",
