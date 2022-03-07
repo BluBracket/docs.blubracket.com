@@ -167,14 +167,14 @@ Source:
     }
   }
 
-  var searchQuery = param("s");
-  if(searchQuery){
-//    alert(searchQuery);
-    document.getElementById("search").value = searchQuery;
+  var urlSearchQuery = urlParam("s");
+  if(urlSearchQuery){
+    document.getElementById("search").value = urlSearchQuery;
+    search.focus();
     show_results();
   }
 
-  function param(name) {
+  function urlParam(name) {
       return decodeURIComponent((location.search.split(name + '=')[1] || '').split('&')[0]).replace(/\+/g, ' ');
   }
 
