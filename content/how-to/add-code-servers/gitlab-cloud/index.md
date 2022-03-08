@@ -12,11 +12,11 @@ resources:
   - src: select.jpg
 ---
 
-After [selecting to add a GitLab Cloud code server]({{< relref "/how-to/add-code-servers/#selecting-a-server-type" >}}), follow the instructions below to add a GitLab XXX as a code server in BluBracket.
+After [selecting to add a GitLab Cloud code server]({{< relref "/how-to/add-code-servers/#selecting-a-server-type" >}}), follow the instructions below to add a GitLab Organization as a code server in BluBracket.
 
 GitLab uses the term "GitLab Cloud" to differentiate repositories hosted at gitlab.com from their self-hosted enterprise offering.
 
-Each GitLab XXX is a different code server in BluBracket ([see GitLab docs on XXX](https://example.com)).
+Each GitLab Organization is a different code server in BluBracket ([see GitLab docs on organizations](https://docs.gitlab.com/ee/topics/set_up_organization.html)).
 
 ### Entering a Group name
 

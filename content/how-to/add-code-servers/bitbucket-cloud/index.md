@@ -13,15 +13,15 @@ resources:
   - src: repo.jpg
 ---
 
-After [selecting to add a Bitbucket Cloud code server]({{< relref "/how-to/add-code-servers/#selecting-a-server-type" >}}), follow the instructions below to add a Bitbucket XXX as a code server in BluBracket.
+After [selecting to add a Bitbucket Cloud code server]({{< relref "/how-to/add-code-servers/#selecting-a-server-type" >}}), follow the instructions below to add a Bitbucket workspace as a code server in BluBracket.
 
 Bitbucket uses the term "Bitbucket Cloud" to differentiate repositories hosted at bitbucket.com from their self-hosted enterprise offering.
 
-Each Bitbucket XXX is a different code server in BluBracket ([see Bitbucket docs on XXX](https://example.com)).
+Each Bitbucket workspace is a different code server in BluBracket ([see Bitbucket docs on workspaces](https://support.atlassian.com/bitbucket-cloud/docs/what-is-a-workspace/)).
 
 ### Entering a workspace name
 
-The next thing to do is select a workspace to point the server to.  Workspaces are usually, but not always, set up as lines of business or projects.  For example, Google may have workspaces for Nest, Android, Add Words, etc., all under the same server.  It is possible to point a server at multiple workspaces. Enter the targeted workspace into the input field.
+The next thing to do is select a workspace to point the server to.  Workspaces are usually, but not always, set up as lines of business or projects.  For example, Google may have workspaces for Nest, Android, AdWords, etc., all under the same server.  It is possible to point a server at multiple workspaces. Enter the targeted workspace into the input field.
 
 ![generate token screenshot](generate-token.jpg)
 
