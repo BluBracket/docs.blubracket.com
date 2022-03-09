@@ -1,7 +1,7 @@
 ---
 title: "Adding a GitHub Cloud code server"
-description: "How to add a GitHub cloud code server to your tenant"
-lead: "How to add a GitHub Cloud code server to your tenant"
+description:
+lead: 
 date: 2022-01-12T02:48:57+00:00
 draft: false
 weight: 100

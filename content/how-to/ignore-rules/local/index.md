@@ -1,7 +1,7 @@
 ---
-title: "Configuring local ignore rules"
-description: ""
-lead: ""
+title: "How to configure local ignore rules"
+description: 
+lead: 
 date: 2022-01-12T02:48:57+00:00
 draft: false
 weight: 200

@@ -1,7 +1,7 @@
 ---
 title: "Configure GitHub checks"
-description: "GitHub checks setup instructions"
-lead: "GitHub checks setup instructions"
+description: 
+lead: 
 date: 2022-03-04T02:48:57+00:00
 draft: false
 weight: 300

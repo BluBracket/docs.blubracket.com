@@ -1,7 +1,7 @@
 ---
 title: "Using the CLI tool"
-description: "Using the CLI tool"
-lead: "Using the CLI tool"
+description: 
+lead: 
 date: 2022-02-22T02:48:57+00:00
 draft: false
 weight: 200

@@ -1,7 +1,7 @@
 ---
 title: "How to generate an app password or personal access token (PAT) in Bitbucket"
-description: "How to generate an app password or personal access token (PAT) in Bitbucket"
-lead: "How to generate an app password or personal access token (PAT) in Bitbucket"
+description: 
+lead: 
 date: 2022-01-12T02:48:57+00:00
 draft: false
 weight: 100

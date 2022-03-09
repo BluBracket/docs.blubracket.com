@@ -1,7 +1,7 @@
 ---
-title: "How To generate a personal access token (PAT) in GitLab"
-description: "How To generate a personal access token (PAT) in GitLab"
-lead: "How To generate a personal access token (PAT) in GitLab"
+title: "How to generate a personal access token (PAT) in GitLab"
+description: 
+lead: 
 date: 2022-01-12T02:48:57+00:00
 draft: false
 weight: 100
