@@ -1,7 +1,7 @@
 ---
-title: "How to remediate alerts in code once they have been found by BluBracket"
-description: 
-lead: 
+title: "Remediate alerts"
+description: "How to remediate alerts"
+lead: "How do I remediate secrets in code once they have been found by BluBracket?"
 date: 2022-01-12T02:48:57+00:00
 draft: false
 weight: 300
