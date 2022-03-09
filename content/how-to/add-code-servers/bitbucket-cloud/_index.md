@@ -37,7 +37,7 @@ The next step in adding the code server is adding the Personal Access Token (PAT
 
 Example: `holland:Vgc9Kw8w5zQu58989Uxz`
 
-[how to generate a personal access token on Bitbucket](https://support.blubracket.com/hc/en-us/articles/4404687343124-How-to-Generate-an-App-Password-or-Personal-Access-Token-PAT-in-Bitbucket)
+[How to generate a personal access token on Bitbucket](/how-to/add-code-servers/bitbucket-cloud/generate-pat/)
 
 Enter the token in the location indicated below:
 

@@ -1,7 +1,7 @@
 ---
-title: "Setting up IaC scanning in GitLab"
-description: "Configuring infrastructure as code on GitLab"
-lead: "Configuring infrastructure as code on GitLab"
+title: "Configuring infrastructure as code scanning on GitLab"
+description: 
+lead: 
 date: 2022-01-12T02:48:57+00:00
 draft: false
 weight: 200
