@@ -1,5 +1,5 @@
 ---
-title: "How to remediate alerts in code once they have been found by BluBracket."
+title: "How to remediate alerts in code once they have been found by BluBracket"
 description: 
 lead: 
 date: 2022-01-12T02:48:57+00:00
