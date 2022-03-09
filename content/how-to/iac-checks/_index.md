@@ -1,6 +1,6 @@
 ---
-title: "Configure infrastructure as code (IaC) scanning"
-description: 
+title: "IaC checks"
+description: "Infrastructure as code (IaC) scanning configuration instructions"
 lead: 
 date: 2022-01-12T02:48:57+00:00
 draft: false

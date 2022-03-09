@@ -1,6 +1,6 @@
 ---
-title: "How to Set Ignore Rules Globally for Tenant"
-description: 
+title: "Configuring global ignore rules"
+description: "How to setup global ignore rules for all users of a tenant"
 lead: 
 date: 2022-01-12T02:48:57+00:00
 draft: false
