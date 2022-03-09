@@ -1,7 +1,7 @@
 ---
 title: "Getting started with BluBracket"
 description: "Getting started with BluBracket"
-lead: "Getting started with BluBracket"
+lead:
 date: 2022-01-12T02:48:57+00:00
 draft: false
 weight: 300
