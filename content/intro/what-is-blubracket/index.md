@@ -12,6 +12,8 @@ resources:
 
 BluBracket is a code and git security suite that identifies risks in your code, monitors who and what has access to your code, and tracks where your code goes outside your git repos.
 
+{{< youtube L_bSENxHp6M >}}
+
 ### BluBracket use-cases
 
 - Identifying, preventing, and removing risks in code
