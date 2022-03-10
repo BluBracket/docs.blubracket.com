@@ -1,6 +1,6 @@
 ---
 title: "Getting started with BluBracket"
-description: ""
+description: "How to sign up and start using BluBracket for free"
 lead:
 date: 2022-01-12T02:48:57+00:00
 draft: false
