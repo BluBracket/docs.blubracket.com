@@ -37,7 +37,7 @@ The next step in adding the code server is adding the Personal Access Token (PAT
 
 Example: `holland:Vgc9Kw8w5zQu58989Uxz`
 
-[How to generate a personal access token on Bitbucket](/how-to/add-code-servers/bitbucket-cloud/access-token/)
+[How to generate a personal access token on Bitbucket](/how-to/add-code-servers/bitbucket-cloud/generate-pat/)
 
 Enter the token in the location indicated below:
 
