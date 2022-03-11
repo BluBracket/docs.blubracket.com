@@ -118,9 +118,23 @@ Source:
 
   search.addEventListener('input', show_results, true);
 
-  function show_results(){
+  function show_results(s){
+
+    // Support calling this function with search args (s)
+    // or getting the search from another context
+    if ((typeof s === 'string') && (0 < s.length))
+    {
+      // accept the argument value
+      var searchQuery = s;
+    }
+    else
+    {
+      // get the value from this
+      var searchQuery = this.value;
+    }
+
     const maxResult = 5;
-    var searchQuery = this.value;
+
     var results = index.search(searchQuery, {limit: maxResult, enrich: true});
 
     // flatten results since index.search() returns results for each indexed field
@@ -166,4 +180,16 @@ Source:
         if(suggestions.childElementCount == maxResult) break;
     }
   }
+
+  var urlSearchQuery = urlParam("s");
+  if(urlSearchQuery){
+    document.getElementById("search").value = urlSearchQuery;
+    search.focus();
+    show_results(urlSearchQuery);
+  }
+
+  function urlParam(name) {
+      return decodeURIComponent((location.search.split(name + '=')[1] || '').split('&')[0]).replace(/\+/g, ' ');
+  }
+
 }());

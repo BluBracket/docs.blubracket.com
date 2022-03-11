@@ -6,8 +6,8 @@
     </div>
     <div class="col-lg-9 col-xl-8 text-center">
       <p class="lead">{{ .Params.lead | safeHTML }}</p>
-      <form class="doks-search position-relative flex-grow-1 me-auto">
-        <input id="search" class="form-control is-search" type="search" placeholder="Search docs..." aria-label="Search docs..." autocomplete="off">
+      <form class="doks-search position-relative flex-grow-1 me-auto" action="/" method="GET">
+        <input id="search" name="s" class="form-control is-search" type="search" placeholder="Search docs..." aria-label="Search docs..." autocomplete="off">
         <div id="suggestions" class="shadow bg-white rounded d-none"></div>
       </form>
     </div>
