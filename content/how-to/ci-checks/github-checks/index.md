@@ -1,11 +1,13 @@
 ---
-title: "Configure GitHub checks"
+title: "Configure GitHub Checks"
+aliases:
+  - /how-to/github-checks
 description: 
 lead: 
 date: 2022-03-04T02:48:57+00:00
 draft: false
 weight: 300
-toc: true
+toc: false
 resources:
   - src: gitchecks.png
   - src: gitchecks2.png
@@ -15,7 +17,7 @@ resources:
 
 #### Prerequisites
 
-To install GitHub checks permissions to install a GitHub App on an org are required.  This would be an [organization owner or someone with admin level permissions in a repository](https://docs.github.com/en/developers/apps/differences-between-github-apps-and-oauth-apps#who-can-install-github-apps-and-authorize-oauth-apps)
+To install GitHub Checks, permissions to install a GitHub App on an org are required.  This would be an [organization owner or someone with admin level permissions in a repository](https://docs.github.com/en/developers/apps/differences-between-github-apps-and-oauth-apps#who-can-install-github-apps-and-authorize-oauth-apps)
 
 #### GitHub cloud checks setup for BluBracket free trial edition {#freetrial}
 

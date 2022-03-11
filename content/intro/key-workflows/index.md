@@ -50,7 +50,7 @@ GitHub is just one [supported code server and CI environment]({{< relref "/intro
 
 As with pre-commit hooks, CI checks and all BluBracket's server-side code scanning supports repo-level configuration with directives in `.blubracket/` at the repo root, and global configuration for all users and all repos in a BluBracket account with directives set at that level. Additionally, inline directives inserted as code comments can be used to mark specific items to ignore, putting decisions about how to handle selected code risks in context with the code.
 
-- Usage guide: [configuring GitHub Checks](/how-to/github-checks/).
+- Usage guide: [configuring CI checks](/how-to/ci-checks/).
 
 #### Alerts
 
