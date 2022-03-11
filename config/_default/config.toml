@@ -1,6 +1,6 @@
 baseurl = "https://docs.blubracket.com/"
 canonifyURLs = false
-disableAliases = true
+disableAliases = false
 disableHugoGeneratorInject = true
 enableEmoji = true
 enableGitInfo = false

@@ -53,7 +53,7 @@ Certified & supported CI servers:
 
 Additional integrations are available via [our open CI API](/api/ci-cd).
 
-Usage guide: [configuring GitHub Checks](/how-to/github-checks/).
+Usage guide: [configuring CI checks](/how-to/ci-checks/).
 
 ### Identity, authentication, and authorization
 
