@@ -6,6 +6,8 @@ date: 2022-01-12T02:48:57+00:00
 draft: false
 weight: 400
 toc: true
+tags:
+  - workflows
 resources:
   - src: blubracket-blocks-secrets-git-pre-commit.pngx
   - src: secret-detection-in-github-checks-ci-via-blubracket.png

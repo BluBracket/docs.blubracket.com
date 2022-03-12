@@ -6,6 +6,8 @@ date: 2022-01-12T02:48:57+00:00
 draft: false
 weight: 500
 toc: true
+tags:
+  - integrations
 resources:
   - src: blubracket-blocks-secrets-git-pre-commit.pngx
   - src: git-repos-scanned-for-security-risks-by-blubracket.png
