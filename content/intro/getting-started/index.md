@@ -1,7 +1,7 @@
 ---
 title: "Getting started with BluBracket"
-description: "Getting started with BluBracket"
-lead: "Getting started with BluBracket"
+description: "How to sign up and start using BluBracket for free"
+lead: ""
 date: 2022-01-12T02:48:57+00:00
 draft: false
 weight: 300
@@ -16,6 +16,7 @@ resources:
 - src: signup6.jpg
 - src: login-blubracket-page.png
 ---
+{{< youtube ZHLOezVag7I >}}
 
 Getting started with BluBracket is a three step process: sign up, add a code server, then start improving security. Using our scanning tool, you you find the risks in your code and dig deeper into the information provided.
 
