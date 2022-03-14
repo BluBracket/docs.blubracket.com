@@ -1,5 +1,7 @@
 ---
 title: "Adding a GitHub Cloud code server"
+aliases:
+  - /how-to/add-code-servers/github-cloud
 description: "How to add a GitHub cloud code server to your tenant"
 lead: "How to add a GitHub Cloud code server to your tenant"
 date: 2022-01-12T02:48:57+00:00

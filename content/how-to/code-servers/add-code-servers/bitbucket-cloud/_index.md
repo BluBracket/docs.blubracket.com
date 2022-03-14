@@ -1,5 +1,7 @@
 ---
 title: "Adding a Bitbucket Cloud code server"
+aliases:
+  - /how-to/add-code-servers/bitbucket-cloud
 description: "How to add a Bitbucket Cloud server to your tenant"
 lead: "How to add a Bitbucket Cloud server to your tenant"
 date: 2022-01-12T02:48:57+00:00
