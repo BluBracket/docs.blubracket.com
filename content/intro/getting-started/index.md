@@ -8,13 +8,16 @@ weight: 300
 toc: true
 tags:
   - free trial
+searchExtraKeywords:
+  - "Getting Started with BluBracket Teams and Enterprise Editions - BluBracket"
+  - "Getting Started with the Free Trial - BluBracket"
 resources:
-- src: three-step-process-sign-up.png
-- src: enter-email-get-started.png
-- src: submit-email-and-get-confirmation-page.png
-- src: getting-to-set-your-blubracket-password.png
-- src: signup6.jpg
-- src: login-blubracket-page.png
+  - src: three-step-process-sign-up.png
+  - src: enter-email-get-started.png
+  - src: submit-email-and-get-confirmation-page.png
+  - src: getting-to-set-your-blubracket-password.png
+  - src: signup6.jpg
+  - src: login-blubracket-page.png
 ---
 {{< youtube ZHLOezVag7I >}}
 
