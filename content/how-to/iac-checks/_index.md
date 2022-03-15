@@ -6,6 +6,9 @@ date: 2022-01-12T02:48:57+00:00
 draft: false
 weight: 300
 toc: true
+searchExtraKeywords:
+  - "Configuring Infrastructure as Code on GitHub – BluBracket"
+  - "Configuring Infrastructure as Code on Bitbucket – BluBracket"
 resources:
   - src:
 ---
