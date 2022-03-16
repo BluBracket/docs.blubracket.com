@@ -18,7 +18,7 @@ resources:
   - src: select.jpg
 ---
 
-After [selecting to add a GitHub Cloud code server]({{< relref "/how-to/add-code-servers/#selecting-a-server-type" >}}), follow the instructions below to add a GitHub Organization as a code server in BluBracket.
+After [selecting to add a GitHub Cloud code server]({{< relref "/how-to/code-servers/add-code-servers/#selecting-a-server-type" >}}), follow the instructions below to add a GitHub Organization as a code server in BluBracket.
 
 GitHub uses the term "GitHub Cloud" to differentiate repositories hosted at github.com from their self-hosted enterprise offering.
 
