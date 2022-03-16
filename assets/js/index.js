@@ -108,7 +108,19 @@ Source:
         {{ else -}}
           description: {{ .Summary | plainify | jsonify }},
         {{ end -}}
-        content: {{ .Plain | jsonify }}
+        {{ if .Params.tags }}
+          {{ range $index, $tag := .Params.tags }}
+            {{ $.Scratch.Add "content" ( printf "%s" $tag ) }}
+          {{ end }}
+        {{ end }}
+        {{ if .Params.searchExtraKeywords }}
+          {{ range $index, $tag := .Params.searchExtraKeywords }}
+            {{ $.Scratch.Add "content" ( printf "%s" $tag ) }}
+          {{ end }}
+        {{ end }}
+        {{ $.Scratch.Add "content" .Plain }}
+        content: {{ $.Scratch.Get "content" | plainify | jsonify }}
+        {{ $.Scratch.Delete "content" }}
       })
       {{ if ne (add $index 1) $len -}}
         .add(
