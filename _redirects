@@ -1,5 +1,10 @@
 
-/how-to/github-checks /how-to/ci-checks/github-checks/# /docs/1.0/prologue/   /docs/1.0/prologue/introduction/
+/how-to/add-code-servers/bitbucket-cloud /how-to/code-servers/add-code-servers/bitbucket-cloud/
+/how-to/add-code-servers/github-cloud /how-to/code-servers/add-code-servers/github-cloud/
+/how-to/add-code-servers/gitlab-cloud /how-to/code-servers/add-code-servers/gitlab-cloud/
+/how-to/add-code-servers /how-to/code-servers/add-code-servers/
+/how-to/github-checks /how-to/ci-checks/github-checks/
+/how-to/add-code-servers/azure-devops /how-to/code-servers/add-code-servers/azure-devops/# /docs/1.0/prologue/   /docs/1.0/prologue/introduction/
 # /docs/1.0/help/       /docs/1.0/help/how-to-update/
 # /docs/1.0/            /docs/1.0/prologue/introduction/
 # /docs/                /docs/1.0/prologue/introduction/

@@ -88,7 +88,7 @@ Source:
   index.add(
     {
         id: 0,
-        href: "/how-to/add-code-servers/bitbucket-cloud/",
+        href: "/how-to/code-servers/add-code-servers/bitbucket-cloud/",
         title: "Adding a Bitbucket Cloud code server",
         description: "How to add a Bitbucket Cloud server to your tenant",
         
@@ -100,7 +100,7 @@ Source:
       .add(
       {
         id: 1,
-        href: "/how-to/add-code-servers/github-cloud/",
+        href: "/how-to/code-servers/add-code-servers/github-cloud/",
         title: "Adding a GitHub Cloud code server",
         description: "How to add a GitHub cloud code server to your tenant",
         
@@ -116,7 +116,7 @@ Source:
       .add(
       {
         id: 2,
-        href: "/how-to/add-code-servers/gitlab-cloud/",
+        href: "/how-to/code-servers/add-code-servers/gitlab-cloud/",
         title: "Adding a GitLab Cloud code server",
         description: "How to add a GitLab Cloud code server to your tenant",
         
@@ -228,7 +228,7 @@ Source:
       .add(
       {
         id: 8,
-        href: "/how-to/add-code-servers/gitlab-cloud/generate-pat/",
+        href: "/how-to/code-servers/add-code-servers/gitlab-cloud/generate-pat/",
         title: "Generate a personal access token (PAT) in GitLab",
         description: "Entering a token and creating a GitLab personal access token #   In order for BluBracket to access information within a given repository, an access token must be uploaded into the tenant. An administrator for the GitLab account can create a new token by taking the following steps:\n  For GitLab Cloud, once logged into the GitLab interface, select Preferences → Access Tokens. You should end up at a URL similar to the following: https://gitlab.",
         
@@ -240,7 +240,7 @@ Source:
       .add(
       {
         id: 9,
-        href: "/how-to/add-code-servers/bitbucket-cloud/generate-pat/",
+        href: "/how-to/code-servers/add-code-servers/bitbucket-cloud/generate-pat/",
         title: "Generate an app password or personal access token (PAT) in Bitbucket",
         description: "In order for BluBracket to access information within a given repository, an App Password (Bitbucket Cloud) or Personal Access Token (Bitbucket Server) must be uploaded into the tenant. An administrator for the Bitbucket account can create a new password or token by taking the following steps:\nBitbucket Cloud #   For Bitbucket Cloud, once logged in to Bitbucket select Personal Settings → App Passwords. You should end up at a URL similar to the following: https://bitbucket.",
         
@@ -592,7 +592,7 @@ Source:
       .add(
       {
         id: 30,
-        href: "/how-to/add-code-servers/",
+        href: "/how-to/code-servers/add-code-servers/",
         title: "Adding code servers",
         description: "How to add code servers to your tenant",
         
@@ -628,6 +628,18 @@ Source:
       .add(
       {
         id: 33,
+        href: "/how-to/code-servers/",
+        title: "Code servers",
+        description: "Code lives in git repos, and git repos are hosted by code servers. Most git hosting providers structure git repos into collections such as GitHub\u0026rsquo;s Organizations and Bitbucket\u0026rsquo;s Workspaces. In BluBracket, each of those collections is a separate code server.\nSupported code servers in BluBracket #    GitHub GitLab Bitbucket Azure DevOps     Cloud \u0026amp; Enterprise Cloud \u0026amp; on-prem Cloud \u0026amp; on-prem Cloud   Supported access \u0026amp; configuration risks Supported access \u0026amp; configuration risks Access \u0026amp; configuration risks not supported Access \u0026amp; configuration risks not supported   GitHub Checks      Adding a GitHub code server Adding a GitLab code server Adding a Bitbucket code server Adding an Azure DevOps code server    ",
+        
+        
+        
+        content: "Code lives in git repos, and git repos are hosted by code servers. Most git hosting providers structure git repos into collections such as GitHub\u0026rsquo;s Organizations and Bitbucket\u0026rsquo;s Workspaces. In BluBracket, each of those collections is a separate code server.\nSupported code servers in BluBracket #    GitHub GitLab Bitbucket Azure DevOps     Cloud \u0026amp; Enterprise Cloud \u0026amp; on-prem Cloud \u0026amp; on-prem Cloud   Supported access \u0026amp; configuration risks Supported access \u0026amp; configuration risks Access \u0026amp; configuration risks not supported Access \u0026amp; configuration risks not supported   GitHub Checks      Adding a GitHub code server Adding a GitLab code server Adding a Bitbucket code server Adding an Azure DevOps code server    "
+        
+      })
+      .add(
+      {
+        id: 34,
         href: "/how-to/ignore-rules/",
         title: "Configure ignore rules",
         description: "Instructions on how to configure ignore fules for different levels, locally, per repo, and globally",
@@ -639,7 +651,7 @@ Source:
       })
       .add(
       {
-        id: 34,
+        id: 35,
         href: "/how-to/ignore-rules/global/",
         title: "Configuring global ignore rules",
         description: "How to setup global ignore rules for all users of a tenant",
@@ -651,7 +663,7 @@ Source:
       })
       .add(
       {
-        id: 35,
+        id: 36,
         href: "/how-to/ignore-rules/per-repo/",
         title: "Configuring ignore rules per repo",
         description: "How to set ignore rules ignore rules for all users of a repository",
@@ -663,7 +675,7 @@ Source:
       })
       .add(
       {
-        id: 36,
+        id: 37,
         href: "/how-to/iac-checks/bitbucket/",
         title: "Configuring infrastructure as code scanning on Bitbucket",
         description: "Step 1: Create Bitbucket Repository Variables: #   Log into Bitbucket and select a repository where you want to enable Infrastructure as Code scanning.\n  Within the repository, select Repository settings, then Repository variables\n  Create five new Repositories variables\n  Name: DOCKER_HUB_EMAIL\nvalue: blusupport@blubracket.com\nName: DOCKER_HUB_USERNAME\nvalue: blusupport\nName: DOCKER_HUB_TOKEN\nvalue: 085ef825-b366-4636-be2a-8babaf65064f\nName: BLUBRACKET_SERVICE_ENDPOINT\nvalue: BluBracket Tenant name\nExample: https://acme.blubracket.com\nName: BLUBRACKET_INTEGRATION_KEY\nvalue: BluBracket Integration API key",
@@ -675,7 +687,7 @@ Source:
       })
       .add(
       {
-        id: 37,
+        id: 38,
         href: "/how-to/iac-checks/github/",
         title: "Configuring infrastructure as code scanning on GitHub",
         description: "Step 1: Create GitHub Repository Secrets:\n  Log into GitHub and select a repository where you want to enable Infrastructure as Code scanning.\n  Within the repository, select settings, then secrets\n  Create three new repositories secrets\n  Name: DOCKER_HUB_USERNAME\nvalue: blusupport\nName: DOCKER_HUB_TOKEN\nvalue: 085ef825-b366-4636-be2a-8babaf65064f\nName: BLUBRACKET_INTEGRATION_KEY\nvalue: BluBracket Integration API key\nSteps to create a BluBracket API token: https://support.blubracket.com/hc/en-us/articles/4403018405140-Event-and-Alert-APIs\n  Step 2: Create Actions Workflow:",
@@ -687,7 +699,7 @@ Source:
       })
       .add(
       {
-        id: 38,
+        id: 39,
         href: "/how-to/iac-checks/gitlab/",
         title: "Configuring infrastructure as code scanning on GitLab",
         description: "Step 1: Create GitLab Repository Variables: #   Log into GitLab and select a repository where you want to enable Infrastructure as Code scanning.\n  Within the repository, select Settings, then CI/CD\n  Expand Variables section and select Add variable\n  Create four new variables:\n  Name: DOCKER_HUB_USERNAME\nvalue: blusupport\nName: DOCKER_HUB_TOKEN\nvalue: 085ef825-b366-4636-be2a-8babaf65064f\nName: BLUBRACKET_SERVICE_ENDPOINT\nvalue: BluBracket Tenant name\nExample: https://acme.blubracket.com\nName: BLUBRACKET_INTEGRATION_KEY\nvalue: BluBracket Integration API key",
@@ -699,7 +711,7 @@ Source:
       })
       .add(
       {
-        id: 39,
+        id: 40,
         href: "/how-to/ignore-rules/local/",
         title: "Configuring local ignore rules",
         description: "How to set ignore rules for your local machine",
@@ -711,7 +723,7 @@ Source:
       })
       .add(
       {
-        id: 40,
+        id: 41,
         href: "/api/event-alert/",
         title: "Event \u0026 alert",
         description: "Reading and searching events and alerts.",
@@ -723,7 +735,43 @@ Source:
       })
       .add(
       {
-        id: 41,
+        id: 42,
+        href: "/how-to/code-servers/git-server-acccess-configuration/",
+        title: "Git server access \u0026 configuration",
+        description: "Supported access and configuration risks by code server.",
+        
+        
+        
+        content: "Supported access and configuration risks by code server.\n"
+        
+      })
+      .add(
+      {
+        id: 43,
+        href: "/how-to/code-servers/git-server-acccess-configuration/github/",
+        title: "GitHub access \u0026 configuration risks",
+        description: "BluBracket monitors and alerts on potential security security issues related to access and configuration of GitHub accounts. The following is a list of these configurations that BluBracket is currently monitoring. BluBracket will continue to add to this list and as we have support for other solutions we will add similar alerts.\nOrganization-level configuration risks #  Base level setting is too permissive: Base permissions to the organization’s repositories apply to all members and exclude outside collaborators.",
+        
+        
+        
+        content: "BluBracket monitors and alerts on potential security security issues related to access and configuration of GitHub accounts. The following is a list of these configurations that BluBracket is currently monitoring. BluBracket will continue to add to this list and as we have support for other solutions we will add similar alerts.\nOrganization-level configuration risks #  Base level setting is too permissive: Base permissions to the organization’s repositories apply to all members and exclude outside collaborators. Since organization members can have permissions from multiple sources, members and collaborators who have been granted a higher level of access than the base permissions will retain their higher permission privileges. If this setting is set to anything other than “None” BluBracket will display an alert. It is best practice to have this set to “None” and configure each repository individually. Members can create public repositories: BluBracket will display an alert if organization members can create public repositories. It is understood that some members may need to create public repositories for collaboration reasons, yet at the same time it can be a code egress point and therefore is displayed as an alert. Two factor is not enforced on the organization: BluBracket will display an alert if two factor authentication is not configured on the organization. This may not be an issue if a company is using an external SAML solution, since two factor could be set there. Members can fork private repositories (coming soon). Members can change repository visibilities (coming soon). Members can delete or transfer repositories (coming soon).  Repository-level configuration risks #  No branch protection rules set on the repository: This alert will only be thrown if no branch protection rules are set. The repository does not restrict direct pushes: BluBracket will display an alert if there are no restrictions for direct pushes across any branch. A specific risk here would be the ability for a developer to push code directly into the main branch without any review process in place. The repository does not require pull request reviews: This alert will be displayed for repositories only if no branches in the repository have pull request restrictions. It is common for some branches to not have pull request restrictions, but best practice is that critical branches should have some level of restrictions. The repository requires an insufficient number of reviewers: BluBracket will display an alert if the number of reviewers is set below the minimum threshold number. This requires additional user inputs fields in the BluBracket interface and is currently unavailable/disabled. The repository does not invalidate stale reviews: This alert will be displayed if a developer can continue to push changes to a pull request without requesting further reviews. This is a potential risk path for unreviewed code being pushed into a critical branch.  "
+        
+      })
+      .add(
+      {
+        id: 44,
+        href: "/how-to/code-servers/git-server-acccess-configuration/gitlab/",
+        title: "GitLab access \u0026 configuration risks",
+        description: "BluBracket monitors and alerts on potential security security issues related to access and configuration of GitLab accounts. The following is a list of these configurations that BluBracket is currently monitoring. BluBracket will continue to add to this list and as we have support for other solutions we will add similar alerts.\nSystem-level configuration risks (on-prem only) # Note: these features can be enabled by request.\n Too many admins on system: Default is five.",
+        
+        
+        
+        content: "BluBracket monitors and alerts on potential security security issues related to access and configuration of GitLab accounts. The following is a list of these configurations that BluBracket is currently monitoring. BluBracket will continue to add to this list and as we have support for other solutions we will add similar alerts.\nSystem-level configuration risks (on-prem only) # Note: these features can be enabled by request.\n Too many admins on system: Default is five. Public sign-up enabled: Any user who visits the on-premise domain can register for an account. By default, this is allowed. Combined with a public organization and public repositories, this would allow anyone to view available code. Triggered only if whitelist domains are not specified. Repository mirroring enabled Two factor is not enforced on the system: BluBracket will display an alert if 2FA is not configured on the system. Default group visibility set to public Default project visibility set to public No default branch protection rules set: Branch protection rules across the instance should be set up by default to protect against force pushes and branch deletion. If it has been explicitly downgraded to none, an alert will be triggered.  Organization-level configuration risks #  Too many owners in org: Default is five. Two factor is not enforced on the organization (cloud only): If 2FA is not enforced on the system, BluBracket will check if 2FA is enforced on the organization. An alert is triggered if 2FA is not enforced for all the users in the organization. Group visibility is set to public: When the organization is set to public, repositories under that organization can be set to public as well. Members of the organization with appropriate access may be able to create public repositories. Projects in this group can be forked outside the group (requires GitLab Silver/Premium+ and v13.3+) SAML SSO not enabled (requires GitLab Silver/Premium+ paid license, cloud only)  Repository-level configuration risks #  Repository is being mirrored: GitLab provides a mirroring feature, where the tracked repository can be kept in sync with another internal or external repository. When this GitLab repository is a “pull mirror”, where the tracked repository pulls in changes from another repository, an event is created. When this GitLab repository is a “push mirror”, where the tracked repository pushes code changes to another repository, an event and alert are created. Too many maintainers in repository: Default is five. No branch protection rules set on repository: Without branch protection rules, both developers and maintainers can force push changes, as well as delete branches. By default, branch protection rules should be set, so if it has been explicitly downgraded to none, an alert will be triggered. Repository does not restrict direct pushes to default branch: Even with branch protection rules set, some users, by default, are still allowed to push to the default branch. Repository does not restrict direct pushes: Even with branch protection rules set, some users, by default, are still allowed to push to a protected branch. Granular access to allow no one to push to a protected branch is available via GitLab. An alert will be triggered if this granular access has not been updated to disallow pushing to a protected branch. Repository does not allow merges: Merges are disabled, and no users can merge code changes into the default branch. Repository does not require merge request reviews: This alert will be triggered in a few cases (requires GitLab Bronze/Starter+ paid license):  Merge requests are enabled, but requirements for reviews can be overridden Merge requests are enabled, but no reviewers are required Merge requests are enabled, and the merge requires one reviewer, but the author is allowed to approve their own merge request   Repository requires an insufficient number of reviewers: This alert will be triggered if the effective number of reviewers is set below the minimum threshold number, which can be specified in the BluBracket interface. The effective number of reviewers required will be the number of reviewers discounting the author’s approval if the author is allowed to approve their own merge request. Default is two. (Requires GitLab Bronze/Starter+ paid license.) Repository does not invalidate stale reviews: This alert will be triggered if new pushes to a merge request do not invalidate old reviews. (Requires GitLab Bronze/Starter+ paid license.)  "
+        
+      })
+      .add(
+      {
+        id: 45,
         href: "/how-to/",
         title: "User guide",
         description: "",
@@ -735,7 +783,7 @@ Source:
       })
       .add(
       {
-        id: 42,
+        id: 46,
         href: "/how-to/ci-checks/github-checks/",
         title: "Configure GitHub Checks",
         description: "Prerequisites # To install GitHub Checks, permissions to install a GitHub App on an org are required. This would be an organization owner or someone with admin level permissions in a repository\nGitHub cloud checks setup for BluBracket free trial edition # This version of GitHub Checks is for customers using a BluBracket Free Trial tenant.\n  Navigate to BluBracket portal, import code server, track repos\n  Install the following app on the organization (should be done by someone who has permissions to install the app): https://github.",
@@ -747,7 +795,7 @@ Source:
       })
       .add(
       {
-        id: 43,
+        id: 47,
         href: "/how-to/add-user/",
         title: "Adding a BluBracket user",
         description: "How to add a BluBracket user",
@@ -759,7 +807,7 @@ Source:
       })
       .add(
       {
-        id: 44,
+        id: 48,
         href: "/api/",
         title: "API",
         description: "How to access and use the BluBracket API.",
@@ -771,7 +819,7 @@ Source:
       })
       .add(
       {
-        id: 45,
+        id: 49,
         href: "/api/ci-checks/",
         title: "CI checks",
         description: "These APIs can be used to integrate BluBracket checks into a continuous integration (CI) workflow and help prevent risks being committed to a protected branch.\nStart a scan # Start a scan for a list of commits or a pull request\nEndpoint # POST /api/analyzer/commit/scan\nParameters #   repo_url (string, required): URL of the repo\n  pull_request_number (int, optional): The id number of the pull request to be scanned.",
@@ -783,7 +831,7 @@ Source:
       })
       .add(
       {
-        id: 46,
+        id: 50,
         href: "/intro/getting-started/",
         title: "Getting started with BluBracket",
         description: "How to sign up and start using BluBracket for free",
@@ -805,7 +853,7 @@ Source:
       })
       .add(
       {
-        id: 47,
+        id: 51,
         href: "/how-to/iac-checks/",
         title: "IaC checks",
         description: "Infrastructure as code (IaC) scanning configuration instructions",
@@ -823,7 +871,7 @@ Source:
       })
       .add(
       {
-        id: 48,
+        id: 52,
         href: "/how-to/remediate-alerts/",
         title: "Remediate alerts",
         description: "How to remediate alerts",
@@ -835,7 +883,7 @@ Source:
       })
       .add(
       {
-        id: 49,
+        id: 53,
         href: "/faq/",
         title: "Frequently asked questions",
         description: "",
@@ -851,7 +899,7 @@ Source:
       })
       .add(
       {
-        id: 50,
+        id: 54,
         href: "/intro/key-workflows/",
         title: "Key workflows",
         description: "BluBracket code security tools are optimized to prevent risks from getting into code, and to promote the process of continuous improvement that reduces existing risks from code over time.\nPreventing risks in code # As developers, we depend on a quick feedback loop to understand if our code is working and does what is expected. BluBracket tools can offer automated security guidance as part of that feedback loop, in the IDE of your choice, pre-commit, and as part of the CI flow.",
@@ -867,7 +915,7 @@ Source:
       })
       .add(
       {
-        id: 51,
+        id: 55,
         href: "/how-to/ci-checks/",
         title: "CI checks",
         description: "BluBracket integrates into the CI workflow to automatically check pull requests before they are merged.\nBluBracket can be configured to warn or block pull requests when it finds risks in code. Most teams prefer only to warn when risks are detected in code, and data shows those warnings are effective in helping those teams recognize and prevent new risks from being merged in PRs.\nBluBracket rich support for:\n GitHub Checks Bitbucket Code Insights  Additionally, the CI API can be used to extend CI checks into nearly any workflow.",
@@ -883,7 +931,7 @@ Source:
       })
       .add(
       {
-        id: 52,
+        id: 56,
         href: "/intro/integrations/",
         title: "Integrations",
         description: "Local workflow tools #  The BluBracket CLI tool can identify and block secrets before they\u0026rsquo;re committed.\n  Available local tools and integrations\n CLI IntelliJ (via CLI, full plugin coming soon) Visual Studio Code (via CLI)  Usage guide: installing and using the CLI.\nCode servers #  BluBracket scans repositories hosted in GitHub, GitLab, Bitbucket, and others.\n  Certified \u0026amp; supported code servers:\n GitHub GitLab Bitbucket Azure DevOps (contact us for beta) Gerrit (coming soon)  Usage guide: adding code servers.",
@@ -899,8 +947,8 @@ Source:
       })
       .add(
       {
-        id: 53,
-        href: "/how-to/add-code-servers/azure-devops/",
+        id: 57,
+        href: "/how-to/code-servers/add-code-servers/azure-devops/",
         title: "Adding an Azure DevOps code server",
         description: "How to add an Azure DevOps code server to your tenant",
         
@@ -911,7 +959,7 @@ Source:
       })
       .add(
       {
-        id: 54,
+        id: 58,
         href: "/contact-support/",
         title: "Contact support",
         description: "",
@@ -923,7 +971,7 @@ Source:
       })
       .add(
       {
-        id: 55,
+        id: 59,
         href: "/authoring-documentation/",
         title: "Authoring documentation",
         description: "How do write and edits the docs in this site.",
@@ -935,7 +983,7 @@ Source:
       })
       .add(
       {
-        id: 56,
+        id: 60,
         href: "/",
         title: "BluBracket Documentation",
         description: "Track what's in your code, who has access, and where it goes.",
@@ -947,7 +995,7 @@ Source:
       })
       .add(
       {
-        id: 57,
+        id: 61,
         href: "/contributors/",
         title: "Contributors",
         description: "",
