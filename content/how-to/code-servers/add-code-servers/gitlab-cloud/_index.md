@@ -1,5 +1,7 @@
 ---
 title: "Adding a GitLab Cloud code server"
+aliases:
+  - /how-to/add-code-servers/gitlab-cloud
 description: "How to add a GitLab Cloud code server to your tenant"
 lead: "How to add a GitLab Cloud code server to your tenant"
 date: 2022-01-12T02:48:57+00:00
@@ -12,7 +14,7 @@ resources:
   - src: select.jpg
 ---
 
-After [selecting to add a GitLab Cloud code server]({{< relref "/how-to/add-code-servers/#selecting-a-server-type" >}}), follow the instructions below to add a GitLab Organization as a code server in BluBracket.
+After [selecting to add a GitLab Cloud code server]({{< relref "/how-to/code-servers/add-code-servers/#selecting-a-server-type" >}}), follow the instructions below to add a GitLab Organization as a code server in BluBracket.
 
 GitLab uses the term "GitLab Cloud" to differentiate repositories hosted at gitlab.com from their self-hosted enterprise offering.
 
@@ -32,7 +34,7 @@ If you don’t know the Group name you can find them in the Gitlab administrator
 
 The next step in adding the code server is adding the Personal Access Token (PAT). In order for BluBracket to access information within a given repository, an access token must be uploaded into the tenant.
 
-[How to generate a Personal Access Token (PAT) in GitLab](/how-to/add-code-servers/gitlab-cloud/generate-pat/)
+[How to generate a Personal Access Token (PAT) in GitLab](/how-to/code-servers/add-code-servers/gitlab-cloud/generate-pat/)
 
 Enter the token in the location indicated below.
 

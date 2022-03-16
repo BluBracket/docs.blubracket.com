@@ -1,5 +1,7 @@
 ---
 title: "Adding a Bitbucket Cloud code server"
+aliases:
+  - /how-to/add-code-servers/bitbucket-cloud
 description: "How to add a Bitbucket Cloud server to your tenant"
 lead: "How to add a Bitbucket Cloud server to your tenant"
 date: 2022-01-12T02:48:57+00:00
@@ -13,7 +15,7 @@ resources:
   - src: repo.jpg
 ---
 
-After [selecting to add a Bitbucket Cloud code server]({{< relref "/how-to/add-code-servers/#selecting-a-server-type" >}}), follow the instructions below to add a Bitbucket workspace as a code server in BluBracket.
+After [selecting to add a Bitbucket Cloud code server]({{< relref "/how-to/code-servers/add-code-servers/#selecting-a-server-type" >}}), follow the instructions below to add a Bitbucket workspace as a code server in BluBracket.
 
 Bitbucket uses the term "Bitbucket Cloud" to differentiate repositories hosted at bitbucket.com from their self-hosted enterprise offering.
 
@@ -37,7 +39,7 @@ The next step in adding the code server is adding the Personal Access Token (PAT
 
 Example: `holland:Vgc9Kw8w5zQu58989Uxz`
 
-[How to generate a personal access token on Bitbucket](/how-to/add-code-servers/bitbucket-cloud/generate-pat/)
+[How to generate a personal access token on Bitbucket](/how-to/code-servers/add-code-servers/bitbucket-cloud/generate-pat/)
 
 Enter the token in the location indicated below:
 
