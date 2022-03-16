@@ -1,6 +1,6 @@
 ---
 title: "Using the CLI tool"
-description: 
+description: "Details about how to use the CLI tool."
 lead: 
 date: 2022-02-22T02:48:57+00:00
 draft: false
