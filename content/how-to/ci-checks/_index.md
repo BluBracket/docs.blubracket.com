@@ -1,6 +1,6 @@
 ---
 title: "CI checks"
-description: ""
+description: "Integrating BluBracket into the CI code review process."
 lead: ""
 date: 2022-01-12T02:48:57+00:00
 draft: false
@@ -8,6 +8,7 @@ weight: 500
 toc: true
 searchExtraKeywords:
   - "CI secret scanning for Azure Pipelines – BluBracket"
+  - "CI secret scanning for GitLab – BluBracket"
 resources:
   - src:
 ---

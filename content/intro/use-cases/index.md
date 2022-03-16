@@ -1,11 +1,13 @@
 ---
 title: "BluBracket use-cases"
-description: ""
+description: "Risks BluBracket solves and how."
 lead: ""
 date: 2022-01-12T02:48:57+00:00
 draft: false
 weight: 200
 toc: true
+searchExtraKeywords:
+  - "Scanning End Points for Code Copies Using the BluBracket Scanner – BluBracket"
 resources:
   - src:
 ---
