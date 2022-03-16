@@ -16,7 +16,7 @@ Code lives in git repos, and git repos are hosted by code servers. Most git host
 
 | GitHub                                 | GitLab                                 | Bitbucket                                  | Azure DevOps                               |
 |----------------------------------------|----------------------------------------|--------------------------------------------|--------------------------------------------|
-| Cloud & Enterprise                     | Cloud & on-prem                        | Cloud & on-prem                            | Cloud                                      |
+| Cloud & Enterprise                     | Cloud & on-prem                        | Cloud & Server                            | Cloud                                      |
 | [Supported access & configuration risks](/how-to/code-servers/git-server-acccess-configuration/github/) | [Supported access & configuration risks](/how-to/code-servers/git-server-acccess-configuration/gitlab/) | Access & configuration risks not supported | Access & configuration risks not supported |
 | [GitHub Checks](/how-to/ci-checks/github-checks/)                          |                                        |                                            |                                            |
 | [Adding a GitHub code server](/how-to/code-servers/add-code-servers/github-cloud/)            | [Adding a GitLab code server](/how-to/code-servers/add-code-servers/gitlab-cloud/)            | [Adding a Bitbucket code server](/how-to/code-servers/add-code-servers/bitbucket-cloud/)          | [Adding an Azure DevOps code server](/how-to/code-servers/add-code-servers/azure-devops/)         |
