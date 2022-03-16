@@ -1,6 +1,6 @@
 ---
 title: "What kinds of secrets does BluBracket search for?"
-description: ""
+description: "What we can find and how we find it."
 lead: ""
 date: 2022-01-12T02:48:57+00:00
 draft: false
@@ -8,6 +8,8 @@ weight: 100
 toc: false
 tags:
   - secrets
+searchExtraKeywords:
+  - "What types of 'secrets in code' does BluBracket scan for - BluBracket"
 resources:
   - src:
 ---
