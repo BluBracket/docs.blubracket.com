@@ -40,7 +40,7 @@ value: BluBracket Integration API key
 
 Steps to create a BluBracket API token:
 
-[https://support.blubracket.com/hc/en-us/articles/4403018405140-Event-and-Alert-API](https://support.blubracket.com/hc/en-us/articles/4403018405140-Event-and-Alert-APIs)
+[Intro to BluBracket APIs and API keys](/api/intro-auth-keys/)
 
 ![integrate](integrate.jpg)
 
