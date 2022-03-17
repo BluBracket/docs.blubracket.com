@@ -12,9 +12,9 @@ resources:
 
 #### Installation
 
-[How do I Install the BluBracket Command Line Interface (CLI) Tool?](/how-to/cli/installation/)
+[How do I Install the BluBracket command line interface (CLI) tool?](/how-to/cli/installation/)
 
-#### Setting Git hooks
+#### Setting git hooks
 
 In terminal, `cd` to the repo dir, then `blubracket install-git-hooks`
 
@@ -78,7 +78,7 @@ secret_value:my_test_gcp_token
   
 * negate mask (!) is not supported
 
-* .blubraket-ignore is read only from the root repo directory, placing it in a sub directory will have no effect.
+* `.blubraket-ignore` is read only from the root repo directory, placing it in a sub directory will have no effect.
 
 ##### Inline comments
 
