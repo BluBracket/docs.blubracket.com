@@ -4,8 +4,8 @@ Login to your BluBracket portal
 Select Settings from left pane menu
 Select Code Scanning
 Download the CLI OS version of your choice (Mac, Windows, Linux)
-Windows Installation # Extract the files into any directory that is available in PATH.</description></item><item><title>Using the CLI tool</title><link>https://docs.blubracket.com/how-to/cli/using-cli/</link><pubDate>Tue, 22 Feb 2022 02:48:57 +0000</pubDate><guid>https://docs.blubracket.com/how-to/cli/using-cli/</guid><description>Installation # How do I Install the BluBracket Command Line Interface (CLI) Tool?
-Setting Git Hooks # In terminal, cd to the repo dir, then blubracket install-git-hooks
+Windows Installation # Extract the files into any directory that is available in PATH.</description></item><item><title>Using the CLI tool</title><link>https://docs.blubracket.com/how-to/cli/using-cli/</link><pubDate>Tue, 22 Feb 2022 02:48:57 +0000</pubDate><guid>https://docs.blubracket.com/how-to/cli/using-cli/</guid><description>Installation # How do I Install the BluBracket command line interface (CLI) tool?
+Setting git hooks # In terminal, cd to the repo dir, then blubracket install-git-hooks
 C:\Users\vbuzu\projects\sandbox&amp;gt;blubracket install-git-hooks Successfully installed pre-commit hook to 'C:/Users/vbuzu/projects/sandbox/.git/hooks/pre-commit' If git is setup to use global git hooks (specified by core.hooksPath git config), CLI will update/install the hook in that global folder.
 Currently CLI will set only one hook, pre-commit.
-Current Limitations # CLI will install the pre-commit hook automatically only if the hook does not exist yet or the hook does exist and is implemented as a shell script (determined by the presence of #!</description></item></channel></rss>
+Current limitations # CLI will install the pre-commit hook automatically only if the hook does not exist yet or the hook does exist and is implemented as a shell script (determined by the presence of #!</description></item></channel></rss>
