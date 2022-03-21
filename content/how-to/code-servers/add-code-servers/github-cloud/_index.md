@@ -8,8 +8,6 @@ date: 2022-01-12T02:48:57+00:00
 draft: false
 weight: 100
 toc: false
-searchExtraKeywords:
-  - "How To Generate Personal Access Token (PAT) in GitHub – BluBracket"
 resources:
   - src: add-org.jpg
   - src: org.jpg
@@ -38,28 +36,8 @@ You can see all organizations you are a member of in your GitHub account at [htt
 
 ![Viewing orgs in GitHub](org.jpg)
 
-### Entering a Personal Access Token (PAT)
+### Generating and entering a personal access token (PAT)
 
 BluBracket uses a personal access token to access the repos you wish to scan ([see GitHub's docs on personal access tokens](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token)).
 
-![generate on github Screenshot](generate.jpg)
-
-The "generate on GitHub" button will take you to the GitHub page specific to creating new tokens:
-
-![token options screenshot](token-options.jpg)
-
-Click on the “generate token” button at the bottom of the page:
-
-![generate token screenshot](generate-token.jpg)
-
-Copy the PAT token from the GitHub page and enter it in the BluBracket dashboard as shown:
-
-![enter token screenshot](enter-token.jpg)
-
-Finally, select either the “all repositories” or “customer select repositories” option, and click on the "save" button.
-
-![select screenshot](select.jpg)
-
-After clicking "save," BluBracket will start scanning for any risks in the code, as well as risks related to access and configuration of the GitHub account.
-
-It can take anywhere from a few minutes to several hours for our system to finish analyzing your repositories. You can navigate to the ‘Repositories’ page to check the real-time scanning status.
+[Instructions on generating and entering a personal access token.](/how-to/code-servers/add-code-servers/github-cloud/generate-pat/)

@@ -6,6 +6,8 @@ date: 2022-03-21T04:44:30.093Z
 draft: false
 weight: 100
 toc: false
+searchExtraKeywords:
+  - "How To Generate Personal Access Token (PAT) in GitHub – BluBracket"
 resources:
   - src: auto-generate.png
   - src: generate_token_button.png
@@ -66,3 +68,19 @@ resources:
 ![Token Generated Screenshot](personal_access_tokens.png)
 
 * To use your token to authenticate to an organization that uses SAML single sign-on, authorize the token. For more information, see ["Authorizing a personal access token for use with SAML single sign-on"](https://docs.github.com/en/enterprise-cloud@latest/authentication/authenticating-with-saml-single-sign-on/authorizing-a-personal-access-token-for-use-with-saml-single-sign-on) in the GitHub Enterprise Cloud documentation.
+
+#### Entering your personal access token
+
+* After generating your personal access token, it needs to be entered into BluBracket. In the BluBracket portal go **Settings**, and then click **Add Code Server**.
+
+![Add Code Server button](add-code-server.png)
+
+* On the **Add Code Server** page select GitHub Cloud
+
+![Add Github Cloud Button](add-github-cloud.png)
+
+* After selecting **GitHub Cloud** you will be presented with the page to enter your organization and personal access token.  Enter the organization with the repositories you wish to monitor and paste your personal access token.
+
+![Entering Token Screenshot](entering-token.png)
+
+* Click next and then select **All repositories** or choose which repositories you wish to monitor.
