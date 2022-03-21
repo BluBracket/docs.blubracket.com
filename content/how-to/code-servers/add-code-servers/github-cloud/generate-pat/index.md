@@ -18,6 +18,10 @@ resources:
   - src: settings.png
   - src: token_description.png
   - src: token_expiration.png
+  - src: add-code-server.png
+  - src: token_expiration.png
+  - src: add-github-cloud.png
+  - src: entering-token.png
 ---
 
 #### Creating a GitHub personal access token
