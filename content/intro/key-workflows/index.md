@@ -6,6 +6,8 @@ date: 2022-01-12T02:48:57+00:00
 draft: false
 weight: 400
 toc: true
+searchExtraKeywords:
+  - "Why should I use the BluBracket Free Trial to discover secrets in code when there are so many other tools available? – BluBracket"
 tags:
   - workflows
 resources:

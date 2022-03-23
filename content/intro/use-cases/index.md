@@ -8,6 +8,7 @@ weight: 200
 toc: true
 searchExtraKeywords:
   - "Scanning End Points for Code Copies Using the BluBracket Scanner – BluBracket"
+  - "Why should I use the BluBracket Free Trial to discover secrets in code when there are so many other tools available? – BluBracket"
 resources:
   - src:
 ---
