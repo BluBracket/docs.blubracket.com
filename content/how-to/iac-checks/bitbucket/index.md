@@ -1,7 +1,7 @@
 ---
-title: "Setting up IAC scanning in Bitbucket"
-description: "Configuring infrastructure as code on Bitbucket"
-lead: "Configuring infrastructure as code on Bitbucket"
+title: "Configuring infrastructure as code scanning on Bitbucket"
+description: 
+lead: 
 date: 2022-01-12T02:48:57+00:00
 draft: false
 weight: 200
@@ -10,7 +10,7 @@ resources:
   - src: docker.jpg, pipe.jpg
 ---
 
-#### Step 1: Create Bitbucket Repository Variables:**
+#### Step 1: Create Bitbucket Repository Variables:
 
 * Log into Bitbucket and select a repository where you want to enable Infrastructure as Code scanning.
 
@@ -41,7 +41,7 @@ Name: **BLUBRACKET_INTEGRATION_KEY**
 value: BluBracket Integration API key
 
 Steps to create a BluBracket API token:
-[https://support.blubracket.com/hc/en-us/articles/4403018405140-Event-and-Alert-APIs](https://support.blubracket.com/hc/en-us/articles/4403018405140-Event-and-Alert-APIs)
+[Intro to BluBracket APIs and API keys](/api/intro-auth-keys/)
 
 ![docker](docker.jpg)
 

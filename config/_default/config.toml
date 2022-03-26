@@ -1,6 +1,6 @@
 baseurl = "https://docs.blubracket.com/"
 canonifyURLs = false
-disableAliases = true
+disableAliases = false
 disableHugoGeneratorInject = true
 enableEmoji = true
 enableGitInfo = false
@@ -64,6 +64,17 @@ rel  = "sitemap"
 
 [minify.tdewolff.html]
   keepWhitespace = false
+
+[indexes]
+  tag = "tags"
+
+[related]
+  threshold = 80
+  toLower = true
+
+  [[related.indices]]
+    name = "tags"
+    weight = 100
 
 [module]
   [module.hugoVersion]

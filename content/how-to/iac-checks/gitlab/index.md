@@ -1,7 +1,7 @@
 ---
-title: "Setting up IaC scanning in GitLab"
-description: "Configuring infrastructure as code on GitLab"
-lead: "Configuring infrastructure as code on GitLab"
+title: "Configuring infrastructure as code scanning on GitLab"
+description: 
+lead: 
 date: 2022-01-12T02:48:57+00:00
 draft: false
 weight: 200
@@ -20,27 +20,27 @@ resources:
 
 * Create four new variables:
 
-Name: DOCKER_HUB_USERNAME
+Name: **DOCKER_HUB_USERNAME**
 
 value: blusupport
 
-Name: DOCKER_HUB_TOKEN
+Name: **DOCKER_HUB_TOKEN**
 
 value: 085ef825-b366-4636-be2a-8babaf65064f
 
-Name: BLUBRACKET_SERVICE_ENDPOINT
+Name: **BLUBRACKET_SERVICE_ENDPOINT**
 
-value: BluBracket Tenant name
+value: **BluBracket Tenant name**
 
 Example: https://acme.blubracket.com
 
-Name: BLUBRACKET_INTEGRATION_KEY
+Name: **BLUBRACKET_INTEGRATION_KEY**
 
 value: BluBracket Integration API key
 
 Steps to create a BluBracket API token:
 
-[https://support.blubracket.com/hc/en-us/articles/4403018405140-Event-and-Alert-API](https://support.blubracket.com/hc/en-us/articles/4403018405140-Event-and-Alert-APIs)
+[Intro to BluBracket APIs and API keys](/api/intro-auth-keys/)
 
 ![integrate](integrate.jpg)
 

@@ -1,7 +1,7 @@
 ---
-title: "Setting up IaC scanning in GitHub"
-description: "Configuring infrastructure as code on GitHub"
-lead: "Configuring infrastructure as code on GitHub"
+title: "Configuring infrastructure as code scanning on GitHub"
+description: 
+lead: 
 date: 2022-01-12T02:48:57+00:00
 draft: false
 weight: 200
@@ -31,7 +31,7 @@ Name: **BLUBRACKET_INTEGRATION_KEY**
 value: BluBracket Integration API key
 
 **Steps to create a BluBracket API token:**
-[https://support.blubracket.com/hc/en-us/articles/4403018405140-Event-and-Alert-APIs](https://support.blubracket.com/hc/en-us/articles/4403018405140-Event-and-Alert-APIs)
+[Intro to BluBracket APIs and API keys](/api/intro-auth-keys/)
 
 ![secrets screenshot](secrets.jpg)
 

@@ -6,13 +6,18 @@ date: 2022-01-12T02:48:57+00:00
 draft: false
 weight: 300
 toc: true
+tags:
+  - free trial
+searchExtraKeywords:
+  - "Getting Started with BluBracket Teams and Enterprise Editions - BluBracket"
+  - "Getting Started with the Free Trial - BluBracket"
 resources:
-- src: three-step-process-sign-up.png
-- src: enter-email-get-started.png
-- src: submit-email-and-get-confirmation-page.png
-- src: getting-to-set-your-blubracket-password.png
-- src: signup6.jpg
-- src: login-blubracket-page.png
+  - src: three-step-process-sign-up.png
+  - src: enter-email-get-started.png
+  - src: submit-email-and-get-confirmation-page.png
+  - src: getting-to-set-your-blubracket-password.png
+  - src: signup6.jpg
+  - src: login-blubracket-page.png
 ---
 {{< youtube m58sAEOG7Ec >}}
 
@@ -54,7 +59,7 @@ Once you have set your password, you are ready to get started with connecting yo
 
 Fill in your email address and password.
 
-**Password Criteria**:
+**Password criteria**:
 
 - Passwords must be at least eight characters.
 - Passwords must include at least one number, a special character or symbol, and one uppercase letter.
@@ -73,6 +78,6 @@ Full details about [how to add a code server are available in the usage guide](h
 
 ## Improve your code security with every commit
 
-1. Add BluBracket to your workflow with the CLI tool, [GitHub Checks (or other CI checks)](https://docs.blubracket.com/api/ci-checks/) so you can identify risks before your next commit.
+1. Add BluBracket to your workflow with the [CLI tool](https://docs.blubracket.com/intro/key-workflows/#preventing-risks-in-code), [GitHub Checks, or other CI checks](https://docs.blubracket.com/intro/key-workflows/#ci-checks) so you can identify risks before your next commit.
 2. Review [existing risks](https://docs.blubracket.com/intro/key-workflows/#understanding-and-taking-action-on-existing-risks) to understand your overall code health and make a plan for what is urgent and what can wait.
 3. Track your security health improvements with every commit.

@@ -6,6 +6,8 @@ date: 2022-01-12T02:48:57+00:00
 draft: false
 weight: 500
 toc: true
+tags:
+  - integrations
 resources:
   - src: blubracket-blocks-secrets-git-pre-commit.pngx
   - src: git-repos-scanned-for-security-risks-by-blubracket.png
@@ -23,7 +25,9 @@ Available local tools and integrations
 
 - [CLI](/how-to/cli)
 - IntelliJ (via CLI, full plugin coming soon)
-- VS Code (via CLI)
+- Visual Studio Code (via CLI)
+
+Usage guide: [installing and using the CLI](/how-to/cli/).
 
 ### Code servers
 
@@ -37,6 +41,8 @@ Certified & supported code servers:
 - Azure DevOps ([contact us for beta]({{< ref contact-support >}}))
 - Gerrit (coming soon)
 
+Usage guide: [adding code servers](/how-to/add-code-servers/).
+
 ### CI servers
 
 {{< figure src="secret-detection-in-github-checks-ci-via-blubracket.png" caption="BluBracket can identify risks in the CI workflow via GitHub Checks and others." >}}
@@ -48,6 +54,8 @@ Certified & supported CI servers:
 - Jenkins
 
 Additional integrations are available via [our open CI API](/api/ci-cd).
+
+Usage guide: [configuring CI checks](/how-to/ci-checks/).
 
 ### Identity, authentication, and authorization
 

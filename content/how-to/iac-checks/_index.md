@@ -1,11 +1,16 @@
 ---
 title: "IaC checks"
-description: "How to setup infrastructure as code (IaC) scanning"
-lead: "How to setup infrastructure as code (IaC) scanning"
+description: "Infrastructure as code (IaC) scanning configuration instructions"
+lead: 
 date: 2022-01-12T02:48:57+00:00
 draft: false
-weight: 200
+weight: 300
 toc: true
+searchExtraKeywords:
+  - "Configuring Infrastructure as Code on GitHub – BluBracket"
+  - "Configuring Infrastructure as Code on Bitbucket – BluBracket"
+  - "Configuring Infrastructure as Code on GitLab – BluBracket"
+  - "How do I configure Infrastructure as Code on my tenant? – BluBracket"
 resources:
   - src:
 ---
