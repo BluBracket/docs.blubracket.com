@@ -19,7 +19,7 @@ resources:
   - src: signup6.jpg
   - src: login-blubracket-page.png
 ---
-{{< youtube ZHLOezVag7I >}}
+{{< youtube m58sAEOG7Ec >}}
 
 Getting started with BluBracket is a three step process: sign up, add a code server, then start improving security. Using our scanning tool, you you find the risks in your code and dig deeper into the information provided.
 
