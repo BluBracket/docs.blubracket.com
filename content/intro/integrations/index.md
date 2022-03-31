@@ -53,7 +53,7 @@ Certified & supported CI servers:
 - Bitbucket Code Insights
 - Jenkins
 
-Additional integrations are available via [our open CI API](/api/ci-cd).
+Additional integrations are available via [our open CI API](/api/ci-checks).
 
 Usage guide: [configuring CI checks](/how-to/ci-checks/).
 
