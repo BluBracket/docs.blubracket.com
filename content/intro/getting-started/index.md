@@ -8,11 +8,11 @@ weight: 300
 toc: true
 tags:
   - free trial
+  - oauth
+  - GitHub
 searchExtraKeywords:
   - "Getting Started with BluBracket Teams and Enterprise Editions - BluBracket"
   - "Getting Started with the Free Trial - BluBracket"
-  - oauth
-  - GitHub
 resources:
   - src: three-step-process-sign-up.png
   - src: login-blubracket-page.png
