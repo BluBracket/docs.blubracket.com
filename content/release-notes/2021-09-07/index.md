@@ -24,7 +24,6 @@ resources:
 
     * ignore.yaml example below will ignore all secrets values for the type aws\_secret\_key
 
-
 `# ignores any secret types below`
 
 `# secret_type == password_assignment OR secret_type == secret_assignment`
@@ -43,12 +42,10 @@ The Enterprise Edition features and bug fixes listed in these release notes also
 
 * Improved Repo selection page when onboarding a new Code Server
 
-
 **Bug Fixes**
 -------------
 
 * Fix page count from erroring out when applying filters
-
 
 **Critical Notifications**
 --------------------------

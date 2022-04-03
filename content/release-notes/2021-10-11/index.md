@@ -9,7 +9,6 @@ resources:
   - src:
 ---
 
-
 ### New Features and Enhancements
 * New public API to return repo scan status
 * Added infinite label filter to support scrolling through all labels.

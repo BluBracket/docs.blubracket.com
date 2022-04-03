@@ -30,7 +30,6 @@ For existing customers, if you would like to utilize the new PII and Non-inclusi
 
 3.  For Non-inclusive Language, create the following regular expressions:
 
-
 * Description: Non-inclusive Language - Master
     Expression: \\b(?i)(master)\\b
     Example: Master
@@ -43,13 +42,11 @@ For existing customers, if you would like to utilize the new PII and Non-inclusi
     Expression: \\b(?i)(blacklist(ed|ing){0,1})\\b
     Example: Blacklist
 
-
 4\. For PII, create the following regular expressions:
 
 * Description: PII - SSN
     Expression: \\b(?P&lt;ssn1&gt;\\d{3})-(?P&lt;ssn2&gt;\\d{2})-(?P&lt;ssn3&gt;\\d{4})\\b
     Example: 123-45-6789
-
 
 Note: you are able to add any additional custom regular expressions, but in order for them to appear in the PII or Non-inclusive Language categories, you must prepend each custom expression Description with either PII - \[any value\] or Non-inclusive Language - \[any value\] (Note: the filter is case sensitive, so you must capitalize as the examples appear).
 
@@ -58,7 +55,6 @@ Example for adding a custom non-inclusive language for the term “whitelist”.
 * Description: Non-inclusive Language - Whitelist
     Expression: \\b(?i)(whitelist(ed|ing){0,1})\\b
     Example: Whitelist
-
 
 In addition to the above, an enhancement was made to rename Code Copies to Code Leaks
 
@@ -74,7 +70,6 @@ The Enterprise Edition features and bug fixes listed in these release notes also
 * CORE-7659 - Fix routing issue with PagerDuty integration
 
 * CORE-7693 - Fix API Key “Last Used” column showing no value
-
 
 **Critical Notifications**
 --------------------------

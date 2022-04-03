@@ -18,7 +18,6 @@ resources:
 
 * Code Leaks details now displays a deep link to the selected leaked file
 
-
 **Free Trial Edition**
 
 The Enterprise Edition features and bug fixes listed in these release notes also apply to the Free Trial Edition.
@@ -33,7 +32,6 @@ The Enterprise Edition features and bug fixes listed in these release notes also
 * CORE-8323 - Fix issue where unable to add internal/external domains to Enterprise Repositories page
 
 * CORE-7905 - Fix slow API response for code leak api /api/publicanalyzer/codecopy/repo
-
 
 **Critical Notifications**
 --------------------------

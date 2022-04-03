@@ -29,7 +29,6 @@ No new features or enhancements added to the Community Edition with this release
 
 * CORE-7408 - Fix sorting issue for Developer column on Alerts and Events page
 
-
 **Critical Notifications**
 --------------------------
 

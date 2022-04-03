@@ -26,24 +26,20 @@ resources:
 
 * For additional information about the CLI tool and other aspects of the Community Edition product, check out the [Getting Started with the Community Edition](https://support.blubracket.com/hc/en-us/sections/360011962771-Getting-Started-with-the-Community-Edition) section of the BluBracket Help Center.
 
-
 **Repository List Table Update**
 
 * Clicking on the repository table now automatically sorts the secrets table by the selected repository. This allows the user to see all of the relevant secrets associated with the repository as well as the secret scores that compose the repo risk score.
 
 * Previously the clicking of any row in the table would expose a slide-out that showed relevant information. We are still determining which is the most helpful to users and would love your feedback. Please drop us a note at [support@blubracket.com](mailto:support@blubracket.com).
 
-
 **Team Edition Links**
 
 * There are a number of areas within the Community Edition interface that you can now sign up for a free trial of the BluBracket Team Edition. By simply clicking on one of these links you will be navigated to the BluBracket web page that will give you more information about the trial and allow you to submit a request for the trial. By default the trial is 14 days, but you can request more time if necessary.
-
 
 **Bug Fixes**
 -------------
 
 * Only minor UI fixes in this release of the Community Edition.
-
 
 **Known Issues and Critical Notifications**
 -------------------------------------------

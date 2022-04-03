@@ -25,7 +25,6 @@ resources:
 
 * CORE-6284 - Issue with GitHub Checks app never completing scan if two users are both monitoring the same repository. This has been fixed.
 
-
 **Critical Notifications**
 --------------------------
 

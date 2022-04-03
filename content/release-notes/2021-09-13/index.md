@@ -32,7 +32,6 @@ resources:
 
         * scan_status is an API that can be used to the scan status of a specified repository
 
-
 **Free Trial Edition**
 
 The Enterprise Edition features and bug fixes listed in these release notes also apply to the Free Trial Edition.
@@ -47,7 +46,6 @@ The Enterprise Edition features and bug fixes listed in these release notes also
 * CORE-7923 - Fixed several multi-select navigation issues
 
 * CORE-7743 - Fix filtering by developer and type returns 0 results
-
 
 **Critical Notifications**
 --------------------------

@@ -37,11 +37,9 @@ resources:
 
     * Client key - e.g. `client_key: 383c8164d4bdd95d8b1bfbf4f540d754 # Informative`
 
-
 **Server to Server Tokens**
 
 * BluBracket now allows the user of server to server tokens when adding code servers. Previously only Personal Access Tokens (PATs) were allowed here.
-
 
 **Community Edition**
 
@@ -61,7 +59,6 @@ No new features or enhancements added to the Community Edition with this release
 * CORE-7349 - Repository filter was not functioning properly in the repository selection screen in code server configurations.
 
 * CORE-7287 - Risk scores that were not fully calculated were always showing up as gray. They now adhere to the normal color scheme which is determined by total score.
-
 
 **Critical Notifications**
 --------------------------

@@ -18,13 +18,11 @@ resources:
 
 * The PCRE library has now been added to the BluBracket regular expression feature. This is an extension to our previous library and will allow users to pattern match more regular expressions than previously.
 
-
 **Community Edition**
 
 **Command Line Interface (CLI) Tool - PII Addition**
 
 * In addition to built-in secrets and custom secrets, CLI does support the ability to define a different group of “secrets” related to PII (Personally Identifiable Information) such as Social Security Numbers (SSN), emails, URLs, IP-addresses, etc. This feature is fully customizable. Out of the box CLI defines several patterns but all can be disabled, or the corresponded action changed. See the [CLI Support page](https://support.blubracket.com/hc/en-us/articles/360058092532-The-BluBracket-Command-Line-Interface-CLI-Tool#TheBluBracketCommandLineInterface(CLI)Tool-PIISecrets) for more detailed information on this feature.
-
 
 **Bug Fixes**
 -------------
@@ -68,7 +66,6 @@ resources:
 * CORE-5441 - Addressed an issue where secrets of the same type in the same line of code are not identified after finding the first one.
 
 * CORE-6523 - Fixed an issue with the first added code server not displaying code copy information.
-
 
 **Critical Notifications**
 --------------------------

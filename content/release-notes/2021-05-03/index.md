@@ -20,7 +20,6 @@ resources:
 
 * **Alert Enabling:** Previous BluBracket determined the events that would be escalated to Alerts. While this was done to focus on the events that BluBracket felt would be the most compelling it quickly became apparent that some other events were very important to some customer workflows and should be escalated as well. As such we have given the tenant administrators the ability to enable alerts for any of the events that we report. In the same location noted above (settings/alerts) the user will see the toggle on the left side of the table that enables the alerts. Once enabled for an event these will show up in the Alerts APIs and under the Alerts tab in the Alerts & Events page of the portal. NOTE: Today these alerts are auto-dismissed in the Alerts table. This is due to some legacy design. It does not affect the APIs but is confusing for those reviewing in the portal. We will shortly update this so that they are not auto-dismissed and will note this in the appropriate release notes.
 
-
 **Community Edition**
 
 No new features or enhancements added to the Community Edition with this release.
@@ -31,7 +30,6 @@ No new features or enhancements added to the Community Edition with this release
 * CORE-6746 - There was an issue with some dismissed alerts displaying the “Dismiss” button instead of the “Reinstate” option.
 
 * CORE-5441 - Fixed the issue with multiple secrets in a single line of code - only the first one found was being reported.
-
 
 **Critical Notifications**
 --------------------------

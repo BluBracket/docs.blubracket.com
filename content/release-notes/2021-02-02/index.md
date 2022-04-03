@@ -22,32 +22,26 @@ resources:
 
 * The Repo Risk Score is an accumulation of the Secret Scores found in a given repository. These numbers are still being refined. We would love your feedback on how these are working for you. Let us know. support@blubracket.com
 
-
 **Command Line Interface (CLI) Tool**
 
 * The BluBracket Command Line Interface (CLI) Tool is a downloadable application that developers can run on their devices to catch secrets before they are committed to a repository. The tool leverages pre-commit hooks and will identify any of the 50+ tokens, keys and IDs as well as passwords and regular expressions. The tool can be downloaded from the main portal page. For more information check out the extensive documentation within the [Getting Started with the Community Edition](https://support.blubracket.com/hc/en-us/sections/360011962771-Getting-Started-with-the-Community-Edition) section of the BluBracket Help Center.
-
 
 **Community Edition Settings Page**
 
 * In our initial release we made the settings page available for beta users and we have now exposed this to all Community Edition users. This page allows users to modify the organization and repositories within the organization as well as the capability to generate an API key to leverage the BluBracket CICD and Events/Alerts APIs.
 
-
 **UI Improvements**
 
 * We have swapped the repository and secrets tables. As you will notice the secrets table is now on the bottom of the main portal page, and the repository table is at the top. This is to better highlight the Repository Risk Score, which is intended to be the main focus of the main portal page.
-
 
 **Community Edition Tour**
 
 * Since the last release at tour of the main portal page has been added to explain all of the feature. This tour will only be displayed on the first visit to the portal within a given browser but can be accessed at any time from the support “?” menu at the top right of the main portal page.
 
-
 **Bug Fixes**
 -------------
 
 * Only minor UI fixes in this release of the Community Edition.
-
 
 **Known Issues and Critical Notifications**
 -------------------------------------------

@@ -18,26 +18,21 @@ resources:
 
 * The BluPrint page now contains a new table that displays the most risky repos that are currently being monitored. The repository with the highest risk score is at the top of the list, descending to the 100th highest at the bottom. The Alert tiles have been moved to just below this table and are now, by default, in a collapsed state.
 
-
 **Repository URL in web hook events**
 
 * Now showing the repository name and repository URL in the details of web hook events.
-
 
 **Organization Column in Contribution Table**
 
 * The contribution table in the developer details page now contains a column for the associated organization.
 
-
 **Additional Password Variations**
 
 * The following variations on the left hand side of any password equation have been added to the list of identified secrets: PSWRD, PWRD and PSWD. As we identify more of these types of variations on password and credential words we will add them to the list.
 
-
 **Google API and Calendar Keys**
 
 * Due to the high number of instances where customers have requested that these be ignored, BluBracket now filters out both Google API and calendar keys. We would love to hear your feedback on this as well.
-
 
 **Community Edition**
 
@@ -83,7 +78,6 @@ No new features or enhancements added to the Community Edition with this release
 * CORE-6847 - Time filter behaves erratically when manually entering dates. Fixed.
 
 * CORE-6125 - Secrets starting with “$” were previously not being detected. Fixed.
-
 
 **Critical Notifications**
 --------------------------
