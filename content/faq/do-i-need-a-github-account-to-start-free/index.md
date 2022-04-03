@@ -16,6 +16,6 @@ resources:
   - src:
 ---
 
-A GitHub account is required to create a free account with BluBracket. 
+A GitHub account is required to create a free account with BluBracket.
 
 Additional users can be added to an account via email.
