@@ -13,7 +13,7 @@ resources:
 
 * **New Repo Details Design**. When clicking on a Repository, you will now see a new design that lists the risk rating and number of violations for each risk category. Clicking on the violations number will provide a filter view of all violations of that risk category type.
 
-    ![](file.png)
+    ![BluBracket repo details](file.png)
 
 * The terminology “Alerts” has been replaced with “All Violations”, which is a new tab next to Code Risks at top of screen.
 

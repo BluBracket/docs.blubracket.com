@@ -18,13 +18,13 @@ resources:
 
 * Within the repository details page the Code Risks tab now indicates the level of risk associated with any of the risk categories that BluBracket could potentially be identifying. As seen in the screenshot below, all categories are designated with a High/Medium/Low indicator and the number of violations associated with the risk category type. Clicking risk category type will navigate the user to a list view of the violations.
 
-* ![](categories.png)
+* ![BluBracket risk categories](categories.png)
 
 ### Access Table in Repo Details
 
 * The Access tab in the repository details page has been updated to include a permissions column and icons to indicate the type of user that has access to the repository.
 
-* ![](access.png)
+* ![BluBracket access report](access.png)
 
 ### Secret Scan Updates
 

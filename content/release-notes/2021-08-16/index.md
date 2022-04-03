@@ -17,7 +17,7 @@ New Code Risks Categories
 
 BluBracket has added two additional Risk Categories to the repo detail view, PII and Non-inclusive language!
 
-![](file.png)
+![BluBracket risk categories](file.png)
 
 All newly created tenants will automatically have three Non-inclusive language regular expressions configured (blacklist, slave, master) and one PII regular expression for social security numbers.
 
