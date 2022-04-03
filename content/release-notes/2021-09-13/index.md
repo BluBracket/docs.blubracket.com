@@ -25,11 +25,11 @@ resources:
 
   * /api/public/blubracket-ignore
 
-      * blubracket-ignore is an API that can be used to globally ignore secret types or secret values. For example, you may want to ignore any passwords that have the value of “password”. Ignore means an event will be created, but not an alert for that secret.
+    * blubracket-ignore is an API that can be used to globally ignore secret types or secret values. For example, you may want to ignore any passwords that have the value of “password”. Ignore means an event will be created, but not an alert for that secret.
 
   * /api/public/repo/scan_status
 
-      * scan_status is an API that can be used to the scan status of a specified repository
+    * scan_status is an API that can be used to the scan status of a specified repository
 
 ### Free Trial Edition
 
