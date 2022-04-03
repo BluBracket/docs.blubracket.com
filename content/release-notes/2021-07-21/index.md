@@ -10,7 +10,6 @@ resources:
 ---
 
 ### New Features and Enhancements
----------------------------------
 
 ### Enterprise Edition
 
@@ -21,7 +20,6 @@ No new features or enhancements added to the Enterprise Edition with this releas
 No new features or enhancements added to the Community Edition with this release.
 
 ### Bug Fixes
--------------
 
 * CORE-7410 - Fix filtering issue when attempting to filter for a value that does not exist. Now returns “no events found” instead of returning all results.
 
@@ -30,7 +28,6 @@ No new features or enhancements added to the Community Edition with this release
 * CORE-7408 - Fix sorting issue for Developer column on Alerts and Events page
 
 ### Critical Notifications
---------------------------
 
 * **Unsupported Languages**
 

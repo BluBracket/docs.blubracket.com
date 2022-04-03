@@ -10,7 +10,6 @@ resources:
 ---
 
 ### New Features and Enhancements
----------------------------------
 
 ### Enterprise Edition
 
@@ -63,7 +62,6 @@ In addition to the above, an enhancement was made to rename Code Copies to Code 
 The Enterprise Edition features and bug fixes listed in these release notes also apply to the Free Trial Edition.
 
 ### Bug Fixes
--------------
 
 * CORE-7654 - Fix regular expression fields from disappearing in UI view until page was refreshed when an edit was made
 
@@ -72,7 +70,6 @@ The Enterprise Edition features and bug fixes listed in these release notes also
 * CORE-7693 - Fix API Key “Last Used” column showing no value
 
 ### Critical Notifications
---------------------------
 
 * **Unsupported Languages**
 

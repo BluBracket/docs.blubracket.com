@@ -10,7 +10,6 @@ resources:
 ---
 
 ### New Features and Enhancements
----------------------------------
 
 * Access Risk Categories now links to appropriate alerts in the repo details page.
 
@@ -43,12 +42,10 @@ The Enterprise Edition features and bug fixes listed in these release notes also
 * Improved Repo selection page when onboarding a new Code Server
 
 ### Bug Fixes
--------------
 
 * Fix page count from erroring out when applying filters
 
 ### Critical Notifications
---------------------------
 
 * **Unsupported Languages**
 

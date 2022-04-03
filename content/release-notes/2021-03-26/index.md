@@ -10,7 +10,6 @@ resources:
 ---
 
 ### New Features and Enhancements
----------------------------------
 
 ### Enterprise Edition
 
@@ -33,7 +32,6 @@ resources:
 * A link to the BluBracket terms and conditions has been added to the bottom of the tenant portal. These terms and conditions have always been available in the BluBracket website and contracts but have been added here to make them easier to access.
 
 ### Bug Fixes
--------------
 
 * CORE-6122 - Filters were previously not working in the Community Edition portal with repositories stared with numerical text. This has been addressed.
 
@@ -46,7 +44,6 @@ resources:
 * CORE-6121 - Sorting by date was displayed incorrectly in the Community Edition interface. This has been fixed.
 
 ### Critical Notifications
---------------------------
 
 * **Unsupported Languages**
 

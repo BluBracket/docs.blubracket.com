@@ -10,7 +10,6 @@ resources:
 ---
 
 ### New Features
-----------------
 
 ### Command Line Interface (CLI) Tool Enhancements
 
@@ -37,11 +36,9 @@ resources:
 * There are a number of areas within the Community Edition interface that you can now sign up for a free trial of the BluBracket Team Edition. By simply clicking on one of these links you will be navigated to the BluBracket web page that will give you more information about the trial and allow you to submit a request for the trial. By default the trial is 14 days, but you can request more time if necessary.
 
 ### Bug Fixes
--------------
 
 * Only minor UI fixes in this release of the Community Edition.
 
 ### Known Issues and Critical Notifications
--------------------------------------------
 
 * There are no known issues or notifications at this time.

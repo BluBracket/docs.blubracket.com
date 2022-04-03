@@ -10,7 +10,6 @@ resources:
 ---
 
 ### New Features and Enhancements
----------------------------------
 
 ### Enterprise Edition
 
@@ -39,7 +38,6 @@ resources:
 No new features or enhancements added to the Community Edition with this release.
 
 ### Bug Fixes
--------------
 
 * CORE-7114 - Back button in the portal is not navigating correctly in some instances. Fixed.
 
@@ -80,7 +78,6 @@ No new features or enhancements added to the Community Edition with this release
 * CORE-6125 - Secrets starting with “$” were previously not being detected. Fixed.
 
 ### Critical Notifications
---------------------------
 
 * **Unsupported Languages**
 

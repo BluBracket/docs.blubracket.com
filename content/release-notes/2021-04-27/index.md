@@ -10,7 +10,6 @@ resources:
 ---
 
 ### New Features and Enhancements
----------------------------------
 
 ### Enterprise Edition
 
@@ -25,7 +24,6 @@ resources:
 * In addition to built-in secrets and custom secrets, CLI does support the ability to define a different group of “secrets” related to PII (Personally Identifiable Information) such as Social Security Numbers (SSN), emails, URLs, IP-addresses, etc. This feature is fully customizable. Out of the box CLI defines several patterns but all can be disabled, or the corresponded action changed. See the [CLI Support page](https://support.blubracket.com/hc/en-us/articles/360058092532-The-BluBracket-Command-Line-Interface-CLI-Tool#TheBluBracketCommandLineInterface(CLI)Tool-PIISecrets) for more detailed information on this feature.
 
 ### Bug Fixes
--------------
 
 * CORE-5543 - Error thrown on the repository contribution table in some instances when selected. Has been addressed.
 
@@ -68,7 +66,6 @@ resources:
 * CORE-6523 - Fixed an issue with the first added code server not displaying code copy information.
 
 ### Critical Notifications
---------------------------
 
 * **Unsupported Languages**
 

@@ -10,7 +10,6 @@ resources:
 ---
 
 ### New Features and Enhancements
----------------------------------
 
 * **New Repo Details Design**. When clicking on a Repository, you will now see a new design that lists the risk rating and number of violations for each risk category. Clicking on the violations number will provide a filter view of all violations of that risk category type.
 
@@ -37,7 +36,6 @@ resources:
 The Enterprise Edition features and bug fixes listed in these release notes also apply to the Free Trial Edition.
 
 ### Bug Fixes
--------------
 
 * CORE-7770-Repos not showing up right away in Monitored Repo Select Screen
 
@@ -48,7 +46,6 @@ The Enterprise Edition features and bug fixes listed in these release notes also
 * CORE-7743 - Fix filtering by developer and type returns 0 results
 
 ### Critical Notifications
---------------------------
 
 * **Unsupported Languages**
 

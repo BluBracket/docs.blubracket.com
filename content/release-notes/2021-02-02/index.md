@@ -10,7 +10,6 @@ resources:
 ---
 
 ### New Features
-----------------
 
 ### Repo Risk Score and Secret Risk Score
 
@@ -39,12 +38,10 @@ resources:
 * Since the last release at tour of the main portal page has been added to explain all of the feature. This tour will only be displayed on the first visit to the portal within a given browser but can be accessed at any time from the support “?” menu at the top right of the main portal page.
 
 ### Bug Fixes
--------------
 
 * Only minor UI fixes in this release of the Community Edition.
 
 ### Known Issues and Critical Notifications
--------------------------------------------
 
 * **Filters and Sorting**
 

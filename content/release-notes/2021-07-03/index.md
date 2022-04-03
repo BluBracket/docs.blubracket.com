@@ -11,7 +11,6 @@ resources:
 ---
 
 ### New Features and Enhancements
----------------------------------
 
 ### Enterprise Edition
 
@@ -46,7 +45,6 @@ resources:
 No new features or enhancements added to the Community Edition with this release.
 
 ### Bug Fixes
--------------
 
 * CORE-7303 - Owners column was incorrectly rendering on the repository list view.
 
@@ -61,7 +59,6 @@ No new features or enhancements added to the Community Edition with this release
 * CORE-7287 - Risk scores that were not fully calculated were always showing up as gray. They now adhere to the normal color scheme which is determined by total score.
 
 ### Critical Notifications
---------------------------
 
 * **Unsupported Languages**
 

@@ -10,7 +10,6 @@ resources:
 ---
 
 ### New Features and Enhancements
----------------------------------
 
 ### Enterprise Edition
 
@@ -25,14 +24,12 @@ resources:
 No new features or enhancements added to the Community Edition with this release.
 
 ### Bug Fixes
--------------
 
 * CORE-6746 - There was an issue with some dismissed alerts displaying the “Dismiss” button instead of the “Reinstate” option.
 
 * CORE-5441 - Fixed the issue with multiple secrets in a single line of code - only the first one found was being reported.
 
 ### Critical Notifications
---------------------------
 
 * **Unsupported Languages**
 

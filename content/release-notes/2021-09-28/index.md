@@ -10,7 +10,6 @@ resources:
 ---
 
 ### New Features and Enhancements
----------------------------------
 
 * Additional checks performed when user adds new code server. We now identify and show a message if the user does not have adequate organization level permissions, even if the Personal Access Token does have required permissions. Inadequate user permissions will result in incomplete repo risk calculations.
 
@@ -23,7 +22,6 @@ resources:
 The Enterprise Edition features and bug fixes listed in these release notes also apply to the Free Trial Edition.
 
 ### Bug Fixes
--------------
 
 * CORE-8075 Repos not showing up right away in Monitored Repo Select Screen
 
@@ -34,7 +32,6 @@ The Enterprise Edition features and bug fixes listed in these release notes also
 * CORE-7905 - Fix slow API response for code leak api /api/publicanalyzer/codecopy/repo
 
 ### Critical Notifications
---------------------------
 
 * **Unsupported Languages**
 

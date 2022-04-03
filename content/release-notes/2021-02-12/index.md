@@ -10,7 +10,6 @@ resources:
 ---
 
 ### New Features
-----------------
 
 ### Repo Details Slide Out
 
@@ -31,7 +30,6 @@ resources:
 * All support documentation is now directly linked to the BluBracket Help Center. This still allows the end users to focus on the desired information as well as quick access to other related documentation.
 
 ### Bug Fixes
--------------
 
 * Repository Sorting - this now sorts correctly by Repo Risk Score (high to low) by default
 
@@ -40,6 +38,5 @@ resources:
 * Minor UI fixes within the portal interface
 
 ### Known Issues and Critical Notifications
--------------------------------------------
 
 * **No known issues at this time**

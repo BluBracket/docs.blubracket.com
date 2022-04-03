@@ -10,12 +10,10 @@ resources:
 ---
 
 ### New Features and Enhancements
----------------------------------
 
 ### No new features in this release.
 
 ### Bug Fixes
--------------
 
 * CORE-6128 - CE - Incorrect count being displayed for duplicate alerts. Has been addressed.
 
@@ -26,7 +24,6 @@ resources:
 * CORE-6284 - Issue with GitHub Checks app never completing scan if two users are both monitoring the same repository. This has been fixed.
 
 ### Critical Notifications
---------------------------
 
 * **Unsupported Languages**
 
