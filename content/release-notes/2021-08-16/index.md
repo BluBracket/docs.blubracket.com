@@ -9,10 +9,10 @@ resources:
   - src: file.png
 ---
 
-**New Features and Enhancements**
+### New Features and Enhancements
 ---------------------------------
 
-**Enterprise Edition**
+### Enterprise Edition
 
 New Code Risks Categories
 
@@ -58,11 +58,11 @@ Example for adding a custom non-inclusive language for the term “whitelist”.
 
 In addition to the above, an enhancement was made to rename Code Copies to Code Leaks
 
-**Free Trial Edition**
+### Free Trial Edition
 
 The Enterprise Edition features and bug fixes listed in these release notes also apply to the Free Trial Edition.
 
-**Bug Fixes**
+### Bug Fixes
 -------------
 
 * CORE-7654 - Fix regular expression fields from disappearing in UI view until page was refreshed when an edit was made
@@ -71,13 +71,13 @@ The Enterprise Edition features and bug fixes listed in these release notes also
 
 * CORE-7693 - Fix API Key “Last Used” column showing no value
 
-**Critical Notifications**
+### Critical Notifications
 --------------------------
 
 * **Unsupported Languages**
 
-    * Note that BluBracket is not currently able to identify and alert on secrets in languages that do not use traditional assignment operators (Lisp, Scheme and Clojure for example).
+  * Note that BluBracket is not currently able to identify and alert on secrets in languages that do not use traditional assignment operators (Lisp, Scheme and Clojure for example).
 
 * **GitHub Payload Cap**
 
-    * GitHub payloads are capped at 25 MB. If your event generates a larger payload, a webhook will not be fired which means that BluBracket will not be able to identify the event. This may happen, for example, on a create event if many branches or tags are pushed at once. We suggest monitoring your payload size to ensure delivery. Please refer to the following GitHub document: [https://developer.github.com/webhooks/#payloads](https://developer.github.com/webhooks/#payloads).
+  * GitHub payloads are capped at 25 MB. If your event generates a larger payload, a webhook will not be fired which means that BluBracket will not be able to identify the event. This may happen, for example, on a create event if many branches or tags are pushed at once. We suggest monitoring your payload size to ensure delivery. Please refer to the following GitHub document: [https://developer.github.com/webhooks/#payloads](https://developer.github.com/webhooks/#payloads).

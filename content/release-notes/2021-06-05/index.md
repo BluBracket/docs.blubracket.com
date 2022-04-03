@@ -9,36 +9,36 @@ resources:
   - src:
 ---
 
-**New Features and Enhancements**
+### New Features and Enhancements
 ---------------------------------
 
-**Enterprise Edition**
+### Enterprise Edition
 
-**High Risks**
+### High Risks
 
 * The BluPrint page now contains a new table that displays the most risky repos that are currently being monitored. The repository with the highest risk score is at the top of the list, descending to the 100th highest at the bottom. The Alert tiles have been moved to just below this table and are now, by default, in a collapsed state.
 
-**Repository URL in web hook events**
+### Repository URL in web hook events
 
 * Now showing the repository name and repository URL in the details of web hook events.
 
-**Organization Column in Contribution Table**
+### Organization Column in Contribution Table
 
 * The contribution table in the developer details page now contains a column for the associated organization.
 
-**Additional Password Variations**
+### Additional Password Variations
 
 * The following variations on the left hand side of any password equation have been added to the list of identified secrets: PSWRD, PWRD and PSWD. As we identify more of these types of variations on password and credential words we will add them to the list.
 
-**Google API and Calendar Keys**
+### Google API and Calendar Keys
 
 * Due to the high number of instances where customers have requested that these be ignored, BluBracket now filters out both Google API and calendar keys. We would love to hear your feedback on this as well.
 
-**Community Edition**
+### Community Edition
 
 No new features or enhancements added to the Community Edition with this release.
 
-**Bug Fixes**
+### Bug Fixes
 -------------
 
 * CORE-7114 - Back button in the portal is not navigating correctly in some instances. Fixed.
@@ -79,13 +79,13 @@ No new features or enhancements added to the Community Edition with this release
 
 * CORE-6125 - Secrets starting with “$” were previously not being detected. Fixed.
 
-**Critical Notifications**
+### Critical Notifications
 --------------------------
 
 * **Unsupported Languages**
 
-    * Note that BluBracket is not currently able to identify and alert on secrets in languages that do not use traditional assignment operators (Lisp, Scheme and Clojure for example).
+  * Note that BluBracket is not currently able to identify and alert on secrets in languages that do not use traditional assignment operators (Lisp, Scheme and Clojure for example).
 
 * **GitHub Payload Cap**
 
-    * GitHub payloads are capped at 25 MB. If your event generates a larger payload, a webhook will not be fired which means that BluBracket will not be able to identify the event. This may happen, for example, on a create event if many branches or tags are pushed at once. We suggest monitoring your payload size to ensure delivery. Please refer to the following GitHub document: [https://developer.github.com/webhooks/#payloads](https://developer.github.com/webhooks/#payloads).
+  * GitHub payloads are capped at 25 MB. If your event generates a larger payload, a webhook will not be fired which means that BluBracket will not be able to identify the event. This may happen, for example, on a create event if many branches or tags are pushed at once. We suggest monitoring your payload size to ensure delivery. Please refer to the following GitHub document: [https://developer.github.com/webhooks/#payloads](https://developer.github.com/webhooks/#payloads).

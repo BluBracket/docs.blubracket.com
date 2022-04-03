@@ -9,22 +9,22 @@ resources:
   - src:
 ---
 
-**New Features and Enhancements**
+### New Features and Enhancements
 ---------------------------------
 
-**Enterprise Edition**
+### Enterprise Edition
 
-**PCRE Library**
+### PCRE Library
 
 * The PCRE library has now been added to the BluBracket regular expression feature. This is an extension to our previous library and will allow users to pattern match more regular expressions than previously.
 
-**Community Edition**
+### Community Edition
 
-**Command Line Interface (CLI) Tool - PII Addition**
+### Command Line Interface (CLI) Tool - PII Addition
 
 * In addition to built-in secrets and custom secrets, CLI does support the ability to define a different group of “secrets” related to PII (Personally Identifiable Information) such as Social Security Numbers (SSN), emails, URLs, IP-addresses, etc. This feature is fully customizable. Out of the box CLI defines several patterns but all can be disabled, or the corresponded action changed. See the [CLI Support page](https://support.blubracket.com/hc/en-us/articles/360058092532-The-BluBracket-Command-Line-Interface-CLI-Tool#TheBluBracketCommandLineInterface(CLI)Tool-PIISecrets) for more detailed information on this feature.
 
-**Bug Fixes**
+### Bug Fixes
 -------------
 
 * CORE-5543 - Error thrown on the repository contribution table in some instances when selected. Has been addressed.
@@ -67,13 +67,13 @@ resources:
 
 * CORE-6523 - Fixed an issue with the first added code server not displaying code copy information.
 
-**Critical Notifications**
+### Critical Notifications
 --------------------------
 
 * **Unsupported Languages**
 
-    * Note that BluBracket is not currently able to identify and alert on secrets in languages that do not use traditional assignment operators (Lisp, Scheme and Clojure for example).
+  * Note that BluBracket is not currently able to identify and alert on secrets in languages that do not use traditional assignment operators (Lisp, Scheme and Clojure for example).
 
 * **GitHub Payload Cap**
 
-    * GitHub payloads are capped at 25 MB. If your event generates a larger payload, a webhook will not be fired which means that BluBracket will not be able to identify the event. This may happen, for example, on a create event if many branches or tags are pushed at once. We suggest monitoring your payload size to ensure delivery. Please refer to the following GitHub document: [https://developer.github.com/webhooks/#payloads](https://developer.github.com/webhooks/#payloads).
+  * GitHub payloads are capped at 25 MB. If your event generates a larger payload, a webhook will not be fired which means that BluBracket will not be able to identify the event. This may happen, for example, on a create event if many branches or tags are pushed at once. We suggest monitoring your payload size to ensure delivery. Please refer to the following GitHub document: [https://developer.github.com/webhooks/#payloads](https://developer.github.com/webhooks/#payloads).
