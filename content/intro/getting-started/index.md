@@ -15,6 +15,7 @@ searchExtraKeywords:
   - "Getting Started with the Free Trial - BluBracket"
 resources:
   - src: three-step-process-sign-up.png
+  - src: github-oauth.png
   - src: login-blubracket-page.png
 ---
 
@@ -29,6 +30,10 @@ Getting started with BluBracket is a three step process:
 To start using BluBracket for free, visit [our signup page](https://blubracket.com/contact/get-started/) and click the **call to action** button.
 
 {{< figure src="three-step-process-sign-up.png" caption="Begin your three-step process by clicking the call to action. ">}}
+
+Then approve the GitHub OAuth request.
+
+{{< figure src="github-oauth.png" caption="Accept the GitHub OAuth request. ">}}
 
 After authenticating and approving the permissions to sign in with GitHub, we'll create a free account for you.
 
