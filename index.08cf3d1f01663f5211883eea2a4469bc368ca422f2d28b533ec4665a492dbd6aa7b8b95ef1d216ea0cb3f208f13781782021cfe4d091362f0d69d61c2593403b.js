@@ -282,6 +282,30 @@ Source:
       .add(
       {
         id: 12,
+        href: "/faq/what-does-blubracket-do-with-my-data/",
+        title: "How does BluBracket use my data?",
+        description: "First and foremost, BluBracket is committed to helping customers improve security. To that end, we minimize the data we have access to, minimize the data we store, and delete code and secrets from BluBracket systems after processing is complete.\nBluBracket only stores metadata about your code and git servers, and uses cryptographic hashes to track and compare files and secrets across different contexts—BluBracket never stores sensitive data after processing.\nThis metadata is retained exclusively for your use on our platform, and is deleted upon termination.",
+        
+          
+            
+          
+            
+          
+            
+          
+        
+        
+          
+            
+          
+        
+        
+        content: "data usagepolicyprivacyFirst and foremost, BluBracket is committed to helping customers improve security. To that end, we minimize the data we have access to, minimize the data we store, and delete code and secrets from BluBracket systems after processing is complete.\nBluBracket only stores metadata about your code and git servers, and uses cryptographic hashes to track and compare files and secrets across different contexts—BluBracket never stores sensitive data after processing.\nThis metadata is retained exclusively for your use on our platform, and is deleted upon termination.\nBluBracket uses your data to provide services to you # We use your data to deliver the services you request of us, including providing notifications and alerts about security issues in your code. All customer data is deleted upon termination, and BluBracket minimizes the data we can access and collect as described above.\nBluBracket uses data to measure, analyze, and improve the accuracy of our services to you # We use the information we have to measure and improve the effectiveness of our services to you. Additionally, we may combine that data in aggregate and anonymous form to understand and report on trends, and to optimize services for all.\n"
+        
+      })
+      .add(
+      {
+        id: 13,
         href: "/faq/how-long-does-it-take-to-scan-new-commits/",
         title: "How long does it take for BB to scan new commits?",
         description: "The time it takes for BluBracket to scan new commits depends on the size of the commit. In most cases though the scan is perceived as immediate.",
@@ -301,7 +325,7 @@ Source:
       })
       .add(
       {
-        id: 13,
+        id: 14,
         href: "/api/intro-auth-keys/",
         title: "Intro to BluBracket APIs and API keys",
         description: "How to access and use the BluBracket API.",
@@ -317,7 +341,7 @@ Source:
       })
       .add(
       {
-        id: 14,
+        id: 15,
         href: "/intro/",
         title: "Introduction to BluBracket ",
         description: "",
@@ -329,7 +353,7 @@ Source:
       })
       .add(
       {
-        id: 15,
+        id: 16,
         href: "/faq/what-can-i-do-with-blubracket-apis/",
         title: "What can I do with BluBracket APIs?",
         description: "Use BluBracket APIs to integrate with your CI/DC solution. This will help make sure that there are no secrets accidentally checked in to code by any of your team members.\nYou may also leverage BluBracket APIs to export secret found events to other systems in addition to our support for Slack, Splunk, and others.",
@@ -345,7 +369,7 @@ Source:
       })
       .add(
       {
-        id: 16,
+        id: 17,
         href: "/faq/what-can-i-do-with-the-free-trial/",
         title: "What can I do with the free trial?",
         description: "The free trial has all the features of the BluBracket Teams Edition, including:\n Risk detection for secrets, PII, non-inclusive language, and infrastructure-as-code, as well as git access and configuration Workflow support from pre-commit through historical risk remediation  Those tools can help you:\n Understand your overall code health and see the areas of highest risk Implement workflows to stop new risks from getting into code Monitor your code health and watch it improve with every commit  These docs walk through the sign-up process.",
@@ -361,7 +385,7 @@ Source:
       })
       .add(
       {
-        id: 17,
+        id: 18,
         href: "/faq/what-does-the-cli-tool-do/",
         title: "What does the BluBracket CLI tool do?",
         description: "The BluBracket CLI tool provides a number of developer conveniences, and is optimized to check for the following at git pre-commit:\n Secrets:the tool identifies hundreds of types of tokens, keys, IDs as well as passwords. Non-inclusive language: the tool identifies non-inclusive language like master, slave, dummy, and blacklist. Custom RegEx: you can configure your own regular expressions that the tool will identify and alert on. Commit Signing:the CLI can check that the commit is going to be signed or not.",
@@ -383,7 +407,7 @@ Source:
       })
       .add(
       {
-        id: 18,
+        id: 19,
         href: "/faq/what-permissions-do-you-require/",
         title: "What GitHub permissions does the BluBracket app require?",
         description: "When you authenticate into BluBracket using GitHub Oauth you will see and approve the following permissions:\n Read access to administration, code, members, metadata, organization administration, and pull requests Read and write access to checks, organization hooks, and repository hooks  These permissions allow BluBracket to monitor the repositories that you select and present you with any secrets found as well as contributor/commit information.",
@@ -401,7 +425,7 @@ Source:
       })
       .add(
       {
-        id: 19,
+        id: 20,
         href: "/faq/what-happens-when-my-free-trial-runs-out/",
         title: "What happens when my free trial runs out?",
         description: "If your free trial expires, it will automatically convert to our BluBracket Community Edition, a completely free product with the most-used features of our Team and Enterprise editions.\nBluBracket Community Edition is free to use with no time limits.",
@@ -417,7 +441,7 @@ Source:
       })
       .add(
       {
-        id: 20,
+        id: 21,
         href: "/faq/supported-ide/",
         title: "What IDEs are supported by the CLI tool?",
         description: "In our testing, any IDE (integrated developer environment) with built-in support for git and pre-commit hooks supports supports the feedback and alerts from the BluBracket CLI tool.\nBluBracket officially supports the following IDEs:\n IntelliJ VS Code  ",
@@ -435,7 +459,7 @@ Source:
       })
       .add(
       {
-        id: 21,
+        id: 22,
         href: "/faq/what-if-i-need-more-time-for-my-free-trial/",
         title: "What if I need more time for my free trial?",
         description: "Just ask and we\u0026rsquo;ll extend your free trial!\nOur goal is to build a product you want to use because it provides value to you. If you need more time, we\u0026rsquo;ll gladly help.\nContact our customer success team here.",
@@ -451,7 +475,7 @@ Source:
       })
       .add(
       {
-        id: 22,
+        id: 23,
         href: "/intro/what-is-blubracket/",
         title: "What is BluBracket?",
         description: "BluBracket is a code and git security suite that identifies risks in your code, monitors who and what has access to your code, and tracks where your code goes outside your git repos.\n  BluBracket use-cases #  Identifying, preventing, and removing risks in code  Secrets Personally identifiable information (PII) Non-inclusive language (NIL) Infrastructure-as-code (IAC) risks   Monitoring who and what has access to your code Monitoring where your code goes  Who is BluBracket for?",
@@ -463,7 +487,7 @@ Source:
       })
       .add(
       {
-        id: 23,
+        id: 24,
         href: "/faq/what-kinds-of-secrets-do-you-search-for/",
         title: "What kinds of secrets does BluBracket search for?",
         description: "What we can find and how we find it.",
@@ -483,7 +507,7 @@ Source:
       })
       .add(
       {
-        id: 24,
+        id: 25,
         href: "/faq/what-sensitive-words-does-you-search-for/",
         title: "What non-inclusive language does the BluBracket search for?",
         description: "It has become increasingly important lately to make sure specific sensitive words are not included in code or documentation. These would be words like: master, slave, dummy, blacklist, etc. Just as with secrets, the BluBracket code scanner and CLI tool automatically search for these sensitive words and notifies the developer before they are committed to repositories.\nExample non-inclusive language includes the following words:\n master slave whitelist blacklist whitebox blackbox whitehat blackhat  Let us know if there are any others that you or your company think should be added to the list.",
@@ -505,7 +529,7 @@ Source:
       })
       .add(
       {
-        id: 25,
+        id: 26,
         href: "/faq/cli-supported-platforms/",
         title: "What platforms are supported by the BluBracket CLI tool?",
         description: "The BluBracket CLI tool is supported on the following platforms:\n Mac OSX 10.12 and later Linux  Alpine 5 and later Ubuntu 16.04 and later CentOS 7 and later   Windows 10  ",
@@ -527,7 +551,7 @@ Source:
       })
       .add(
       {
-        id: 26,
+        id: 27,
         href: "/faq/what-repositories-can-i-monitor/",
         title: "What repositories can I monitor?",
         description: "BluBracket can monitor any repositories on a supported code server that you have access to. Fully supported code servers include cloud and enterprise versions of:\n GitHub GitLab Bitbucket  Support for additional code servers is in development, and may be available in private beta.\nOn GitHub, for example, you can monitor repos in your personal GitHub org as well as company/group orgs where you have permission to add apps.",
@@ -547,7 +571,7 @@ Source:
       })
       .add(
       {
-        id: 27,
+        id: 28,
         href: "/faq/why-should-i-use-blubracket-discover-secrets/",
         title: "Why should I use the BluBracket to discover secrets in code when there are so many other tools available?",
         description: "Best in class secret detection # Testing demonstrates that BluBracket can identify more tokens, keys and IDs than the other tools. Additionally, it supports user-defined custom patterns so you can match whatever is important to you.\nFewest false positives # Expansive detection is critical to ensuring secrets are found, but BluBracket’s rules engine also actively eliminates potential false positives allowing developers to focus on the most important findings.\nComprehensive threat detection # In addition to secrets, BluBracket scans for the following risks in code:",
@@ -567,7 +591,7 @@ Source:
       })
       .add(
       {
-        id: 28,
+        id: 29,
         href: "/how-to/cli/installation/",
         title: "CLI tool installation",
         description: "Instructions to install the CLI tool for Windows, macOS, and Linux",
@@ -579,7 +603,7 @@ Source:
       })
       .add(
       {
-        id: 29,
+        id: 30,
         href: "/how-to/cli/using-cli/",
         title: "Using the CLI tool",
         description: "Details about how to use the CLI tool.",
@@ -591,7 +615,7 @@ Source:
       })
       .add(
       {
-        id: 30,
+        id: 31,
         href: "/how-to/code-servers/add-code-servers/",
         title: "Adding code servers",
         description: "How to add code servers to your tenant",
@@ -603,7 +627,7 @@ Source:
       })
       .add(
       {
-        id: 31,
+        id: 32,
         href: "/intro/use-cases/",
         title: "BluBracket use-cases",
         description: "Risks BluBracket solves and how.",
@@ -621,7 +645,7 @@ Source:
       })
       .add(
       {
-        id: 32,
+        id: 33,
         href: "/how-to/cli/",
         title: "CLI tool",
         description: "How to install and use the BluBracket CLI Tool.",
@@ -637,7 +661,7 @@ Source:
       })
       .add(
       {
-        id: 33,
+        id: 34,
         href: "/how-to/code-servers/",
         title: "Code servers",
         description: "Code lives in git repos, and git repos are hosted by code servers. Most git hosting providers structure git repos into collections such as GitHub\u0026rsquo;s Organizations and Bitbucket\u0026rsquo;s Workspaces. In BluBracket, each of those collections is a separate code server.\nSupported code servers in BluBracket #    GitHub GitLab Bitbucket Azure DevOps     Cloud \u0026amp; Enterprise Cloud \u0026amp; on-prem Cloud \u0026amp; Server Cloud   Supported access \u0026amp; configuration risks Supported access \u0026amp; configuration risks Access \u0026amp; configuration risks not supported Access \u0026amp; configuration risks not supported   GitHub Checks      Adding a GitHub code server Adding a GitLab code server Adding a Bitbucket code server Adding an Azure DevOps code server    ",
@@ -649,7 +673,7 @@ Source:
       })
       .add(
       {
-        id: 34,
+        id: 35,
         href: "/how-to/ignore-rules/",
         title: "Configure ignore rules",
         description: "Instructions on how to configure ignore fules for different levels, locally, per repo, and globally",
@@ -661,7 +685,7 @@ Source:
       })
       .add(
       {
-        id: 35,
+        id: 36,
         href: "/how-to/ignore-rules/global/",
         title: "Configuring global ignore rules",
         description: "How to setup global ignore rules for all users of a tenant",
@@ -673,7 +697,7 @@ Source:
       })
       .add(
       {
-        id: 36,
+        id: 37,
         href: "/how-to/ignore-rules/per-repo/",
         title: "Configuring ignore rules per repo",
         description: "How to set ignore rules ignore rules for all users of a repository",
@@ -685,7 +709,7 @@ Source:
       })
       .add(
       {
-        id: 37,
+        id: 38,
         href: "/how-to/iac-checks/bitbucket/",
         title: "Configuring infrastructure as code scanning on Bitbucket",
         description: "Step 1: Create Bitbucket Repository Variables: #   Log into Bitbucket and select a repository where you want to enable Infrastructure as Code scanning.\n  Within the repository, select Repository settings, then Repository variables\n  Create five new Repositories variables\n  Name: DOCKER_HUB_EMAIL\nvalue: blusupport@blubracket.com\nName: DOCKER_HUB_USERNAME\nvalue: blusupport\nName: DOCKER_HUB_TOKEN\nvalue: 085ef825-b366-4636-be2a-8babaf65064f\nName: BLUBRACKET_SERVICE_ENDPOINT\nvalue: BluBracket Tenant name\nExample: https://acme.blubracket.com\nName: BLUBRACKET_INTEGRATION_KEY\nvalue: BluBracket Integration API key",
@@ -697,7 +721,7 @@ Source:
       })
       .add(
       {
-        id: 38,
+        id: 39,
         href: "/how-to/iac-checks/github/",
         title: "Configuring infrastructure as code scanning on GitHub",
         description: "Step 1: Create GitHub Repository Secrets:\n  Log into GitHub and select a repository where you want to enable Infrastructure as Code scanning.\n  Within the repository, select settings, then secrets\n  Create three new repositories secrets\n  Name: DOCKER_HUB_USERNAME\nvalue: blusupport\nName: DOCKER_HUB_TOKEN\nvalue: 085ef825-b366-4636-be2a-8babaf65064f\nName: BLUBRACKET_INTEGRATION_KEY\nvalue: BluBracket Integration API key\nSteps to create a BluBracket API token: Intro to BluBracket APIs and API keys",
@@ -709,7 +733,7 @@ Source:
       })
       .add(
       {
-        id: 39,
+        id: 40,
         href: "/how-to/iac-checks/gitlab/",
         title: "Configuring infrastructure as code scanning on GitLab",
         description: "Step 1: Create GitLab Repository Variables: #   Log into GitLab and select a repository where you want to enable Infrastructure as Code scanning.\n  Within the repository, select Settings, then CI/CD\n  Expand Variables section and select Add variable\n  Create four new variables:\n  Name: DOCKER_HUB_USERNAME\nvalue: blusupport\nName: DOCKER_HUB_TOKEN\nvalue: 085ef825-b366-4636-be2a-8babaf65064f\nName: BLUBRACKET_SERVICE_ENDPOINT\nvalue: BluBracket Tenant name\nExample: https://acme.blubracket.com\nName: BLUBRACKET_INTEGRATION_KEY\nvalue: BluBracket Integration API key",
@@ -721,7 +745,7 @@ Source:
       })
       .add(
       {
-        id: 40,
+        id: 41,
         href: "/how-to/ignore-rules/local/",
         title: "Configuring local ignore rules",
         description: "How to set ignore rules for your local machine",
@@ -733,7 +757,7 @@ Source:
       })
       .add(
       {
-        id: 41,
+        id: 42,
         href: "/api/event-alert/",
         title: "Event \u0026 alert",
         description: "Reading and searching events and alerts.",
@@ -745,7 +769,7 @@ Source:
       })
       .add(
       {
-        id: 42,
+        id: 43,
         href: "/how-to/code-servers/git-server-acccess-configuration/",
         title: "Git server access \u0026 configuration",
         description: "Supported access and configuration risks by code server.",
@@ -757,7 +781,7 @@ Source:
       })
       .add(
       {
-        id: 43,
+        id: 44,
         href: "/how-to/code-servers/git-server-acccess-configuration/github/",
         title: "GitHub access \u0026 configuration risks",
         description: "BluBracket monitors and alerts on potential security security issues related to access and configuration of GitHub accounts. The following is a list of these configurations that BluBracket is currently monitoring. BluBracket will continue to add to this list and as we have support for other solutions we will add similar alerts.\nOrganization-level configuration risks #  Base level setting is too permissive: Base permissions to the organization’s repositories apply to all members and exclude outside collaborators.",
@@ -769,7 +793,7 @@ Source:
       })
       .add(
       {
-        id: 44,
+        id: 45,
         href: "/how-to/code-servers/git-server-acccess-configuration/gitlab/",
         title: "GitLab access \u0026 configuration risks",
         description: "BluBracket monitors and alerts on potential security security issues related to access and configuration of GitLab accounts. The following is a list of these configurations that BluBracket is currently monitoring. BluBracket will continue to add to this list and as we have support for other solutions we will add similar alerts.\nSystem-level configuration risks (on-prem only) # Note: these features can be enabled by request.\n Too many admins on system: Default is five.",
@@ -781,7 +805,7 @@ Source:
       })
       .add(
       {
-        id: 45,
+        id: 46,
         href: "/how-to/",
         title: "User guide",
         description: "",
@@ -793,7 +817,7 @@ Source:
       })
       .add(
       {
-        id: 46,
+        id: 47,
         href: "/how-to/ci-checks/github-checks/",
         title: "Configure GitHub Checks",
         description: "Prerequisites # To install GitHub Checks, permissions to install a GitHub App on an org are required. This would be an organization owner or someone with admin level permissions in a repository\nGitHub cloud checks setup for BluBracket free trial edition # This version of GitHub Checks is for customers using a BluBracket Free Trial tenant.\n  Navigate to BluBracket portal, import code server, track repos\n  Install the following app on the organization (should be done by someone who has permissions to install the app): https://github.",
@@ -805,7 +829,7 @@ Source:
       })
       .add(
       {
-        id: 47,
+        id: 48,
         href: "/how-to/add-user/",
         title: "Adding a BluBracket user",
         description: "How to add a BluBracket user",
@@ -817,7 +841,7 @@ Source:
       })
       .add(
       {
-        id: 48,
+        id: 49,
         href: "/api/",
         title: "API",
         description: "How to access and use the BluBracket API.",
@@ -829,7 +853,7 @@ Source:
       })
       .add(
       {
-        id: 49,
+        id: 50,
         href: "/api/ci-checks/",
         title: "CI checks",
         description: "These APIs can be used to integrate BluBracket checks into a continuous integration (CI) workflow and help prevent risks being committed to a protected branch.\nStart a scan # Start a scan for a list of commits or a pull request\nEndpoint # POST /api/analyzer/commit/scan\nParameters #   repo_url (string, required): URL of the repo\n  pull_request_number (int, optional): The id number of the pull request to be scanned.",
@@ -841,7 +865,7 @@ Source:
       })
       .add(
       {
-        id: 50,
+        id: 51,
         href: "/intro/getting-started/",
         title: "Getting started with BluBracket",
         description: "How to sign up and start using BluBracket for free",
@@ -863,7 +887,7 @@ Source:
       })
       .add(
       {
-        id: 51,
+        id: 52,
         href: "/how-to/iac-checks/",
         title: "IaC checks",
         description: "Infrastructure as code (IaC) scanning configuration instructions",
@@ -885,7 +909,7 @@ Source:
       })
       .add(
       {
-        id: 52,
+        id: 53,
         href: "/how-to/remediate-alerts/",
         title: "Remediate alerts",
         description: "How to remediate alerts",
@@ -897,7 +921,7 @@ Source:
       })
       .add(
       {
-        id: 53,
+        id: 54,
         href: "/faq/",
         title: "Frequently asked questions",
         description: "A searchable list of all FAQs.",
@@ -915,7 +939,7 @@ Source:
       })
       .add(
       {
-        id: 54,
+        id: 55,
         href: "/intro/key-workflows/",
         title: "Key workflows",
         description: "BluBracket code security tools are optimized to prevent risks from getting into code, and to promote the process of continuous improvement that reduces existing risks from code over time.\nPreventing risks in code # As developers, we depend on a quick feedback loop to understand if our code is working and does what is expected. BluBracket tools can offer automated security guidance as part of that feedback loop, in the IDE of your choice, pre-commit, and as part of the CI flow.",
@@ -935,7 +959,7 @@ Source:
       })
       .add(
       {
-        id: 55,
+        id: 56,
         href: "/how-to/ci-checks/",
         title: "CI checks",
         description: "Integrating BluBracket into the CI code review process.",
@@ -953,7 +977,7 @@ Source:
       })
       .add(
       {
-        id: 56,
+        id: 57,
         href: "/intro/integrations/",
         title: "Integrations",
         description: "Local workflow tools #  The BluBracket CLI tool can identify and block secrets before they\u0026rsquo;re committed.\n  Available local tools and integrations\n CLI IntelliJ (via CLI, full plugin coming soon) Visual Studio Code (via CLI)  Usage guide: installing and using the CLI.\nCode servers #  BluBracket scans repositories hosted in GitHub, GitLab, Bitbucket, and others.\n  Certified \u0026amp; supported code servers:\n GitHub GitLab Bitbucket Azure DevOps (contact us for beta) Gerrit (coming soon)  Usage guide: adding code servers.",
@@ -969,7 +993,7 @@ Source:
       })
       .add(
       {
-        id: 57,
+        id: 58,
         href: "/how-to/code-servers/add-code-servers/azure-devops/",
         title: "Adding an Azure DevOps code server",
         description: "How to add an Azure DevOps code server to your tenant",
@@ -981,7 +1005,7 @@ Source:
       })
       .add(
       {
-        id: 58,
+        id: 59,
         href: "/contact-support/",
         title: "Contact support",
         description: "",
@@ -993,7 +1017,7 @@ Source:
       })
       .add(
       {
-        id: 59,
+        id: 60,
         href: "/authoring-documentation/",
         title: "Authoring documentation",
         description: "How do write and edits the docs in this site.",
@@ -1005,7 +1029,7 @@ Source:
       })
       .add(
       {
-        id: 60,
+        id: 61,
         href: "/",
         title: "BluBracket Documentation",
         description: "Track what's in your code, who has access, and where it goes.",
@@ -1017,7 +1041,7 @@ Source:
       })
       .add(
       {
-        id: 61,
+        id: 62,
         href: "/contributors/",
         title: "Contributors",
         description: "",
