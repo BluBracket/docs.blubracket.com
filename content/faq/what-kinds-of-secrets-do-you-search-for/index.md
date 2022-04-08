@@ -404,7 +404,7 @@ Potential Stripe Test Secret Key
 
 Potential Stripe Test Secret Key (base64)
 
-    c2tfdGVzdF80ZUMzOUhxTHlqV0Rhcmp0VDF6ZHA3ZGM=
+    c2tfdGVzdF9NZlJ1YUZBOXNnbDVlMUFVWXpqd2lOTnQwMFVHNnQ2ZnZZ
 
 ### stripe_live_secret_key
 
