@@ -38,7 +38,7 @@ Note: This will not change any existing alerts/events in the platform.
       - aws_access_key_id
 
     # per repo-rules
-    - repo_url: (?i)github.com/blubracket/bludemogh/(apache_tomcat_2.0|crm_order_management)
+    - repo_url: (?i)github.com/blubracket/(apache_tomcat_2.0|crm_order_management)
       rules:
         - secret_values:
           - My$uperDuperS3cret!
