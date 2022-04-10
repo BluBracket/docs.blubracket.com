@@ -14,8 +14,9 @@ resources:
   - src:
 ---
 
-BluBracket scans for code risks in all text encoded files. In addition, we also support
-scanning binary files. We support the following archive formats with different compressions
+BluBracket scans for code risks in all **text encoded** files. In addition, we also support
+scanning binary files. We support the following archive formats with different compression
+levels.
 
 1. Zip
 1. Rar
