@@ -1,7 +1,7 @@
 ---
 title: "Configuring global ignore rules"
 description: "How to setup global ignore rules for all users of a tenant"
-lead: 
+lead:
 date: 2022-01-12T02:48:57+00:00
 draft: false
 weight: 200
@@ -16,12 +16,12 @@ Note: This will not change any existing alerts/events in the platform.
 
 1. Download integration API key
 
-2. Set environment variable BLUBRACKET_INTEGRATION_KEY
+1. Set environment variable BLUBRACKET_INTEGRATION_KEY
 
     * `export BLUBRACKET_INTEGRATION_KEY='TOKEN'`
     * `$Env:BLUBRACKET_INTEGRATION_KEY='TOKEN'`
 
-3. Create blubracket-ignore.yaml
+1. Create blubracket-ignore.yaml
 
     ```yaml
     # ignores any of the paths below
@@ -48,24 +48,24 @@ Note: This will not change any existing alerts/events in the platform.
           - helm/values.yaml
     ```
 
-4. Upload yaml file via API using curl:
+1. Upload yaml file via API using curl:
 
     ```bash
     curl -H "Authorization: Bearer ${BLUBRACKET_INTEGRATION_KEY}" --data-binary "@blubracket-ignore.yaml" https://TENANT.blubracket.com/api/public/blubracket-ignore
 
     ```
 
-5. Confirm upload using:
+1. Confirm upload using:
 
     ```bash
     curl -i -H "Authorization: Bearer ${BLUBRACKET_INTEGRATION_KEY}" https://TENANT.blubracket.com/api/public/blubracket-ignore
     ```
 
-To delete blubracket-ignore:
+1. To delete blubracket-ignore:
 
-```bash
-curl -i -X DELETE -H "Authorization: Bearer ${BLUBRACKET_INTEGRATION_KEY}" https://TENANT.blubracket.com/api/public/blubracket-ignore
-```
+    ```bash
+    curl -i -X DELETE -H "Authorization: Bearer ${BLUBRACKET_INTEGRATION_KEY}" https://TENANT.blubracket.com/api/public/blubracket-ignore
+    ```
 
 Any new secrets, PII or Non-inclusive language ignored will automatically be annotated as “Reviewed as Not Important” and labeled as “Ignore rule”
 
