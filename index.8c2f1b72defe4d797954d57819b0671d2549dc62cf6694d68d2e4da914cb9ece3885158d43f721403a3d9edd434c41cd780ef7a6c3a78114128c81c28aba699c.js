@@ -88,6 +88,26 @@ Source:
   index.add(
     {
         id: 0,
+        href: "/faq/what-file-types-are-scanned/",
+        title: "What file types are scanned?",
+        description: "BluBracket scans for code risks in all text encoded files. In addition, we also support scanning binary files. We support the following archive formats with different compression levels.\n Zip Rar Tar  br bz2 gz lz4 sz xz zstd   7-Zip (Coming soon)  In CLI, scanning archive files is supported using scan-dir subcommand.\nNote: For Bitbucket Cloud \u0026amp; Server, archive files are only scanned during a full repo scan.",
+        
+          
+            
+          
+            
+          
+            
+          
+        
+        
+        
+        content: "secretspiicustom-regexBluBracket scans for code risks in all text encoded files. In addition, we also support scanning binary files. We support the following archive formats with different compression levels.\n Zip Rar Tar  br bz2 gz lz4 sz xz zstd   7-Zip (Coming soon)  In CLI, scanning archive files is supported using scan-dir subcommand.\nNote: For Bitbucket Cloud \u0026amp; Server, archive files are only scanned during a full repo scan.\n"
+        
+      })
+      .add(
+      {
+        id: 1,
         href: "/how-to/code-servers/add-code-servers/github-cloud/generate-pat/",
         title: "Generate a personal access token (PAT) in GitHub",
         description: "Creating a GitHub personal access token #   In order for BluBracket to access information within a given repository, an access token must be uploaded into the tenant.\n  If you want to use a PAT to access resources owned by an organization that uses SAML SSO, you must authorize the PAT. For more information, see \u0026ldquo;About authentication with SAML single sign-on\u0026rdquo; and \u0026ldquo;Authorizing a personal access token for use with SAML single sign-on\u0026rdquo; in the GitHub Enterprise Cloud documentation.",
@@ -103,7 +123,7 @@ Source:
       })
       .add(
       {
-        id: 1,
+        id: 2,
         href: "/how-to/code-servers/add-code-servers/bitbucket-cloud/",
         title: "Adding a Bitbucket Cloud code server",
         description: "How to add a Bitbucket Cloud server to your tenant",
@@ -115,7 +135,7 @@ Source:
       })
       .add(
       {
-        id: 2,
+        id: 3,
         href: "/how-to/code-servers/add-code-servers/github-cloud/",
         title: "Adding a GitHub Cloud code server",
         description: "How to add a GitHub cloud code server to your tenant",
@@ -127,7 +147,7 @@ Source:
       })
       .add(
       {
-        id: 3,
+        id: 4,
         href: "/how-to/code-servers/add-code-servers/gitlab-cloud/",
         title: "Adding a GitLab Cloud code server",
         description: "How to add a GitLab Cloud code server to your tenant",
@@ -139,7 +159,7 @@ Source:
       })
       .add(
       {
-        id: 4,
+        id: 5,
         href: "/faq/can-i-customize-secrets-detected-by-the-cli/",
         title: "Can I customize what secrets are detected by the CLI tool?",
         description: "Yes. BluBracket can identify hundreds of different types of secrets in code, including tokens, keys, IDs and passwords, but the BluBracket CLI tool also supports user-defined regular expressions to match and alert on.\nFor more detailed information on how to add regular expressions to the CLI, look here.",
@@ -159,7 +179,7 @@ Source:
       })
       .add(
       {
-        id: 5,
+        id: 6,
         href: "/faq/can-i-find-secrets-before-committed/",
         title: "Can I find secrets before they are committed?",
         description: "Yes. With the BluBracket Command Line Interface (CLI) tool, you can catch secrets before the code is committed to a repository. Once downloaded and configured, the tool will report any risks found in commits and optionally block commits until they\u0026rsquo;re addressed.\nThe BluBracket CLI tool works with pre-commit hooks, and with any IDEs where the pre-commit hooks are supported.",
@@ -183,7 +203,7 @@ Source:
       })
       .add(
       {
-        id: 6,
+        id: 7,
         href: "/faq/do-i-need-a-credit-card/",
         title: "Do I need a credit card to sign up?",
         description: "No credit card is needed to sign up for either the BluBracket Community Edition or free trial.\nLearn how to sign up here.",
@@ -199,7 +219,7 @@ Source:
       })
       .add(
       {
-        id: 7,
+        id: 8,
         href: "/faq/do-i-need-a-github-account-to-start-free/",
         title: "Do I need a GitHub account to try BluBracket?",
         description: "A GitHub account is required to create a free account with BluBracket.\nAdditional users can be added to an account via email.",
@@ -223,7 +243,7 @@ Source:
       })
       .add(
       {
-        id: 8,
+        id: 9,
         href: "/faq/does-blubracket-scan-new-commits-to-repositories/",
         title: "Does BluBracket scan new commits to repositories?",
         description: "Yes. Each time a new commit is made to a monitored repository, BluBracket immediately scans the commit for any new risks. Any risks that are found will be displayed in the web dashboard, and alerted through any configured alert integrations.",
@@ -243,7 +263,7 @@ Source:
       })
       .add(
       {
-        id: 9,
+        id: 10,
         href: "/faq/does-blubracket-store-modify-my-code/",
         title: "Does BluBracket store/modify my code or any part of my code?",
         description: "No. BluBracket clones repositories, scans them, creates a hash of each of the files (for later comparisons), then the entire checkout from the BluBracket servers. All of this happens within a few seconds, depending on the repository size.\nAfter the scan, BluBracket saves specific metadata to support alerting and reporting on any found risks—things like repository names, file names, contributor IDs, commit IDs and times, etc.\nBluBracket never stores any code after the scan.",
@@ -263,7 +283,7 @@ Source:
       })
       .add(
       {
-        id: 10,
+        id: 11,
         href: "/how-to/code-servers/add-code-servers/gitlab-cloud/generate-pat/",
         title: "Generate a personal access token (PAT) in GitLab",
         description: "Entering a token and creating a GitLab personal access token #   In order for BluBracket to access information within a given repository, an access token must be uploaded into the tenant. An administrator for the GitLab account can create a new token by taking the following steps:\n  For GitLab Cloud, once logged into the GitLab interface, select Preferences → Access Tokens. You should end up at a URL similar to the following: https://gitlab.",
@@ -275,7 +295,7 @@ Source:
       })
       .add(
       {
-        id: 11,
+        id: 12,
         href: "/how-to/code-servers/add-code-servers/bitbucket-cloud/generate-pat/",
         title: "Generate an app password or personal access token (PAT) in Bitbucket",
         description: "In order for BluBracket to access information within a given repository, an App Password (Bitbucket Cloud) or Personal Access Token (Bitbucket Server) must be uploaded into the tenant. An administrator for the Bitbucket account can create a new password or token by taking the following steps:\nBitbucket Cloud #   For Bitbucket Cloud, once logged in to Bitbucket select Personal Settings → App Passwords. You should end up at a URL similar to the following: https://bitbucket.",
@@ -287,7 +307,7 @@ Source:
       })
       .add(
       {
-        id: 12,
+        id: 13,
         href: "/faq/how-do-i-add-a-repo/",
         title: "How do I add a repo to monitor?",
         description: "To monitor a code repository in BluBracket, it must be part of a monitored code server.\n👉 How to add code servers\nFor many code servers supported by BluBracket, you have an option of automatically monitoring all repos on the code server, or choosing which repos to monitor. View your configured code servers in Settings → Code Servers, then select \u0026ldquo;edit monitored repositories\u0026rdquo; from the options menu for the code server:",
@@ -305,7 +325,7 @@ Source:
       })
       .add(
       {
-        id: 13,
+        id: 14,
         href: "/faq/how-to-sign-in-to-blubracket/",
         title: "How do I sign in to BluBracket?",
         description: "Every BluBracket account uses a different domain name to provide you the most secure, reliable, and personalized experience.\nTo sign in to your account, go to the account domain in your welcome email and follow the prompts to sign in.\n BluBracket provides your login link through email.\n  ",
@@ -327,7 +347,7 @@ Source:
       })
       .add(
       {
-        id: 14,
+        id: 15,
         href: "/faq/what-does-blubracket-do-with-my-data/",
         title: "How does BluBracket use my data?",
         description: "First and foremost, BluBracket is committed to helping customers improve security. To that end, we minimize the data we have access to, minimize the data we store, and delete code and secrets from BluBracket systems after processing is complete.\nBluBracket only stores metadata about your code and git servers, and uses cryptographic hashes to track and compare files and secrets across different contexts—BluBracket never stores sensitive data after processing.\nThis metadata is retained exclusively for your use on our platform, and is deleted upon termination.",
@@ -351,7 +371,7 @@ Source:
       })
       .add(
       {
-        id: 15,
+        id: 16,
         href: "/faq/how-long-does-it-take-to-scan-new-commits/",
         title: "How long does it take for BB to scan new commits?",
         description: "The time it takes for BluBracket to scan new commits depends on the size of the commit. In most cases though the scan is perceived as immediate.",
@@ -371,7 +391,7 @@ Source:
       })
       .add(
       {
-        id: 16,
+        id: 17,
         href: "/faq/created-free-account-github-can-i-check-gitlab-bitbucket-repos/",
         title: "If I create a free account via GitHub, can I check code on GitLab or Bitbucket servers?",
         description: "Yes! After sign up, you can add repositories via any supported supported code server.",
@@ -395,7 +415,7 @@ Source:
       })
       .add(
       {
-        id: 17,
+        id: 18,
         href: "/api/intro-auth-keys/",
         title: "Intro to BluBracket APIs and API keys",
         description: "How to access and use the BluBracket API.",
@@ -411,7 +431,7 @@ Source:
       })
       .add(
       {
-        id: 18,
+        id: 19,
         href: "/intro/",
         title: "Introduction to BluBracket ",
         description: "",
@@ -423,7 +443,7 @@ Source:
       })
       .add(
       {
-        id: 19,
+        id: 20,
         href: "/faq/what-can-i-do-with-blubracket-apis/",
         title: "What can I do with BluBracket APIs?",
         description: "Use BluBracket APIs to integrate with your CI/DC solution. This will help make sure that there are no secrets accidentally checked in to code by any of your team members.\nYou may also leverage BluBracket APIs to export secret found events to other systems in addition to our support for Slack, Splunk, and others.",
@@ -439,7 +459,7 @@ Source:
       })
       .add(
       {
-        id: 20,
+        id: 21,
         href: "/faq/what-can-i-do-with-the-free-trial/",
         title: "What can I do with the free trial?",
         description: "The free trial has all the features of the BluBracket Teams Edition, including:\n Risk detection for secrets, PII, non-inclusive language, and infrastructure-as-code, as well as git access and configuration Workflow support from pre-commit through historical risk remediation  Those tools can help you:\n Understand your overall code health and see the areas of highest risk Implement workflows to stop new risks from getting into code Monitor your code health and watch it improve with every commit  These docs walk through the sign-up process.",
@@ -455,7 +475,7 @@ Source:
       })
       .add(
       {
-        id: 21,
+        id: 22,
         href: "/faq/what-does-the-cli-tool-do/",
         title: "What does the BluBracket CLI tool do?",
         description: "The BluBracket CLI tool provides a number of developer conveniences, and is optimized to check for the following at git pre-commit:\n Secrets:the tool identifies hundreds of types of tokens, keys, IDs as well as passwords. Non-inclusive language: the tool identifies non-inclusive language like master, slave, dummy, and blacklist. Custom RegEx: you can configure your own regular expressions that the tool will identify and alert on. Commit Signing:the CLI can check that the commit is going to be signed or not.",
@@ -477,7 +497,7 @@ Source:
       })
       .add(
       {
-        id: 22,
+        id: 23,
         href: "/faq/what-permissions-do-you-require/",
         title: "What GitHub permissions does the BluBracket app require?",
         description: "When you authenticate into BluBracket using GitHub Oauth you will see and approve the following permissions:\n Read access to administration, code, members, metadata, organization administration, and pull requests Read and write access to checks, organization hooks, and repository hooks  These permissions allow BluBracket to monitor the repositories that you select and present you with any secrets found as well as contributor/commit information.",
@@ -495,7 +515,7 @@ Source:
       })
       .add(
       {
-        id: 23,
+        id: 24,
         href: "/faq/what-happens-when-my-free-trial-runs-out/",
         title: "What happens when my free trial runs out?",
         description: "If your free trial expires, it will automatically convert to our BluBracket Community Edition, a completely free product with the most-used features of our Team and Enterprise editions.\nBluBracket Community Edition is free to use with no time limits.",
@@ -511,7 +531,7 @@ Source:
       })
       .add(
       {
-        id: 24,
+        id: 25,
         href: "/faq/supported-ide/",
         title: "What IDEs are supported by the CLI tool?",
         description: "In our testing, any IDE (integrated developer environment) with built-in support for git and pre-commit hooks supports supports the feedback and alerts from the BluBracket CLI tool.\nBluBracket officially supports the following IDEs:\n IntelliJ VS Code  ",
@@ -529,7 +549,7 @@ Source:
       })
       .add(
       {
-        id: 25,
+        id: 26,
         href: "/faq/what-if-i-need-more-time-for-my-free-trial/",
         title: "What if I need more time for my free trial?",
         description: "Just ask and we\u0026rsquo;ll extend your free trial!\nOur goal is to build a product you want to use because it provides value to you. If you need more time, we\u0026rsquo;ll gladly help.\nContact our customer success team here.",
@@ -545,7 +565,7 @@ Source:
       })
       .add(
       {
-        id: 26,
+        id: 27,
         href: "/intro/what-is-blubracket/",
         title: "What is BluBracket?",
         description: "BluBracket is a code and git security suite that identifies risks in your code, monitors who and what has access to your code, and tracks where your code goes outside your git repos.\n  BluBracket use-cases #  Identifying, preventing, and removing risks in code  Secrets Personally identifiable information (PII) Non-inclusive language (NIL) Infrastructure-as-code (IAC) risks   Monitoring who and what has access to your code Monitoring where your code goes  Who is BluBracket for?",
@@ -557,7 +577,7 @@ Source:
       })
       .add(
       {
-        id: 27,
+        id: 28,
         href: "/faq/what-kinds-of-secrets-do-you-search-for/",
         title: "What kinds of secrets does BluBracket search for?",
         description: "What we can find and how we find it.",
@@ -577,7 +597,7 @@ Source:
       })
       .add(
       {
-        id: 28,
+        id: 29,
         href: "/faq/what-sensitive-words-does-you-search-for/",
         title: "What non-inclusive language does the BluBracket search for?",
         description: "It has become increasingly important lately to make sure specific sensitive words are not included in code or documentation. These would be words like: master, slave, dummy, blacklist, etc. Just as with secrets, the BluBracket code scanner and CLI tool automatically search for these sensitive words and notifies the developer before they are committed to repositories.\nExample non-inclusive language includes the following words:\n master slave whitelist blacklist whitebox blackbox whitehat blackhat  Let us know if there are any others that you or your company think should be added to the list.",
@@ -599,7 +619,7 @@ Source:
       })
       .add(
       {
-        id: 29,
+        id: 30,
         href: "/faq/cli-supported-platforms/",
         title: "What platforms are supported by the BluBracket CLI tool?",
         description: "The BluBracket CLI tool is supported on the following platforms:\n Mac OSX 10.12 and later Linux  Alpine 5 and later Ubuntu 16.04 and later CentOS 7 and later   Windows 10  ",
@@ -621,7 +641,7 @@ Source:
       })
       .add(
       {
-        id: 30,
+        id: 31,
         href: "/faq/what-repositories-can-i-monitor/",
         title: "What repositories can I monitor?",
         description: "BluBracket can monitor any repositories on a supported code server that you have access to. Fully supported code servers include cloud and enterprise versions of:\n GitHub GitLab Bitbucket  Support for additional code servers is in development, and may be available in private beta.\nOn GitHub, for example, you can monitor repos in your personal GitHub org as well as company/group orgs where you have permission to add apps.",
@@ -641,7 +661,7 @@ Source:
       })
       .add(
       {
-        id: 31,
+        id: 32,
         href: "/faq/why-should-i-use-blubracket-discover-secrets/",
         title: "Why should I use the BluBracket to discover secrets in code when there are so many other tools available?",
         description: "Best in class secret detection # Testing demonstrates that BluBracket can identify more tokens, keys and IDs than the other tools. Additionally, it supports user-defined custom patterns so you can match whatever is important to you.\nFewest false positives # Expansive detection is critical to ensuring secrets are found, but BluBracket’s rules engine also actively eliminates potential false positives allowing developers to focus on the most important findings.\nComprehensive threat detection # In addition to secrets, BluBracket scans for the following risks in code:",
@@ -661,7 +681,7 @@ Source:
       })
       .add(
       {
-        id: 32,
+        id: 33,
         href: "/how-to/cli/installation/",
         title: "CLI tool installation",
         description: "Instructions to install the CLI tool for Windows, macOS, and Linux",
@@ -673,7 +693,7 @@ Source:
       })
       .add(
       {
-        id: 33,
+        id: 34,
         href: "/how-to/cli/using-cli/",
         title: "Using the CLI tool",
         description: "Details about how to use the CLI tool.",
@@ -685,7 +705,7 @@ Source:
       })
       .add(
       {
-        id: 34,
+        id: 35,
         href: "/how-to/code-servers/add-code-servers/",
         title: "Adding code servers",
         description: "How to add code servers to your tenant",
@@ -697,7 +717,7 @@ Source:
       })
       .add(
       {
-        id: 35,
+        id: 36,
         href: "/intro/use-cases/",
         title: "BluBracket use-cases",
         description: "Risks BluBracket solves and how.",
@@ -715,7 +735,7 @@ Source:
       })
       .add(
       {
-        id: 36,
+        id: 37,
         href: "/how-to/cli/",
         title: "CLI tool",
         description: "How to install and use the BluBracket CLI Tool.",
@@ -731,7 +751,7 @@ Source:
       })
       .add(
       {
-        id: 37,
+        id: 38,
         href: "/how-to/code-servers/",
         title: "Code servers",
         description: "Code lives in git repos, and git repos are hosted by code servers. Most git hosting providers structure git repos into collections such as GitHub\u0026rsquo;s Organizations and Bitbucket\u0026rsquo;s Workspaces. In BluBracket, each of those collections is a separate code server.\nSupported code servers in BluBracket #    GitHub GitLab Bitbucket Azure DevOps     Cloud \u0026amp; Enterprise Cloud \u0026amp; on-prem Cloud \u0026amp; Server Cloud   Supported access \u0026amp; configuration risks Supported access \u0026amp; configuration risks Access \u0026amp; configuration risks not supported Access \u0026amp; configuration risks not supported   GitHub Checks      Adding a GitHub code server Adding a GitLab code server Adding a Bitbucket code server Adding an Azure DevOps code server    ",
@@ -743,31 +763,31 @@ Source:
       })
       .add(
       {
-        id: 38,
+        id: 39,
         href: "/how-to/ignore-rules/",
         title: "Configure ignore rules",
         description: "Instructions on how to configure ignore fules for different levels, locally, per repo, and globally",
         
         
         
-        content: "Configuring rules for ignoring detected risks can be set at multiple levels:\n On a developer\u0026rsquo;s local machine, with configuration files in the user\u0026rsquo;s home directory Per repo, with configuration files in the repo Globally, for all users and repos in an account, with a configuration file in the account  "
+        content: "Configuring rules for ignoring detected risks can be set at multiple levels:\n Per repo, with configuration files in the repo Globally, for all users and repos in an account, with a configuration file in the account  "
         
       })
       .add(
       {
-        id: 39,
+        id: 40,
         href: "/how-to/ignore-rules/global/",
         title: "Configuring global ignore rules",
         description: "How to setup global ignore rules for all users of a tenant",
         
         
         
-        content: "Ignore rules can be set up globally for a BluBracket tenant. blubracket-ignore.yaml allows Blubracket users to ignore specific secret types, secret values, or paths. This file must be sent utilizing the Blubracket API’s. When a match of the ignore file is made, an alert will not be created however an event will still be made.\nNote: This will not change any existing alerts/events in the platform.\n  Download integration API key\n  Set environment variable BLUBRACKET_INTEGRATION_KEY\n export BLUBRACKET_INTEGRATION_KEY='TOKEN' $Env:BLUBRACKET_INTEGRATION_KEY='TOKEN'    Create blubracket-ignore.yaml\n# ignores any of the paths below - paths: - oanda_connector.py - MachLearn-23.py # ignores any secret values below - secret_values: - My$uperDuperP@ssw0rd! # ignores any secret types below - secret_types: - aws_access_key_id # per repo-rules - repo_url: (?i)github.com/blubracket/(apache_tomcat_2.0|crm_order_management) rules: - secret_values: - My$uperDuperS3cret! - secret_types: - google_oauth - paths: - helm/values.yaml    Upload yaml file via API using curl:\ncurl -H \u0026quot;Authorization: Bearer ${BLUBRACKET_INTEGRATION_KEY}\u0026quot; --data-binary \u0026quot;@blubracket-ignore.yaml\u0026quot; https://TENANT.blubracket.com/api/public/blubracket-ignore    Confirm upload using:\ncurl -i -H \u0026quot;Authorization: Bearer ${BLUBRACKET_INTEGRATION_KEY}\u0026quot; https://TENANT.blubracket.com/api/public/blubracket-ignore    To delete blubracket-ignore:\ncurl -i -X DELETE -H \u0026quot;Authorization: Bearer ${BLUBRACKET_INTEGRATION_KEY}\u0026quot; https://TENANT.blubracket.com/api/public/blubracket-ignore  Any new secrets, PII or Non-inclusive language ignored will automatically be annotated as “Reviewed as Not Important” and labeled as “Ignore rule”\n  "
+        content: "Ignore rules can be set up globally for a BluBracket tenant. blubracket-ignore.yaml allows Blubracket users to ignore specific secret types, secret values, or paths. This file must be sent utilizing the Blubracket API’s. When a match of the ignore file is made, an alert will not be created however an event will still be made.\nNote: This will not change any existing alerts/events in the platform.\n  Download integration API key\n  Set environment variable BLUBRACKET_INTEGRATION_KEY\n export BLUBRACKET_INTEGRATION_KEY='TOKEN' $Env:BLUBRACKET_INTEGRATION_KEY='TOKEN'    Create blubracket-ignore.yaml\n# ignores any of the paths below - paths: - oanda_connector.py - MachLearn-23.py # ignores any secret values below - secret_values: - My$uperDuperP@ssw0rd! # ignores any secret types below - secret_types: - aws_access_key_id # per repo-rules - repo_url: (?i)github.com/blubracket/(apache_tomcat_2.0|crm_order_management) rules: - secret_values: - My$uperDuperS3cret! - secret_types: - google_oauth - paths: - helm/values.yaml    Upload yaml file via API using curl:\ncurl -H \u0026quot;Authorization: Bearer ${BLUBRACKET_INTEGRATION_KEY}\u0026quot; --data-binary \u0026quot;@blubracket-ignore.yaml\u0026quot; https://TENANT.blubracket.com/api/public/blubracket-ignore    Confirm upload using:\ncurl -i -H \u0026quot;Authorization: Bearer ${BLUBRACKET_INTEGRATION_KEY}\u0026quot; https://TENANT.blubracket.com/api/public/blubracket-ignore    To delete blubracket-ignore:\ncurl -i -X DELETE -H \u0026quot;Authorization: Bearer ${BLUBRACKET_INTEGRATION_KEY}\u0026quot; https://TENANT.blubracket.com/api/public/blubracket-ignore    Any new secrets, PII or Non-inclusive language ignored will automatically be annotated as “Reviewed as Not Important” and labeled as “Ignore rule”\n  "
         
       })
       .add(
       {
-        id: 40,
+        id: 41,
         href: "/how-to/ignore-rules/per-repo/",
         title: "Configuring ignore rules per repo",
         description: "How to set ignore rules ignore rules for all users of a repository",
@@ -779,7 +799,7 @@ Source:
       })
       .add(
       {
-        id: 41,
+        id: 42,
         href: "/how-to/iac-checks/bitbucket/",
         title: "Configuring infrastructure as code scanning on Bitbucket",
         description: "Step 1: Create Bitbucket Repository Variables: #   Log into Bitbucket and select a repository where you want to enable Infrastructure as Code scanning.\n  Within the repository, select Repository settings, then Repository variables\n  Create five new Repositories variables\n  Name: DOCKER_HUB_EMAIL\nvalue: blusupport@blubracket.com\nName: DOCKER_HUB_USERNAME\nvalue: blusupport\nName: DOCKER_HUB_TOKEN\nvalue: 085ef825-b366-4636-be2a-8babaf65064f\nName: BLUBRACKET_SERVICE_ENDPOINT\nvalue: BluBracket Tenant name\nExample: https://acme.blubracket.com\nName: BLUBRACKET_INTEGRATION_KEY\nvalue: BluBracket Integration API key",
@@ -791,7 +811,7 @@ Source:
       })
       .add(
       {
-        id: 42,
+        id: 43,
         href: "/how-to/iac-checks/github/",
         title: "Configuring infrastructure as code scanning on GitHub",
         description: "Step 1: Create GitHub Repository Secrets:\n  Log into GitHub and select a repository where you want to enable Infrastructure as Code scanning.\n  Within the repository, select settings, then secrets\n  Create three new repositories secrets\n  Name: DOCKER_HUB_USERNAME\nvalue: blusupport\nName: DOCKER_HUB_TOKEN\nvalue: 085ef825-b366-4636-be2a-8babaf65064f\nName: BLUBRACKET_INTEGRATION_KEY\nvalue: BluBracket Integration API key\nSteps to create a BluBracket API token: Intro to BluBracket APIs and API keys",
@@ -803,7 +823,7 @@ Source:
       })
       .add(
       {
-        id: 43,
+        id: 44,
         href: "/how-to/iac-checks/gitlab/",
         title: "Configuring infrastructure as code scanning on GitLab",
         description: "Step 1: Create GitLab Repository Variables: #   Log into GitLab and select a repository where you want to enable Infrastructure as Code scanning.\n  Within the repository, select Settings, then CI/CD\n  Expand Variables section and select Add variable\n  Create four new variables:\n  Name: DOCKER_HUB_USERNAME\nvalue: blusupport\nName: DOCKER_HUB_TOKEN\nvalue: 085ef825-b366-4636-be2a-8babaf65064f\nName: BLUBRACKET_SERVICE_ENDPOINT\nvalue: BluBracket Tenant name\nExample: https://acme.blubracket.com\nName: BLUBRACKET_INTEGRATION_KEY\nvalue: BluBracket Integration API key",
@@ -811,18 +831,6 @@ Source:
         
         
         content: "Step 1: Create GitLab Repository Variables: #   Log into GitLab and select a repository where you want to enable Infrastructure as Code scanning.\n  Within the repository, select Settings, then CI/CD\n  Expand Variables section and select Add variable\n  Create four new variables:\n  Name: DOCKER_HUB_USERNAME\nvalue: blusupport\nName: DOCKER_HUB_TOKEN\nvalue: 085ef825-b366-4636-be2a-8babaf65064f\nName: BLUBRACKET_SERVICE_ENDPOINT\nvalue: BluBracket Tenant name\nExample: https://acme.blubracket.com\nName: BLUBRACKET_INTEGRATION_KEY\nvalue: BluBracket Integration API key\nSteps to create a BluBracket API token:\nIntro to BluBracket APIs and API keys\n  Step 2: Create Pipeline Workflow: #  Within the repository, select CI/CD, then Pipelines to either update an existing ci.yaml script or create a new one via the Editor option:     Add the following script to enable Infrastructure as Code scanning:  infra-as-code-scan: # Use the official docker image. image: docker:latest stage: build services: - docker:dind variables: GIT_STRATEGY: clone GIT_DEPTH: 0 before_script: - docker login -u \u0026quot;$DOCKERHUB_USERNAME\u0026quot; -p \u0026quot;$DOCKERHUB_TOKEN\u0026quot; script: - env - | set -ax docker run -v ${CI_PROJECT_DIR}:/home/blubracket/iac-checker/repo \\ -u $(id -u):$(id -g) \\ blubracket/iac-checker:0.0.4-beta run \\ --blubracket-service-endpoint ${BLUBRACKET_SERVICE_ENDPOINT} \\ --integration-key ${BLUBRACKET_INTEGRATION_KEY} \\ --source-branch ${CI_MERGE_REQUEST_SOURCE_BRANCH_NAME:-${CI_COMMIT_BRANCH}} \\ --target-branch ${CI_MERGE_REQUEST_TARGET_BRANCH_NAME:-\u0026quot;\u0026quot;} \\ --do-not-fail-on-misconfigurations rules: # Run diff workflow on all merge requests - if: '$CI_PIPELINE_SOURCE == \u0026quot;merge_request_event\u0026quot;' # Run branch workflow on pushes to default branch - if: '$CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH'  Step 3: Run Workflow #  Ensure workflow runs successfully. This can be verified by selecting Jobs and expanding the Executing “step_script” karat and scrolling to bottom of page:     If Infrastructure as Code was detected, you will see entries that indicate a check has been performed (green check indicating scan passed, a red “x” indicating a risk has been detected).       For all detected risks (red “x”), an alert will be posted to the BluBracket portal.    "
-        
-      })
-      .add(
-      {
-        id: 44,
-        href: "/how-to/ignore-rules/local/",
-        title: "Configuring local ignore rules",
-        description: "How to set ignore rules for your local machine",
-        
-        
-        
-        content: "In some cases a developer may want the BluBracket CLI Tool to ignore specific secret types or entire files. This can be achieved by creating a .blubracket-ignore file. This file is then placed into the root directory of the repository.\nThe format of the .blubracket-ignore file is similar to a .gitignore file.\nEmpty lines and lines beginning with # will be ignored\nTo ignore all secrets in a file a glob pattern is recognized. For example **/tests will ignore any secrets found in all files within any directory or sub-directory named “tests”.\nTo ignore a specific secret type, say passwords, you would add the following line: secret_type:password.*, where password.* is a perl compatible regular expression.\n**/tests/** secret_type:password.*  "
         
       })
       .add(
