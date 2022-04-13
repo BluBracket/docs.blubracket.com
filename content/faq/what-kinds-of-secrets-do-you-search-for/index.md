@@ -16,12 +16,299 @@ resources:
 
 BluBracket uses a variety of technologies, including pattern matching and AI/ML to detect hundreds of different types of secrets in code, including tokens, keys, IDs, credentials and passwords. BluBracket also allows developers to specify additional alert triggers using regular expressions.
 
+BluBracket searches inside all text formatted files—regardless of language—to find secrets. → [See more about secrets in files](#secrets-in-files)
+
+And, BluBracket identifies files that are generally considered unsafe in a repo, regardless of their contents. → [See more about sensitive files](#sensitive-files)
+
+
+
+
 ### Sensitive files
 
-A number of files are considered sensitive regardless of their contents. Examples include:
+A number of files are considered sensitive regardless of their contents.
 
-- `.env` files
-- [Java KeyStore files](https://en.wikipedia.org/wiki/Java_KeyStore)
+#### cryptographic_key_bundle .p12
+
+Potential cryptographic key bundle
+
+```
+some-bundle.p12
+```
+
+#### cryptographic_key_bundle .pfx
+
+Potential cryptographic key bundle
+
+```
+secrets/some-bundle.pfx
+```
+
+#### cryptographic_key_bundle .asc
+
+Potential cryptographic key bundle
+
+```
+some-bundle.asc
+```
+
+#### openvpn_client_configuration_file .ovpn
+
+Potential OpenVPN client configuration file
+
+```
+~/secret.ovpn
+```
+
+#### remote_desktop_connection_file .rdp
+
+Potential Remote Desktop connection file
+
+```
+~/secret.rdp
+```
+
+#### microsoft_sql_database_file .mdf
+
+Potential Microsoft SQL database file
+
+```
+~/msql-db.mdf
+```
+
+#### microsoft_sql_server_compact_database_file .sdf
+
+Potential Microsoft SQL server compact database file
+
+```
+~/.sdf
+```
+
+#### sqlite_database_file .sqlite
+
+Potential SQLite database file
+
+```
+/local/usr/db/.sqlite
+```
+
+#### microsoft_bitlocker_recovery_key_file .bek
+
+Potential Microsoft BitLocker recovery key file
+
+```
+some_file.bek
+```
+
+#### microsoft_bitlocker_trusted_platform_module_password_file .tpm
+
+Potential Microsoft BitLocker Trusted Platform Module password file
+
+```
+secrets.tpm
+```
+
+#### windows_bitLocker_full_volume_encrypted_data_file .fve
+
+Potential Windows BitLocker full volume encrypted data file
+
+```
+some-dir/test.fve
+```
+
+#### java_keystore_file .jks
+
+Potential Java KeyStore file
+
+```
+java-keystore.jks
+```
+
+#### password_safe_database_file .psafe3
+
+Potential Password Safe database file
+
+```
+file.psafe3
+```
+
+#### 1password_password_manager_database_file .agilekeychain
+
+Potential 1Password password manager database file
+
+```
+../complicated-path/../.project/test.agilekeychain
+```
+
+#### apple_keychain_database_file .keychain
+
+Potential Apple Keychain database file
+
+```
+/../complicated-path/../.project/test.keychain
+```
+
+#### network_traffic_capture_file .pcap
+
+Potential network traffic capture file
+
+```
+traffic.pcap
+```
+
+#### tunnelblick_vpn_configuration_file .tblk
+
+Potential Tunnelblick VPN configuration file
+
+```
+test.tblk
+```
+
+#### postgresql_password_file .pgpass
+
+Potential PostgreSQL password file
+
+```
+postgres/pgpass
+```
+
+#### aws_cli_credentials_file .aws/credentials
+
+Potential AWS CLI credentials file
+
+```
+/~deploy/.aws/credentials
+/prod/aws/credentials
+```
+
+#### apache_htpasswd_file .htpasswd
+
+Potential Apache htpasswd file
+
+```
+~apache/.htpasswd
+~httpd/htpasswd
+```
+
+#### rubygems_credentials_file .gem/credentials
+
+Potential Rubygems credentials file
+
+```
+~/.gem/credentials
+```
+
+#### git_credential_store_helper_credentials_file .git-credentials
+
+Potential git-credential-store helper credentials file
+
+```
+.git-credentials
+```
+
+#### environment_configuration_file .env
+
+Potential environment configuration file
+
+```
+project/prod.env
+```
+
+#### mysql_client_command_history_file .mysql_history
+
+Potential MySQL client command history file
+
+```
+db/mysql_history
+~mysql/.mysql_history
+```
+
+#### postgresql_client_command_history_file .psql_history
+
+Potential PostgreSQL client command history file
+
+```
+.psql_history
+~db/psql_history
+```
+
+#### linux_shadow_file etc/shadow
+
+Potential Linux shadow file
+
+```
+/etc/shadow
+```
+
+#### linux_passwd_file etc/passwd
+
+Potential Linux passwd file
+
+```
+/etc/passwd
+```
+
+#### ruby_master_key_file master\.key
+
+Potential Ruby master.key file
+
+```
+master.key
+```
+
+#### docker_configuration_file .dockercfg | .docker/config.json
+
+Potential Docker configuration file
+
+```
+docker-compose/.dockercfg
+docker/config.json
+```
+
+#### gnome_keyring_database_file .key(store|ring)
+
+Potential GNOME Keyring database file
+
+```
+~/.local/share/keyrings/login.keyring
+~/.local/share/keyrings/login.keystore
+```
+
+#### sftp_connection_configuration_file sftp-config.json
+
+Potential SFTP connection configuration file
+
+```
+sftp-config.json
+sftp-config
+```
+
+#### terraform_state_file .tfstate
+
+Potential Terraform State File
+
+```
+deploy/default.tfstate
+deploy/default.tfstate.backup
+```
+
+Negative example:
+
+```
+test.tfstates
+```
+
+#### shell_command_history_file
+
+Potential shell command history file
+
+```
+.bash_history
+.sh_history
+.history
+history
+.zsh_history
+.z_history
+```
 
 ### Secrets in files
 
