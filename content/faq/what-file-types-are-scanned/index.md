@@ -1,22 +1,26 @@
 ---
 title: "What file types are scanned?"
-description: ""
+description: "BluBracket scans all text encoded files, as well as many types of archive formats."
 lead: ""
 date: 2022-04-09T01:59:00+00:00
 draft: false
 weight: 100
 toc: false
 tags:
-  - secrets
-  - pii
-  - custom-regex
+  - files
+  - file types
+  - scanning
 resources:
   - src:
 ---
 
-BluBracket scans for code risks in all **text encoded** files. In addition, we also support
-scanning binary files. We support the following archive formats with different compression
-levels.
+### Source code and text files
+
+BluBracket scans for code risks in all text encoded files, regardless of language.
+
+### Archives
+
+In addition, we also support scanning binary files. We support the following archive formats with different compression levels.
 
 1. Zip
 1. Rar
