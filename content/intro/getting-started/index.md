@@ -27,6 +27,8 @@ Getting started with BluBracket is a three step process:
 
 ## Signing up
 
+{{< youtube _cgoY1YKs_w >}}
+
 To start using BluBracket for free, visit [our signup page](https://blubracket.com/contact/get-started/) and click the **start for free** button.
 
 {{< figure src="three-step-process-sign-up.png" caption="Begin your three-step process by clicking the **start for free** button.">}}
