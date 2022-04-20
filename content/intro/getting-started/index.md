@@ -47,6 +47,8 @@ Refer to your welcome email when you first signed in to BluBracket for your pers
 
 ## Adding your first code server
 
+{{< youtube Ex-JA_xkZ0M >}}
+
 Go to Settings → Code Servers in the BluBracket web console to add repos from your GitHub, GitLab, Bitbucket, or another supported code server.
 
 Full details about [how to add a code server are available in the usage guide](https://docs.blubracket.com/how-to/add-code-servers/).
