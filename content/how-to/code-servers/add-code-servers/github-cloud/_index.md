@@ -3,7 +3,7 @@ title: "Adding a GitHub Cloud code server"
 aliases:
   - /how-to/add-code-servers/github-cloud
 description: "How to add a GitHub cloud code server to your tenant"
-lead: "How to add a GitHub Cloud code server to your tenant"
+lead: ""
 date: 2022-01-12T02:48:57+00:00
 draft: false
 weight: 100
@@ -17,6 +17,8 @@ resources:
   - src: enter-token.jpg
   - src: select.jpg
 ---
+
+{{< youtube Ex-JA_xkZ0M >}}
 
 After [selecting to add a GitHub Cloud code server]({{< relref "/how-to/code-servers/add-code-servers/#selecting-a-server-type" >}}), follow the instructions below to add a GitHub Organization as a code server in BluBracket.
 
