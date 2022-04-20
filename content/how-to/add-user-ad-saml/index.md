@@ -22,18 +22,18 @@ BluBracket requires an email attribute in order to successful identify and authe
 ### Register the BluBracket app in Azure Active Directory
 
 1. Login to Azure AD as an Administrator [https://portal.azure.com](https://portal.azure.com)
-2. Select the Azure service Azure Active Directory [https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview)
-![azure ad screenshot](azureactivedirectory.png)
+2. Select the [Azure Active Directory service](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview)
+  ![azure ad screenshot](azureactivedirectory.png)
 3. Select [Enterprise applications](https://portal.azure.com/#blade/Microsoft_AAD_IAM/StartboardApplicationsMenuBlade/AllApps/menuId/)
-![enterprise applications screenshot](enterpriseapplications.png)
+  ![enterprise applications screenshot](enterpriseapplications.png)
 4. Select [+ New application](https://portal.azure.com/#blade/Microsoft_AAD_IAM/AppGalleryApplicationsBlade/category/)
-![add application](addapplication.png)
+  ![add application](addapplication.png)
 5. Select Application you're developing
 ![add application you developing](applicationyouredeveloping.png)
 6. Select the link Ok, take me to App Registrations to register my new application
-![add your application](appregistration.png)
+  ![add your application](appregistration.png)
 7. Select + New registration.
-![add application registration](addapplicationregistration.png)
+  ![add application registration](addapplicationregistration.png)
 8. Register the Application
    1. App name: BluBracket
    2. Select the appropriate radio button for who can use this application
@@ -41,7 +41,7 @@ BluBracket requires an email attribute in order to successful identify and authe
       1. Type: Web
       2. URI: `https://TENANT_NAME.blubracket.com/api/saml/sso` (Be sure to replace `TENANT_NAME` with the name of your tenant name provided by BluBracket)
    4. Select Register
-   ![register application](registerapplication.png)
+     ![register application](registerapplication.png)
 
 ### Get the federation metadata document URL from Azure AD
 
