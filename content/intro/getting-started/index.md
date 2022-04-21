@@ -60,3 +60,5 @@ Full details about [how to add a code server are available in the usage guide](h
 1. Add BluBracket to your workflow with [GitHub Checks](https://docs.blubracket.com/intro/key-workflows/#ci-checks) or the [CLI tool](https://docs.blubracket.com/intro/key-workflows/#preventing-risks-in-code) so you can identify risks before your next commit.
 2. Review [existing risks](https://docs.blubracket.com/intro/key-workflows/#understanding-and-taking-action-on-existing-risks) to understand your overall code health and make a plan for what is urgent and what can wait.
 3. Track your security health improvements with every commit.
+
+{{< youtube USPR40spmjY >}}
