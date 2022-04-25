@@ -11,7 +11,7 @@ tags:
   - oauth
   - GitHub
 searchExtraKeywords:
-  - "Getting Started with BluBracket Teams and Enterprise Editions - BluBracket"
+  - "Getting Started with BluBracket Team and Enterprise Editions - BluBracket"
   - "Getting Started with the Free Trial - BluBracket"
 resources:
   - src: three-step-process-sign-up.png

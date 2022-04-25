@@ -32,7 +32,7 @@ BluBracket is for individual developers, development and appsec teams of all siz
 
     Core BluBracket code security features—including the CLI tools.[Available free with no time limit for personal and open source use](https://blubracket.com/contact/get-started/).
 
-- **BluBracket Teams Edition**
+- **BluBracket Team Edition**
 
     All the BluBracket features to identify risks in your code, as well as git access and configuration risks.
 
