@@ -12,7 +12,7 @@ resources:
   - src:
 ---
 
-The free trial has all the features of the [BluBracket Teams Edition](https://blubracket.com/pricing/), including:
+The free trial has all the features of the [BluBracket Team Edition](https://blubracket.com/pricing/), including:
 
 - Risk detection for [secrets](/intro/use-cases/#secrets), [PII](/intro/use-cases/#pii), [non-inclusive language](/intro/use-cases/#inclusive-language), and [infrastructure-as-code](/intro/use-cases/#iac), as well as [git access and configuration](/intro/use-cases/#access-auditing)
 - [Workflow support](/intro/key-workflows/) from pre-commit through historical risk remediation
