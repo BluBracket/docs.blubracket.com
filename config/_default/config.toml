@@ -8,6 +8,7 @@ enableRobotsTXT = true
 languageCode = "en-US"
 paginate = 7
 rssLimit = 10
+timeout = 53551 # a prime number of milliseconds larger than 30 seconds
 
 # Multilingual
 defaultContentLanguage = "en"
