@@ -1,7 +1,7 @@
 ---
 title: "Event & alert"
 description: "Reading and searching events and alerts."
-lead: "Reading and searching events and alerts."
+lead: ""
 date: 2022-01-12T02:48:57+00:00
 draft: false
 weight: 200
@@ -10,17 +10,17 @@ resources:
   - src:
 ---
 
-### Getting alert counts
+### Getting a list of alerts
 
-Search alerts using filters over attributes
+Filter for getting all secrets, first page of results, return 10 results.
 
 #### Endpoint
 
-`POST /api/public/alert/count`
+`POST https://[hostname]/api/public/alert/search`
+
+Called with bearer token.
 
 #### Request body
-
-One or more filters
 
 ```json
 {
@@ -30,24 +30,12 @@ One or more filters
             "value": [
                 "REPO_SCAN_MATCH"
             ],
-            "exact_match": true
-        },
-        {
-            "id": "repo_type",
-            "value": [
-                "ENTERPRISE_PUBLIC",
-                "PUBLIC"
-            ],
-            "exact_match": true
-        },
-        {
-            "id": "state",
-            "value": [
-                "ACTIVE"
-            ],
+            "op": "EQ",
             "exact_match": true
         }
-    ]
+    ],
+    "limit": 10,
+    "page": 1
 }
 ```
 
@@ -55,10 +43,47 @@ One or more filters
 
 Success: `200`
 
-Number of alerts
+Set of 10 alert objects.
 
-### Searching alerts
+### Getting alerts for a specific set of repos
 
-### Updating an alert
+Filter for getting all secrets in a set of repos, first page of results, return 10 results.
 
-Update the state of one or more alerts.
+#### Endpoint
+
+`POST https://[hostname]/api/public/alert/search`
+
+Called with bearer token.
+
+#### Request body
+
+```json
+{
+    "filters": [
+        {
+            "id": "alert_type",
+            "value": [
+                "REPO_SCAN_MATCH"
+            ],
+            "op": "EQ",
+            "exact_match": true
+        },
+        {
+            "id": "url",
+            "value": [
+                "git://github.com/bludemogh/myfirstrepo.git", "git://github.com/bludemogh/myotherrepo.git"
+            ],
+            "op": "EQ",
+            "exact_match": true
+        }
+    ],
+    "limit": 100,
+    "page": 1
+}
+```
+
+#### Response
+
+Success: `200`
+
+Set of 10 alert objects in the specified repos.
