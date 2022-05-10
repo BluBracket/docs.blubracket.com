@@ -52,6 +52,8 @@ Pre-commit hooks prevent most risks before they ever get into a repo, but CI che
 
 GitHub is just one [supported code server and CI environment]({{< relref "/intro/integrations#ci-servers" >}}).
 
+{{< youtube xAuJOzDvx6A >}}
+
 As with pre-commit hooks, CI checks and all BluBracket's server-side code scanning supports repo-level configuration with directives in `.blubracket/` at the repo root, and global configuration for all users and all repos in a BluBracket account with directives set at that level. Additionally, inline directives inserted as code comments can be used to mark specific items to ignore, putting decisions about how to handle selected code risks in context with the code.
 
 - Usage guide: [configuring CI checks](/how-to/ci-checks/).
@@ -70,7 +72,7 @@ Preventing new risks from getting into your code is one of the most important st
 
 BluBracket scans your code, including every historical commit, to identify [secrets](/intro/use-cases/#secrets), [PII](/intro/use-cases/#pii), [non-inclusive language](/intro/use-cases/#inclusive-language), and [infrastructure-as-code risks](/intro/use-cases/#iac) lurking within.
 
-{{< figure src="comparing-code-and-access-risks-for-repository-in-blubracket.png" caption="BluBracket categorizes risks so you can understand your code health and areas of highest risk." >}}
+{{< youtube GcdSRypGv2k >}}
 
 Reviewing those risks in the BluBracket dashboard allows you to see the overall health of your scanned codebase, the areas of highest risk, and find specific issues you can act on now to improve your code security.
 
