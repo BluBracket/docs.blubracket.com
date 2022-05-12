@@ -57,13 +57,3 @@ No new features or enhancements added to the Community Edition with this release
 * CORE-7349 - Repository filter was not functioning properly in the repository selection screen in code server configurations.
 
 * CORE-7287 - Risk scores that were not fully calculated were always showing up as gray. They now adhere to the normal color scheme which is determined by total score.
-
-### Critical Notifications
-
-* **Unsupported Languages**
-
-  * Note that BluBracket is not currently able to identify and alert on secrets in languages that do not use traditional assignment operators (Lisp, Scheme and Clojure for example).
-
-* **GitHub Payload Cap**
-
-  * GitHub payloads are capped at 25 MB. If your event generates a larger payload, a webhook will not be fired which means that BluBracket will not be able to identify the event. This may happen, for example, on a create event if many branches or tags are pushed at once. We suggest monitoring your payload size to ensure delivery. Please refer to the following GitHub document: [https://developer.github.com/webhooks/#payloads](https://developer.github.com/webhooks/#payloads).
