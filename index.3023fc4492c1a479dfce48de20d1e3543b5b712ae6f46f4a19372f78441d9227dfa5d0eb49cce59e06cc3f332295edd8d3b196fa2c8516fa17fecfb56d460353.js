@@ -348,6 +348,24 @@ Source:
       .add(
       {
         id: 15,
+        href: "/faq/how-does-blubracket-iac-scanning-compare-to-checkov/",
+        title: "How does BluBracket IaC scanning compare to Checkov?",
+        description: "BluBracket\u0026rsquo;s IaC scanning is built on the open source Checkov scanner, combined with BluBracket\u0026rsquo;s workflow tools optimized to help development teams identify new risks before propagating in code, and knock down the risks already in their code through continuous improvement.\n    Checkov BluBracket IaC scanning     IaC scanning ✅ ✅   Graph-based queries ✅ On roadmap   IDE integration ✅ ✅   IaC policy violations ✅ ✅   Custom policies Requires customization On roadmap   Notifications ⛔️ ✅   Dashboards ⛔️ ✅   External dependencies/",
+        
+          
+            
+          
+            
+          
+        
+        
+        
+        content: "infrastructure as codeIaCBluBracket\u0026rsquo;s IaC scanning is built on the open source Checkov scanner, combined with BluBracket\u0026rsquo;s workflow tools optimized to help development teams identify new risks before propagating in code, and knock down the risks already in their code through continuous improvement.\n    Checkov BluBracket IaC scanning     IaC scanning ✅ ✅   Graph-based queries ✅ On roadmap   IDE integration ✅ ✅   IaC policy violations ✅ ✅   Custom policies Requires customization On roadmap   Notifications ⛔️ ✅   Dashboards ⛔️ ✅   External dependencies/\nsupply chain tracking ⛔️ On roadmap   Compliance reporting ⛔️ ✅   Repo integration ⛔️ ✅   Central configuration ⛔️ ✅   REST API ⛔️ ✅   CI/CD integrations Limited ✅   Notifications ⛔️ ✅   Support level Community Enterprise    "
+        
+      })
+      .add(
+      {
+        id: 16,
         href: "/faq/what-does-blubracket-do-with-my-data/",
         title: "How does BluBracket use my data?",
         description: "First and foremost, BluBracket is committed to helping customers improve security. To that end, we minimize the data we have access to, minimize the data we store, and delete code and secrets from BluBracket systems after processing is complete.\nBluBracket only stores metadata about your code and git servers, and uses cryptographic hashes to track and compare files and secrets across different contexts—BluBracket never stores sensitive data after processing.\nThis metadata is retained exclusively for your use on our platform, and is deleted upon termination.",
@@ -371,7 +389,7 @@ Source:
       })
       .add(
       {
-        id: 16,
+        id: 17,
         href: "/faq/how-does-the-blubracket-checks-app-check-my-pull-requests/",
         title: "How does the BluBracket checks app check my pull requests?",
         description: "Overview of how the BluBracket checks app for GitHub works.",
@@ -393,7 +411,7 @@ Source:
       })
       .add(
       {
-        id: 17,
+        id: 18,
         href: "/faq/how-long-does-it-take-to-scan-new-commits/",
         title: "How long does it take for BB to scan new commits?",
         description: "The time it takes for BluBracket to scan new commits depends on the size of the commit. In most cases though the scan is perceived as immediate.",
@@ -413,7 +431,7 @@ Source:
       })
       .add(
       {
-        id: 18,
+        id: 19,
         href: "/faq/created-free-account-github-can-i-check-gitlab-bitbucket-repos/",
         title: "If I create a free account via GitHub, can I check code on GitLab or Bitbucket servers?",
         description: "Yes! After sign up, you can add repositories via any supported supported code server.",
@@ -437,7 +455,7 @@ Source:
       })
       .add(
       {
-        id: 19,
+        id: 20,
         href: "/api/intro-auth-keys/",
         title: "Intro to BluBracket APIs and API keys",
         description: "How to access and use the BluBracket API.",
@@ -453,7 +471,7 @@ Source:
       })
       .add(
       {
-        id: 20,
+        id: 21,
         href: "/intro/",
         title: "Introduction to BluBracket ",
         description: "",
@@ -465,7 +483,7 @@ Source:
       })
       .add(
       {
-        id: 21,
+        id: 22,
         href: "/faq/what-can-i-do-with-blubracket-apis/",
         title: "What can I do with BluBracket APIs?",
         description: "Use BluBracket APIs to integrate with your CI/DC solution. This will help make sure that there are no secrets accidentally checked in to code by any of your team members.\nYou may also leverage BluBracket APIs to export secret found events to other systems in addition to our support for Slack, Splunk, and others.",
@@ -481,7 +499,7 @@ Source:
       })
       .add(
       {
-        id: 22,
+        id: 23,
         href: "/faq/what-can-i-do-with-the-free-trial/",
         title: "What can I do with the free trial?",
         description: "The free trial has all the features of the BluBracket Team Edition, including:\n Risk detection for secrets, PII, non-inclusive language, and infrastructure-as-code, as well as git access and configuration Workflow support from pre-commit through historical risk remediation  Those tools can help you:\n Understand your overall code health and see the areas of highest risk Implement workflows to stop new risks from getting into code Monitor your code health and watch it improve with every commit  These docs walk through the sign-up process.",
@@ -497,7 +515,7 @@ Source:
       })
       .add(
       {
-        id: 23,
+        id: 24,
         href: "/faq/what-does-the-cli-tool-do/",
         title: "What does the BluBracket CLI tool do?",
         description: "The BluBracket CLI tool provides a number of developer conveniences, and is optimized to check for the following at git pre-commit:\n Secrets:the tool identifies hundreds of types of tokens, keys, IDs as well as passwords. Non-inclusive language: the tool identifies non-inclusive language like master, slave, dummy, and blacklist. Custom RegEx: you can configure your own regular expressions that the tool will identify and alert on. Commit Signing:the CLI can check that the commit is going to be signed or not.",
@@ -519,7 +537,7 @@ Source:
       })
       .add(
       {
-        id: 24,
+        id: 25,
         href: "/faq/what-permissions-do-you-require/",
         title: "What GitHub permissions does the BluBracket app require?",
         description: "When you authenticate into BluBracket using GitHub Oauth you will see and approve the following permissions:\n Read access to administration, code, members, metadata, organization administration, and pull requests Read and write access to checks, organization hooks, and repository hooks  These permissions allow BluBracket to monitor the repositories that you select and present you with any secrets found as well as contributor/commit information.",
@@ -537,7 +555,7 @@ Source:
       })
       .add(
       {
-        id: 25,
+        id: 26,
         href: "/faq/what-happens-when-my-free-trial-runs-out/",
         title: "What happens when my free trial runs out?",
         description: "If your free trial expires, it will automatically convert to our BluBracket Community Edition, a completely free product with the most-used features of our Team and Enterprise editions.\nBluBracket Community Edition is free to use with no time limits.",
@@ -553,7 +571,7 @@ Source:
       })
       .add(
       {
-        id: 26,
+        id: 27,
         href: "/faq/supported-ide/",
         title: "What IDEs are supported by the CLI tool?",
         description: "In our testing, any IDE (integrated developer environment) with built-in support for git and pre-commit hooks supports supports the feedback and alerts from the BluBracket CLI tool.\nBluBracket officially supports the following IDEs:\n IntelliJ VS Code  ",
@@ -571,7 +589,7 @@ Source:
       })
       .add(
       {
-        id: 27,
+        id: 28,
         href: "/faq/what-if-i-need-more-time-for-my-free-trial/",
         title: "What if I need more time for my free trial?",
         description: "Just ask and we\u0026rsquo;ll extend your free trial!\nOur goal is to build a product you want to use because it provides value to you. If you need more time, we\u0026rsquo;ll gladly help.\nContact our customer success team here.",
@@ -587,7 +605,7 @@ Source:
       })
       .add(
       {
-        id: 28,
+        id: 29,
         href: "/intro/what-is-blubracket/",
         title: "What is BluBracket?",
         description: "BluBracket is a code and git security suite that identifies risks in your code, monitors who and what has access to your code, and tracks where your code goes outside your git repos.\n  BluBracket use-cases #  Identifying, preventing, and removing risks in code  Secrets Personally identifiable information (PII) Non-inclusive language (NIL) Infrastructure-as-code (IAC) risks   Monitoring who and what has access to your code Monitoring where your code goes  Who is BluBracket for?",
@@ -599,7 +617,7 @@ Source:
       })
       .add(
       {
-        id: 29,
+        id: 30,
         href: "/faq/what-sensitive-words-does-you-search-for/",
         title: "What non-inclusive language does the BluBracket search for?",
         description: "It has become increasingly important lately to make sure specific sensitive words are not included in code or documentation. These would be words like: master, slave, dummy, blacklist, etc. Just as with secrets, the BluBracket code scanner and CLI tool automatically search for these sensitive words and notifies the developer before they are committed to repositories.\nExample non-inclusive language includes the following words:\n master slave whitelist blacklist whitebox blackbox whitehat blackhat  Let us know if there are any others that you or your company think should be added to the list.",
@@ -621,7 +639,7 @@ Source:
       })
       .add(
       {
-        id: 30,
+        id: 31,
         href: "/faq/cli-supported-platforms/",
         title: "What platforms are supported by the BluBracket CLI tool?",
         description: "The BluBracket CLI tool is supported on the following platforms:\n Mac OSX 10.12 and later Linux  Alpine 5 and later Ubuntu 16.04 and later CentOS 7 and later   Windows 10  ",
@@ -643,7 +661,7 @@ Source:
       })
       .add(
       {
-        id: 31,
+        id: 32,
         href: "/faq/what-repositories-can-i-monitor/",
         title: "What repositories can I monitor?",
         description: "BluBracket can monitor any repositories on a supported code server that you have access to. Fully supported code servers include cloud and enterprise versions of:\n GitHub GitLab Bitbucket  Support for additional code servers is in development, and may be available in private beta.\nOn GitHub, for example, you can monitor repos in your personal GitHub org as well as company/group orgs where you have permission to add apps.",
@@ -663,7 +681,7 @@ Source:
       })
       .add(
       {
-        id: 32,
+        id: 33,
         href: "/faq/what-kinds-of-secrets-do-you-search-for/",
         title: "What types of secrets does BluBracket search for?",
         description: "What we can find and how we find it.",
@@ -683,7 +701,7 @@ Source:
       })
       .add(
       {
-        id: 33,
+        id: 34,
         href: "/faq/why-should-i-use-blubracket-discover-secrets/",
         title: "Why should I use the BluBracket to discover secrets in code when there are so many other tools available?",
         description: "Best in class secret detection # Testing demonstrates that BluBracket can identify more tokens, keys and IDs than the other tools. Additionally, it supports user-defined custom patterns so you can match whatever is important to you.\nFewest false positives # Expansive detection is critical to ensuring secrets are found, but BluBracket’s rules engine also actively eliminates potential false positives allowing developers to focus on the most important findings.\nComprehensive threat detection # In addition to secrets, BluBracket scans for the following risks in code:",
@@ -703,7 +721,7 @@ Source:
       })
       .add(
       {
-        id: 34,
+        id: 35,
         href: "/how-to/cli/installation/",
         title: "CLI tool installation",
         description: "Instructions to install the CLI tool for Windows, macOS, and Linux",
@@ -715,7 +733,7 @@ Source:
       })
       .add(
       {
-        id: 35,
+        id: 36,
         href: "/how-to/cli/using-cli/",
         title: "Using the CLI tool",
         description: "Details about how to use the CLI tool.",
@@ -727,7 +745,7 @@ Source:
       })
       .add(
       {
-        id: 36,
+        id: 37,
         href: "/how-to/code-servers/add-code-servers/",
         title: "Adding code servers",
         description: "How to add code servers to your tenant",
@@ -739,7 +757,7 @@ Source:
       })
       .add(
       {
-        id: 37,
+        id: 38,
         href: "/intro/use-cases/",
         title: "BluBracket use-cases",
         description: "Risks BluBracket solves and how.",
@@ -757,7 +775,7 @@ Source:
       })
       .add(
       {
-        id: 38,
+        id: 39,
         href: "/how-to/cli/",
         title: "CLI tool",
         description: "How to install and use the BluBracket CLI Tool.",
@@ -773,7 +791,7 @@ Source:
       })
       .add(
       {
-        id: 39,
+        id: 40,
         href: "/how-to/code-servers/",
         title: "Code servers",
         description: "Code lives in git repos, and git repos are hosted by code servers. Most git hosting providers structure git repos into collections such as GitHub\u0026rsquo;s Organizations and Bitbucket\u0026rsquo;s Workspaces. In BluBracket, each of those collections is a separate code server.\nSupported code servers in BluBracket #    GitHub GitLab Bitbucket Azure DevOps     Cloud \u0026amp; Enterprise Cloud \u0026amp; on-prem Cloud \u0026amp; Server Cloud   Supported access \u0026amp; configuration risks Supported access \u0026amp; configuration risks Access \u0026amp; configuration risks not supported Access \u0026amp; configuration risks not supported   GitHub Checks      Adding a GitHub code server Adding a GitLab code server Adding a Bitbucket code server Adding an Azure DevOps code server    ",
@@ -785,7 +803,7 @@ Source:
       })
       .add(
       {
-        id: 40,
+        id: 41,
         href: "/how-to/ignore-rules/",
         title: "Configure ignore rules",
         description: "Instructions on how to configure ignore fules for different levels, locally, per repo, and globally",
@@ -797,7 +815,7 @@ Source:
       })
       .add(
       {
-        id: 41,
+        id: 42,
         href: "/how-to/ignore-rules/global/",
         title: "Configuring global ignore rules",
         description: "How to setup global ignore rules for all users of a tenant",
@@ -809,7 +827,7 @@ Source:
       })
       .add(
       {
-        id: 42,
+        id: 43,
         href: "/how-to/ignore-rules/per-repo/",
         title: "Configuring ignore rules per repo",
         description: "How to set ignore rules ignore rules for all users of a repository",
@@ -821,43 +839,61 @@ Source:
       })
       .add(
       {
-        id: 43,
+        id: 44,
         href: "/how-to/iac-checks/bitbucket/",
         title: "Configuring infrastructure as code scanning on Bitbucket",
         description: "Step 1: Create Bitbucket Repository Variables: #   Log into Bitbucket and select a repository where you want to enable Infrastructure as Code scanning.\n  Within the repository, select Repository settings, then Repository variables\n  Create five new Repositories variables\n  Name: DOCKER_HUB_EMAIL\nvalue: blusupport@blubracket.com\nName: DOCKER_HUB_USERNAME\nvalue: blusupport\nName: DOCKER_HUB_TOKEN\nvalue: 085ef825-b366-4636-be2a-8babaf65064f\nName: BLUBRACKET_SERVICE_ENDPOINT\nvalue: BluBracket Tenant name\nExample: https://acme.blubracket.com\nName: BLUBRACKET_INTEGRATION_KEY\nvalue: BluBracket Integration API key",
         
-        
-        
-        content: "Step 1: Create Bitbucket Repository Variables: #   Log into Bitbucket and select a repository where you want to enable Infrastructure as Code scanning.\n  Within the repository, select Repository settings, then Repository variables\n  Create five new Repositories variables\n  Name: DOCKER_HUB_EMAIL\nvalue: blusupport@blubracket.com\nName: DOCKER_HUB_USERNAME\nvalue: blusupport\nName: DOCKER_HUB_TOKEN\nvalue: 085ef825-b366-4636-be2a-8babaf65064f\nName: BLUBRACKET_SERVICE_ENDPOINT\nvalue: BluBracket Tenant name\nExample: https://acme.blubracket.com\nName: BLUBRACKET_INTEGRATION_KEY\nvalue: BluBracket Integration API key\nSteps to create a BluBracket API token: Intro to BluBracket APIs and API keys\n  Step 2: Create Pipeline Workflow: #   Within the repository, select Pipelines and either update an existing pipelines.yaml script or create a new one\n  Add the following script to enable Infrastructure as Code scanning:\n  pipelines: pull-requests: '**': - step: name: 'Run BluBracket IaC Scan' image: name: blubracket/iac-checker:0.0.4-beta username: $DOCKER_HUB_USERNAME password: $DOCKER_HUB_TOKEN email: $DOCKER_HUB_EMAIL script: - echo \u0026quot;Running BluBracket IaC scan\u0026quot; - env - cd /home/blubracket/iac-checker - pipenv run run --repo-directory ${BITBUCKET_CLONE_DIR} --source-branch ${BITBUCKET_BRANCH} -target-branch ${BITBUCKET_PR_DESTINATION_BRANCH} --do-not-fail-on-misconfigurations branches: main: - step: name: 'Run Blubracket IaC Scan' image: name: blubracket/iac-checker:0.0.4-beta username: $DOCKER_HUB_USERNAME password: $DOCKER_HUB_TOKEN email: $DOCKER_HUB_EMAIL script: - echo \u0026quot;Running BluBracket IaC scan\u0026quot; - env - cd /home/blubracket/iac-checker - pipenv run run --repo-directory ${BITBUCKET_CLONE_DIR} --do-not-fail-on-misconfigurations --source-branch ${BITBUCKET_BRANCH}  Step 3: Run Workflow #  Ensure workflow runs successfully. This can be verified by expanding the pipenv run karat:     If Infrastructure as Code was detected, you will see entries that indicate a check has been performed (green check indicating scan passed, a red “x” indicating a risk has been detected).       For all detected risks (red “x”), an alert will be posted to the BluBracket portal.    "
-        
-      })
-      .add(
-      {
-        id: 44,
-        href: "/how-to/iac-checks/github/",
-        title: "Configuring infrastructure as code scanning on GitHub",
-        description: "Step 1: Create GitHub Repository Secrets:\n  Log into GitHub and select a repository where you want to enable Infrastructure as Code scanning.\n  Within the repository, select settings, then secrets\n  Create three new repositories secrets\n  Name: DOCKER_HUB_USERNAME\nvalue: blusupport\nName: DOCKER_HUB_TOKEN\nvalue: 085ef825-b366-4636-be2a-8babaf65064f\nName: BLUBRACKET_INTEGRATION_KEY\nvalue: BluBracket Integration API key\nSteps to create a BluBracket API token: Intro to BluBracket APIs and API keys",
+          
+            
+          
+            
+          
         
         
         
-        content: "Step 1: Create GitHub Repository Secrets:\n  Log into GitHub and select a repository where you want to enable Infrastructure as Code scanning.\n  Within the repository, select settings, then secrets\n  Create three new repositories secrets\n  Name: DOCKER_HUB_USERNAME\nvalue: blusupport\nName: DOCKER_HUB_TOKEN\nvalue: 085ef825-b366-4636-be2a-8babaf65064f\nName: BLUBRACKET_INTEGRATION_KEY\nvalue: BluBracket Integration API key\nSteps to create a BluBracket API token: Intro to BluBracket APIs and API keys\n  Step 2: Create Actions Workflow:\n Within the repository, select Actions and either update an existing ci.yaml script or create a new one     Add the following script to enable Infrastructure as Code scanning:  Note: You must update BLUBRACKET_SERVICE_ENDPOINT=https://[Your BluBracket Tenant Name].blubracket.com to your BluBracket tenant name    Example: BLUBRACKET_SERVICE_ENDPOINT=https://acme.blubracket.com\n# This is a basic workflow to help you get started with Actions name: CI # Controls when the workflow will run on: # Triggers the workflow on push or pull request events but only for the main branch push: branches: [ main ] pull_request: branches: [ main ] # Allows you to run this workflow manually from the Actions tab workflow_dispatch: # A workflow run is made up of one or more jobs that can run sequentially or in parallel jobs: # This workflow contains a single job called \u0026quot;build\u0026quot; build: # The type of runner that the job will run on runs-on: ubuntu-latest # Steps represent a sequence of tasks that will be executed as part of the job steps: # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it - uses: actions/checkout@v2 with: fetch-depth: '0' - name: Login to DockerHub uses: docker/login-action@v1 with: username: ${{ secrets.DOCKERHUB_USERNAME }} password: ${{ secrets.DOCKERHUB_TOKEN }} # Runs a set of commands using the runners shell - name: Run Infra as Code Checker run: | set -ax env SOURCE_BRANCH=${GITHUB_REF/refs\\/heads\\//} BLUBRACKET_SERVICE_ENDPOINT=https://[BluBracket Tenant Name] BLUBRACKET_INTEGRATION_KEY=${{ secrets.BLUBRACKET_INTEGRATION_KEY }} docker run -v ${GITHUB_WORKSPACE}:/home/blubracket/iac-checker/repo \\ -u $(id -u):$(id -g) \\ blubracket/iac-checker:0.0.4-beta run \\ --blubracket-service-endpoint ${BLUBRACKET_SERVICE_ENDPOINT} \\ --integration-key ${BLUBRACKET_INTEGRATION_KEY} \\ --source-branch ${GITHUB_HEAD_REF:-${SOURCE_BRANCH}} \\ --target-branch ${GITHUB_BASE_REF:-\u0026quot;\u0026quot;} \\ --do-not-fail-on-misconfigurations  Step 3: Run Workflow #  Ensure workflow runs successfully. This can be verified by expanding the Run Infra As Code Checker karat:     If Infrastructure as Code was detected, you will see entries that indicate a check has been performed (green check indicating scan passed, a red “x” indicating a risk has been detected).       For all detected risks (red “x”), an alert will be posted to the BluBracket portal.  "
+        content: "infrastructure as codeIaCStep 1: Create Bitbucket Repository Variables: #   Log into Bitbucket and select a repository where you want to enable Infrastructure as Code scanning.\n  Within the repository, select Repository settings, then Repository variables\n  Create five new Repositories variables\n  Name: DOCKER_HUB_EMAIL\nvalue: blusupport@blubracket.com\nName: DOCKER_HUB_USERNAME\nvalue: blusupport\nName: DOCKER_HUB_TOKEN\nvalue: 085ef825-b366-4636-be2a-8babaf65064f\nName: BLUBRACKET_SERVICE_ENDPOINT\nvalue: BluBracket Tenant name\nExample: https://acme.blubracket.com\nName: BLUBRACKET_INTEGRATION_KEY\nvalue: BluBracket Integration API key\nSteps to create a BluBracket API token: Intro to BluBracket APIs and API keys\n  Step 2: Create Pipeline Workflow: #   Within the repository, select Pipelines and either update an existing pipelines.yaml script or create a new one\n  Add the following script to enable Infrastructure as Code scanning:\n  pipelines: pull-requests: '**': - step: name: 'Run BluBracket IaC Scan' image: name: blubracket/iac-checker:0.0.4-beta username: $DOCKER_HUB_USERNAME password: $DOCKER_HUB_TOKEN email: $DOCKER_HUB_EMAIL script: - echo \u0026quot;Running BluBracket IaC scan\u0026quot; - env - cd /home/blubracket/iac-checker - pipenv run run --repo-directory ${BITBUCKET_CLONE_DIR} --source-branch ${BITBUCKET_BRANCH} -target-branch ${BITBUCKET_PR_DESTINATION_BRANCH} --do-not-fail-on-misconfigurations branches: main: - step: name: 'Run Blubracket IaC Scan' image: name: blubracket/iac-checker:0.0.4-beta username: $DOCKER_HUB_USERNAME password: $DOCKER_HUB_TOKEN email: $DOCKER_HUB_EMAIL script: - echo \u0026quot;Running BluBracket IaC scan\u0026quot; - env - cd /home/blubracket/iac-checker - pipenv run run --repo-directory ${BITBUCKET_CLONE_DIR} --do-not-fail-on-misconfigurations --source-branch ${BITBUCKET_BRANCH}  Step 3: Run Workflow #  Ensure workflow runs successfully. This can be verified by expanding the pipenv run karat:     If Infrastructure as Code was detected, you will see entries that indicate a check has been performed (green check indicating scan passed, a red “x” indicating a risk has been detected).       For all detected risks (red “x”), an alert will be posted to the BluBracket portal.    "
         
       })
       .add(
       {
         id: 45,
-        href: "/how-to/iac-checks/gitlab/",
-        title: "Configuring infrastructure as code scanning on GitLab",
-        description: "Step 1: Create GitLab Repository Variables: #   Log into GitLab and select a repository where you want to enable Infrastructure as Code scanning.\n  Within the repository, select Settings, then CI/CD\n  Expand Variables section and select Add variable\n  Create four new variables:\n  Name: DOCKER_HUB_USERNAME\nvalue: blusupport\nName: DOCKER_HUB_TOKEN\nvalue: 085ef825-b366-4636-be2a-8babaf65064f\nName: BLUBRACKET_SERVICE_ENDPOINT\nvalue: BluBracket Tenant name\nExample: https://acme.blubracket.com\nName: BLUBRACKET_INTEGRATION_KEY\nvalue: BluBracket Integration API key",
+        href: "/how-to/iac-checks/github/",
+        title: "Configuring infrastructure as code scanning on GitHub",
+        description: "Step 1: Create GitHub Repository Secrets:\n  Log into GitHub and select a repository where you want to enable Infrastructure as Code scanning.\n  Within the repository, select settings, then secrets\n  Create three new repositories secrets\n  Name: DOCKER_HUB_USERNAME\nvalue: blusupport\nName: DOCKER_HUB_TOKEN\nvalue: 085ef825-b366-4636-be2a-8babaf65064f\nName: BLUBRACKET_INTEGRATION_KEY\nvalue: BluBracket Integration API key\nSteps to create a BluBracket API token: Intro to BluBracket APIs and API keys",
+        
+          
+            
+          
+            
+          
         
         
         
-        content: "Step 1: Create GitLab Repository Variables: #   Log into GitLab and select a repository where you want to enable Infrastructure as Code scanning.\n  Within the repository, select Settings, then CI/CD\n  Expand Variables section and select Add variable\n  Create four new variables:\n  Name: DOCKER_HUB_USERNAME\nvalue: blusupport\nName: DOCKER_HUB_TOKEN\nvalue: 085ef825-b366-4636-be2a-8babaf65064f\nName: BLUBRACKET_SERVICE_ENDPOINT\nvalue: BluBracket Tenant name\nExample: https://acme.blubracket.com\nName: BLUBRACKET_INTEGRATION_KEY\nvalue: BluBracket Integration API key\nSteps to create a BluBracket API token:\nIntro to BluBracket APIs and API keys\n  Step 2: Create Pipeline Workflow: #  Within the repository, select CI/CD, then Pipelines to either update an existing ci.yaml script or create a new one via the Editor option:     Add the following script to enable Infrastructure as Code scanning:  infra-as-code-scan: # Use the official docker image. image: docker:latest stage: build services: - docker:dind variables: GIT_STRATEGY: clone GIT_DEPTH: 0 before_script: - docker login -u \u0026quot;$DOCKERHUB_USERNAME\u0026quot; -p \u0026quot;$DOCKERHUB_TOKEN\u0026quot; script: - env - | set -ax docker run -v ${CI_PROJECT_DIR}:/home/blubracket/iac-checker/repo \\ -u $(id -u):$(id -g) \\ blubracket/iac-checker:0.0.4-beta run \\ --blubracket-service-endpoint ${BLUBRACKET_SERVICE_ENDPOINT} \\ --integration-key ${BLUBRACKET_INTEGRATION_KEY} \\ --source-branch ${CI_MERGE_REQUEST_SOURCE_BRANCH_NAME:-${CI_COMMIT_BRANCH}} \\ --target-branch ${CI_MERGE_REQUEST_TARGET_BRANCH_NAME:-\u0026quot;\u0026quot;} \\ --do-not-fail-on-misconfigurations rules: # Run diff workflow on all merge requests - if: '$CI_PIPELINE_SOURCE == \u0026quot;merge_request_event\u0026quot;' # Run branch workflow on pushes to default branch - if: '$CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH'  Step 3: Run Workflow #  Ensure workflow runs successfully. This can be verified by selecting Jobs and expanding the Executing “step_script” karat and scrolling to bottom of page:     If Infrastructure as Code was detected, you will see entries that indicate a check has been performed (green check indicating scan passed, a red “x” indicating a risk has been detected).       For all detected risks (red “x”), an alert will be posted to the BluBracket portal.    "
+        content: "infrastructure as codeIaCStep 1: Create GitHub Repository Secrets:\n  Log into GitHub and select a repository where you want to enable Infrastructure as Code scanning.\n  Within the repository, select settings, then secrets\n  Create three new repositories secrets\n  Name: DOCKER_HUB_USERNAME\nvalue: blusupport\nName: DOCKER_HUB_TOKEN\nvalue: 085ef825-b366-4636-be2a-8babaf65064f\nName: BLUBRACKET_INTEGRATION_KEY\nvalue: BluBracket Integration API key\nSteps to create a BluBracket API token: Intro to BluBracket APIs and API keys\n  Step 2: Create Actions Workflow:\n Within the repository, select Actions and either update an existing ci.yaml script or create a new one     Add the following script to enable Infrastructure as Code scanning:  Note: You must update BLUBRACKET_SERVICE_ENDPOINT=https://[Your BluBracket Tenant Name].blubracket.com to your BluBracket tenant name    Example: BLUBRACKET_SERVICE_ENDPOINT=https://acme.blubracket.com\n# This is a basic workflow to help you get started with Actions name: CI # Controls when the workflow will run on: # Triggers the workflow on push or pull request events but only for the main branch push: branches: [ main ] pull_request: branches: [ main ] # Allows you to run this workflow manually from the Actions tab workflow_dispatch: # A workflow run is made up of one or more jobs that can run sequentially or in parallel jobs: # This workflow contains a single job called \u0026quot;build\u0026quot; build: # The type of runner that the job will run on runs-on: ubuntu-latest # Steps represent a sequence of tasks that will be executed as part of the job steps: # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it - uses: actions/checkout@v2 with: fetch-depth: '0' - name: Login to DockerHub uses: docker/login-action@v1 with: username: ${{ secrets.DOCKERHUB_USERNAME }} password: ${{ secrets.DOCKERHUB_TOKEN }} # Runs a set of commands using the runners shell - name: Run Infra as Code Checker run: | set -ax env SOURCE_BRANCH=${GITHUB_REF/refs\\/heads\\//} BLUBRACKET_SERVICE_ENDPOINT=https://[BluBracket Tenant Name] BLUBRACKET_INTEGRATION_KEY=${{ secrets.BLUBRACKET_INTEGRATION_KEY }} docker run -v ${GITHUB_WORKSPACE}:/home/blubracket/iac-checker/repo \\ -u $(id -u):$(id -g) \\ blubracket/iac-checker:0.0.4-beta run \\ --blubracket-service-endpoint ${BLUBRACKET_SERVICE_ENDPOINT} \\ --integration-key ${BLUBRACKET_INTEGRATION_KEY} \\ --source-branch ${GITHUB_HEAD_REF:-${SOURCE_BRANCH}} \\ --target-branch ${GITHUB_BASE_REF:-\u0026quot;\u0026quot;} \\ --do-not-fail-on-misconfigurations  Step 3: Run Workflow #  Ensure workflow runs successfully. This can be verified by expanding the Run Infra As Code Checker karat:     If Infrastructure as Code was detected, you will see entries that indicate a check has been performed (green check indicating scan passed, a red “x” indicating a risk has been detected).       For all detected risks (red “x”), an alert will be posted to the BluBracket portal.  "
         
       })
       .add(
       {
         id: 46,
+        href: "/how-to/iac-checks/gitlab/",
+        title: "Configuring infrastructure as code scanning on GitLab",
+        description: "Step 1: Create GitLab Repository Variables: #   Log into GitLab and select a repository where you want to enable Infrastructure as Code scanning.\n  Within the repository, select Settings, then CI/CD\n  Expand Variables section and select Add variable\n  Create four new variables:\n  Name: DOCKER_HUB_USERNAME\nvalue: blusupport\nName: DOCKER_HUB_TOKEN\nvalue: 085ef825-b366-4636-be2a-8babaf65064f\nName: BLUBRACKET_SERVICE_ENDPOINT\nvalue: BluBracket Tenant name\nExample: https://acme.blubracket.com\nName: BLUBRACKET_INTEGRATION_KEY\nvalue: BluBracket Integration API key",
+        
+          
+            
+          
+            
+          
+        
+        
+        
+        content: "infrastructure as codeIaCStep 1: Create GitLab Repository Variables: #   Log into GitLab and select a repository where you want to enable Infrastructure as Code scanning.\n  Within the repository, select Settings, then CI/CD\n  Expand Variables section and select Add variable\n  Create four new variables:\n  Name: DOCKER_HUB_USERNAME\nvalue: blusupport\nName: DOCKER_HUB_TOKEN\nvalue: 085ef825-b366-4636-be2a-8babaf65064f\nName: BLUBRACKET_SERVICE_ENDPOINT\nvalue: BluBracket Tenant name\nExample: https://acme.blubracket.com\nName: BLUBRACKET_INTEGRATION_KEY\nvalue: BluBracket Integration API key\nSteps to create a BluBracket API token:\nIntro to BluBracket APIs and API keys\n  Step 2: Create Pipeline Workflow: #  Within the repository, select CI/CD, then Pipelines to either update an existing ci.yaml script or create a new one via the Editor option:     Add the following script to enable Infrastructure as Code scanning:  infra-as-code-scan: # Use the official docker image. image: docker:latest stage: build services: - docker:dind variables: GIT_STRATEGY: clone GIT_DEPTH: 0 before_script: - docker login -u \u0026quot;$DOCKERHUB_USERNAME\u0026quot; -p \u0026quot;$DOCKERHUB_TOKEN\u0026quot; script: - env - | set -ax docker run -v ${CI_PROJECT_DIR}:/home/blubracket/iac-checker/repo \\ -u $(id -u):$(id -g) \\ blubracket/iac-checker:0.0.4-beta run \\ --blubracket-service-endpoint ${BLUBRACKET_SERVICE_ENDPOINT} \\ --integration-key ${BLUBRACKET_INTEGRATION_KEY} \\ --source-branch ${CI_MERGE_REQUEST_SOURCE_BRANCH_NAME:-${CI_COMMIT_BRANCH}} \\ --target-branch ${CI_MERGE_REQUEST_TARGET_BRANCH_NAME:-\u0026quot;\u0026quot;} \\ --do-not-fail-on-misconfigurations rules: # Run diff workflow on all merge requests - if: '$CI_PIPELINE_SOURCE == \u0026quot;merge_request_event\u0026quot;' # Run branch workflow on pushes to default branch - if: '$CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH'  Step 3: Run Workflow #  Ensure workflow runs successfully. This can be verified by selecting Jobs and expanding the Executing “step_script” karat and scrolling to bottom of page:     If Infrastructure as Code was detected, you will see entries that indicate a check has been performed (green check indicating scan passed, a red “x” indicating a risk has been detected).       For all detected risks (red “x”), an alert will be posted to the BluBracket portal.    "
+        
+      })
+      .add(
+      {
+        id: 47,
         href: "/api/event-alert/",
         title: "Event \u0026 alert",
         description: "Reading and searching events and alerts.",
@@ -869,7 +905,7 @@ Source:
       })
       .add(
       {
-        id: 47,
+        id: 48,
         href: "/how-to/code-servers/git-server-acccess-configuration/",
         title: "Git server access \u0026 configuration",
         description: "Supported access and configuration risks by code server.",
@@ -881,7 +917,7 @@ Source:
       })
       .add(
       {
-        id: 48,
+        id: 49,
         href: "/how-to/code-servers/git-server-acccess-configuration/github/",
         title: "GitHub access \u0026 configuration risks",
         description: "BluBracket monitors and alerts on potential security security issues related to access and configuration of GitHub accounts. The following is a list of these configurations that BluBracket is currently monitoring. BluBracket will continue to add to this list and as we have support for other solutions we will add similar alerts.\nOrganization-level configuration risks #  Base level setting is too permissive: Base permissions to the organization’s repositories apply to all members and exclude outside collaborators.",
@@ -893,7 +929,7 @@ Source:
       })
       .add(
       {
-        id: 49,
+        id: 50,
         href: "/how-to/code-servers/git-server-acccess-configuration/gitlab/",
         title: "GitLab access \u0026 configuration risks",
         description: "BluBracket monitors and alerts on potential security security issues related to access and configuration of GitLab accounts. The following is a list of these configurations that BluBracket is currently monitoring. BluBracket will continue to add to this list and as we have support for other solutions we will add similar alerts.\nSystem-level configuration risks (on-prem only) # Note: these features can be enabled by request.\n Too many admins on system: Default is five.",
@@ -905,7 +941,7 @@ Source:
       })
       .add(
       {
-        id: 50,
+        id: 51,
         href: "/how-to/",
         title: "User guide",
         description: "",
@@ -917,7 +953,7 @@ Source:
       })
       .add(
       {
-        id: 51,
+        id: 52,
         href: "/how-to/ci-checks/github-checks/",
         title: "Configure GitHub Checks",
         description: "Prerequisites # To install GitHub Checks, permissions to install a GitHub App on an org are required. This would be an organization owner or someone with admin level permissions in a repository\nGitHub cloud checks setup for BluBracket free trial edition # This version of GitHub Checks is for customers using a BluBracket Free Trial tenant.\n  Navigate to BluBracket portal, import code server, track repos\n  Install the following app on the organization (should be done by someone who has permissions to install the app): https://github.",
@@ -929,7 +965,7 @@ Source:
       })
       .add(
       {
-        id: 52,
+        id: 53,
         href: "/how-to/add-user/",
         title: "Adding a BluBracket user",
         description: "How to add a BluBracket user",
@@ -941,7 +977,7 @@ Source:
       })
       .add(
       {
-        id: 53,
+        id: 54,
         href: "/api/",
         title: "API",
         description: "How to access and use the BluBracket API.",
@@ -953,7 +989,7 @@ Source:
       })
       .add(
       {
-        id: 54,
+        id: 55,
         href: "/api/ci-checks/",
         title: "CI checks",
         description: "These APIs can be used to integrate BluBracket checks into a continuous integration (CI) workflow and help prevent risks being committed to a protected branch.\nStart a scan # Start a scan for a list of commits or a pull request\nEndpoint # POST /api/analyzer/commit/scan\nParameters #   repo_url (string, required): URL of the repo\n  pull_request_number (int, optional): The id number of the pull request to be scanned.",
@@ -965,7 +1001,7 @@ Source:
       })
       .add(
       {
-        id: 55,
+        id: 56,
         href: "/how-to/add-user-ad-saml/",
         title: "Configure Azure AD",
         description: "How to configure Azure AD SAML and manage users",
@@ -977,7 +1013,7 @@ Source:
       })
       .add(
       {
-        id: 56,
+        id: 57,
         href: "/intro/getting-started/",
         title: "Getting started with BluBracket",
         description: "How to sign up and start using BluBracket for free",
@@ -1003,16 +1039,11 @@ Source:
       })
       .add(
       {
-        id: 57,
+        id: 58,
         href: "/how-to/iac-checks/",
         title: "IaC checks",
         description: "Infrastructure as code (IaC) scanning configuration instructions",
         
-        
-          
-            
-          
-            
           
             
           
@@ -1020,12 +1051,23 @@ Source:
           
         
         
-        content: "Configuring Infrastructure as Code on GitHub – BluBracketConfiguring Infrastructure as Code on Bitbucket – BluBracketConfiguring Infrastructure as Code on GitLab – BluBracketHow do I configure Infrastructure as Code on my tenant? – BluBracketInfrastructure as code (IaC) scanning operates differently from other checks in BluBracket. It runs as a job within the CI tool of your choice, and reports its findings back to BluBracket where you can evaluate any found risks. Despite the different operation model, any alerts related to IaC risks are processed by BluBracket as usual, and trigger messages in Slack for example.\nOfficially supported CI systems for IaC scanning include:\n"
+          
+            
+          
+            
+          
+            
+          
+            
+          
+        
+        
+        content: "infrastructure as codeIaCConfiguring Infrastructure as Code on GitHub – BluBracketConfiguring Infrastructure as Code on Bitbucket – BluBracketConfiguring Infrastructure as Code on GitLab – BluBracketHow do I configure Infrastructure as Code on my tenant? – BluBracketInfrastructure as code (IaC) scanning operates differently from other checks in BluBracket. It runs as a job within the CI tool of your choice, and reports its findings back to BluBracket where you can evaluate any found risks. Despite the different operation model, any alerts related to IaC risks are processed by BluBracket as usual, and trigger messages in Slack for example.\nOfficially supported CI systems for IaC scanning include:\n"
         
       })
       .add(
       {
-        id: 58,
+        id: 59,
         href: "/how-to/remediate-alerts/",
         title: "Remediate alerts",
         description: "How to remediate alerts",
@@ -1037,7 +1079,7 @@ Source:
       })
       .add(
       {
-        id: 59,
+        id: 60,
         href: "/faq/",
         title: "Frequently asked questions",
         description: "A searchable list of all FAQs.",
@@ -1055,7 +1097,7 @@ Source:
       })
       .add(
       {
-        id: 60,
+        id: 61,
         href: "/intro/key-workflows/",
         title: "Key workflows",
         description: "BluBracket code security tools are optimized to prevent risks from getting into code, and to promote the process of continuous improvement that reduces existing risks from code over time.\nPreventing risks in code # As developers, we depend on a quick feedback loop to understand if our code is working and does what is expected. BluBracket tools can offer automated security guidance as part of that feedback loop, in the IDE of your choice, pre-commit, and as part of the CI flow.",
@@ -1075,7 +1117,7 @@ Source:
       })
       .add(
       {
-        id: 61,
+        id: 62,
         href: "/how-to/ci-checks/",
         title: "CI checks",
         description: "Integrating BluBracket into the CI code review process.",
@@ -1103,7 +1145,7 @@ Source:
       })
       .add(
       {
-        id: 62,
+        id: 63,
         href: "/intro/integrations/",
         title: "Integrations",
         description: "Local workflow tools #  The BluBracket CLI tool can identify and block secrets before they\u0026rsquo;re committed.\n  Available local tools and integrations\n CLI IntelliJ (via CLI, full plugin coming soon) Visual Studio Code (via CLI)  Usage guide: installing and using the CLI.\nCode servers #  BluBracket scans repositories hosted in GitHub, GitLab, Bitbucket, and others.\n  Certified \u0026amp; supported code servers:\n GitHub GitLab Bitbucket Azure DevOps (contact us for beta) Gerrit (coming soon)  Usage guide: adding code servers.",
@@ -1119,7 +1161,7 @@ Source:
       })
       .add(
       {
-        id: 63,
+        id: 64,
         href: "/how-to/code-servers/add-code-servers/azure-devops/",
         title: "Adding an Azure DevOps code server",
         description: "How to add an Azure DevOps code server to your tenant",
@@ -1131,7 +1173,7 @@ Source:
       })
       .add(
       {
-        id: 64,
+        id: 65,
         href: "/contact-support/",
         title: "Contact support",
         description: "",
@@ -1143,7 +1185,7 @@ Source:
       })
       .add(
       {
-        id: 65,
+        id: 66,
         href: "/release-notes/",
         title: "Release notes",
         description: "",
@@ -1155,7 +1197,7 @@ Source:
       })
       .add(
       {
-        id: 66,
+        id: 67,
         href: "/authoring-documentation/",
         title: "Authoring documentation",
         description: "How do write and edits the docs in this site.",
@@ -1167,7 +1209,7 @@ Source:
       })
       .add(
       {
-        id: 67,
+        id: 68,
         href: "/",
         title: "BluBracket Documentation",
         description: "Track what's in your code, who has access, and where it goes.",
@@ -1179,7 +1221,7 @@ Source:
       })
       .add(
       {
-        id: 68,
+        id: 69,
         href: "/release-notes/2021-11-22/",
         title: "2021-11-22 release",
         description: "New Features and Enhancements #  “Other” type has been added to the Secret Types pie chart on the BluPrint page. The pie chart should now show the top 6 secret types as well as a 7th that is composed of all of the remaining types. Clicking on any of the pie sections should take the user to a filtered table for the selected secret type. Many additional enhancements have been added to identify false positives where secrets are concerned.",
@@ -1191,7 +1233,7 @@ Source:
       })
       .add(
       {
-        id: 69,
+        id: 70,
         href: "/release-notes/2021-10-11/",
         title: "2021-10-11 release",
         description: "New Features and Enhancements #  New public API to return repo scan status Added infinite label filter to support scrolling through all labels.  Bug Fixes #  CORE-8192 URL of webhook was not displayed in the compliance alerts flyover details CORE-8343 Enhanced false positive detection where secret type is “token” CORE-8414 - Fixed Slack integration issue where deep link was not being displayed in message Fix table pagination loading bugs  ",
@@ -1203,7 +1245,7 @@ Source:
       })
       .add(
       {
-        id: 70,
+        id: 71,
         href: "/release-notes/2021-09-28/",
         title: "2021-09-28 release",
         description: "New Features and Enhancements #   Additional checks performed when user adds new code server. We now identify and show a message if the user does not have adequate organization level permissions, even if the Personal Access Token does have required permissions. Inadequate user permissions will result in incomplete repo risk calculations.\n  Code Leaks now filters out Public to Public alerts.\n  Code Leaks details now displays a deep link to the selected leaked file",
@@ -1215,7 +1257,7 @@ Source:
       })
       .add(
       {
-        id: 71,
+        id: 72,
         href: "/release-notes/2021-09-13/",
         title: "2021-09-13 release",
         description: "New Features and Enhancements #   New Repo Details Design. When clicking on a Repository, you will now see a new design that lists the risk rating and number of violations for each risk category. Clicking on the violations number will provide a filter view of all violations of that risk category type.\n    The terminology “Alerts” has been replaced with “All Violations”, which is a new tab next to Code Risks at top of screen.",
@@ -1227,7 +1269,7 @@ Source:
       })
       .add(
       {
-        id: 72,
+        id: 73,
         href: "/release-notes/2021-09-07/",
         title: "2021-09-07 release",
         description: "New Features and Enhancements #   Access Risk Categories now links to appropriate alerts in the repo details page.\n  Enhanced Code Server onboarding for Bitbucket and GitLab.\n  Updated Infrastructure Code Alerts and Events to be more descriptive.\n  Added breadcrumbs to repository details page in portal.\n  Updated support for global Ignore.yaml. If you place a folder labeled “.blubracket” into a repository, then create a file called ignore.",
@@ -1239,7 +1281,7 @@ Source:
       })
       .add(
       {
-        id: 73,
+        id: 74,
         href: "/release-notes/2021-08-16/",
         title: "2021-08-16 release",
         description: "New Features and Enhancements # Enterprise Edition # New Code Risks Categories\nBluBracket has added two additional Risk Categories to the repo detail view, PII and Non-inclusive language!\n  All newly created tenants will automatically have three Non-inclusive language regular expressions configured (blacklist, slave, master) and one PII regular expression for social security numbers.\nFor existing customers, if you would like to utilize the new PII and Non-inclusive Language categories, please follow the instructions below:",
@@ -1251,7 +1293,7 @@ Source:
       })
       .add(
       {
-        id: 74,
+        id: 75,
         href: "/release-notes/2021-07-21/",
         title: "2021-07-21 release",
         description: "New Features and Enhancements # Enterprise Edition # No new features or enhancements added to the Enterprise Edition with this release.\nCommunity Edition # No new features or enhancements added to the Community Edition with this release.\nBug Fixes #   CORE-7410 - Fix filtering issue when attempting to filter for a value that does not exist. Now returns “no events found” instead of returning all results.\n  CORE-7514 - Fix custom date range bug for Last Activity column in repository list view",
@@ -1263,7 +1305,7 @@ Source:
       })
       .add(
       {
-        id: 75,
+        id: 76,
         href: "/release-notes/2021-07-03/",
         title: "2021-07-03 release",
         description: "New Features and Enhancements # Enterprise Edition # Code Risks #   Within the repository details page the Code Risks tab now indicates the level of risk associated with any of the risk categories that BluBracket could potentially be identifying. As seen in the screenshot below, all categories are designated with a High/Medium/Low indicator and the number of violations associated with the risk category type. Clicking risk category type will navigate the user to a list view of the violations.",
@@ -1275,7 +1317,7 @@ Source:
       })
       .add(
       {
-        id: 76,
+        id: 77,
         href: "/release-notes/2021-06-05/",
         title: "2021-06-05 release",
         description: "New Features and Enhancements # Enterprise Edition # High Risks #  The BluPrint page now contains a new table that displays the most risky repos that are currently being monitored. The repository with the highest risk score is at the top of the list, descending to the 100th highest at the bottom. The Alert tiles have been moved to just below this table and are now, by default, in a collapsed state.",
@@ -1287,7 +1329,7 @@ Source:
       })
       .add(
       {
-        id: 77,
+        id: 78,
         href: "/release-notes/2021-05-03/",
         title: "2021-05-03 release",
         description: "New Features and Enhancements # Enterprise Edition # Event Tagging and Alert Enabling #   Event Tagging: For quite some time now BluBracket has been using tagging events with things like “Active Token”, “Inactive Token”, “Strong Password”, etc. These tags have been used to notify the user of specific information related to the event. It quickly became apparent that these could be useful for customers when integrating with other systems, or just for filtering purposes.",
@@ -1299,7 +1341,7 @@ Source:
       })
       .add(
       {
-        id: 78,
+        id: 79,
         href: "/release-notes/2021-04-27/",
         title: "2021-04-27 release",
         description: "New Features and Enhancements # Enterprise Edition # PCRE Library #  The PCRE library has now been added to the BluBracket regular expression feature. This is an extension to our previous library and will allow users to pattern match more regular expressions than previously.  Community Edition # Command Line Interface (CLI) Tool - PII Addition #  In addition to built-in secrets and custom secrets, CLI does support the ability to define a different group of “secrets” related to PII (Personally Identifiable Information) such as Social Security Numbers (SSN), emails, URLs, IP-addresses, etc.",
@@ -1311,7 +1353,7 @@ Source:
       })
       .add(
       {
-        id: 79,
+        id: 80,
         href: "/release-notes/2021-04-16/",
         title: "2021-04-16 release",
         description: "New Features and Enhancements # No new features in this release. # Bug Fixes #   CORE-6128 - CE - Incorrect count being displayed for duplicate alerts. Has been addressed.\n  CORE-5030 - Redundant URL being displayed in code copy details. Fixed.\n  CORE-5543 - Repository contribution table on BluPrint page is throwing an error when clicked. This is now fixed.\n  CORE-6284 - Issue with GitHub Checks app never completing scan if two users are both monitoring the same repository.",
@@ -1323,7 +1365,7 @@ Source:
       })
       .add(
       {
-        id: 80,
+        id: 81,
         href: "/release-notes/2021-03-26/",
         title: "2021-03-26 release",
         description: "New Features and Enhancements # Enterprise Edition # Rescan Repository #  It is now possible to rescan an entire repository, including all of the repository history, at the click of a button. Normally a full scan of a repository is done at the time of adding the code server that the repository belongs to, or whenever the repository is added. After that the initial scan the repository is monitored and all new commits are scanned and only periodically is the entire repository scanned.",
@@ -1335,7 +1377,7 @@ Source:
       })
       .add(
       {
-        id: 81,
+        id: 82,
         href: "/release-notes/2021-03-12/",
         title: "2021-03-12 release",
         description: "New Features and Enhancements # New Public APIs #   Two new APIs have been added to the list of public APIs available. The two new APIs allow users to dismiss alerts and re-enabled alerts that have been dismissed. This is especially important for users that have integrated with their CICD solutions and want to complete the loop. For example, a developer commits code that triggers a BluBracket alert, the user’s CICD integration recognizes the alert, creates a ticket and notification to the appropriate developer/administrator to remediate the issue, the developer/administrator remediates and closes the ticket, which triggers the API to dismissed the addressed alert in BluBracket.",
@@ -1347,7 +1389,7 @@ Source:
       })
       .add(
       {
-        id: 82,
+        id: 83,
         href: "/release-notes/2021-03-05/",
         title: "2021-03-05 release",
         description: "New Features # Command Line Interface (CLI) Tool Enhancements #   A number of significant changes have been added to the CLI tool this with this release of the Community Edition. All of these improvements, except for code signing of course, have been taken from the existing features within the enterprise version of the BluBracket solution.\n  Activeness Checks - The CLI tool now runs an activeness check on a number of the tokens, keys and IDs to eliminate false positives.",
@@ -1359,7 +1401,7 @@ Source:
       })
       .add(
       {
-        id: 83,
+        id: 84,
         href: "/release-notes/2021-02-12/",
         title: "2021-02-12 release",
         description: "New Features # Repo Details Slide Out #   Clicking on any row within the repository table will now expose a repository details slide out panel. Within this panel the user can see all of the unreviewed secrets that compose the Repo Risk Score for the specific repository. Users are still able to navigate to the GitHub repository, as was the previous action by clicking on a given repo, by clicking on the deep link within the slide out.",
@@ -1371,7 +1413,7 @@ Source:
       })
       .add(
       {
-        id: 84,
+        id: 85,
         href: "/release-notes/2021-02-02/",
         title: "2021-02-02 release",
         description: "New Features # Repo Risk Score and Secret Risk Score #   The BluBracket Community Edition has introduced the concepts of Repository Risk Score and Secret Risk Score to the interface as of this release. This feature is meant to give the user, at a glance, an idea of the potential risk involved with a specific repository.\n  The Repository Risk Score is a number that is meant to reflect the number of unreviewed secrets that exist within the repository as well as their potential severity.",
@@ -1383,7 +1425,7 @@ Source:
       })
       .add(
       {
-        id: 85,
+        id: 86,
         href: "/release-notes/2021-01-22/",
         title: "2021-01-22 release",
         description: "Bug Fixes #  CORE-5377 - Updated the Community Edition secrets table to include a loading spinner CORE-5468 - Fixed the incorrect URL for Secrets in Code documentation CORE-4744 - Sorting fix for the repository list view CORE-5357 - A number of minor UI fixes were taken care of in the Community Edition CORE-5370 - Fixed the Community Edition Safari issue with the insight tile sizing CORE-5371 - Topbar icon fix for Community Edition CORE-5485 - Addressed the Bitbucket push event when no nickname in payload  ",
@@ -1395,7 +1437,7 @@ Source:
       })
       .add(
       {
-        id: 86,
+        id: 87,
         href: "/contributors/",
         title: "Contributors",
         description: "",
