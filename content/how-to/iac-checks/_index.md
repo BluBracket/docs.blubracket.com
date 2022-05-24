@@ -11,6 +11,9 @@ searchExtraKeywords:
   - "Configuring Infrastructure as Code on Bitbucket – BluBracket"
   - "Configuring Infrastructure as Code on GitLab – BluBracket"
   - "How do I configure Infrastructure as Code on my tenant? – BluBracket"
+tags:
+  - infrastructure as code
+  - IaC
 resources:
   - src:
 ---
