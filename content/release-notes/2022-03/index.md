@@ -11,8 +11,9 @@ resources:
 
 ### New Features and Enhancements
 
-- Placeholder
-
-### Bug Fixes
-
-- Placeholder
+- Track and manage your work by marking the triaged state of each alert
+- Event reconciliation on pattern/logic changes
+- New settings page outlining available integrations
+- New support for tracking commit info, including tip of main branch
+- Refactored user management in preparation for OAuth and RBAC
+- New documentation website (this site, yay!)

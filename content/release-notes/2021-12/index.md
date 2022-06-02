@@ -11,8 +11,7 @@ resources:
 
 ### New Features and Enhancements
 
-- Placeholder
-
-### Bug Fixes
-
-- Placeholder
+- Self-hosted (VPC/on-prem) installer improvements, including support for Terraform
+- Bulk code server import to import multiple GitHub Organizations, Bitbucket Workspaces, or GitLab Workspaces with a single click
+- Activeness checks for multi-part secrets, such as AWS keys and secret keys
+- CLI: Ability to scan an arbitrary directory outside a git repo

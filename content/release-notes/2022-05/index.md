@@ -11,8 +11,8 @@ resources:
 
 ### New Features and Enhancements
 
-- Placeholder
-
-### Bug Fixes
-
-- Placeholder
+- New alert search and filtering experience improves workflows and findability of actionable
+- Support for git repositories on Gerrit code servers
+- Ongoing false positive improvements, including more nuanced inspection and reporting for multi-part secrets (such as AWS keys and secret keys)
+- New OAuth signup/sign-in support
+- CLI: offline scan, which operates entirely without network interaction, is now the default

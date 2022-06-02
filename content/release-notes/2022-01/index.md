@@ -11,8 +11,7 @@ resources:
 
 ### New Features and Enhancements
 
-- Placeholder
-
-### Bug Fixes
-
-- Placeholder
+- Initial support for repos in Azure DevOps
+- Bitbucket Insights support gives developers guidance about risks in their code during the review process, eliminating unnecessary alerts
+- Scalability improvements around integrations
+- Scalability improvements for git host webhook processing and job queueing
