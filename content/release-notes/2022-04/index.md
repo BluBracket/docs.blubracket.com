@@ -9,7 +9,7 @@ resources:
   - src:
 ---
 
-### New Features and Enhancements
+### New features, enhancements, and bug fixes
 
 - Redesigned and re-imagined views of alerts optimized around quick triage and remediation workflows
 - New support for tracking detailed branch info

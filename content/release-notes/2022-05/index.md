@@ -9,7 +9,7 @@ resources:
   - src:
 ---
 
-### New Features and Enhancements
+### New features, enhancements, and bug fixes
 
 - New alert search and filtering experience improves workflows and findability of actionable
 - Support for git repositories on Gerrit code servers

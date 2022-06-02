@@ -9,7 +9,7 @@ resources:
   - src:
 ---
 
-### New Features and Enhancements
+### New features, enhancements, and bug fixes
 
 - Track and manage your work by marking the triaged state of each alert
 - Event reconciliation on pattern/logic changes

@@ -9,7 +9,7 @@ resources:
   - src:
 ---
 
-### New Features and Enhancements
+### New features, enhancements, and bug fixes
 
 - Improved false positive rejection
 - Periodic scans re-process data with the latest rules, and catch pushes missed in case the git host dropped the webhook

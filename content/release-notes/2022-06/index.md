@@ -9,7 +9,7 @@ resources:
   - src:
 ---
 
-### New Features and Enhancements
+### New features, enhancements, and bug fixes
 
 - CLI: new open-source recipes for scanning S3, syslog, and Confluence wiki pages
 - New risk severity for all events gives detailed information to identify and prioritize risk across your codebase

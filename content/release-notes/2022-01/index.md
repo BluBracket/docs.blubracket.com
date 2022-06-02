@@ -9,7 +9,7 @@ resources:
   - src:
 ---
 
-### New Features and Enhancements
+### New features, enhancements, and bug fixes
 
 - Initial support for repos in Azure DevOps
 - Bitbucket Insights support gives developers guidance about risks in their code during the review process, eliminating unnecessary alerts

@@ -9,7 +9,7 @@ resources:
   - src:
 ---
 
-### New Features and Enhancements
+### New features, enhancements, and bug fixes
 
 - Self-hosted (VPC/on-prem) installer improvements, including support for Terraform
 - Bulk code server import to import multiple GitHub Organizations, Bitbucket Workspaces, or GitLab Workspaces with a single click
