@@ -38,8 +38,8 @@ Certified & supported code servers:
 - GitHub
 - GitLab
 - Bitbucket
-- Azure DevOps ([contact us for beta]({{< ref contact-support >}}))
-- Gerrit (coming soon)
+- Azure DevOps
+- Gerrit
 
 Usage guide: [adding code servers](/how-to/add-code-servers/).
 

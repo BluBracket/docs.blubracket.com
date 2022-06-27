@@ -3,7 +3,7 @@ title: "Adding a GitLab Cloud code server"
 aliases:
   - /how-to/add-code-servers/gitlab-cloud
 description: "How to add a GitLab Cloud code server to your tenant"
-lead: "How to add a GitLab Cloud code server to your tenant"
+lead: ""
 date: 2022-01-12T02:48:57+00:00
 draft: false
 weight: 100
