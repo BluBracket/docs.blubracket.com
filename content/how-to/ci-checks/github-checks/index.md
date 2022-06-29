@@ -39,8 +39,8 @@ The BluBracket app for GitHub Checks is automatically installed when adding a Gi
 
 Note: if you added your GitHub org to BluBracket before 1 June 2022, the GitHub Checks was not automatically configured. Please follow these instructions to add GitHub Checks:
 
-- If you are monitoring all repos in the GitHub org: [go through the steps to add the GitHub org as a code server again](https://docs.blubracket.com/how-to/code-servers/add-code-servers/bitbucket-cloud/) (don't delete the old code server). This won't create any duplicate, it will simply add GitHub Checks to the existing configuration.
-- If you are *not* monitoring all repos in the GitHub org: remove the current code server and [re-add it to BluBracket](https://docs.blubracket.com/how-to/code-servers/add-code-servers/bitbucket-cloud/). When re-adding the code server, the GitHub interface will allow you to select which repos you wish to monitor.
+- If you are monitoring all repos in the GitHub org: [go through the steps to add the GitHub org as a code server again](/how-to/code-servers/add-code-servers/github-cloud-oauth/) (don't delete the old code server). This won't create any duplicate, it will simply add GitHub Checks to the existing configuration.
+- If you are *not* monitoring all repos in the GitHub org: remove the current code server and [re-add it to BluBracket](/how-to/code-servers/add-code-servers/github-cloud-oauth/). When re-adding the code server, the GitHub interface will allow you to select which repos you wish to monitor.
 
 Whatever path you choose, your future PRs + commits to PRs in monitored repos will be checked by BluBracket.
 
