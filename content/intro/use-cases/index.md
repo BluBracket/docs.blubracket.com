@@ -45,7 +45,9 @@ BluBracket's tools help identify non-inclusive language throughout the developme
 
 ## Code analysis (powered by Semgrep) {#sast}
 
-## Dependency vulnerabilities (powered by Snyk) {#sca}
+Spotting SQL injection, XSS, insecure crypto, and other OWASP top ten risks, as well as performance and maintainability best practices helps runtime security and overall code quality.
+
+Code analysis recommendations are presented side-by-side other code risks, giving developers and security teams a comprehensive view of code health.
 
 ## Infrastructure as code (IaC) risks (powered by Checkov) {#iac}
 
@@ -54,6 +56,14 @@ Monitoring infrastructure-as-code for proper configuration before it's applied t
 BluBracket's tools automatically and continuously audit IaC throughout the development process, but teams value the guidance most when reviewing pull requests.
 
 [Learn more about how BluBracket has integrated Checkov](https://docs.blubracket.com/faq/how-does-blubracket-iac-scanning-compare-to-checkov/) and the unique features available when using Checkov inside BluBracket.
+
+## Dependency vulnerabilities (powered by Snyk) {#sca}
+
+{{< alert icon="👉" text="This feature is an available option for Enterprise customers." />}}
+
+BluBracket's core tools give security teams and developers comprehensive visibility to their internal code supply chain. And now, integrated dependency vulnerability reports powered by Snyk Open Source add visibility to the external code supply chain.
+
+The combined power of BluBracket and Snyk offers the only end-to-end code supply chain security solution available today.
 
 ## Monitoring git access & configuration {#access-auditing}
 
