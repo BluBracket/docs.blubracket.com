@@ -1,5 +1,7 @@
 ---
 title: "What if I need more time for my free trial?"
+aliases:
+  - /faq/what-happens-when-my-free-trial-runs-out
 description: ""
 lead: ""
 date: 2022-01-12T02:48:57+00:00
@@ -12,8 +14,8 @@ resources:
   - src:
 ---
 
-Just ask and we'll extend your free trial!
+The BluBracket Community Edition is free for individuals and teams of up to 50 developers, and has no time limits.
 
-Our goal is to build a product you want to use because it provides value to you. If you need more time, we'll gladly help.
+Free trials of the BluBracket Team Edition have no time limit. Our goal is to build a product you want to use because it provides value to you.
 
-[Contact our customer success team here](/contact-support/).
+As always, [our customer success team is here to help](/contact-support/).

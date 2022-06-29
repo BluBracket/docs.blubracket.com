@@ -43,13 +43,21 @@ Companies and open source communities are both increasingly aware of the role in
 
 BluBracket's tools help identify non-inclusive language throughout the development process, and guide teams to continuous improvement over time.
 
-## Infrastructure as code (IaC) risks {#iac}
+## Code analysis (powered by Semgrep) {#sast}
+
+## Dependency vulnerabilities (powered by Snyk) {#sca}
+
+## Infrastructure as code (IaC) risks (powered by Checkov) {#iac}
 
 Monitoring infrastructure-as-code for proper configuration before it's applied to the infrastructure reduces risk and improves productivity for teams of all sizes.
 
 BluBracket's tools automatically and continuously audit IaC throughout the development process, but teams value the guidance most when reviewing pull requests.
 
+[Learn more about how BluBracket has integrated Checkov](https://docs.blubracket.com/faq/how-does-blubracket-iac-scanning-compare-to-checkov/) and the unique features available when using Checkov inside BluBracket.
+
 ## Monitoring git access & configuration {#access-auditing}
+
+{{< alert icon="👉" text="This feature is only available to Enterprise customers." />}}
 
 Knowing who and what systems have access to code is critical to supporting modern workflows that often require broad access across the organization, while also protecting organizations and teams against stale permissions and misconfigurations that can emerge over time.
 

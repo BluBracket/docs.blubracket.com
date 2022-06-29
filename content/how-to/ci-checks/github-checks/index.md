@@ -2,71 +2,75 @@
 title: "Configure GitHub Checks"
 aliases:
   - /how-to/github-checks
-description: 
-lead: 
+description:
+lead:
 date: 2022-03-04T02:48:57+00:00
 draft: false
 weight: 300
 toc: false
 resources:
-  - src: gitchecks.png
+  - src: gitchecks1.png
   - src: gitchecks2.png
   - src: gitchecks3.png
-  - src: gitchecks4.png
+  - src: gitchecks5.png
 ---
 
-#### Prerequisites
+## Prerequisites
 
-To install GitHub Checks, permissions to install a GitHub App on an org are required.  This would be an [organization owner or someone with admin level permissions in a repository](https://docs.github.com/en/developers/apps/differences-between-github-apps-and-oauth-apps#who-can-install-github-apps-and-authorize-oauth-apps)
+To install the BluBracket app for GitHub Checks, permissions to install a GitHub App on an org are required. This would be an [organization owner or someone with admin level permissions in a repository](https://docs.github.com/en/developers/apps/differences-between-github-apps-and-oauth-apps#who-can-install-github-apps-and-authorize-oauth-apps).
 
-#### GitHub cloud checks setup for BluBracket free trial edition {#freetrial}
+## Choosing which app to install
 
-This version of GitHub Checks is for customers using a BluBracket Free Trial tenant.
+The BluBracket app for GitHub Checks is available for all BluBracket editions, and multiple offerings of GitHub.
 
-1. Navigate to BluBracket portal, import code server, track repos
+|                               | GitHub Cloud                                                                         | GitHub Enterprise<br />(including Server) |
+|-------------------------------|--------------------------------------------------------------------------------------|--------------------------------------|
+| BluBracket Community Edition  | [BluBracket Community & Team Edition](#community-and-team) | n/a                                  |
+| BluBracket Team Edition       | [BluBracket Community & Team Edition](#community-and-team) | n/a                                  |
+| BluBracket Enterprise Edition | [BluBracket Enterprise Edition](#enterprise)               | [BluBracket Enterprise Edition & GitHub Enterprise Server](#onpremise)                             |
 
-2. Install the following app on the organization (should be done by someone who has permissions to install the app): [https://github.com/apps/blubracket-standard](https://github.com/apps/blubracket-standard)
+## GitHub Checks setup for GitHub Cloud and BluBracket Community & Team Edition accounts {#community-and-team}
 
-3. Future PRs + commits to PRs should automatically run the scans via GitHub Checks
+BluBracket Community and Team Edition accounts are monitored by the [BluBracket Community Edition app.](https://github.com/apps/blubracket-community-edition).
 
-[![Github Checks Free Install](gitchecks.png)](https://github.com/apps/blubracket-standard)
+[![Github Checks for GitHub Cloud and BluBracket Community & Team Editions](gitchecks1.png)](https://github.com/apps/blubracket-community-edition)
 
-#### GitHub cloud checks setup for BluBracket enterprise tenants {#enterprise}
+The BluBracket app for GitHub Checks is automatically installed when adding a GitHub org to your BluBracket Community Edition and BluBracket Team Edition account.
 
-This version of GitHub Checks is for paid customers running on the BluBracket production servers
+Note: if you added your GitHub org to BluBracket before 1 June 2022, the GitHub Checks was not automatically configured. Please follow these instructions to add GitHub Checks:
 
-1. Navigate to BluBracket portal, import code server, track repos
+- If you are monitoring all repos in the GitHub org: [go through the steps to add the GitHub org as a code server again](https://docs.blubracket.com/how-to/code-servers/add-code-servers/bitbucket-cloud/) (don't delete the old code server). This won't create any duplicate, it will simply add GitHub Checks to the existing configuration.
+- If you are *not* monitoring all repos in the GitHub org: remove the current code server and [re-add it to BluBracket](https://docs.blubracket.com/how-to/code-servers/add-code-servers/bitbucket-cloud/). When re-adding the code server, the GitHub interface will allow you to select which repos you wish to monitor.
 
-2. Install the following app on the organization (should be done by someone who has permissions to install the app): [https://github.com/apps/blubracket-checks-app](https://github.com/apps/blubracket-checks-app)
+Whatever path you choose, your future PRs + commits to PRs in monitored repos will be checked by BluBracket.
 
-3. Future PRs + commits to PRs should automatically run the scans via GitHub Checks
+## GitHub Checks setup for BluBracket Enterprise accounts {#enterprise}
 
-[![Github Checks Paid Install](gitchecks2.png)](https://github.com/apps/blubracket-checks-app)
+BluBracket Enterprise Edition accounts are monitored by the [BluBracket Checks App.](https://github.com/apps/blubracket-checks-app).
 
-#### GitHub enterprise server checks setup {#onpremise}
+Once your BluBracket Enterprise Edition account is configured and code servers setup, simply install the [BluBracket Checks App.](https://github.com/apps/blubracket-checks-app) (this must be done by someone who has permissions in GitHub to install the app). Once installed, your future PRs + commits to PRs in monitored repos will be checked by BluBracket.
+
+[![Github Checks for GitHub Cloud and BluBracket Enterprise Edition](gitchecks2.png)](https://github.com/apps/blubracket-checks-app)
+
+## GitHub Checks setup for GitHub Enterprise Server {#onpremise}
 
 This version of GitHub Checks is for paid customers using the on-premise GitHub Enterprise Server
 
-1. Navigate to the BluBracket portal, import code server, track repos
+1. Setup your BluBracket Enterprise Edition and configure code servers setup
+2. Create the GitHub Enterprise Server Checks app (follow [the instructions here](https://github.com/BluBracket/blubracket-tools/tree/main/github-checks-app))
+    1. One step in those instructions is to send the configuration details to the customer success team. Wait for confirmation from the team before proceeding.
+3. Install the app created from step 2 on the organization (this must be done by someone who has permissions in GitHub to install the app).
 
-2. Create the GitHub Enterprise Server Checks app (follow the instructions at https://github.com/BluBracket/blubracket-tools/tree/main/github-checks-app )
-
-    * As part of the last step in that README.md file, send over the relevant configuration details. Wait for confirmation from us that our internal set up has been completed before proceeding.
-
-3. Install the app created from step 2 on the organization (should be done by someone who has permissions to install the app).
-
-Future PRs + commits to PRs should automatically run the scans via GitHub Checks
+Once installed, your future PRs + commits to PRs in monitored repos will be checked by BluBracket.
 
 [![GitHub Checks Enterprise](gitchecks3.png)](https://github.com/BluBracket/blubracket-tools/tree/main/github-checks-app)
 
-#### GitHub checks workflow {#workflow}
+## BluBracket app for GitHub Checks workflow {#workflow}
 
-The BluBracket GitHub checks workflow will run on your CI/CD workflow within GitHub.  For example when a pull request is made the BluBracket GitHub checks will scan the pull request for secrets.  
+Whatever version of the BluBracket app for GitHub Checks you choose, it will run for every pull request, and for every new commit to any open pull requests.
 
-For example when a secret is found within a pull request, the check will fail and will give details on where and what type of secret was found.
+The app will alert you to any secrets found in the pull request, including both the tip of the pull request and the history of any commits. The alert includes details on where and what type of secret was found.
 
 {{< figure src="gitchecks5.png" caption="Example of a failing check on a pull request" >}}
 
-If the BluBracket checks app doesn't find any blocking items such as secrets, the check will pass and the pull request can be successfully merged.
-
-{{< figure src="gitchecks4.png" caption="Example of a passing check on a pull request" >}}
+By default, the BluBracket app for GitHub Checks does not block any pull requests. Usage statistics show over 80% of warnings about secrets in PRs are fixed before commit, and the non-blocking workflow is more respectful of developer needs.
