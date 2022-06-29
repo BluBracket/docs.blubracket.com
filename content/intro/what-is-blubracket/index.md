@@ -32,7 +32,7 @@ BluBracket is for individual developers, development and appsec teams of all siz
 
 - **BluBracket Community Edition**
 
-    Core BluBracket code security features—including the CLI tools.[Available free with no time limit for personal use and teams under 50 devs](https://blubracket.com/contact/get-started/).
+    Core BluBracket code security features—including the CLI tools. [Available free with no time limit for personal use and teams under 50 devs](https://blubracket.com/contact/get-started/).
 
 - **BluBracket Team Edition**
 
