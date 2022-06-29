@@ -6,7 +6,7 @@ description: "How to add a Gerrit code server to your tenant"
 lead: ""
 date: 2022-01-12T02:48:57+00:00
 draft: false
-weight: 700
+weight: 400
 toc: false
 resources:
   - src: add-code-server.png

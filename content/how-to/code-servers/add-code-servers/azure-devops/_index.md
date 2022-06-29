@@ -6,7 +6,7 @@ description: "How to add an Azure DevOps code server to your tenant"
 lead: ""
 date: 2022-01-12T02:48:57+00:00
 draft: false
-weight: 600
+weight: 300
 toc: false
 resources:
   - src: add-code-server.png
