@@ -12,6 +12,6 @@ resources:
   - src:
 ---
 
-No credit card is needed to sign up for either the BluBracket Community Edition or free trial.
+No credit card is needed to sign up for either the BluBracket Community Edition or the BluBracket Team Edition free trial.
 
 [Learn how to sign up here](/intro/getting-started/).

@@ -11,6 +11,7 @@ searchExtraKeywords:
 tags:
   - workflows
 resources:
+  - src: intellij-ide-integration.gif
   - src: blubracket-blocks-secrets-git-pre-commit.pngx
   - src: secret-detection-in-github-checks-ci-via-blubracket.png
   - src: code-risk-alerts-in-slack-via-blubracket.png
@@ -26,6 +27,14 @@ BluBracket code security tools are optimized to prevent risks from getting into 
 
 As developers, we depend on a quick feedback loop to understand if our code is working and does what is expected. BluBracket tools can offer automated security guidance as part of that feedback loop, in the IDE of your choice, pre-commit, and as part of the CI flow.
 
+#### IDE integration
+
+{{< figure src="intellij-ide-integration.gif" caption="IntelliJ integration warns developers about risks in the moment." >}}
+
+Popular IDEs, such as VS Code and IntelliJ, present messages from pre-commit hooks in context so you don't have to interrupt your flow to get feedback.
+
+- FAQ: [supported IDEs](/faq/supported-ide/).
+
 #### Pre-commit hooks
 
 The BluBracket CLI scan for secrets, PII, and non-inclusive language before commits, to prevent risks from ever getting into repos from the start.
@@ -37,12 +46,6 @@ The CLI supports local configuration with directives in `~/.blubracket/`, repo-l
 Users can choose to make pre-commit risk detection a blocking or non-blocking feature, to support whatever workflow a developer prefers.
 
 - Usage guide: [installing and using the CLI](/how-to/cli/).
-
-#### IDE integration
-
-Popular IDEs, such as VS Code and IntelliJ, present messages from pre-commit hooks in context so you don't have to interrupt your flow to get feedback.
-
-- FAQ: [supported IDEs](/faq/supported-ide/).
 
 #### CI checks
 
@@ -84,7 +87,7 @@ BluBracket evaluates the health of every scanned repo and sums it up in an easy-
 
 #### Detailed filtering and reporting
 
-{{< figure src="filtering-alerts-in-blubracket.png" caption="Filter risks to understand code health and find actionable issues." >}}
+{{< youtube bUchFSbYzek >}}
 
 Filtering tools allow you to take control to see exactly what risks exist in your codebase and where to target and prioritize efforts based on your specific code condition and threat model.
 

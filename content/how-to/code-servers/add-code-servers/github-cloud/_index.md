@@ -1,12 +1,12 @@
 ---
-title: "Adding a GitHub Cloud code server"
+title: "Adding a GitHub Cloud code server on BluBracket Enterprise Edition"
 aliases:
   - /how-to/add-code-servers/github-cloud
 description: ""
 lead: ""
 date: 2022-01-12T02:48:57+00:00
 draft: false
-weight: 100
+weight: 110
 toc: false
 resources:
   - src: add-org.jpg
