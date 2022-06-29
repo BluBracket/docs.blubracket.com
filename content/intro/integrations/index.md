@@ -35,13 +35,16 @@ Usage guide: [installing and using the CLI](/how-to/cli/).
 
 Certified & supported code servers:
 
-- GitHub
-- GitLab
-- Bitbucket
+- GitHub Cloud
+- GitHub Enterprise (including on-prem)
+- GitLab Cloud
+- GitLab on-prem
+- Bitbucket Cloud
+- Bitbucket Server
 - Azure DevOps
 - Gerrit
 
-Usage guide: [adding code servers](/how-to/add-code-servers/).
+Usage guide: [adding code servers](/how-to/code-servers/add-code-servers/).
 
 ### CI servers
 
@@ -67,7 +70,7 @@ Certified & supported identity integrations:
 - Okta
 - Ping
 - SAML
-- GitHub OAuth (coming soon)
+- GitHub OAuth
 - Gitlab OAuth (coming soon)
 - Bitbucket OAuth (coming soon)
 
