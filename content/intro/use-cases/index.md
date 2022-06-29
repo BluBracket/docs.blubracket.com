@@ -45,6 +45,8 @@ BluBracket's tools help identify non-inclusive language throughout the developme
 
 ## Code analysis (powered by Semgrep) {#sast}
 
+(This feature is in private beta.)
+
 Spotting SQL injection, XSS, insecure crypto, and other OWASP top ten risks, as well as performance and maintainability best practices helps runtime security and overall code quality.
 
 Code analysis recommendations are presented side-by-side other code risks, giving developers and security teams a comprehensive view of code health.
