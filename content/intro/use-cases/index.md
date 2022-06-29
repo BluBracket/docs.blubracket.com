@@ -19,7 +19,9 @@ BluBracket is most often used to identify risks in code, who has access, and whe
   - [Secrets](#secrets)
   - [Personally identifiable information (PII)](#pii)
   - [Non-inclusive language (NIL)](#inclusive-language)
+  - [Code analysis (SAST)](#sast)
   - [Infrastructure-as-code (IAC) risks](#iac)
+  - [Dependency vulnerabilities](#sca)
 - [Monitoring who and what has access to your code](#access-auditing)
 - [Monitoring where your code goes](#code-leaks)
 

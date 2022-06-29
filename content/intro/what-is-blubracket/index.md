@@ -21,8 +21,8 @@ BluBracket is a code and git security suite that identifies risks in your code, 
   - [Personally identifiable information (PII)]({{< relref "use-cases#pii" >}})
   - [Non-inclusive language (NIL)]({{< relref "use-cases#inclusive-language" >}})
   - [Code analysis (SAST)]({{< relref "use-cases#sast" >}})
-  - [Dependency vulnerabilities]({{< relref "use-cases#sca" >}})
   - [Infrastructure-as-code (IAC) risks]({{< relref "use-cases#iac" >}})
+  - [Dependency vulnerabilities]({{< relref "use-cases#sca" >}})
 - [Monitoring who and what has access to your code]({{< relref "use-cases#access-auditing" >}})
 - [Monitoring where your code goes]({{< relref "use-cases#code-leaks" >}})
 
