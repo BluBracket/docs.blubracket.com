@@ -14,7 +14,7 @@ resources:
 
 This integration depends on [an API endpoint to fetch the pull request details from the commit](https://developer.atlassian.com/cloud/bitbucket/rest/api-group-pullrequests/#api-repositories-workspace-repo-slug-commit-commit-pullrequests-get). This API endpoint specifically requires pull request links to be indexed, which means that within the lifetime of the repository a user has to have clicked “go to pull request” from the per commit view of the Bitbucket Cloud UI at least once.
 
-{{< figure src="pull-request.png" caption="The 'go to pull request' link in the commit view of the Bitbucket Cloud UI" >}}
+![The 'go to pull request' link in the commit view of the Bitbucket Cloud UI](pull-request.png)
 
 #### Enable BitBucket Code Insights
 
