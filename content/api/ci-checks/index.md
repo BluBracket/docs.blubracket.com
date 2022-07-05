@@ -23,8 +23,8 @@ Start a scan for a list of commits or a pull request
 ### Parameters
 
 1. `repo_url` (string, required): URL of the repo
-1. `pull_request_number` (int, either `pull_request_number` or `commit_shas` is required): The id number of the pull request to be scanned.
-1. `commit_shas` (a list of strings, , either `commit_shas` or `pull_request_number` is required): full SHA of the commits to be scanned
+1. `pull_request_number` (int, one of `pull_request_number` or `commit_shas` is required): The id number of the pull request to be scanned.
+1. `commit_shas` (a list of strings, one of `commit_shas` or `pull_request_number` is required): full SHA of the commits to be scanned
 
 ### Sample request body
 
