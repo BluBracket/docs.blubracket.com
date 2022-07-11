@@ -44,7 +44,7 @@ Note: if you added your GitHub org to BluBracket before 1 June 2022, the GitHub 
 
 Whatever path you choose, your future PRs + commits to PRs in monitored repos will be checked by BluBracket.
 
-## GitHub Checks setup for BluBracket Enterprise accounts {#enterprise}
+## GitHub Checks setup for BluBracket Enterprise Edition {#enterprise}
 
 BluBracket Enterprise Edition accounts are monitored by the [BluBracket Checks App.](https://github.com/apps/blubracket-checks-app).
 
@@ -74,3 +74,27 @@ The app will alert you to any secrets found in the pull request, including both 
 {{< figure src="gitchecks5.png" caption="Example of a failing check on a pull request" >}}
 
 By default, the BluBracket app for GitHub Checks does not block any pull requests. Usage statistics show over 80% of warnings about secrets in PRs are fixed before commit, and the non-blocking workflow is more respectful of developer needs.
+
+## Configuring repositories
+
+To configure which repositories the BluBracket app for GitHub Checks monitors after installation, go to your GitHub organization → settings → GitHub apps (the URL pattern is `github.com/organizations/{orgname}/settings/installations`) to review all applications installed in the org.
+
+Configuration is the same for all versions of the BluBracket app for GitHub Checks.
+
+{{< figure src="configure1.png" caption="The BluBracket app for GitHub Checks for BluBracket Community and Team Edition accounts as it appears in the GitHub app configuration page" >}}
+
+Find the BluBracket app for GitHub Checks in the list and click the "configure" button.
+
+{{< figure src="configure1.png" caption="Configuring the BluBracket app for GitHub Checks for BluBracket Community and Team Edition accounts" >}}
+
+Using the GitHub interface, make selections about which repos the app can access, and save the changes.
+
+Any changes take effect with the next pull request (or commit in an open pull request), and apply to all users of the org.
+
+## Disabling GitHub Checks
+
+Follow the steps to configure the BluBracket app for GitHub Checks app. From the configuration page, select either suspend or uninstall.
+
+{{< figure src="uninstall1.png" caption="The options to uninstall the BluBracket app for GitHub Checks for BluBracket Community and Team Edition accounts" >}}
+
+Both options take effect immediately and apply to the entire GitHub org.
