@@ -1,0 +1,16 @@
+---
+title: "Ticketing"
+description: ""
+lead: ""
+date: 2022-01-12T02:48:57+00:00
+draft: false
+weight: 500
+toc: false
+tags:
+  - integrations
+  - ticketing
+  - JIRA
+resources:
+  - src: blubracket-blocks-secrets-git-pre-commit.png
+
+---
