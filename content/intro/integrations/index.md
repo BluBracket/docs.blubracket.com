@@ -80,7 +80,7 @@ Certified & supported identity integrations:
 
 Certified & supported messaging integrations:
 
-- [Slack](messaging/slack/)
+- [Slack](/how-to/messaging/slack/)
 - Microsoft Teams
 
 ### Ticketing & incident management
@@ -89,7 +89,7 @@ Certified & supported messaging integrations:
 
 Certified & supported ticketing & incident management integrations:
 
-- [Jira](ticketing/jira/)
+- [Jira](/how-to/ticketing/jira/)
 - ServiceNow
 - PagerDuty
 - Splunk
