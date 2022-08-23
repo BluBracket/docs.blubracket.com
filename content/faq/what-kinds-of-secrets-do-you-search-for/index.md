@@ -307,6 +307,14 @@ history
 .z_history
 ```
 
+### Kerberos keytab
+
+Potential kerberos keytab file
+
+```sh
+somefile.keytab
+```
+
 ### Secrets in files
 
 A sample of secrets BluBracket commonly detects in files includes:
