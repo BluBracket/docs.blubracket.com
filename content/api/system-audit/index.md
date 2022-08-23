@@ -1,6 +1,6 @@
 ---
 title: "System Audit"
-description: "Auditing list of users who have accessed the Blubracket System"
+description: "Auditing list of users who have accessed the BluBracket System"
 lead: ""
 date: 2022-08-15T02:48:57+00:00
 draft: false
