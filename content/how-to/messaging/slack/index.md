@@ -28,4 +28,4 @@ Integration with Slack requires the following:
 
 * [A destination Slack channel for alerts to be posted.](https://slack.com/integrations)
 
-If you are interested in integrating Slack into your BluBracket workflow please [contact support.](mailto:support@blubracket.com)
+If you are interested in integrating Slack into your BluBracket workflow please [contact support.](/contact-support/)
