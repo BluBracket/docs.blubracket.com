@@ -26,4 +26,4 @@ resources:
 
 * [JIRA Project for events and alerts to be added to.](https://support.atlassian.com/jira-software-cloud/docs/create-a-new-project/)
 
-If you are interested in integrating JIRA into your BluBracket workflow please [contact support.](mailto:support@blubracket.com)
+If you are interested in integrating JIRA into your BluBracket workflow please [contact support.](/contact-support/)
