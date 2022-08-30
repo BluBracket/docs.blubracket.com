@@ -2,6 +2,4 @@
 The Settings → Code Servers page.
 Selecting to add a GitHub Cloud org as a new code server # Select GitHub Cloud from the list of available code server types.
 The list of code server types in BluBracket.
-Click the button to continue # Click the button to continue.</description></item><item><title>Adding a Gerrit code server</title><link>https://docs.blubracket.com/how-to/code-servers/add-code-servers/gerrit/</link><pubDate>Wed, 12 Jan 2022 02:48:57 +0000</pubDate><guid>https://docs.blubracket.com/how-to/code-servers/add-code-servers/gerrit/</guid><description>After selecting to add a Gerrit code server, follow the instructions below to add a Gerrit server in BluBracket. Each Gerrit code review host is a different code server in BluBracket.
-Enter the host/domain name # Enter the hostname of the Gerrit code review server
-Enter the access token # A token is necessary for BluBracket to access the Gerrit code review host.</description></item></channel></rss>
+Click the button to continue # Click the button to continue.</description></item></channel></rss>
