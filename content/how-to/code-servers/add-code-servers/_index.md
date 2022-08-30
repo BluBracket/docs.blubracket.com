@@ -2,6 +2,7 @@
 title: "Adding code servers"
 aliases:
   - /how-to/add-code-servers
+  - /how-to/code-servers/add-code-servers/gerrit/
 description: "How to add code servers to your tenant"
 lead: "How to add code servers to your tenant"
 date: 2022-01-12T02:48:57+00:00
@@ -34,7 +35,6 @@ Different BluBracket editions support different server types:
 | Bitbucket Cloud | [Add via PAT](/how-to/code-servers/add-code-servers/bitbucket-cloud/) | [Add via PAT](/how-to/code-servers/add-code-servers/bitbucket-cloud/) | [Add via PAT](/how-to/code-servers/add-code-servers/bitbucket-cloud/) |
 | BitBucket server | Not supported | Not supported | Add via PAT |
 | Azure DevOps | [Add via PAT](/how-to/code-servers/add-code-servers/azure-devops/) | [Add via PAT](/how-to/code-servers/add-code-servers/azure-devops/) | [Add via PAT](/how-to/code-servers/add-code-servers/azure-devops/) |
-| Gerrit | [Add via PAT](/how-to/code-servers/add-code-servers/gerrit/) | [Add via PAT](/how-to/code-servers/add-code-servers/gerrit/) | [Add via PAT](/how-to/code-servers/add-code-servers/gerrit/) |
 
 {{< figure src="repo-type.png" caption="The list of code server types in a BluBracket account." >}}
 
