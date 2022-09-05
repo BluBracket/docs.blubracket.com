@@ -1,0 +1,13 @@
+name = "Newsprint"
+license = "BSD-2-Clause"
+licenselink = "https://bitbucket.org/SamWhited/newsprint/src/master/LICENSE.md"
+description = """
+A readable Hugo theme that showcases photos and looks nice on mobile."""
+homepage = ""
+tags = ["blog"]
+features = ["blog"]
+min_version = "0.25.1"
+
+[author]
+  name = "Sam Whited"
+  homepage = "https://blog.samwhited.com"

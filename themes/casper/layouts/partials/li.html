@@ -1,0 +1,56 @@
+{{ $posturl := or .Params.redirect .RelPermalink }}
+
+<article class="post {{ .Section }}">
+    <header class="post-header">
+        <h2 class="post-title"><a href="{{ $posturl }}">{{ .Title }}</a></h2>
+    </header>
+    {{/*
+        this results in an error:
+
+        if (and (lt .FuzzyWordCount 201) (not (findRE "<\s?img.*?>" .Content)) (not (findRE "{{<\s?figure.*?>}}" .Content)) )
+
+        ERROR 2018/10/14 11:14:39 partials/li.html : template: partials/li.html:16: invalid syntax
+
+        But the line below works...?
+     */}}
+    {{ if (and (lt .FuzzyWordCount 201) (not (findRE "img " .Content)) (not (findRE "figure " .Content)) ) }}
+        <section class="post-content">
+            {{ .Content }}
+        </section>
+    {{else if and (in .Params.tags "photoblog") (.Resources.GetMatch "thumbnail") }}
+        {{ $thumbnail := .Resources.GetMatch "thumbnail" }}
+        {{ $scaled := $thumbnail.Resize "1200x Gaussian jpg" }}
+        <section class="post-excerpt">
+            <figure><a href="{{ $posturl }}"><img src="{{ $scaled.RelPermalink }}"> </a></figure>
+            <p>{{ .Params.excerpt }}</p>
+        </section>
+    {{else if .Params.excerpt }}
+        <section class="post-excerpt">
+            <p>{{ .Params.excerpt }} <a class="read-more" href="{{ $posturl }}">&raquo; about {{ .FuzzyWordCount }} words</a></p>
+        </section>
+    {{else}}
+        <section class="post-excerpt">
+            <p>{{ .Summary }} <a class="read-more" href="{{ $posturl }}">&raquo; about {{ .FuzzyWordCount }} words</a></p>
+        </section>
+    {{end}}
+    <footer class="post-meta">
+
+
+        {{ if or .Params.author .Site.Params.author}}
+            {{$authorname := or .Params.author .Site.Params.author }}
+
+            {{with $authorname}}
+            {{$authorname}}
+            {{end}}
+        {{end}}
+
+        {{if .Params.tags }}on
+            {{ range $index, $tag := .Params.tags }}
+                <a href="/tags/{{ $tag | urlize }}/">#{{ $tag }}</a>,
+            {{ end }}
+        {{end}}
+        <time class="post-date" datetime="{{ .Date.Format "2006-01-02T15:04:05Z07:00" | safeHTML }}">
+            {{ .Date.Format "2 Jan 2006" }}
+        </time>
+    </footer>
+</article>

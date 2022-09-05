@@ -1,0 +1,11 @@
+baseurl = "https://example.org/"
+title = "The Library"
+author = "The Librarian"
+copyright = "Information wants to be free [Stewart Brand, 1984]"
+canonifyurls = true
+paginate = 3
+theme = "newsprint"
+
+[params]
+
+subtitle = "Cave ab homine unius libri"

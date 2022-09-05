@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="{{.Site.LanguageCode}}">
+<head>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    {{ partial "twitter_card.html" . }}
+
+  	<meta property="og:title" content="{{ if ne .URL "/" }}{{ .Title | htmlEscape }} &middot; {{ end }}{{ .Site.Title | htmlEscape }}" />
+  	<meta property="og:site_name" content="{{ .Site.Title | htmlEscape }}" />
+  	<meta property="og:url" content="{{ .Permalink }}" />
+
+    {{ if .IsPage }}
+        <meta content="{{ if .Params.hidden }}noindex{{ else }}index{{ end }}, follow" name="robots">
+    {{end}}
+
+    {{ if .IsPage }}
+        {{ if .Params.redirect }}
+            <meta http-equiv="refresh" content="0;url={{ .Params.redirect }}"/>
+        {{end}}
+    {{end}}
+
+    {{ if .IsPage }}
+        {{ if .Resources.GetMatch "thumbnail" }}
+            {{ $thumbnail := .Resources.GetMatch "thumbnail" }}
+            {{ $scaled := $thumbnail.Fill "1200x1200 Gaussian jpg" }}
+            <meta property="og:image" content="{{ $scaled.Permalink }}"/>
+        {{end}}
+    {{else}}
+        {{if .Site.Params.cover}}
+            <meta property="og:image" content="{{ .Site.Params.cover | relURL }}"/>
+        {{end}}
+    {{end}}
+
+    {{ if .IsPage }}
+    <meta property="og:description" content="{{ .Description | htmlEscape }}" />
+  	<meta property="og:type" content="article" />
+    <meta property="article:published_time" content="{{ .Date.Format "2006-01-02T15:04:05Z07:00" | safeHTML }}" />
+
+    {{ range .Params.tags }}
+    <meta property="article:tag" content="{{ . }}" />
+    {{ end }}
+    {{ else }}
+    <meta property="og:type" content="website" />
+    <meta property="og:description" content="{{ .Site.Params.description | htmlEscape }}" />
+    {{ end }}
+
+    <title>{{ if ne .URL "/" }}{{ .Title | htmlEscape }} &middot; {{ end }}{{ .Site.Title | htmlEscape }}</title>
+
+    {{ if .IsPage }}
+    <meta name="description" content="{{ .Description | default (substr .Summary 0 160) | htmlEscape }}" />
+    {{ else }}
+    <meta name="description" content="{{ .Site.Params.metadescription | default .Site.Params.description | htmlEscape }}" />
+    {{ end }}
+
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- desktop -->
+    <link rel="shortcut icon" href="/favicon.ico">
+    <!-- iPhone 4, iPhone 4s, iPhone 5, iPhone 5c, iPhone 5s, iPhone 6, iPhone 6s, iPhone 7, iPhone 7s, iPhone8 -->
+    <link rel="apple-touch-icon" sizes="120x120" href="/images/touch-icon-iphone-retina.png">
+    <!-- iPad and iPad mini @2x -->
+    <link rel="apple-touch-icon" sizes="152x152" href="/images/touch-icon-ipad-retina.png">
+    <!-- iPad Pro -->
+    <link rel="apple-touch-icon" sizes="167x167" href="/images/touch-icon-ipad-pro.png">
+    <!-- iPhone X, iPhone 8 Plus, iPhone 7 Plus, iPhone 6s Plus, iPhone 6 Plus -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/touch-icon-iphone-6-plus.png">
+    <!-- Android Devices High Resolution -->
+    <link rel="icon" sizes="192x192" href="/images/android-icon-hd.png">
+    <!-- Android Devices Normal Resolution -->
+    <link rel="icon" sizes="128x128" href="/images/android-icon.png">
+
+    <link rel="stylesheet" type="text/css" href="{{ "css/screen.css" | relURL }}" />
+    <link rel="stylesheet" type="text/css" href="{{ "css/nav.css" | relURL }}" />
+
+    {{ if .IsPage }}
+        {{ if .Resources.GetMatch "thumbnail" }}
+	        {{ $thumbnail := .Resources.GetMatch "thumbnail" }}
+	        {{ $scaleds := $thumbnail.Fill "1200x675 Gaussian jpg" }}
+	        {{ $scaledl := $thumbnail.Fill "2400x1350 Gaussian jpg" }}
+	        <style>
+		        .post-head.main-header {
+		            background-image: url({{ $scaledl.RelPermalink }});
+		        }
+		        @media only screen and (max-width: 900px) {
+		            .post-head.main-header {
+		                background-image: url({{ $scaleds.RelPermalink }});
+		            }
+		        }
+	        </style>
+        {{end}}
+    {{end}}
+
+
+    {{ range .Site.Params.customCSS }}
+    <link rel="stylesheet" href="{{ . | relURL }}">
+    {{ end }}
+
+    {{ if .Site.Params.hjsStyle }}
+        <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.8.0/styles/{{ .Site.Params.hjsStyle }}.min.css">
+        <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.8.0/highlight.min.js"></script>
+        {{ if or .Site.Params.hjsExtraLanguages .Params.hjsExtraLanguages }}
+          {{ range $index, $language := (union .Site.Params.hjsExtraLanguages .Params.hjsExtraLanguages) }}
+            <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.8.0/languages/{{ $language }}.min.js"></script>
+          {{ end }}
+        {{ end }}
+        <script>hljs.initHighlightingOnLoad();</script>
+    {{end}}
+
+    {{ if .Site.Params.RSSLink}}
+        <link href="{{.Site.Params.RSSLink }}" rel="alternate" type="application/rss+xml" title="{{ .Site.Title }}" />
+    {{else}}
+      {{ if ne .URL "/" }}
+          <link href="{{ "index.xml" | relURL}}" rel="alternate" type="application/rss+xml" title="{{ .Site.Title }}" />
+      {{ end }}
+      {{if .IsNode }}
+        <link href="{{ with .OutputFormats.Get "RSS" }}{{ .RelPermalink }}{{ end }}" rel="alternate" type="application/rss+xml" title="{{ if ne .URL "/" }}{{ .Title | htmlEscape }} &middot; {{ end }}{{ .Site.Title | htmlEscape }}" />
+      {{end}}
+    {{end}}
+    {{ .Hugo.Generator }}
+
+    <link rel="canonical" href="{{ .Permalink }}" />
+
+    {{ if .Params.customSemanticPartial }}
+      {{ partial .Params.customSemanticPartial . }}
+    {{ else }}
+      {{ partial "semantic.html" . }}
+    {{end}}
+
+    {{ with  .Site.Params.googleAnalyticsUserID }}
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', '{{ . }}', 'auto');
+      ga('send', 'pageview');
+
+    </script>
+    {{ end }}
+
+    {{ if .Site.Params.customHeaderPartial }}
+        {{ partial .Site.Params.customHeaderPartial . }}
+    {{ end }}
+</head>
+
+<body class="nav-closed{{ if .IsPage }} post-template{{ end }}">
+
+  {{ partial "navigation.html" . }}
+
+ <div class="site-wrapper">

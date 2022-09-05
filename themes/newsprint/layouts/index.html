@@ -1,0 +1,35 @@
+{{- $paginator := .Paginate (where .Data.Pages "Type" "post") -}}
+{{- partial "header" . -}}
+<section class="content list">
+	{{- range $index, $element := $paginator.Pages -}}	
+	<article class="thumb">
+		<div class="imgthumb">
+        {{ if .Resources.GetMatch "thumbnail" }}
+            {{ $thumbnail := .Resources.GetMatch "thumbnail" }}
+            {{ $scaled := $thumbnail.Fill "300x300 Gaussian" }}
+    		<a href="{{ .URL }}"><img src="{{ $scaled.Permalink }}" width="150"/></a>
+		{{- end -}}
+		</div>
+		<div class="prevtext">
+		<h1><a href="{{ .URL }}">{{ .Title }}</a></h1>
+		{{/*
+		The "excerpt" and "description" params are used for backwards compatibility
+		with an old Jekyll theme and some of my posts already had them. New posts
+		shouldn't use these params as they might go away in the future after I've
+		cleaned up my personal blog.
+		*/}}
+		{{- partial "datetime" .Date -}}
+		{{- if .Params.excerpt -}}
+		<p>{{ .Params.excerpt }}</p>
+		{{- else -}}
+		{{- if .Params.description -}}
+		<p>{{ .Params.description }}</p>
+		{{- else -}}
+		{{- if .Summary -}}<p>{{ .Summary }}</p>{{- end -}}
+		{{- end -}}{{- end -}}
+		</div>
+	</article>
+	{{- end -}}
+</section>
+
+{{- partial "footer" . -}}

@@ -1,0 +1,29 @@
+<footer>
+	<nav>
+		{{- if eq .Section "post" -}}
+		{{- if .NextInSection -}}
+		<a class="next" href="{{ .NextInSection.Permalink }}">Next</a>
+		{{- else -}}
+		<span class="next disable">Next</span>
+		{{- end -}}
+		{{- if and .NextInSection .PrevInSection -}}|{{- end -}}
+		{{- if .PrevInSection -}}
+		<a class="prev" href="{{ .PrevInSection.Permalink }}">Prev</a>
+		{{- else -}}
+		<span class="prev disable">Prev</span>
+		{{- end -}}
+		{{- else -}}
+		{{- if .IsHome -}}
+		{{- partial "pagination" . }}
+		{{- end -}}
+		{{- end -}}
+	</nav>
+	{{- if not .Params.nocopy -}}
+	{{- if .Site.Params.author -}}
+	&copy; {{ .Date.Format "2006" }} {{ .Site.Params.author }}.<br/>
+	{{- end -}}
+	{{- partialCached "license" . }}
+	{{- end -}}
+</footer>
+</body>
+</html>

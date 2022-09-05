@@ -1,0 +1,9 @@
+{{ $thumbnail := .Resources.GetMatch "thumbnail" }}
+{{ with $thumbnail }}
+{{ $scaled := .Fill "800x600 Gaussian" }}
+<div {{if .Params.cover_caption}}data-caption="{{.Params.cover_caption}}" {{end}}class="coverimg">
+	{{- if .Params.cover_link}}<a href="{{.Params.cover_link}}">{{- end -}}
+		<img src="{{ $scaled.Permalink }}" {{if .Params.cover_title}}title="{{.Params.cover_title}}" {{end}}alt="{{if .Params.cover_alt}}{{.Params.cover_alt}}{{end}}" width="400" height="300"/>
+	{{- if .Params.cover_link -}}</a>{{- end -}}
+</div>
+{{- end -}}

@@ -1,0 +1,69 @@
+<aside class="read-next">
+  {{ with .NextInSection }}
+    {{ $.Scratch.Add "relatedp" (slice .RelPermalink) }}
+    {{ if .Resources.GetMatch "thumbnail" }}
+        {{ $thumbnail := .Resources.GetMatch "thumbnail" }}
+        {{ $scaled := $thumbnail.Fill "1200x675 Gaussian jpg" }}
+        <a class="read-next-story" style="background-image: url({{ $scaled.RelPermalink }})" href="{{ .RelPermalink }}">
+    {{ else }}
+        <a class="read-next-story" style="no-cover" href="{{ .RelPermalink }}">
+    {{ end }}
+          <section class="post">
+              <h2>{{ .Title }}</h2>
+          </section>
+      </a>
+  {{ end }}
+  {{ with .PrevInSection }}
+    {{ $.Scratch.Add "relatedp" (slice .RelPermalink) }}
+    {{ if .Resources.GetMatch "thumbnail" }}
+        {{ $thumbnail := .Resources.GetMatch "thumbnail" }}
+        {{ $scaled := $thumbnail.Fill "1200x675 Gaussian jpg" }}
+        <a class="read-next-story" style="background-image: url({{ $scaled.RelPermalink }})" href="{{ .RelPermalink }}">
+    {{ else }}
+        <a class="read-next-story" style="no-cover" href="{{ .RelPermalink }}">
+    {{ end }}
+          <section class="post">
+              <h2>{{ .Title }}</h2>
+          </section>
+      </a>
+  {{ end }}
+</aside>
+
+{{ $related := .Site.RegularPages.Related . | first 25 }}
+{{ with $related }}
+	{{ $.Scratch.Set "relatedi" 0 }}
+	{{ $.Scratch.Set "relatede" 0 }}
+	{{ $relateda := (now.AddDate -4 0 0) }}
+	{{ range . }}
+		{{ if ge .Date.Unix $relateda.Unix }}
+			{{ if not (in ( $.Scratch.Get "relatedp" ) .RelPermalink) }}
+		        {{ $.Scratch.Add "relatedp" (slice .RelPermalink) }}
+				{{ if (eq ( $.Scratch.Get "relatedi" ) 0) }}
+					<aside class="read-next">
+				{{ end }}
+			    {{ if .Resources.GetMatch "thumbnail" }}
+			        {{ $thumbnail := .Resources.GetMatch "thumbnail" }}
+			        {{ $scaled := $thumbnail.Fill "1200x675 Gaussian jpg" }}
+			        <a class="read-next-story" style="background-image: url({{ $scaled.RelPermalink }})" href="{{ .RelPermalink }}">
+			    {{ else }}
+			        <a class="read-next-story" style="no-cover" href="{{ .RelPermalink }}">
+			    {{ end }}
+			          <section class="post">
+			              <h2>{{ .Title }}</h2>
+			          </section>
+		              </a>
+				{{ if (eq ( $.Scratch.Get "relatedi" ) 1) }}
+					</aside>
+					{{ $.Scratch.Set "relatedi" 0 }}
+					{{ $.Scratch.Set "relatede" 1 }}
+				{{ else }}
+					{{ $.Scratch.Set "relatedi" 1 }}
+					{{ $.Scratch.Set "relatede" 0 }}
+				{{ end }}
+			{{ end }}
+		{{ end }}
+	{{ end }}
+	{{ if (eq ( $.Scratch.Get "relatede" ) 0) }}
+		</aside>
+	{{ end }}
+{{ end }}
