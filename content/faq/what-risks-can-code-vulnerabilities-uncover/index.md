@@ -31,7 +31,7 @@ BluBracket's code vulnerability scanning runs automatically on every repository.
 
 ### What rules are checked
 
-#### C#
+#### C\#
 
 ##### Command injection
 
