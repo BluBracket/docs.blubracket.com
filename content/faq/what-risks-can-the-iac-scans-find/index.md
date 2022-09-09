@@ -18,7 +18,7 @@ resources:
   - src:
 ---
 
-BluBracket's infrastructure-as-code (IaC) scanning runs automatically on every repository. If there are any support IaC-related files, they'll be scanned for risks according to best-practices recommendations outlined below.
+BluBracket's infrastructure-as-code (IaC) scanning runs automatically on every repository. If there are any supported IaC-related files, they'll be scanned for risks according to best-practices recommendations outlined below.
 
 ### What IaC file types are supported
 
