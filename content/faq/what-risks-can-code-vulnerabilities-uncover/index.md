@@ -18,6 +18,8 @@ resources:
 
 BluBracket's code vulnerability scanning runs automatically on every repository. If the repo contains any supported code, it will be scanned for risks according to best-practices recommendations outlined below.
 
+{{< alert icon="👉" text="This feature is in limited beta at this time." >}}
+
 ### What languages are supported
 
 - C#
