@@ -1,5 +1,4 @@
 ---
-=======
 title: "What risks can the infrastructure-as-code (IaC) checks uncover?"
 aliases:
   - /how-to/iac-checks/
