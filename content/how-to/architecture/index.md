@@ -36,7 +36,7 @@ All secrets needed to integrate with customer resources are stored in an encrypt
 
 ### Customer SCM solutions
 
-[GitHub, GitLab, Bitbucket, Azure DevOps, and more are supported](/intro/integrations/#code-servers).
+GitHub, GitLab, Bitbucket, Azure DevOps, and more, running in the cloud and on-prem [are supported](/intro/integrations/#code-servers).
 
 BluBracket registers webhooks to receive events for every code push, pull request, and others.
 
