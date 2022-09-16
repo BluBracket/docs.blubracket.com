@@ -8,4 +8,6 @@ However, users must be registered in both BluBracket and Azure AD. Removing a us
 Encrypt your secrets
 Use environmental variables
 Use a secret manager to store your secrets, like HashiCorp Vault, Azure Key Vault, etc.
-Once BluBracket has found a secret and you have had a chance to remediate the secret in code, marking it as reviewed will help you easily differentiate it from those that still require action.</description></item></channel></rss>
+Once BluBracket has found a secret and you have had a chance to remediate the secret in code, marking it as reviewed will help you easily differentiate it from those that still require action.</description></item><item><title>Integration architecture</title><link>https://docs.blubracket.com/how-to/architecture/</link><pubDate>Wed, 12 Jan 2022 02:48:57 +0000</pubDate><guid>https://docs.blubracket.com/how-to/architecture/</guid><description>BluBracket runs as SaaS, on-prem, or in your VPC, and integrates with a variety of cloud-hosted or on-prem tools to secure your entire code pipeline from developer to deploy.
+BluBracket architecture diagram. View larger.
+Risk detection orchestration engine # BluBracket executes risk scanners on-demand, in response to events like new code pushes or pull requests, and on a periodic schedule as appropriate for the resource being scanned and user needs.</description></item></channel></rss>
