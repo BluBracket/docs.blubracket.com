@@ -1,6 +1,6 @@
 ---
 title: "Configuring global ignore rules"
-description: "How to setup global ignore rules for all users of a tenant"
+description: "How to setup global ignore rules for all users of a BluBracket account"
 lead:
 date: 2022-01-12T02:48:57+00:00
 draft: false
@@ -15,12 +15,17 @@ Ignore rules can be set up globally for a BluBracket tenant. blubracket-ignore.y
 Note: This will not change any existing alerts/events in the platform.
 
 1. Download integration API key
+1. Set environment variables
 
-1. Set environment variable BLUBRACKET_INTEGRATION_KEY
+    The `TOKEN` for `BLUBRACKET_INTEGRATION_KEY` can be found in the `.json` file downloaded after generating an API key.
 
-    * `export BLUBRACKET_INTEGRATION_KEY='TOKEN'`
-    * `$Env:BLUBRACKET_INTEGRATION_KEY='TOKEN'`
-
+    The `BLUBRACKET_HOST` is the base URL for your BluBracket account, prepended with `https://` and with no trailing `/`.
+    * On Linux and macOS:
+        * `export BLUBRACKET_INTEGRATION_KEY='TOKEN'`
+        * `export BLUBRACKET_HOST='https://YOURBLUBRACKETHOST.blubracket.com'`
+    * Windows:
+        * `$Env:BLUBRACKET_INTEGRATION_KEY='TOKEN'`
+        * `$Env:BLUBRACKET_HOST ='https://YOURBLUBRACKETHOST.blubracket.com'`
 1. Create blubracket-ignore.yaml
 
     ```yaml
@@ -51,20 +56,20 @@ Note: This will not change any existing alerts/events in the platform.
 1. Upload yaml file via API using curl:
 
     ```bash
-    curl -H "Authorization: Bearer ${BLUBRACKET_INTEGRATION_KEY}" --data-binary "@blubracket-ignore.yaml" https://TENANT.blubracket.com/api/public/blubracket-ignore
+    curl -H "Authorization: Bearer ${BLUBRACKET_INTEGRATION_KEY}" --data-binary "@blubracket-ignore.yaml" ${BLUBRACKET_HOST}/api/public/blubracket-ignore
 
     ```
 
 1. Confirm upload using:
 
     ```bash
-    curl -i -H "Authorization: Bearer ${BLUBRACKET_INTEGRATION_KEY}" https://TENANT.blubracket.com/api/public/blubracket-ignore
+    curl -i -H "Authorization: Bearer ${BLUBRACKET_INTEGRATION_KEY}" ${BLUBRACKET_HOST}/api/public/blubracket-ignore
     ```
 
 1. To delete blubracket-ignore:
 
     ```bash
-    curl -i -X DELETE -H "Authorization: Bearer ${BLUBRACKET_INTEGRATION_KEY}" https://TENANT.blubracket.com/api/public/blubracket-ignore
+    curl -i -X DELETE -H "Authorization: Bearer ${BLUBRACKET_INTEGRATION_KEY}" ${BLUBRACKET_HOST}/api/public/blubracket-ignore
     ```
 
 Any new secrets, PII or Non-inclusive language ignored will automatically be annotated as “Reviewed as Not Important” and labeled as “Ignore rule”
