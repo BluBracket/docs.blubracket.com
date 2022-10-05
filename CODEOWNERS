@@ -8,7 +8,12 @@
 # a pull request.
 *       @misterbisson
 
+# The `docs/*` pattern will match files like
+# `docs/getting-started.md` but not further nested files like
+# `docs/build-app/troubleshooting.md`.
+.blubracket/*  @misterbisson @paymanblu
+
 # The `content/**` pattern will files like
 # `content/getting-started.md` and further nested files like
 # `content/how-to/intro/what-is-blubracket/index.md`.
-content/**  @misterbisson @robbyandrews
+content/**  @misterbisson @robbyandrews @norefice-github
