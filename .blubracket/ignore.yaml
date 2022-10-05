@@ -1,0 +1,8 @@
+# Ignore by file path
+- paths:
+    - content/faq/what-kinds-of-secrets-do-you-search-for/index.md
+
+# Ignore by secret value
+# Equivalent to 'secret_value == my_password OR secret_value == my_token'
+- secret_values:
+    - My$uperDuperS3cret!
