@@ -786,24 +786,12 @@ Source:
         
         
         
-        content: "Windows Installation | macOS Installation | Linux Installation | Try out the BluBracket CLI commit hook\nInstalling the BluBracket CLI Tool is simple! Download the tool from the BluBracket portal:\n  Login to your BluBracket portal\n  Select Settings from left pane menu\n  Select Code Scanning\n  Download the CLI OS version of your choice (Mac, Windows, Linux)\n    Windows Installation #   Extract the files into any directory that is available in PATH.\n  For example, into the git installation folder, \u0026ldquo;C:\\Program Files\\Git\\cmd\u0026rdquo;\n  Verify the installation\n C:\\Users\\vbuzu\u0026gt;blubracket --version blubracket 2021-01-14-42f4dfe2c2abef161ee5066b0b774b41832c7c51    Setting up git hooks for Windows #   In your terminal, cd to your repository directory, then run blubracket install-git-hooks\nC:\\Users\\vbuzu\\projects\\sandbox\u0026gt;blubracket install-git-hooks Successfully installed pre-commit hook to \u0026lsquo;C:/Users/vbuzu/projects/sandbox/.git/hooks/pre-commit\u0026rsquo;\n  If git is setup to use global git hooks (specified by core.hooksPath git config), CLI will update/install the hook in that global folder.\n  Currently BluBracket CLI will set only one hook, pre-commit.\n  macOS Installation #   The macOS .pkg will automatically install the app into the /Applications/BluBracket folder (or the ~/Applications/BluBracket folder if you selected install for me only).\n  Open a terminal and add the BluBracket path to your bash profile:\n If you selected Install for all users of this computer:  echo 'export PATH=\u0026quot;/Applications/BluBracket/blubracket:$PATH\u0026quot;' \u0026gt;\u0026gt;~/.bash_profile source ~/.bash_profile\n Alternatively, if you selected Install for me only:  echo 'export PATH=\u0026quot;~/Applications/BluBracket/blubracket:$PATH\u0026quot;' \u0026gt;\u0026gt;~/.bash_profile; source ~/.bash_profile\n  If your IDE is open you may need to restart it in order to pick up the new bash profile changes.\n  Verify the installation\n% blubracket --version blubracket 2021-01-14-42f4dfe2c2abef161ee5066b0b774b41832c7c51\n  Note: If blubracket is not found when attempting to run blubracket \u0026ndash;version, you may also need to perform the following\n  Create a file named blubracket in /etc/paths.d. The file content should be /Applications/BluBracket\n  Example:\n Open the terminal and cd to your desktop Type: echo “Applications/BluBracket” \u0026gt; blubracket Open Finder and move the blubracket file from your desktop into /etc/paths.d  etc is a hidden folder, so you may need to select Command+Shit+. to show hidden folders and files   Restart your terminal or application for changes to take effect.      Setting up git hooks on macOS #   In your terminal, cd to your repository directory, then run blubracket install-git-hooks\n  % blubracket install-git-hooks Successfully installed pre-commit hook to '/Users/vbuzu/sandbox/.git/hooks/pre-commit'\n  NOTE:\n  If git is setup to use global git hooks (specified by core.hooksPath git config), BluBracketCLI will update/install the hook in that global folder.\n  Currently BluBracket CLI will set only one hook, pre-commit.\n    Linux Installation #   Extract the file into any directory that is available in PATH.\n  Please follow instructions from step 2 onwards in macOS section above.\n  Try out the BluBracket CLI commit hook #   In your terminal, cd to your repository directory\n  Then add the following example secret into any file in your repository: myPassword=\u0026quot;My$uperDuperS3cret!\u0026quot;\n  Now try to commit your change with git commit - your new BluBracket CLI hook should prevent the commit from happening.\n  "
+        content: "The BluBracket CLI is a high-performance, compact risk scanner written in Go. Unlike some tools, it runs entirely locally without sending any data to remote hosts (unless explicitly configured otherwise).\nmacOS, multiple Linux distros, and Windows are all supported.\nInstallation # Use these direct links to download the executables:\n macOS: https://static.blubracket.com/cli/latest/blubracket-macos Linux: https://static.blubracket.com/cli/latest/blubracket-linux Windows: https://static.blubracket.com/cli/latest/blubracket-win.exe  For example, to download and run the latest BluBracket CLI on macOS, you could run:\ncurl https://static.blubracket.com/cli/latest/blubracket-macos -o blubracket chmod +x ./blubracket mv ./blubracket /usr/local/bin/  Supported platforms #  Windows \u0026gt;= 10 macOS \u0026gt;= 10.12 Linux  Alpine \u0026gt;= 5 Ubuntu \u0026gt;= 16.04 CentOS \u0026gt;= 7    "
         
       })
       .add(
       {
         id: 39,
-        href: "/how-to/cli/using-cli/",
-        title: "Using the CLI tool",
-        description: "Details about how to use the CLI tool.",
-        
-        
-        
-        content: "Installation # How do I Install the BluBracket command line interface (CLI) tool?\nSetting git hooks # In terminal, cd to the repo dir, then blubracket install-git-hooks\nC:\\Users\\vbuzu\\projects\\sandbox\u0026gt;blubracket install-git-hooks Successfully installed pre-commit hook to 'C:/Users/vbuzu/projects/sandbox/.git/hooks/pre-commit'  If git is setup to use global git hooks (specified by core.hooksPath git config), CLI will update/install the hook in that global folder.\nCurrently CLI will set only one hook, pre-commit.\nCurrent limitations # CLI will install the pre-commit hook automatically only if the hook does not exist yet or the hook does exist and is implemented as a shell script (determined by the presence of #!/bin/sh or #!/usr/bin/env bash lines). In all other cases, e.g. if the hook is a python script, the CLI invocation must be added to the hook manually. It should be an equivalent of the follow shell command blubracket pre-commit \u0026quot;$@\u0026quot; || { exit \u0026quot;$?\u0026quot;; }: run blubracket command with pre-commit as the first parameter followed by all other parameters passed to the hook itself; exit/stop the hook on any non-zero exit codes from blubracket.\nPre-commit.com integration # The CLI tool integrates with the https://pre-commit.com hook management tool now. If it is detected that the pre-commit tool is used to manager the hooks, the CLI will add itself as one of the hooks to .pre-commit-config.yaml.\nNote: Currently only the default configuration file is supported, if pre-commit tool is configured to use a different file, CLI will NOT add itself to it automatically. In that case, it can be done manually by adding following lines under repos key:\n- repo: local hooks: - id: blubracket name: BluBracket language: system entry: blubracket pre-commit stages: - commit verbose: true always_run: true pass_filenames: false  Secrets # Use your normal git workflow, edit and stage some files, then try to commit. If the changes have secrets, the commit will be blocked. For example:\nC:\\Users\\vbuzu\\projects\\sandbox\u0026gt;git commit -m \u0026quot;test commit\u0026quot; -a Blubracket found 4 secret(s) C:\\Users\\vbuzu\\projects\\sandbox\\src\\app.cpp:7:11: password_assignment C:\\Users\\vbuzu\\projects\\sandbox\\tests\\dir2\\tests\\file1.txt:11:16: bitbucket_oauth_key_base64 C:\\Users\\vbuzu\\projects\\sandbox\\tests\\dir2\\tests\\file1.txt:12:11: password_assignment C:\\Users\\vbuzu\\projects\\sandbox\\tests\\dir2\\tests\\file1.txt:13:14: password_in_url  .blubracket-ignore # Sometimes it might be necessary to ignore secrets in some files or secrets of some types. To achieve this just create a .blubracket-ignore file in the root directory of the repo. The format of the file is similar to .gitignore. Empty lines and lines started with # are ignored. To ignore all secrets in a file, put a glob pattern, e.g. **/tests will ignore secrets found in all files in any tests directory and sub-directories. To ignore specific a secret type, e.g. any password like secrets, add a line like secret_type:password.*, where password.* is perl compatible regular expression. To ignore specific secret, add a line like secret_value:my_test_gcp_token where my_test_gcp_token is the real secret/token you want to ignore.\n**/tests/** secret_type:password.* secret_value:my_test_gcp_token  Current limitations: #   negate mask (!) is not supported\n  .blubraket-ignore is read only from the root repo directory, placing it in a sub directory will have no effect.\n  Inline comments # In addition to .blubracket-ignore file, it is possible to mark a secret to be ignored by placing a “comment” on the same line as the secret. The comment/line has to have BluBracketIgnore string in it, please note that CLI will do case-sensitive comparison.\nPossible workarounds for false positives # Ignoring whole folders and/or secret type all the time could be dangerous as it can be easy to miss secrets. The recommended ways to deal with false positives are inline comments or ignoring the particular secret using secret_value rule in the .blubracket-ignore file.\nAdding checks for your own secrets # Out of the box BluBracket does support around 50 different secret types. If you want to check other secret types, it is easy. In a repo/clone folder create a file .blubracket/customregex.yml (if you want new secret checks be applicable for any repo, create the file in $HOME folder instead). The content of the file is a list of secrets to check. Each secret is defined by two properties: description and pattern. Description is textual name for the secret that will be displayed by CLI if the secret is detected. Pattern is a regex to match the secret. Here is an example of how to a check for SSNs:\n- pattern: (?P\u0026lt;value\u0026gt;\\d{3}-\\d{2}-\\d{4}) description: simple_ssn  PII secrets # In addition to built-in secrets and custom secrets, CLI does support the ability to define a different group of “secrets” related to PII (Personally Identifiable Information) such as Social Security Numbers (SSN), emails, URLs, IP-addresses, etc. This feature is fully customizable. Out of the box CLI defines several patterns but all can be disabled, or the corresponded action changed. Here is the default configuration file:\ndefaults: action: allow disabled: false patterns: - type: ssn description: Social Security Number pattern: \\b(?P\u0026lt;ssn1\u0026gt;\\d{3})-(?P\u0026lt;ssn2\u0026gt;\\d{2})-(?P\u0026lt;ssn3\u0026gt;\\d{4})\\b exclude_if: | /000|666|9../.test(ssn1) || ssn2 == \u0026quot;00\u0026quot; || ssn3 == \u0026quot;0000\u0026quot; action: block - type: email pattern: \\b(?P\u0026lt;username\u0026gt;[a-z0-9!#'+^_~-]+(?:\\.[a-z0-9!#'+^_~-]+)*)@(?P\u0026lt;domain\u0026gt;[a-zA-Z0-9-.]+)\\b # exclude_if can be any valid JavaScript expression returns boolean value # it is not limited to a single expression, it can be even a full fledged function. # all matched groups defined in 'pattern' regex will be available as variables in the global execution context # the full matched value will be available as 'full_match' variable # Here is an example that uses a function: it will report only @github.com emails #exclude_if: | # (function(){ # if (domain.toLowerCase() != \u0026quot;github.com\u0026quot;) return true; # return false; # })() disabled: true - type: url description: URL pattern: \\b(?:(?P\u0026lt;scheme\u0026gt;[a-zA-Z][a-zA-Z\\d+-.]*):)(?:\\/\\/)?(?:(?P\u0026lt;userinfo\u0026gt;(?:[a-zA-Z\\d\\-._~\\!$\u0026amp;'()*+,;=%]*)(?::(?:[a-zA-Z\\d\\-._~\\!$\u0026amp;'()*+,;=:%]*))?)@)?(?P\u0026lt;host\u0026gt;[a-zA-Z\\d\\-.%]+)\\b disabled: true - type: ip_v4 description: IPv4 pattern: \\b((25[0-5]|(2[0-4]|1{0,1}[0-9]){0,1}[0-9])\\.){3,3}(25[0-5]|(2[0-4]|1{0,1}[0-9]){0,1}[0-9])\\b - type: ip_v6 description: IPv6 pattern: (([0-9a-fA-F]{1,4}:){7,7}[0-9a-fA-F]{1,4}|([0-9a-fA-F]{1,4}:){1,7}:|([0-9a-fA-F]{1,4}:){1,6}:[0-9a-fA-F]{1,4}|([0-9a-fA-F]{1,4}:){1,5}(:[0-9a-fA-F]{1,4}){1,2}|([0-9a-fA-F]{1,4}:){1,4}(:[0-9a-fA-F]{1,4}){1,3}|([0-9a-fA-F]{1,4}:){1,3}(:[0-9a-fA-F]{1,4}){1,4}|([0-9a-fA-F]{1,4}:){1,2}(:[0-9a-fA-F]{1,4}){1,5}|[0-9a-fA-F]{1,4}:((:[0-9a-fA-F]{1,4}){1,6})|:((:[0-9a-fA-F]{1,4}){1,7}|:)|fe80:(:[0-9a-fA-F]{0,4}){0,4}%[0-9a-zA-Z]{1,}|::(ffff(:0{1,4}){0,1}:){0,1}((25[0-5]|(2[0-4]|1{0,1}[0-9]){0,1}[0-9])\\.){3,3}(25[0-5]|(2[0-4]|1{0,1}[0-9]){0,1}[0-9])|([0-9a-fA-F]{1,4}:){1,4}:((25[0-5]|(2[0-4]|1{0,1}[0-9]){0,1}[0-9])\\.){3,3}(25[0-5]|(2[0-4]|1{0,1}[0-9]){0,1}[0-9]))  Configuration file can be global, for all the repos, it is located in ~/.blubracket/pii.yaml, or local, in repo’s .blubracket/pii.yaml file. If repo-local file exists, it will be used, otherwise the global file will be used. Upon launch, CLI with create the global file if it does not exist yet. After file has been created, it is OK to fully change it, CLI will not touch it anymore.\nSensitive words # In addition to checking secrets, CLI can check for sensitive/offensive words that might be good idea to avoid. Examples includes master, slave, etc. By default CLI only warns if a sensitive word has been found but allows commit to proceed. Sensitive Words can be configured in the similar way as PII Secrets. The configuration file name is ~/.blubracket/sensitive-words.yaml (or a repo-local alternative). Here is the default file:\ndefaults: action: block disabled: false patterns: - type: master description: master pattern: \\b(?i)(master(\\w)*)\\b - type: slave description: slave pattern: \\b(?i)(slave)\\b - type: whitelist description: whitelist pattern: \\b(?i)(whitelist(ed|ing){0,1})\\b - type: blacklist description: blacklist pattern: \\b(?i)(blacklist(ed|ing){0,1})\\b - type: whitebox description: whitebox pattern: \\b(?i)(whitebox)\\b - type: blackbox description: blackbox pattern: \\b(?i)(blackbox)\\b - type: whitehat description: whitehat pattern: \\b(?i)(whitehat)\\b - type: blackhat description: blackhat pattern: \\b(?i)(blackhat)\\b - type: man_hours description: man-hours pattern: \\b(?i)(man[ -]hours{0,1})\\b - type: man_days description: man-days pattern: \\b(?i)(man[ -]days{0,1})\\b  Example output:\nC:\\Users\\vbuzu\\projects\\sandbox\u0026gt;git commit -m \u0026quot;test\u0026quot; -a BluBracket blocked 1 secret(s): C:\\Users\\vbuzu\\projects\\sandbox\\test2:8:27: custom_regex: simple SSN: BluBracket allowed 1 sensitive word(s): C:\\Users\\vbuzu\\projects\\sandbox\\test2:8:4: Master: config: sensitive_keywords.action: allow  Commit signing # BluBracket can check that the commit is going to be signed or not and warn or block in case the commit is not signed. By default BluBracket only warns if commit is not signed.\nNote: Blubracket only checks git config commit.gpgSign value and not -Soption passed to git commit command to determine signing status. The reason is that commit signing makes sense if all the commits are signed. Thus using commit.gpgSign is the most proper way to enable signing\nExample Output:\nC:\\Users\\vbuzu\\projects\\sandbox\u0026gt;git commit -m \u0026quot;test\u0026quot; -a BluBracket allowed unsigned commit Use `blubracket commit-signing configure` to enable commit signing [master 94ca89a] test 1 file changed, 2 insertions(+), 1 deletion(-)  Configure commit signing # In addition to checking is commit signed or not, BluBracket helps configuring signing if it is not done already. To do that use blubracket commit-signing configure command. This should be run inside a clone directory as it will configure the signing only for the one current repo/clone. To configure signing globally, for all the current and future clones, add --global flag. Internally CLI will create a gpg key if needed, will configure git to use it, and will point how to upload the key’s public key to git providers, like GitHub and GitLab.\nNotes:\n  CLI checks and configures gpg keys only, not S-MIME/X509\n  CLI will try to use gpg command already available on the user’s device. If gpg is not found:\n  on Linux, CLI will do nothing, as gpg actually expected to be installed by default\n  on Windows, CLI will use gpg from a git for Windows distribution, if available. CLI will NOT install gpg4Win\n on Mac/OSX, CLI will install gnupg2 using brew. CLI will NOT install brew itself. Along side with gnupg2, CLI will install and configure pinentry-mac, so key management can be integrated with OSX keychain and commit signing works not only from terminal but from IDEs as well.      If a key needs to be generated, it is generated with default parameters (same as gpg \u0026ndash;quick-gen-key command). Currently there is no way to customize this.\n  Example output:\nC:\\Users\\vbuzu\\projects\\test-repo\u0026gt;blubracket commit-signing configure Finding gpg... found: C:\\Program Files\\Git\\usr\\bin\\gpg.exe Checking gpg key for user-id 'John Doe \u0026lt;john@acme.com\u0026gt;' ...About to create a key for: \u0026quot;John Doe \u0026lt;john@acme.com\u0026gt;\u0026quot; Continue? (Y/n) We need to generate a lot of random bytes. It is a good idea to perform some other action (type on the keyboard, move the mouse, utilize the disks) during the prime generation; this gives the random number generator a better chance to gain enough entropy. We need to generate a lot of random bytes. It is a good idea to perform some other action (type on the keyboard, move the mouse, utilize the disks) during the prime generation; this gives the random number generator a better chance to gain enough entropy. gpg: key 25ADA7C6E06D60A0 marked as ultimately trusted gpg: revocation certificate stored as '/c/Users/vbuzu/.gnupg/openpgp-revocs.d/AF06E23594DC979D3AC56B5625ADA7C6E06D60A0.rev' public and secret key created and signed. pub rsa3072 2021-03-10 [SC] [expires: 2023-03-10] AF06E23594DC979D3AC56B5625ADA7C6E06D60A0 uid John Doe \u0026lt;john@acme.com\u0026gt; sub rsa3072 2021-03-10 [E] Configuring git to use commit signing...done Getting public key for gpg key '25ADA7C6E06D60A0' ...done -----BEGIN PGP PUBLIC KEY BLOCK----- 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 3OYqf//nWVG3qA== =ulRA -----END PGP PUBLIC KEY BLOCK----- Public Key has been copied to system clipboard. Next, add it to your git provider: For GitHub: navigate to https://github.com/settings/keys For GitLab: navigate to https://gitlab.com/-/profile/gpg_keys  Binary files # The CLI can check that a “large” binary file is going to be committed and either ignore, warn, or block the commit depending on the file size. By default binary files less than 500 KB will be ignored; if more than 500 KB but less than 10 MB, CLI will warn but allow the commit; if more than 10 MB then the commit will be blocked. To disable only warning or blocking the size can be set to 0 (see configuration options below).\nSample output:\nC:\\Users\\vbuzu\\projects\\test-repo\u0026gt;git commit -m \u0026quot;test\u0026quot; BluBracket blocked 1 binary file Blocked binary files: C:\\Users\\vbuzu\\projects\\test-repo\\bluscanner.exe: 81.2 MB Consider using git-lfs to manage large binary files, https://git-lfs.github.com/  CLI configuration # By default CLI blocks secrets and allows sensitive words. It is possible to customize this behavior using config files. CLI loads config files from \u0026lt;repo\u0026gt;/.blubracket/config.yaml and ~/.blubracket/config.yaml. CLI mimics git config behavior where settings in a repo-local config overwrite settings in global config. Here is an example of the config file that has all the default values:\nsecrets: disabled: false action: block commit_signing: disabled: false action: allow binary_files: disabled: false allow_larger: 500KB block_larger: 10MB  Supported platforms #   Windows 10\n  Mac OSX \u0026gt;= 10.12\n  Linux\n  Alpine \u0026gt;= 5\n  Ubuntu \u0026gt;= 16.04\n  CentOS \u0026gt;= 7\n    "
-        
-      })
-      .add(
-      {
-        id: 40,
         href: "/how-to/code-servers/add-code-servers/bitbucket-cloud/",
         title: "Adding a Bitbucket Cloud code server",
         description: "How to add a Bitbucket Cloud server to your tenant",
@@ -815,7 +803,7 @@ Source:
       })
       .add(
       {
-        id: 41,
+        id: 40,
         href: "/how-to/code-servers/add-code-servers/gitlab-cloud/",
         title: "Adding a GitLab Cloud code server",
         description: "How to add a GitLab Cloud code server to your tenant",
@@ -827,7 +815,7 @@ Source:
       })
       .add(
       {
-        id: 42,
+        id: 41,
         href: "/how-to/code-servers/add-code-servers/",
         title: "Adding code servers",
         description: "How to add code servers to your tenant",
@@ -839,7 +827,7 @@ Source:
       })
       .add(
       {
-        id: 43,
+        id: 42,
         href: "/intro/use-cases/",
         title: "BluBracket use-cases",
         description: "Risks BluBracket solves and how.",
@@ -857,7 +845,7 @@ Source:
       })
       .add(
       {
-        id: 44,
+        id: 43,
         href: "/how-to/cli/",
         title: "CLI tool",
         description: "How to install and use the BluBracket CLI Tool.",
@@ -873,7 +861,7 @@ Source:
       })
       .add(
       {
-        id: 45,
+        id: 44,
         href: "/how-to/code-servers/",
         title: "Code servers",
         description: "Code lives in git repos, and git repos are hosted by code servers. Most git hosting providers structure git repos into collections such as GitHub\u0026rsquo;s Organizations and Bitbucket\u0026rsquo;s Workspaces. In BluBracket, each of those collections is a separate code server.\nSupported code servers in BluBracket #    GitHub GitLab Bitbucket Azure DevOps     Cloud \u0026amp; Enterprise Cloud \u0026amp; on-prem Cloud \u0026amp; Server Cloud   Supported access \u0026amp; configuration risks Supported access \u0026amp; configuration risks Access \u0026amp; configuration risks not supported Access \u0026amp; configuration risks not supported   GitHub Checks  Bitbucket Code Insights    Add a GitHub code server Add a GitLab code server Add a Bitbucket code server Add an Azure DevOps code server    ",
@@ -885,7 +873,7 @@ Source:
       })
       .add(
       {
-        id: 46,
+        id: 45,
         href: "/how-to/ignore-rules/",
         title: "Configure ignore rules",
         description: "Instructions on how to configure ignore fules for different levels, locally, per repo, and globally",
@@ -897,7 +885,7 @@ Source:
       })
       .add(
       {
-        id: 47,
+        id: 46,
         href: "/how-to/ignore-rules/global/",
         title: "Configuring global ignore rules",
         description: "How to setup global ignore rules for all users of a BluBracket account",
@@ -909,7 +897,7 @@ Source:
       })
       .add(
       {
-        id: 48,
+        id: 47,
         href: "/how-to/ignore-rules/per-repo/",
         title: "Configuring ignore rules per repo",
         description: "How to set ignore rules ignore rules for all users of a repository",
@@ -921,7 +909,7 @@ Source:
       })
       .add(
       {
-        id: 49,
+        id: 48,
         href: "/how-to/iac-checks/bitbucket/",
         title: "Configuring infrastructure as code scanning on Bitbucket",
         description: "Step 1: Create Bitbucket Repository Variables: #   Log into Bitbucket and select a repository where you want to enable Infrastructure as Code scanning.\n  Within the repository, select Repository settings, then Repository variables\n  Create five new Repositories variables\n  Name: DOCKER_HUB_EMAIL\nvalue: blusupport@blubracket.com\nName: DOCKER_HUB_USERNAME\nvalue: blusupport\nName: DOCKER_HUB_TOKEN\nvalue: 085ef825-b366-4636-be2a-8babaf65064f\nName: BLUBRACKET_SERVICE_ENDPOINT\nvalue: BluBracket Tenant name\nExample: https://acme.blubracket.com\nName: BLUBRACKET_INTEGRATION_KEY\nvalue: BluBracket Integration API key",
@@ -939,7 +927,7 @@ Source:
       })
       .add(
       {
-        id: 50,
+        id: 49,
         href: "/how-to/iac-checks/github/",
         title: "Configuring infrastructure as code scanning on GitHub",
         description: "Step 1: Create GitHub Repository Secrets:\n  Log into GitHub and select a repository where you want to enable Infrastructure as Code scanning.\n  Within the repository, select settings, then secrets\n  Create three new repositories secrets\n  Name: DOCKER_HUB_USERNAME\nvalue: blusupport\nName: DOCKER_HUB_TOKEN\nvalue: 085ef825-b366-4636-be2a-8babaf65064f\nName: BLUBRACKET_INTEGRATION_KEY\nvalue: BluBracket Integration API key\nSteps to create a BluBracket API token: Intro to BluBracket APIs and API keys",
@@ -957,7 +945,7 @@ Source:
       })
       .add(
       {
-        id: 51,
+        id: 50,
         href: "/how-to/iac-checks/gitlab/",
         title: "Configuring infrastructure as code scanning on GitLab",
         description: "Step 1: Create GitLab Repository Variables: #   Log into GitLab and select a repository where you want to enable Infrastructure as Code scanning.\n  Within the repository, select Settings, then CI/CD\n  Expand Variables section and select Add variable\n  Create four new variables:\n  Name: DOCKER_HUB_USERNAME\nvalue: blusupport\nName: DOCKER_HUB_TOKEN\nvalue: 085ef825-b366-4636-be2a-8babaf65064f\nName: BLUBRACKET_SERVICE_ENDPOINT\nvalue: BluBracket Tenant name\nExample: https://acme.blubracket.com\nName: BLUBRACKET_INTEGRATION_KEY\nvalue: BluBracket Integration API key",
@@ -975,7 +963,7 @@ Source:
       })
       .add(
       {
-        id: 52,
+        id: 51,
         href: "/api/event-alert/",
         title: "Event \u0026 alert",
         description: "Reading and searching events and alerts.",
@@ -987,7 +975,7 @@ Source:
       })
       .add(
       {
-        id: 53,
+        id: 52,
         href: "/how-to/code-servers/git-server-acccess-configuration/",
         title: "Git server access \u0026 configuration",
         description: "Supported access and configuration risks by code server.",
@@ -999,7 +987,7 @@ Source:
       })
       .add(
       {
-        id: 54,
+        id: 53,
         href: "/how-to/code-servers/git-server-acccess-configuration/github/",
         title: "GitHub access \u0026 configuration risks",
         description: "BluBracket monitors and alerts on potential security security issues related to access and configuration of GitHub accounts. The following is a list of these configurations that BluBracket is currently monitoring. BluBracket will continue to add to this list and as we have support for other solutions we will add similar alerts.\nOrganization-level configuration risks #  Base level setting is too permissive: Base permissions to the organization’s repositories apply to all members and exclude outside collaborators.",
@@ -1011,7 +999,7 @@ Source:
       })
       .add(
       {
-        id: 55,
+        id: 54,
         href: "/how-to/code-servers/git-server-acccess-configuration/gitlab/",
         title: "GitLab access \u0026 configuration risks",
         description: "BluBracket monitors and alerts on potential security security issues related to access and configuration of GitLab accounts. The following is a list of these configurations that BluBracket is currently monitoring. BluBracket will continue to add to this list and as we have support for other solutions we will add similar alerts.\nSystem-level configuration risks (on-prem only) # Note: these features can be enabled by request.\n Too many admins on system: Default is five.",
@@ -1023,7 +1011,7 @@ Source:
       })
       .add(
       {
-        id: 56,
+        id: 55,
         href: "/how-to/",
         title: "User guide",
         description: "",
@@ -1035,7 +1023,7 @@ Source:
       })
       .add(
       {
-        id: 57,
+        id: 56,
         href: "/how-to/ci-checks/bitbucket-insights/",
         title: "Configure BitBucket Code Insights",
         description: "Prerequisites # This integration depends on an API endpoint to fetch the pull request details from the commit. This API endpoint specifically requires pull request links to be indexed, which means that within the lifetime of the repository a user has to have clicked “go to pull request” from the per commit view of the Bitbucket Cloud UI at least once.\nEnable BitBucket Code Insights # Contact the customer success team to enable BitBucket Code Insights.",
@@ -1047,7 +1035,7 @@ Source:
       })
       .add(
       {
-        id: 58,
+        id: 57,
         href: "/how-to/ci-checks/github-checks/",
         title: "Configure GitHub Checks",
         description: "Prerequisites # To install the BluBracket app for GitHub Checks, permissions to install a GitHub App on an org are required. This would be an organization owner or someone with admin level permissions in a repository.\nChoosing which app to install # The BluBracket app for GitHub Checks is available for all BluBracket editions, and multiple offerings of GitHub.\n    GitHub Cloud GitHub Enterprise\n(including Server)     BluBracket Community Edition BluBracket Community \u0026amp; Team Edition n/a   BluBracket Team Edition BluBracket Community \u0026amp; Team Edition n/a   BluBracket Enterprise Edition BluBracket Enterprise Edition BluBracket Enterprise Edition \u0026amp; GitHub Enterprise Server    GitHub Checks setup for GitHub Cloud and BluBracket Community \u0026amp; Team Edition accounts # BluBracket Community and Team Edition accounts are monitored by the BluBracket Community Edition app.",
@@ -1055,6 +1043,18 @@ Source:
         
         
         content: "Prerequisites # To install the BluBracket app for GitHub Checks, permissions to install a GitHub App on an org are required. This would be an organization owner or someone with admin level permissions in a repository.\nChoosing which app to install # The BluBracket app for GitHub Checks is available for all BluBracket editions, and multiple offerings of GitHub.\n    GitHub Cloud GitHub Enterprise\n(including Server)     BluBracket Community Edition BluBracket Community \u0026amp; Team Edition n/a   BluBracket Team Edition BluBracket Community \u0026amp; Team Edition n/a   BluBracket Enterprise Edition BluBracket Enterprise Edition BluBracket Enterprise Edition \u0026amp; GitHub Enterprise Server    GitHub Checks setup for GitHub Cloud and BluBracket Community \u0026amp; Team Edition accounts # BluBracket Community and Team Edition accounts are monitored by the BluBracket Community Edition app..\n  \nThe BluBracket app for GitHub Checks is automatically installed when adding a GitHub org to your BluBracket Community Edition and BluBracket Team Edition account.\nNote: if you added your GitHub org to BluBracket before 1 June 2022, the GitHub Checks was not automatically configured. Please follow these instructions to add GitHub Checks:\n If you are monitoring all repos in the GitHub org: go through the steps to add the GitHub org as a code server again (don\u0026rsquo;t delete the old code server). This won\u0026rsquo;t create any duplicate, it will simply add GitHub Checks to the existing configuration. If you are not monitoring all repos in the GitHub org: remove the current code server and re-add it to BluBracket. When re-adding the code server, the GitHub interface will allow you to select which repos you wish to monitor.  Whatever path you choose, your future PRs + commits to PRs in monitored repos will be checked by BluBracket.\nGitHub Checks setup for BluBracket Enterprise Edition # BluBracket Enterprise Edition accounts are monitored by the BluBracket Checks App..\nOnce your BluBracket Enterprise Edition account is configured and code servers setup, simply install the BluBracket Checks App. (this must be done by someone who has permissions in GitHub to install the app). Once installed, your future PRs + commits to PRs in monitored repos will be checked by BluBracket.\n  \nGitHub Checks setup for GitHub Enterprise Server # This version of GitHub Checks is for paid customers using the on-premise GitHub Enterprise Server\n Setup your BluBracket Enterprise Edition and configure code servers setup Create the GitHub Enterprise Server Checks app (follow the instructions here)  One step in those instructions is to send the configuration details to the customer success team. Wait for confirmation from the team before proceeding.   Install the app created from step 2 on the organization (this must be done by someone who has permissions in GitHub to install the app).  Once installed, your future PRs + commits to PRs in monitored repos will be checked by BluBracket.\n  \nBluBracket app for GitHub Checks workflow # Whatever version of the BluBracket app for GitHub Checks you choose, it will run for every pull request, and for every new commit to any open pull requests.\nThe app will alert you to any secrets found in the pull request, including both the tip of the pull request and the history of any commits. The alert includes details on where and what type of secret was found.\n Example of a failing check on a pull request\n  By default, the BluBracket app for GitHub Checks does not block any pull requests. Usage statistics show over 80% of warnings about secrets in PRs are fixed before commit, and the non-blocking workflow is more respectful of developer needs.\nConfiguring repositories # To configure which repositories the BluBracket app for GitHub Checks monitors after installation, go to your GitHub organization → settings → GitHub apps (the URL pattern is github.com/organizations/{orgname}/settings/installations) to review all applications installed in the org.\nConfiguration is the same for all versions of the BluBracket app for GitHub Checks.\n The BluBracket app for GitHub Checks for BluBracket Community and Team Edition accounts as it appears in the GitHub app configuration page\n  Find the BluBracket app for GitHub Checks in the list and click the \u0026ldquo;configure\u0026rdquo; button.\n Configuring the BluBracket app for GitHub Checks for BluBracket Community and Team Edition accounts\n  Using the GitHub interface, make selections about which repos the app can access, and save the changes.\nAny changes take effect with the next pull request (or commit in an open pull request), and apply to all users of the org.\nDisabling GitHub Checks # Follow the steps to configure the BluBracket app for GitHub Checks app. From the configuration page, select either suspend or uninstall.\n The options to uninstall the BluBracket app for GitHub Checks for BluBracket Community and Team Edition accounts\n  Both options take effect immediately and apply to the entire GitHub org.\n"
+        
+      })
+      .add(
+      {
+        id: 58,
+        href: "/how-to/cli/cli-docs/",
+        title: "BluBracket CLI options and usage",
+        description: "Options and usage for the BluBracket CLI",
+        
+        
+        
+        content: "The BluBracket CLI is a high-performance, compact risk scanner written in Go. Unlike some tools, it runs entirely locally without sending any data to remote hosts (unless explicitly configured otherwise).\nInstallation for Linux, macOS, and Windows is detailed here.\nKey usage of the BluBracket CLI tool is as part of a local git workflow, such as for pre-commit hooks, scanning STDIN, a file or directory, or as a local gRPC server to support integrations with IDEs and other applications.\nblubracket \u0026ndash;help # Overview of BluBracket commands.\nUsage: blubracket [command] Available Commands: checks Various system checks commit-signing Top level command for commands specific to commit signing help Help about any command install-git-hooks Installs git hooks license Prints the license details scan-dir Scan a directory scan-file Scan a file serve Run gRPC server upload-stats Uploads stats to BluBracket portal; normally, it should not be used directly Flags: -h, --help help for blubracket -v, --version version for blubracket  Commands and usage related to local git workflows are documented here, additional commands detailed below.\nblubracket scan-file -h # Scanning a file or STDIN.\nScan a file Usage: blubracket scan-file [flags] Flags: --filename string Specifies input filename in case stdin is used as input, ignored if real file is used as input -h, --help help for scan-file -i, --input string If specified scans that file, otherwise it scans stdin -o, --output string If specified output information about found secrets to that file, otherwise stdout  blubracket scan-dir -h # Scanning a directory.\nScan a directory Usage: blubracket scan-dir [flags] Flags: -h, --help help for scan-dir -o, --output string Specifies the file to store information about found secrets (required) -p, --path string If specified scans that directory, otherwise it scans current directory  blubracket serve -h # Operating as a local server to support more sophisticated integrations.\nStarts a daemon that serves gRPC requests. blubracket serve \u0026lt;listen-uri\u0026gt; where \u0026lt;listen-uri\u0026gt; is of format \u0026lt;network\u0026gt;:\u0026lt;address\u0026gt; \u0026lt;network\u0026gt; - must be \u0026quot;unix\u0026quot;, \u0026quot;tcp\u0026quot;, \u0026quot;tcp4\u0026quot;, \u0026quot;tcp6\u0026quot; \u0026lt;address\u0026gt; - specify network address For example: blubracket serve unix:/tmp/blubracket-cli-server-123 Usage: blubracket serve [flags] Flags: -h, --help help for serve  "
         
       })
       .add(
@@ -1186,6 +1186,18 @@ Source:
       .add(
       {
         id: 67,
+        href: "/how-to/cli/using-cli-with-git/",
+        title: "Using the CLI tool in git workflows",
+        description: "Details about how to use the CLI tool.",
+        
+        
+        
+        content: "Installation # How do I Install the BluBracket command line interface (CLI) tool?\nSetting git hooks # In terminal, cd to the repo dir, then blubracket install-git-hooks\nC:\\Users\\vbuzu\\projects\\sandbox\u0026gt;blubracket install-git-hooks Successfully installed pre-commit hook to 'C:/Users/vbuzu/projects/sandbox/.git/hooks/pre-commit'  If git is setup to use global git hooks (specified by core.hooksPath git config), CLI will update/install the hook in that global folder.\nCurrently CLI will set only one hook, pre-commit.\nCurrent limitations # CLI will install the pre-commit hook automatically only if the hook does not exist yet or the hook does exist and is implemented as a shell script (determined by the presence of #!/bin/sh or #!/usr/bin/env bash lines). In all other cases, e.g. if the hook is a python script, the CLI invocation must be added to the hook manually. It should be an equivalent of the follow shell command blubracket pre-commit \u0026quot;$@\u0026quot; || { exit \u0026quot;$?\u0026quot;; }: run blubracket command with pre-commit as the first parameter followed by all other parameters passed to the hook itself; exit/stop the hook on any non-zero exit codes from blubracket.\nPre-commit.com integration # The CLI tool integrates with the https://pre-commit.com hook management tool now. If it is detected that the pre-commit tool is used to manager the hooks, the CLI will add itself as one of the hooks to .pre-commit-config.yaml.\nNote: Currently only the default configuration file is supported, if pre-commit tool is configured to use a different file, CLI will NOT add itself to it automatically. In that case, it can be done manually by adding following lines under repos key:\n- repo: local hooks: - id: blubracket name: BluBracket language: system entry: blubracket pre-commit stages: - commit verbose: true always_run: true pass_filenames: false  Testing the BluBracket CLI commit hook #   In your terminal, cd to your repository directory\n  Then add the following example secret into any file in your repository: myPassword=\u0026quot;My$uperDuperS3cret!\u0026quot;\n  Now try to commit your change with git commit - your new BluBracket CLI hook should prevent the commit from happening.\n  Secrets # Use your normal git workflow, edit and stage some files, then try to commit. If the changes have secrets, the commit will be blocked. For example:\nC:\\Users\\vbuzu\\projects\\sandbox\u0026gt;git commit -m \u0026quot;test commit\u0026quot; -a Blubracket found 4 secret(s) C:\\Users\\vbuzu\\projects\\sandbox\\src\\app.cpp:7:11: password_assignment C:\\Users\\vbuzu\\projects\\sandbox\\tests\\dir2\\tests\\file1.txt:11:16: bitbucket_oauth_key_base64 C:\\Users\\vbuzu\\projects\\sandbox\\tests\\dir2\\tests\\file1.txt:12:11: password_assignment C:\\Users\\vbuzu\\projects\\sandbox\\tests\\dir2\\tests\\file1.txt:13:14: password_in_url  .blubracket-ignore # Sometimes it might be necessary to ignore secrets in some files or secrets of some types. To achieve this just create a .blubracket-ignore file in the root directory of the repo. The format of the file is similar to .gitignore. Empty lines and lines started with # are ignored. To ignore all secrets in a file, put a glob pattern, e.g. **/tests will ignore secrets found in all files in any tests directory and sub-directories. To ignore specific a secret type, e.g. any password like secrets, add a line like secret_type:password.*, where password.* is perl compatible regular expression. To ignore specific secret, add a line like secret_value:my_test_gcp_token where my_test_gcp_token is the real secret/token you want to ignore.\n**/tests/** secret_type:password.* secret_value:my_test_gcp_token  Current limitations: #   negate mask (!) is not supported\n  .blubraket-ignore is read only from the root repo directory, placing it in a sub directory will have no effect.\n  Inline comments # In addition to .blubracket-ignore file, it is possible to mark a secret to be ignored by placing a “comment” on the same line as the secret. The comment/line has to have BluBracketIgnore string in it, please note that CLI will do case-sensitive comparison.\nPossible workarounds for false positives # Ignoring whole folders and/or secret type all the time could be dangerous as it can be easy to miss secrets. The recommended ways to deal with false positives are inline comments or ignoring the particular secret using secret_value rule in the .blubracket-ignore file.\nAdding checks for your own secrets # BluBracket supports hundreds of different secret types, but you can extend it to detect any pattern you want.\nIn a repo/clone folder create a file .blubracket/customregex.yml (if you want new secret checks be applicable for any repo, create the file in $HOME folder instead). The content of the file is a list of secrets to check. Each secret is defined by two properties: description and pattern. Description is textual name for the secret that will be displayed by CLI if the secret is detected. Pattern is a regex to match the secret. Here is an example of how to a check for SSNs:\n- pattern: (?P\u0026lt;value\u0026gt;\\d{3}-\\d{2}-\\d{4}) description: simple_ssn  PII # In addition to built-in secrets and custom secrets, the CLI supports the ability to define a different group of “secrets” related to PII (Personally Identifiable Information) such as Social Security Numbers (SSN), emails, URLs, IP-addresses, etc. This feature is fully customizable. Out of the box CLI defines several patterns but all can be disabled, or the corresponded action changed. Here is the default configuration file:\ndefaults: action: allow disabled: false patterns: - type: ssn description: Social Security Number pattern: \\b(?P\u0026lt;ssn1\u0026gt;\\d{3})-(?P\u0026lt;ssn2\u0026gt;\\d{2})-(?P\u0026lt;ssn3\u0026gt;\\d{4})\\b exclude_if: | /000|666|9../.test(ssn1) || ssn2 == \u0026quot;00\u0026quot; || ssn3 == \u0026quot;0000\u0026quot; action: block - type: email pattern: \\b(?P\u0026lt;username\u0026gt;[a-z0-9!#'+^_~-]+(?:\\.[a-z0-9!#'+^_~-]+)*)@(?P\u0026lt;domain\u0026gt;[a-zA-Z0-9-.]+)\\b # exclude_if can be any valid JavaScript expression returns boolean value # it is not limited to a single expression, it can be even a full fledged function. # all matched groups defined in 'pattern' regex will be available as variables in the global execution context # the full matched value will be available as 'full_match' variable # Here is an example that uses a function: it will report only @github.com emails #exclude_if: | # (function(){ # if (domain.toLowerCase() != \u0026quot;github.com\u0026quot;) return true; # return false; # })() disabled: true - type: url description: URL pattern: \\b(?:(?P\u0026lt;scheme\u0026gt;[a-zA-Z][a-zA-Z\\d+-.]*):)(?:\\/\\/)?(?:(?P\u0026lt;userinfo\u0026gt;(?:[a-zA-Z\\d\\-._~\\!$\u0026amp;'()*+,;=%]*)(?::(?:[a-zA-Z\\d\\-._~\\!$\u0026amp;'()*+,;=:%]*))?)@)?(?P\u0026lt;host\u0026gt;[a-zA-Z\\d\\-.%]+)\\b disabled: true - type: ip_v4 description: IPv4 pattern: \\b((25[0-5]|(2[0-4]|1{0,1}[0-9]){0,1}[0-9])\\.){3,3}(25[0-5]|(2[0-4]|1{0,1}[0-9]){0,1}[0-9])\\b - type: ip_v6 description: IPv6 pattern: (([0-9a-fA-F]{1,4}:){7,7}[0-9a-fA-F]{1,4}|([0-9a-fA-F]{1,4}:){1,7}:|([0-9a-fA-F]{1,4}:){1,6}:[0-9a-fA-F]{1,4}|([0-9a-fA-F]{1,4}:){1,5}(:[0-9a-fA-F]{1,4}){1,2}|([0-9a-fA-F]{1,4}:){1,4}(:[0-9a-fA-F]{1,4}){1,3}|([0-9a-fA-F]{1,4}:){1,3}(:[0-9a-fA-F]{1,4}){1,4}|([0-9a-fA-F]{1,4}:){1,2}(:[0-9a-fA-F]{1,4}){1,5}|[0-9a-fA-F]{1,4}:((:[0-9a-fA-F]{1,4}){1,6})|:((:[0-9a-fA-F]{1,4}){1,7}|:)|fe80:(:[0-9a-fA-F]{0,4}){0,4}%[0-9a-zA-Z]{1,}|::(ffff(:0{1,4}){0,1}:){0,1}((25[0-5]|(2[0-4]|1{0,1}[0-9]){0,1}[0-9])\\.){3,3}(25[0-5]|(2[0-4]|1{0,1}[0-9]){0,1}[0-9])|([0-9a-fA-F]{1,4}:){1,4}:((25[0-5]|(2[0-4]|1{0,1}[0-9]){0,1}[0-9])\\.){3,3}(25[0-5]|(2[0-4]|1{0,1}[0-9]){0,1}[0-9]))  The configuration file can be global, for all the repos, it is located in ~/.blubracket/pii.yaml, or local, in repo’s .blubracket/pii.yaml file. If repo-local file exists, it will be used, otherwise the global file will be used. Upon launch, CLI with create the global file if it does not exist yet. After file has been created, it is OK to fully change it, CLI will not touch it anymore.\nSensitive words # In addition to checking secrets, CLI can check for sensitive/offensive words that might be good idea to avoid. Examples includes master, slave, etc. By default CLI only warns if a sensitive word has been found but allows commit to proceed. Sensitive Words can be configured in the similar way as PII Secrets. The configuration file name is ~/.blubracket/sensitive-words.yaml (or a repo-local alternative). Here is the default file:\ndefaults: action: block disabled: false patterns: - type: master description: master pattern: \\b(?i)(master(\\w)*)\\b - type: slave description: slave pattern: \\b(?i)(slave)\\b - type: whitelist description: whitelist pattern: \\b(?i)(whitelist(ed|ing){0,1})\\b - type: blacklist description: blacklist pattern: \\b(?i)(blacklist(ed|ing){0,1})\\b - type: whitebox description: whitebox pattern: \\b(?i)(whitebox)\\b - type: blackbox description: blackbox pattern: \\b(?i)(blackbox)\\b - type: whitehat description: whitehat pattern: \\b(?i)(whitehat)\\b - type: blackhat description: blackhat pattern: \\b(?i)(blackhat)\\b - type: man_hours description: man-hours pattern: \\b(?i)(man[ -]hours{0,1})\\b - type: man_days description: man-days pattern: \\b(?i)(man[ -]days{0,1})\\b  Example output:\nC:\\Users\\vbuzu\\projects\\sandbox\u0026gt;git commit -m \u0026quot;test\u0026quot; -a BluBracket blocked 1 secret(s): C:\\Users\\vbuzu\\projects\\sandbox\\test2:8:27: custom_regex: simple SSN: BluBracket allowed 1 sensitive word(s): C:\\Users\\vbuzu\\projects\\sandbox\\test2:8:4: Master: config: sensitive_keywords.action: allow  Commit signing # BluBracket can check that the commit is going to be signed or not and warn or block in case the commit is not signed. By default BluBracket only warns if commit is not signed.\nNote: Blubracket only checks git config commit.gpgSign value and not -Soption passed to git commit command to determine signing status. The reason is that commit signing makes sense if all the commits are signed. Thus using commit.gpgSign is the most proper way to enable signing\nExample Output:\nC:\\Users\\vbuzu\\projects\\sandbox\u0026gt;git commit -m \u0026quot;test\u0026quot; -a BluBracket allowed unsigned commit Use `blubracket commit-signing configure` to enable commit signing [master 94ca89a] test 1 file changed, 2 insertions(+), 1 deletion(-)  Configure commit signing # In addition to checking is commit signed or not, BluBracket helps configuring signing if it is not done already. To do that use blubracket commit-signing configure command. This should be run inside a clone directory as it will configure the signing only for the one current repo/clone. To configure signing globally, for all the current and future clones, add --global flag. Internally CLI will create a gpg key if needed, will configure git to use it, and will point how to upload the key’s public key to git providers, like GitHub and GitLab.\nNotes:\n  CLI checks and configures gpg keys only, not S-MIME/X509\n  CLI will try to use gpg command already available on the user’s device. If gpg is not found:\n  on Linux, CLI will do nothing, as gpg actually expected to be installed by default\n  on Windows, CLI will use gpg from a git for Windows distribution, if available. CLI will NOT install gpg4Win\n on Mac/OSX, CLI will install gnupg2 using brew. CLI will NOT install brew itself. Along side with gnupg2, CLI will install and configure pinentry-mac, so key management can be integrated with OSX keychain and commit signing works not only from terminal but from IDEs as well.      If a key needs to be generated, it is generated with default parameters (same as gpg \u0026ndash;quick-gen-key command). Currently there is no way to customize this.\n  Example output:\nC:\\Users\\vbuzu\\projects\\test-repo\u0026gt;blubracket commit-signing configure Finding gpg... found: C:\\Program Files\\Git\\usr\\bin\\gpg.exe Checking gpg key for user-id 'John Doe \u0026lt;john@acme.com\u0026gt;' ...About to create a key for: \u0026quot;John Doe \u0026lt;john@acme.com\u0026gt;\u0026quot; Continue? (Y/n) We need to generate a lot of random bytes. It is a good idea to perform some other action (type on the keyboard, move the mouse, utilize the disks) during the prime generation; this gives the random number generator a better chance to gain enough entropy. We need to generate a lot of random bytes. It is a good idea to perform some other action (type on the keyboard, move the mouse, utilize the disks) during the prime generation; this gives the random number generator a better chance to gain enough entropy. gpg: key 25ADA7C6E06D60A0 marked as ultimately trusted gpg: revocation certificate stored as '/c/Users/vbuzu/.gnupg/openpgp-revocs.d/AF06E23594DC979D3AC56B5625ADA7C6E06D60A0.rev' public and secret key created and signed. pub rsa3072 2021-03-10 [SC] [expires: 2023-03-10] AF06E23594DC979D3AC56B5625ADA7C6E06D60A0 uid John Doe \u0026lt;john@acme.com\u0026gt; sub rsa3072 2021-03-10 [E] Configuring git to use commit signing...done Getting public key for gpg key '25ADA7C6E06D60A0' ...done -----BEGIN PGP PUBLIC KEY BLOCK----- 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 3OYqf//nWVG3qA== =ulRA -----END PGP PUBLIC KEY BLOCK----- Public Key has been copied to system clipboard. Next, add it to your git provider: For GitHub: navigate to https://github.com/settings/keys For GitLab: navigate to https://gitlab.com/-/profile/gpg_keys  Binary files # The CLI can check that a “large” binary file is going to be committed and either ignore, warn, or block the commit depending on the file size. By default binary files less than 500 KB will be ignored; if more than 500 KB but less than 10 MB, CLI will warn but allow the commit; if more than 10 MB then the commit will be blocked. To disable only warning or blocking the size can be set to 0 (see configuration options below).\nSample output:\nC:\\Users\\vbuzu\\projects\\test-repo\u0026gt;git commit -m \u0026quot;test\u0026quot; BluBracket blocked 1 binary file Blocked binary files: C:\\Users\\vbuzu\\projects\\test-repo\\bluscanner.exe: 81.2 MB Consider using git-lfs to manage large binary files, https://git-lfs.github.com/  CLI configuration # By default CLI blocks secrets and allows sensitive words. It is possible to customize this behavior using config files. CLI loads config files from \u0026lt;repo\u0026gt;/.blubracket/config.yaml and ~/.blubracket/config.yaml. CLI mimics git config behavior where settings in a repo-local config overwrite settings in global config. Here is an example of the config file that has all the default values:\nsecrets: disabled: false action: block commit_signing: disabled: false action: allow binary_files: disabled: false allow_larger: 500KB block_larger: 10MB  "
+        
+      })
+      .add(
+      {
+        id: 68,
         href: "/faq/",
         title: "Frequently asked questions",
         description: "A searchable list of all FAQs.",
@@ -1203,7 +1215,7 @@ Source:
       })
       .add(
       {
-        id: 68,
+        id: 69,
         href: "/intro/key-workflows/",
         title: "Key workflows",
         description: "BluBracket code security tools are optimized to prevent risks from getting into code, and to promote the process of continuous improvement that reduces existing risks from code over time.\nPreventing risks in code # As developers, we depend on a quick feedback loop to understand if our code is working and does what is expected. BluBracket tools can offer automated security guidance as part of that feedback loop, in the IDE of your choice, pre-commit, and as part of the CI flow.",
@@ -1223,7 +1235,7 @@ Source:
       })
       .add(
       {
-        id: 69,
+        id: 70,
         href: "/how-to/messaging/slack/",
         title: "Slack",
         description: "Slack Integration #  BluBracket integration with Slack can alert teams about code risks in new commits in real time.\n  Requirements # Integration with Slack requires the following:\n  Slack API Key\n  Valid Slack Workplace URL\n  A destination Slack channel for alerts to be posted.\n  If you are interested in integrating Slack into your BluBracket workflow please contact support.",
@@ -1243,7 +1255,7 @@ Source:
       })
       .add(
       {
-        id: 70,
+        id: 71,
         href: "/how-to/ci-checks/",
         title: "CI checks",
         description: "Integrating BluBracket into the CI code review process.",
@@ -1271,7 +1283,7 @@ Source:
       })
       .add(
       {
-        id: 71,
+        id: 72,
         href: "/intro/integrations/",
         title: "Integrations",
         description: "Local workflow tools #  The BluBracket CLI tool can identify and block secrets before they\u0026rsquo;re committed.\n  Available local tools and integrations\n CLI IntelliJ (via CLI, full plugin coming soon) Visual Studio Code (via CLI)  Usage guide: installing and using the CLI.\nCode servers #  BluBracket scans repositories hosted in GitHub, GitLab, Bitbucket, and others.\n  Certified \u0026amp; supported code servers:\n GitHub Cloud GitHub Enterprise (including on-prem) GitLab Cloud GitLab on-prem Bitbucket Cloud Bitbucket Server Azure DevOps Gerrit  Usage guide: adding code servers.",
@@ -1287,7 +1299,7 @@ Source:
       })
       .add(
       {
-        id: 72,
+        id: 73,
         href: "/how-to/ticketing/jira/",
         title: "JIRA",
         description: "JIRA Integration #  BluBracket can automatically create a Jira ticket when risks are found in new commits.\n  Requirements #   Atlassian API Token\n  JIRA Base URL\n  JIRA Project for events and alerts to be added to.\n  If you are interested in integrating JIRA into your BluBracket workflow please contact support.",
@@ -1307,7 +1319,7 @@ Source:
       })
       .add(
       {
-        id: 73,
+        id: 74,
         href: "/contact-support/",
         title: "Contact support",
         description: "",
@@ -1319,7 +1331,7 @@ Source:
       })
       .add(
       {
-        id: 74,
+        id: 75,
         href: "/release-notes/",
         title: "Release notes",
         description: "",
@@ -1331,7 +1343,7 @@ Source:
       })
       .add(
       {
-        id: 75,
+        id: 76,
         href: "/how-to/messaging/",
         title: "Messaging",
         description: "Messaging security team members and developers when risks are found in code in the real-time commit scans can help increase visibility of risks and reduce the time to remediate risks.\nOut of the box, BluBracket supports messaging via Slack and Microsoft Teams, and additional integrations are possible via the flexible APIs.",
@@ -1349,7 +1361,7 @@ Source:
       })
       .add(
       {
-        id: 76,
+        id: 77,
         href: "/how-to/ticketing/",
         title: "Ticketing",
         description: "Automatic ticketing of detected issues gives security and developer teams visibility into security issues in the tools they\u0026rsquo;re using to plan, track, and report work. No need to sign into or use another too.\nOut of the box, BluBracket supports Jira and ServiceNow, and additional integrations are possible via the flexible APIs.",
@@ -1367,7 +1379,7 @@ Source:
       })
       .add(
       {
-        id: 77,
+        id: 78,
         href: "/authoring-documentation/",
         title: "Authoring documentation",
         description: "How do write and edits the docs in this site.",
@@ -1379,7 +1391,7 @@ Source:
       })
       .add(
       {
-        id: 78,
+        id: 79,
         href: "/how-to/architecture/",
         title: "Integration architecture",
         description: "How BluBracket connects to your world",
@@ -1391,7 +1403,7 @@ Source:
       })
       .add(
       {
-        id: 79,
+        id: 80,
         href: "/release-notes/2022-06/",
         title: "2022-06 release",
         description: "New features, enhancements, and bug fixes #  SOC 2 Type II compliance for SaaS services, recognizing the rigorous operational and security practices across the organization for safe and reliable handling of customer data CLI: new open-source recipes for scanning S3, syslog, and Confluence wiki pages New risk severity for all events gives detailed information to identify and prioritize risk across your codebase The new filtering experience is now enabled for all customers  ",
@@ -1403,7 +1415,7 @@ Source:
       })
       .add(
       {
-        id: 80,
+        id: 81,
         href: "/release-notes/2022-05/",
         title: "2022-05 release",
         description: "New features, enhancements, and bug fixes #  New alert search and filtering experience improves workflows and findability of actionable Support for git repositories on Gerrit code servers Ongoing false positive improvements, including more nuanced inspection and reporting for multi-part secrets (such as AWS keys and secret keys) New OAuth signup/sign-in support CLI: offline scan, which operates entirely without network interaction, is now the default  ",
@@ -1415,7 +1427,7 @@ Source:
       })
       .add(
       {
-        id: 81,
+        id: 82,
         href: "/release-notes/2022-04/",
         title: "2022-04 release",
         description: "New features, enhancements, and bug fixes #  Redesigned and re-imagined views of alerts optimized around quick triage and remediation workflows New support for tracking detailed branch info Snyk integration beta for tracking and reporting dependency vulnerabilities for a complete view of the external and internal code supply chain CLI: searching inside archive files, including .tar, .zip, and others CLI: support for scanning a specific file or files  ",
@@ -1427,7 +1439,7 @@ Source:
       })
       .add(
       {
-        id: 82,
+        id: 83,
         href: "/release-notes/2022-03/",
         title: "2022-03 release",
         description: "New features, enhancements, and bug fixes #  Track and manage your work by marking the triaged state of each alert Event reconciliation on pattern/logic changes New settings page outlining available integrations New support for tracking commit info, including tip of main branch Refactored user management in preparation for OAuth and RBAC New documentation website (this site, yay!)  ",
@@ -1439,7 +1451,7 @@ Source:
       })
       .add(
       {
-        id: 83,
+        id: 84,
         href: "/release-notes/2022-02/",
         title: "2022-02 release",
         description: "New features, enhancements, and bug fixes #  Improved false positive rejection Periodic scans re-process data with the latest rules, and catch pushes missed in case the git host dropped the webhook Support for filtering by commit time Big fixes and improvements to the BluPrint report New report: most used secrets across your code base (calculated by hash, BluBracket does not store your code or any secrets)  ",
@@ -1451,7 +1463,7 @@ Source:
       })
       .add(
       {
-        id: 84,
+        id: 85,
         href: "/",
         title: "BluBracket Documentation",
         description: "Track what's in your code, who has access, and where it goes.",
@@ -1463,7 +1475,7 @@ Source:
       })
       .add(
       {
-        id: 85,
+        id: 86,
         href: "/release-notes/2022-01/",
         title: "2022-01 release",
         description: "New features, enhancements, and bug fixes #  Initial support for repos in Azure DevOps Bitbucket Insights support gives developers guidance about risks in their code during the review process, eliminating unnecessary alerts Scalability improvements around integrations Scalability improvements for git host webhook processing and job queueing  ",
@@ -1475,7 +1487,7 @@ Source:
       })
       .add(
       {
-        id: 86,
+        id: 87,
         href: "/release-notes/2021-12/",
         title: "2021-12 release",
         description: "New features, enhancements, and bug fixes #  Self-hosted (VPC/on-prem) installer improvements, including support for Terraform Bulk code server import to import multiple GitHub Organizations, Bitbucket Workspaces, or GitLab Workspaces with a single click Activeness checks for multi-part secrets, such as AWS keys and secret keys CLI: Ability to scan an arbitrary directory outside a git repo  ",
@@ -1487,7 +1499,7 @@ Source:
       })
       .add(
       {
-        id: 87,
+        id: 88,
         href: "/release-notes/2021-11-22/",
         title: "2021-11-22 release",
         description: "New Features and Enhancements #  “Other” type has been added to the Secret Types pie chart on the BluPrint page. The pie chart should now show the top 6 secret types as well as a 7th that is composed of all of the remaining types. Clicking on any of the pie sections should take the user to a filtered table for the selected secret type. Many additional enhancements have been added to identify false positives where secrets are concerned.",
@@ -1499,7 +1511,7 @@ Source:
       })
       .add(
       {
-        id: 88,
+        id: 89,
         href: "/release-notes/2021-10-11/",
         title: "2021-10-11 release",
         description: "New Features and Enhancements #  New public API to return repo scan status Added infinite label filter to support scrolling through all labels.  Bug Fixes #  CORE-8192 URL of webhook was not displayed in the compliance alerts flyover details CORE-8343 Enhanced false positive detection where secret type is “token” CORE-8414 - Fixed Slack integration issue where deep link was not being displayed in message Fix table pagination loading bugs  ",
@@ -1511,7 +1523,7 @@ Source:
       })
       .add(
       {
-        id: 89,
+        id: 90,
         href: "/release-notes/2021-09-28/",
         title: "2021-09-28 release",
         description: "New Features and Enhancements #   Additional checks performed when user adds new code server. We now identify and show a message if the user does not have adequate organization level permissions, even if the Personal Access Token does have required permissions. Inadequate user permissions will result in incomplete repo risk calculations.\n  Code Leaks now filters out Public to Public alerts.\n  Code Leaks details now displays a deep link to the selected leaked file",
@@ -1523,7 +1535,7 @@ Source:
       })
       .add(
       {
-        id: 90,
+        id: 91,
         href: "/release-notes/2021-09-13/",
         title: "2021-09-13 release",
         description: "New Features and Enhancements #   New Repo Details Design. When clicking on a Repository, you will now see a new design that lists the risk rating and number of violations for each risk category. Clicking on the violations number will provide a filter view of all violations of that risk category type.\n    The terminology “Alerts” has been replaced with “All Violations”, which is a new tab next to Code Risks at top of screen.",
@@ -1535,7 +1547,7 @@ Source:
       })
       .add(
       {
-        id: 91,
+        id: 92,
         href: "/release-notes/2021-09-07/",
         title: "2021-09-07 release",
         description: "New Features and Enhancements #   Access Risk Categories now links to appropriate alerts in the repo details page.\n  Enhanced Code Server onboarding for Bitbucket and GitLab.\n  Updated Infrastructure Code Alerts and Events to be more descriptive.\n  Added breadcrumbs to repository details page in portal.\n  Updated support for global Ignore.yaml. If you place a folder labeled “.blubracket” into a repository, then create a file called ignore.",
@@ -1547,7 +1559,7 @@ Source:
       })
       .add(
       {
-        id: 92,
+        id: 93,
         href: "/release-notes/2021-08-16/",
         title: "2021-08-16 release",
         description: "New Features and Enhancements # Enterprise Edition # New Code Risks Categories\nBluBracket has added two additional Risk Categories to the repo detail view, PII and Non-inclusive language!\n  All newly created tenants will automatically have three Non-inclusive language regular expressions configured (blacklist, slave, master) and one PII regular expression for social security numbers.\nFor existing customers, if you would like to utilize the new PII and Non-inclusive Language categories, please follow the instructions below:",
@@ -1559,7 +1571,7 @@ Source:
       })
       .add(
       {
-        id: 93,
+        id: 94,
         href: "/release-notes/2021-07-21/",
         title: "2021-07-21 release",
         description: "New Features and Enhancements # Enterprise Edition # No new features or enhancements added to the Enterprise Edition with this release.\nCommunity Edition # No new features or enhancements added to the Community Edition with this release.\nBug Fixes #   CORE-7410 - Fix filtering issue when attempting to filter for a value that does not exist. Now returns “no events found” instead of returning all results.\n  CORE-7514 - Fix custom date range bug for Last Activity column in repository list view",
@@ -1571,7 +1583,7 @@ Source:
       })
       .add(
       {
-        id: 94,
+        id: 95,
         href: "/release-notes/2021-07-03/",
         title: "2021-07-03 release",
         description: "New Features and Enhancements # Enterprise Edition # Code Risks #   Within the repository details page the Code Risks tab now indicates the level of risk associated with any of the risk categories that BluBracket could potentially be identifying. As seen in the screenshot below, all categories are designated with a High/Medium/Low indicator and the number of violations associated with the risk category type. Clicking risk category type will navigate the user to a list view of the violations.",
@@ -1583,7 +1595,7 @@ Source:
       })
       .add(
       {
-        id: 95,
+        id: 96,
         href: "/release-notes/2021-06-05/",
         title: "2021-06-05 release",
         description: "New Features and Enhancements # Enterprise Edition # High Risks #  The BluPrint page now contains a new table that displays the most risky repos that are currently being monitored. The repository with the highest risk score is at the top of the list, descending to the 100th highest at the bottom. The Alert tiles have been moved to just below this table and are now, by default, in a collapsed state.",
@@ -1595,7 +1607,7 @@ Source:
       })
       .add(
       {
-        id: 96,
+        id: 97,
         href: "/release-notes/2021-05-03/",
         title: "2021-05-03 release",
         description: "New Features and Enhancements # Enterprise Edition # Event Tagging and Alert Enabling #   Event Tagging: For quite some time now BluBracket has been using tagging events with things like “Active Token”, “Inactive Token”, “Strong Password”, etc. These tags have been used to notify the user of specific information related to the event. It quickly became apparent that these could be useful for customers when integrating with other systems, or just for filtering purposes.",
@@ -1607,7 +1619,7 @@ Source:
       })
       .add(
       {
-        id: 97,
+        id: 98,
         href: "/release-notes/2021-04-27/",
         title: "2021-04-27 release",
         description: "New Features and Enhancements # Enterprise Edition # PCRE Library #  The PCRE library has now been added to the BluBracket regular expression feature. This is an extension to our previous library and will allow users to pattern match more regular expressions than previously.  Community Edition # Command Line Interface (CLI) Tool - PII Addition #  In addition to built-in secrets and custom secrets, CLI does support the ability to define a different group of “secrets” related to PII (Personally Identifiable Information) such as Social Security Numbers (SSN), emails, URLs, IP-addresses, etc.",
@@ -1619,7 +1631,7 @@ Source:
       })
       .add(
       {
-        id: 98,
+        id: 99,
         href: "/release-notes/2021-04-16/",
         title: "2021-04-16 release",
         description: "New Features and Enhancements # No new features in this release. # Bug Fixes #   CORE-6128 - CE - Incorrect count being displayed for duplicate alerts. Has been addressed.\n  CORE-5030 - Redundant URL being displayed in code copy details. Fixed.\n  CORE-5543 - Repository contribution table on BluPrint page is throwing an error when clicked. This is now fixed.\n  CORE-6284 - Issue with GitHub Checks app never completing scan if two users are both monitoring the same repository.",
@@ -1631,7 +1643,7 @@ Source:
       })
       .add(
       {
-        id: 99,
+        id: 100,
         href: "/release-notes/2021-03-26/",
         title: "2021-03-26 release",
         description: "New Features and Enhancements # Enterprise Edition # Rescan Repository #  It is now possible to rescan an entire repository, including all of the repository history, at the click of a button. Normally a full scan of a repository is done at the time of adding the code server that the repository belongs to, or whenever the repository is added. After that the initial scan the repository is monitored and all new commits are scanned and only periodically is the entire repository scanned.",
@@ -1643,7 +1655,7 @@ Source:
       })
       .add(
       {
-        id: 100,
+        id: 101,
         href: "/release-notes/2021-03-12/",
         title: "2021-03-12 release",
         description: "New Features and Enhancements # New Public APIs #   Two new APIs have been added to the list of public APIs available. The two new APIs allow users to dismiss alerts and re-enabled alerts that have been dismissed. This is especially important for users that have integrated with their CICD solutions and want to complete the loop. For example, a developer commits code that triggers a BluBracket alert, the user’s CICD integration recognizes the alert, creates a ticket and notification to the appropriate developer/administrator to remediate the issue, the developer/administrator remediates and closes the ticket, which triggers the API to dismissed the addressed alert in BluBracket.",
@@ -1655,7 +1667,7 @@ Source:
       })
       .add(
       {
-        id: 101,
+        id: 102,
         href: "/release-notes/2021-03-05/",
         title: "2021-03-05 release",
         description: "New Features # Command Line Interface (CLI) Tool Enhancements #   A number of significant changes have been added to the CLI tool this with this release of the Community Edition. All of these improvements, except for code signing of course, have been taken from the existing features within the enterprise version of the BluBracket solution.\n  Activeness Checks - The CLI tool now runs an activeness check on a number of the tokens, keys and IDs to eliminate false positives.",
@@ -1667,7 +1679,7 @@ Source:
       })
       .add(
       {
-        id: 102,
+        id: 103,
         href: "/release-notes/2021-02-12/",
         title: "2021-02-12 release",
         description: "New Features # Repo Details Slide Out #   Clicking on any row within the repository table will now expose a repository details slide out panel. Within this panel the user can see all of the unreviewed secrets that compose the Repo Risk Score for the specific repository. Users are still able to navigate to the GitHub repository, as was the previous action by clicking on a given repo, by clicking on the deep link within the slide out.",
@@ -1679,7 +1691,7 @@ Source:
       })
       .add(
       {
-        id: 103,
+        id: 104,
         href: "/release-notes/2021-02-02/",
         title: "2021-02-02 release",
         description: "New Features # Repo Risk Score and Secret Risk Score #   The BluBracket Community Edition has introduced the concepts of Repository Risk Score and Secret Risk Score to the interface as of this release. This feature is meant to give the user, at a glance, an idea of the potential risk involved with a specific repository.\n  The Repository Risk Score is a number that is meant to reflect the number of unreviewed secrets that exist within the repository as well as their potential severity.",
@@ -1691,7 +1703,7 @@ Source:
       })
       .add(
       {
-        id: 104,
+        id: 105,
         href: "/release-notes/2021-01-22/",
         title: "2021-01-22 release",
         description: "Bug Fixes #  CORE-5377 - Updated the Community Edition secrets table to include a loading spinner CORE-5468 - Fixed the incorrect URL for Secrets in Code documentation CORE-4744 - Sorting fix for the repository list view CORE-5357 - A number of minor UI fixes were taken care of in the Community Edition CORE-5370 - Fixed the Community Edition Safari issue with the insight tile sizing CORE-5371 - Topbar icon fix for Community Edition CORE-5485 - Addressed the Bitbucket push event when no nickname in payload  ",
@@ -1703,7 +1715,7 @@ Source:
       })
       .add(
       {
-        id: 105,
+        id: 106,
         href: "/contributors/",
         title: "Contributors",
         description: "",
