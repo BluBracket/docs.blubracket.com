@@ -58,7 +58,7 @@ Note: Currently only the default configuration file is supported, if pre-commit 
 * In your terminal, `cd` to your repository directory
 
 * Then add the following example secret into any file in your repository:
-     `myPassword="ptr-316-9bq3-11enty-N0P3d"`
+     `myPassword="My$uperDuperS3cret!"`
 
 * Now try to commit your change with git commit - your new BluBracket CLI hook should prevent the commit from happening.
 

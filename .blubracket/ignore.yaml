@@ -5,5 +5,4 @@
 # Ignore by secret value
 # Equivalent to 'secret_value == my_password OR secret_value == my_token'
 - secret_values:
-    - ptr-316-9bq3-11enty-N0P3d
-    - My$uperDuperS3cret!
+    - My\$uperDuperS3cret\!
