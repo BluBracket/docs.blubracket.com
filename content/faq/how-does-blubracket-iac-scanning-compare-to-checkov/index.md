@@ -1,6 +1,6 @@
 ---
 title: "How does BluBracket IaC scanning compare to Checkov?"
-description: "Detection by Checkov. Worfllow by BluBracket."
+description: "Detection by Checkov. Workflow by BluBracket."
 lead: ""
 date: 2022-01-12T02:48:57+00:00
 draft: false
