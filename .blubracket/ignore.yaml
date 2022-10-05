@@ -5,4 +5,5 @@
 # Ignore by secret value
 # Equivalent to 'secret_value == my_password OR secret_value == my_token'
 - secret_values:
-    - "My$uperDuperS3cret!"
+    - My$uperDuperS3cret!
+    - myPassword="My$uperDuperS3cret!"
