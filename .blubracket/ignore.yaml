@@ -1,6 +1,7 @@
 # Ignore by file path
 - paths:
     - content/faq/what-kinds-of-secrets-do-you-search-for/index.md
+    - content/how-to/cli/using-cli-with-git/index.md
 
 # Ignore by secret value
 # Equivalent to 'secret_value == my_password OR secret_value == my_token'
