@@ -14,6 +14,8 @@ The BluBracket CLI is a high-performance, compact risk scanner written in Go. Un
 
 macOS, multiple Linux distros, and Windows are all supported.
 
+### Installation
+
 Use these direct links to download the executables:
 
 - macOS: https://static.blubracket.com/cli/latest/blubracket-macos
@@ -27,3 +29,12 @@ curl https://static.blubracket.com/cli/latest/blubracket-macos -o blubracket
 chmod +x ./blubracket
 mv ./blubracket /usr/local/bin/
 ```
+
+### Supported platforms
+
+- Windows >= 10
+- macOS >= 10.12
+- Linux
+  - Alpine >= 5
+  - Ubuntu >= 16.04
+  - CentOS >= 7
