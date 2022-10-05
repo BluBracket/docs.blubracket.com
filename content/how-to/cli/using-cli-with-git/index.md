@@ -1,20 +1,22 @@
 ---
-title: "Using the CLI tool"
+title: "Using the CLI tool in git workflows"
+aliases:
+    - /how-to/cli/using-cli/
 description: "Details about how to use the CLI tool."
 lead: 
 date: 2022-02-22T02:48:57+00:00
 draft: false
-weight: 200
+weight: 400
 toc: false
 resources:
   - src:
 ---
 
-#### Installation
+### Installation
 
 [How do I Install the BluBracket command line interface (CLI) tool?](/how-to/cli/installation/)
 
-#### Setting git hooks
+### Setting git hooks
 
 In terminal, `cd` to the repo dir, then `blubracket install-git-hooks`
 
@@ -27,11 +29,11 @@ If git is setup to use global git hooks (specified by `core.hooksPath` git confi
 
 Currently CLI will set only one hook, `pre-commit`.
 
-##### Current limitations
+#### Current limitations
 
 CLI will install the pre-commit hook automatically only if the hook does not exist yet or the hook does exist and is implemented as a shell script (determined by the presence of `#!/bin/sh` or `#!/usr/bin/env bash` lines). In all other cases, e.g. if the hook is a python script, the CLI invocation must be added to the hook manually. It should be an equivalent of the follow shell command `blubracket pre-commit "$@" || { exit "$?"; }:` run `blubracket` command with `pre-commit` as the first parameter followed by all other parameters passed to the hook itself; exit/stop the hook on any non-zero exit codes from `blubracket`.
 
-##### Pre-commit.com integration
+#### Pre-commit.com integration
 
 The CLI tool integrates with the [https://pre-commit.com](https://pre-commit.com) hook management tool now. If it is detected that the pre-commit tool is used to manager the hooks, the CLI will add itself as one of the hooks to `.pre-commit-config.yaml`.
 
@@ -51,7 +53,16 @@ Note: Currently only the default configuration file is supported, if pre-commit 
         pass_filenames: false
 ```
 
-#### Secrets
+#### Testing the BluBracket CLI commit hook
+
+* In your terminal, `cd` to your repository directory
+
+* Then add the following example secret into any file in your repository:
+     `myPassword="My$uperDuperS3cret!"`
+
+* Now try to commit your change with git commit - your new BluBracket CLI hook should prevent the commit from happening.
+
+### Secrets
 
 Use your normal git workflow, edit and stage some files, then try to commit. If the changes have secrets, the commit will be blocked. For example:
 
@@ -64,7 +75,7 @@ C:\Users\vbuzu\projects\sandbox\tests\dir2\tests\file1.txt:12:11: password_assig
 C:\Users\vbuzu\projects\sandbox\tests\dir2\tests\file1.txt:13:14: password_in_url
 ```
 
-##### .blubracket-ignore
+#### .blubracket-ignore
 
 Sometimes it might be necessary to ignore secrets in some files or secrets of some types. To achieve this just create a `.blubracket-ignore` file in the root directory of the repo. The format of the file is similar to `.gitignore`. Empty lines and lines started with # are ignored. To ignore all secrets in a file, put a glob pattern, e.g. `**/tests` will ignore secrets found in all files in any tests directory and sub-directories. To ignore specific a secret type, e.g. any password like secrets, add a line like `secret_type:password.*`, where `password.*` is perl compatible regular expression. To ignore specific secret, add a line like `secret_value:my_test_gcp_token` where `my_test_gcp_token` is the real secret/token you want to ignore.
 
@@ -74,32 +85,34 @@ secret_type:password.*
 secret_value:my_test_gcp_token
 ```
 
-##### Current limitations:
+#### Current limitations:
   
 * negate mask (!) is not supported
 
 * `.blubraket-ignore` is read only from the root repo directory, placing it in a sub directory will have no effect.
 
-##### Inline comments
+#### Inline comments
 
 In addition to .blubracket-ignore file, it is possible to mark a secret to be ignored by placing a “comment” on the **same** line as the secret. The comment/line has to have `BluBracketIgnore` string in it, please note that CLI will do case-sensitive comparison.
 
-##### Possible workarounds for false positives
+#### Possible workarounds for false positives
 
 Ignoring whole folders and/or secret type all the time could be dangerous as it can be easy to miss secrets. The recommended ways to deal with false positives are inline comments or ignoring the particular secret using `secret_value` rule in the `.blubracket-ignore` file.
 
 #### Adding checks for your own secrets {#own-secrets}
 
-Out of the box BluBracket does support around 50 different secret types. If you want to check other secret types, it is easy. In a repo/clone folder create a file `.blubracket/customregex.yml` (if you want new secret checks be applicable for any repo, create the file in $HOME folder instead). The content of the file is a list of secrets to check. Each secret is defined by two properties: `description` and `pattern`. Description is textual name for the secret that will be displayed by CLI if the secret is detected. Pattern is a regex to match the secret. Here is an example of how to a check for SSNs:
+BluBracket supports hundreds of different secret types, but you can extend it to detect any pattern you want.
+
+In a repo/clone folder create a file `.blubracket/customregex.yml` (if you want new secret checks be applicable for any repo, create the file in `$HOME` folder instead). The content of the file is a list of secrets to check. Each secret is defined by two properties: `description` and `pattern`. Description is textual name for the secret that will be displayed by CLI if the secret is detected. Pattern is a regex to match the secret. Here is an example of how to a check for SSNs:
 
 ```yaml
 - pattern: (?P<value>\d{3}-\d{2}-\d{4})
   description: simple_ssn
   ```
 
-##### PII secrets
+### PII
 
-In addition to built-in secrets and custom secrets, CLI does support the ability to define a different group of “secrets” related to PII (Personally Identifiable Information) such as Social Security Numbers (SSN), emails, URLs, IP-addresses, etc. This feature is fully customizable. Out of the box CLI defines several patterns but all can be disabled, or the corresponded action changed. Here is the default configuration file:
+In addition to built-in secrets and custom secrets, the CLI supports the ability to define a different group of “secrets” related to PII (Personally Identifiable Information) such as Social Security Numbers (SSN), emails, URLs, IP-addresses, etc. This feature is fully customizable. Out of the box CLI defines several patterns but all can be disabled, or the corresponded action changed. Here is the default configuration file:
 
   ```yaml
   defaults:
@@ -145,9 +158,9 @@ patterns:
 
 ```
 
-Configuration file can be global, for all the repos, it is located in `~/.blubracket/pii.yaml`, or local, in repo’s `.blubracket/pii.yaml` file. If repo-local file exists, it will be used, otherwise the global file will be used. Upon launch, CLI with create the global file if it does not exist yet. After file has been created, it is OK to fully change it, CLI will not touch it anymore.
+The configuration file can be global, for all the repos, it is located in `~/.blubracket/pii.yaml`, or local, in repo’s `.blubracket/pii.yaml` file. If repo-local file exists, it will be used, otherwise the global file will be used. Upon launch, CLI with create the global file if it does not exist yet. After file has been created, it is OK to fully change it, CLI will not touch it anymore.
 
-#### Sensitive words
+### Sensitive words
 
 In addition to checking secrets, CLI can check for sensitive/offensive words that might be good idea to avoid. Examples includes master, slave, etc. By default CLI only warns if a sensitive word has been found but allows commit to proceed. Sensitive Words can be configured in the similar way as PII Secrets. The configuration file name is `~/.blubracket/sensitive-words.yaml` (or a repo-local alternative). Here is the default file:
 
@@ -199,7 +212,7 @@ BluBracket allowed 1 sensitive word(s):
 C:\Users\vbuzu\projects\sandbox\test2:8:4: Master: config: sensitive_keywords.action: allow
 ```
 
-#### Commit signing
+### Commit signing
 
 BluBracket can check that the commit is going to be signed or not and warn or block in case the commit is not signed. By default BluBracket only warns if commit is not signed.
 
@@ -215,7 +228,7 @@ Use `blubracket commit-signing configure` to enable commit signing
  1 file changed, 2 insertions(+), 1 deletion(-)
 ```
 
-##### Configure commit signing
+#### Configure commit signing
 
 In addition to checking is commit signed or not, BluBracket helps configuring signing if it is not done already. To do that use `blubracket commit-signing configure command`. This should be run inside a clone directory as it will configure the signing only for the one current repo/clone. To configure signing globally, for all the current and future clones, add `--global` flag. Internally CLI will create a gpg key if needed, will configure git to use it, and will point how to upload the key’s public key to git providers, like GitHub and GitLab.
 
@@ -308,7 +321,7 @@ For GitHub: navigate to https://github.com/settings/keys
 For GitLab: navigate to https://gitlab.com/-/profile/gpg_keys
 ```
 
-#### Binary files
+### Binary files
 
 The CLI can check that a “large” binary file is going to be committed and either ignore, warn, or block the commit depending on the file size. By default binary files less than 500 KB will be ignored; if more than 500 KB but less than 10 MB, CLI will warn but allow the commit; if more than 10 MB then the commit will be blocked. To disable only warning or blocking the size can be set to 0 (see configuration options below).
 
@@ -322,7 +335,7 @@ C:\Users\vbuzu\projects\test-repo\bluscanner.exe: 81.2 MB
 Consider using git-lfs to manage large binary files, https://git-lfs.github.com/
 ```
 
-#### CLI configuration
+### CLI configuration
 
 By default CLI blocks secrets and allows sensitive words. It is possible to customize this behavior using config files. CLI loads config files from `<repo>/.blubracket/config.yaml` and `~/.blubracket/config.yaml`. CLI mimics `git config` behavior where settings in a repo-local config overwrite settings in global config. Here is an example of the config file that has all the default values:
 
@@ -340,17 +353,3 @@ binary_files:
     allow_larger: 500KB
     block_larger: 10MB
 ```
-
-#### Supported platforms
-
-* Windows 10
-
-* Mac OSX >= 10.12
-
-* Linux
-
-  * Alpine >= 5
-
-  * Ubuntu >= 16.04
-
-  * CentOS >= 7
