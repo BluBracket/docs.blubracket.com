@@ -3,7 +3,7 @@ title: "Using the CLI tool in git workflows"
 aliases:
     - /how-to/cli/using-cli/
 description: "Details about how to use the CLI tool."
-lead: 
+lead:
 date: 2022-02-22T02:48:57+00:00
 draft: false
 weight: 400
@@ -58,7 +58,7 @@ Note: Currently only the default configuration file is supported, if pre-commit 
 * In your terminal, `cd` to your repository directory
 
 * Then add the following example secret into any file in your repository:
-     `myPassword="My$uperDuperS3cret!"`
+     `myPassword="ptr-316-9bq3-11enty-N0P3d"`
 
 * Now try to commit your change with git commit - your new BluBracket CLI hook should prevent the commit from happening.
 
@@ -86,7 +86,7 @@ secret_value:my_test_gcp_token
 ```
 
 #### Current limitations:
-  
+
 * negate mask (!) is not supported
 
 * `.blubraket-ignore` is read only from the root repo directory, placing it in a sub directory will have no effect.
@@ -343,11 +343,11 @@ By default CLI blocks secrets and allows sensitive words. It is possible to cust
 secrets:
     disabled: false
     action: block
-   
+
 commit_signing:
     disabled: false
-    action: allow    
-  
+    action: allow
+
 binary_files:
     disabled: false
     allow_larger: 500KB
