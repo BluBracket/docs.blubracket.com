@@ -20,8 +20,6 @@ resources:
 
 BluBracket's infrastructure-as-code (IaC) scanning runs automatically on every repository. If there are any supported IaC-related files, they'll be scanned for risks according to best-practices recommendations outlined below.
 
-{{< alert icon="👉" text="Fully-integrated IaC risk scanning is in limited beta at this time." />}}
-
 ### What IaC file types are supported
 
 - Terraform (for AWS, GCP, Azure and OCI)
