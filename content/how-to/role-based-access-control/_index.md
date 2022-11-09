@@ -18,7 +18,6 @@ Manager, Member, Viewer.
 
 The following table describes the features each role can access:
 
-
 | Feature                                                           | Manager | Member | Viewer |
 | :------------------------------------------------------------------ | --------- | -------- | -------- |
 | View events                                                       | ✅      | ✅     | ✅     |
@@ -29,10 +28,7 @@ The following table describes the features each role can access:
 | Add/Manage Users                                                  | ✅      |        |        |
 | Configure SSO/SAML                                                | ✅      |        |        |
 
-
 Note: At the current time, the roles Member and Viewer are only available on tenants which have the Just-in-time SAML user provisioning feature enabled.
-
-
 
 ## Just-in-time (JIT) SAML user provisioning
 
