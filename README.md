@@ -17,7 +17,7 @@ This theme is automated using Node.js and `npm`.
 npm install
 ```
 
-### Preview the website
+### Preview the websited
 
 ```
 npm run start
