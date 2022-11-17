@@ -12,6 +12,7 @@ tags:
   - slack
 resources:
   - src: code-risk-alerts-in-slack-via-blubracket.png
+  - src: slack-integrations-location.png
 ---
 
 ### Slack Integration
@@ -22,10 +23,9 @@ resources:
 
 Integration with Slack requires the following:
 
-* [Slack API Key](https://slack.com/help/articles/215770388-Create-and-regenerate-API-tokens)
+1. [Install the BluBracket Slack App on your workspace](https://api.slack.com/apps/A044R68FYGY)
 
-* [Valid Slack Workplace URL](https://slack.com/help/articles/221769328-Locate-your-Slack-URL)
+2. [Create a Slack connection](/how-to/messaging/slack/connection/)
+{{< figure src="slack-integrations-location.png" >}}
 
-* [A destination Slack channel for alerts to be posted.](https://slack.com/integrations)
-
-If you are interested in integrating Slack into your BluBracket workflow please [contact support.](/contact-support/)
+3.  [Create a Slack subscription](/how-to/messaging/slack/subscription/)
