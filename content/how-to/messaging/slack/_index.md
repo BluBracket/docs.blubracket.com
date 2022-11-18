@@ -28,4 +28,4 @@ Integration with Slack requires the following:
 2. [Create a Slack connection](/how-to/messaging/slack/connection/)
 {{< figure src="slack-integrations-location.png" >}}
 
-3.  [Create a Slack subscription](/how-to/messaging/slack/subscription/)
+3. [Create a Slack subscription](/how-to/messaging/slack/subscription/)
