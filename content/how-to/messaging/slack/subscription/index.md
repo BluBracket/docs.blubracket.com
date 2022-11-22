@@ -13,18 +13,24 @@ resources:
   - src: slack-subscription-complete.png
 ---
 
-### Slack Subscription
+### Requirements
 
-Once you have created a [Slack connection](/how-to/messaging/slack/connection/), you can begin setting up subscriptions for notifications.
+- Create a [BluBracket Slack App](/how-to/messaging/slack/app/) and install to your workspace.
+- Create [Slack connection](/how-to/messaging/slack/connection/)
 
-1. Click the + SUBSCRIPTION button to begin the creation process.
+### Creating a Slack Subscription
+
+1. Navigate to Slack integrations by clicking the **Slack** link on the integrations page
+{{< figure src="../slack-integrations-location.png" >}}
+
+2. Click the **+ SUBSCRIPTION** button to begin the creation process.
 {{< figure src="slack-subscription-start.png" >}}
 
-2. Choose a name for the subscription as well as the saved filters you would like the subscription to be based on.
+3. Choose a name for the subscription as well as the saved filters you would like the subscription to be based on.
 
-3. Choose the connection for the subscription output and the slack channel.
+4. Choose the connection for the subscription output and the slack channel.
 
-4. Click SAVE
+5. Click **SAVE**
 {{< figure src="slack-subscription-complete.png" >}}
 
 BluBracket events matching your filters will be sent to your specified channel in Slack.
