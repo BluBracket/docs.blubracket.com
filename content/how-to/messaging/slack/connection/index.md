@@ -25,7 +25,7 @@ resources:
 2. Begin creating a BluBracket Slack connection by clicking the **+ CONNECTION** button
 {{< figure src="slack-connection-start.png" >}}
 
-3. Visit the [installations page](https://api.slack.com/apps/A044R68FYGY/install-on-team) in the [BluBracket Slack App](https://api.slack.com/apps/A044R68FYGY) and copy the bot token presented on the screen.
+3. Visit the installations page in your [BluBracket Slack App](https://api.slack.com/apps/) and copy the bot token presented on the screen.
 
 4. Paste the bot token into the token input and click TEST & SAVE.
 {{< figure src="slack-connection-save.png" >}}
