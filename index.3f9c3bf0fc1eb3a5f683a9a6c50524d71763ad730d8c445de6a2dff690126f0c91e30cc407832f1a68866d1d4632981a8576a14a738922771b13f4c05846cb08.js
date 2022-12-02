@@ -1190,7 +1190,7 @@ Source:
         id: 68,
         href: "/how-to/messaging/slack/connection/",
         title: "Slack Connection",
-        description: "Requirements #  Create a BluBracket Slack App and install to your workspace.  Creating a Slack Connection #   Navigate to Slack integrations by clicking the Slack link on the integrations page    Begin creating a BluBracket Slack connection by clicking the + CONNECTION button    Visit the installations page in the BluBracket Slack App and copy the bot token presented on the screen.",
+        description: "Requirements #  Create a BluBracket Slack App and install to your workspace.  Creating a Slack Connection #   Navigate to Slack integrations by clicking the Slack link on the integrations page    Begin creating a BluBracket Slack connection by clicking the + CONNECTION button    Visit the installations page in your BluBracket Slack App and copy the bot token presented on the screen.",
         
           
             
@@ -1198,7 +1198,7 @@ Source:
         
         
         
-        content: "slackRequirements #  Create a BluBracket Slack App and install to your workspace.  Creating a Slack Connection #   Navigate to Slack integrations by clicking the Slack link on the integrations page    Begin creating a BluBracket Slack connection by clicking the + CONNECTION button    Visit the installations page in the BluBracket Slack App and copy the bot token presented on the screen.\n  Paste the bot token into the token input and click TEST \u0026amp; SAVE.    Now you\u0026rsquo;re ready to create subscriptions for this connection and start seeing BluBracket notifications in Slack.\n"
+        content: "slackRequirements #  Create a BluBracket Slack App and install to your workspace.  Creating a Slack Connection #   Navigate to Slack integrations by clicking the Slack link on the integrations page    Begin creating a BluBracket Slack connection by clicking the + CONNECTION button    Visit the installations page in your BluBracket Slack App and copy the bot token presented on the screen.\n  Paste the bot token into the token input and click TEST \u0026amp; SAVE.    Now you\u0026rsquo;re ready to create subscriptions for this connection and start seeing BluBracket notifications in Slack.\n"
         
       })
       .add(
