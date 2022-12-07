@@ -45,4 +45,3 @@ To configure this feature, the **JIT SAML create user** feature must be enabled 
 To leverage the JIT SAML user provisioning feature, a role attribute must be sent by the SAML provider at the time of SAML authentication.  In order for a role to be sent, the SAML roles need to be configured on the SAML provider.
 
 Each SAML provider (Azure AD, Ping, or Okta) have a specific way to set up SAML roles.
-
