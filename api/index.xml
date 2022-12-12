@@ -11,7 +11,4 @@ Endpoint # POST https://[hostname]/api/public/alert/search
 Called with bearer token.
 Request body # { &amp;quot;filters&amp;quot;: [ { &amp;quot;id&amp;quot;: &amp;quot;alert_type&amp;quot;, &amp;quot;value&amp;quot;: [ &amp;quot;REPO_SCAN_MATCH&amp;quot; ], &amp;quot;op&amp;quot;: &amp;quot;EQ&amp;quot;, &amp;quot;exact_match&amp;quot;: true } ], &amp;quot;limit&amp;quot;: 10, &amp;quot;page&amp;quot;: 1 } Response # Success: 200
 Set of 10 alert objects.
-Getting alerts for a specific set of repos # Filter for getting all secrets in a set of repos, first page of results, return 10 results.</description></item><item><title>CI checks</title><link>https://docs.blubracket.com/api/ci-checks/</link><pubDate>Wed, 12 Jan 2022 02:48:57 +0000</pubDate><guid>https://docs.blubracket.com/api/ci-checks/</guid><description>These APIs can be used to integrate BluBracket checks into a continuous integration (CI) workflow and help prevent risks being committed to a protected branch.
-Start a scan # Start a scan for a list of commits or a pull request
-Endpoint # POST /api/analyzer/commit/scan
-Parameters # repo_url (string, required): URL of the repo pull_request_number (int, one of pull_request_number or commit_shas is required): The id number of the pull request to be scanned.</description></item></channel></rss>
+Getting alerts for a specific set of repos # Filter for getting all secrets in a set of repos, first page of results, return 10 results.</description></item></channel></rss>

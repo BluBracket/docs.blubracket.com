@@ -1106,18 +1106,6 @@ Source:
       .add(
       {
         id: 62,
-        href: "/api/ci-checks/",
-        title: "CI checks",
-        description: "These APIs can be used to integrate BluBracket checks into a continuous integration (CI) workflow and help prevent risks being committed to a protected branch.\nStart a scan # Start a scan for a list of commits or a pull request\nEndpoint # POST /api/analyzer/commit/scan\nParameters #  repo_url (string, required): URL of the repo pull_request_number (int, one of pull_request_number or commit_shas is required): The id number of the pull request to be scanned.",
-        
-        
-        
-        content: "These APIs can be used to integrate BluBracket checks into a continuous integration (CI) workflow and help prevent risks being committed to a protected branch.\nStart a scan # Start a scan for a list of commits or a pull request\nEndpoint # POST /api/analyzer/commit/scan\nParameters #  repo_url (string, required): URL of the repo pull_request_number (int, one of pull_request_number or commit_shas is required): The id number of the pull request to be scanned. commit_shas (a list of strings, one of commit_shas or pull_request_number is required): full SHA of the commits to be scanned  Sample request body # For scanning a pull request\n{ \u0026quot;repo_url\u0026quot;: \u0026quot;https://github.com/my_org/my_repo\u0026quot;, \u0026quot;pull_request_number\u0026quot;: 3891 }  For scanning a list of commits\n{ \u0026quot;repo_url\u0026quot;: \u0026quot;https://github.com/my_org/my_repo\u0026quot;, \u0026quot;commit_shas\u0026quot;: [ \u0026quot;a20cb4ca5c14ff27bdf16989d450c83b22f156d8\u0026quot;, \u0026quot;d0d6593d1d4e81acd073244f42b6893fa65c99d8\u0026quot; ] }  Sample response # { \u0026quot;scan_uuid\u0026quot;: \u0026quot;fd974b65-61ba-4576-849a-0e6aa1fdd16b\u0026quot; }  Note: The scan_uuid returned in the response can be used to query the result once it’s ready.\nGet the scan result # Get the result of the scan with a given id\nEndpoint # GET /api/analyzer/commit/scan/{scan_uuid}\nwhere scan_uuid is the ID of the scan\nResponse code # 200 - Scan is completed\n202 - Scan is still in progress\nSample response # { \u0026quot;secrets\u0026quot;: { \u0026quot;d0d6593d1d4e81acd073244f42b6893fa65c99d8\u0026quot;: { \u0026quot;secrets_found\u0026quot;: [ { \u0026quot;secret_hash\u0026quot;: \u0026quot;a392d713-4000-419a-b720-6a037b6147e3\u0026quot;, \u0026quot;secret_type\u0026quot;: \u0026quot;google_api_key\u0026quot;, \u0026quot;file_path\u0026quot;: \u0026quot;token.py\u0026quot;, \u0026quot;line_no\u0026quot;: 32, \u0026quot;cols\u0026quot;: [ 13, 29 ], \u0026quot;secret_checker_results\u0026quot;: { \u0026quot;tags\u0026quot;: [ \u0026quot;active_secret\u0026quot; ] } } ] } }, \u0026quot;scan_state\u0026quot;: \u0026quot;done\u0026quot;, \u0026quot;message\u0026quot;: \u0026quot;\u0026quot; }  "
-        
-      })
-      .add(
-      {
-        id: 63,
         href: "/how-to/add-user-ad-saml/",
         title: "Configure Azure AD",
         description: "How to configure Azure AD SAML and manage users",
@@ -1129,7 +1117,7 @@ Source:
       })
       .add(
       {
-        id: 64,
+        id: 63,
         href: "/intro/getting-started/",
         title: "Getting started with BluBracket",
         description: "How to sign up and start using BluBracket for free",
@@ -1155,7 +1143,7 @@ Source:
       })
       .add(
       {
-        id: 65,
+        id: 64,
         href: "/how-to/remediate-alerts/",
         title: "Remediate alerts",
         description: "How to remediate alerts",
@@ -1167,7 +1155,7 @@ Source:
       })
       .add(
       {
-        id: 66,
+        id: 65,
         href: "/how-to/cli/using-cli-with-git/",
         title: "Using the CLI tool in git workflows",
         description: "Details about how to use the CLI tool.",
@@ -1179,7 +1167,7 @@ Source:
       })
       .add(
       {
-        id: 67,
+        id: 66,
         href: "/faq/",
         title: "Frequently asked questions",
         description: "A searchable list of all FAQs.",
@@ -1197,7 +1185,7 @@ Source:
       })
       .add(
       {
-        id: 68,
+        id: 67,
         href: "/intro/key-workflows/",
         title: "Key workflows",
         description: "BluBracket code security tools are optimized to prevent risks from getting into code, and to promote the process of continuous improvement that reduces existing risks from code over time.\nPreventing risks in code # As developers, we depend on a quick feedback loop to understand if our code is working and does what is expected. BluBracket tools can offer automated security guidance as part of that feedback loop, in the IDE of your choice, pre-commit, and as part of the CI flow.",
@@ -1217,7 +1205,7 @@ Source:
       })
       .add(
       {
-        id: 69,
+        id: 68,
         href: "/how-to/messaging/slack/app/",
         title: "BluBracket Slack App",
         description: "Visit the Slack App creation page.\n  Click the Create New App button.    Click the From an app manifest option.    Select your workspace and click Next.    Copy and paste the following app manifest into the json input:\n{ \u0026quot;display_information\u0026quot;: { \u0026quot;name\u0026quot;: \u0026quot;BluBracket\u0026quot;, \u0026quot;description\u0026quot;: \u0026quot;Pipeline Security Tools\u0026quot;, \u0026quot;background_color\u0026quot;: \u0026quot;#2b2b2b\u0026quot;, \u0026quot;long_description\u0026quot;: \u0026quot;What if code security could be improved with the same techniques we use to improve code quality?",
@@ -1233,7 +1221,7 @@ Source:
       })
       .add(
       {
-        id: 70,
+        id: 69,
         href: "/how-to/messaging/slack/connection/",
         title: "Slack Connection",
         description: "Requirements #  Create a BluBracket Slack App and install to your workspace.  Creating a Slack Connection #   Navigate to Slack integrations by clicking the Slack link on the integrations page    Begin creating a BluBracket Slack connection by clicking the + CONNECTION button    Visit the installations page in your BluBracket Slack App and copy the bot token presented on the screen.",
@@ -1249,7 +1237,7 @@ Source:
       })
       .add(
       {
-        id: 71,
+        id: 70,
         href: "/how-to/messaging/slack/subscription/",
         title: "Slack Subscription",
         description: "Requirements #  Create a BluBracket Slack App and install to your workspace. Create Slack connection   Creating a Slack Subscription #   Navigate to Slack integrations by clicking the Slack link on the integrations page    Click the + SUBSCRIPTION button to begin the creation process.    Choose a name for the subscription as well as the saved filters you would like the subscription to be based on.",
@@ -1265,7 +1253,7 @@ Source:
       })
       .add(
       {
-        id: 72,
+        id: 71,
         href: "/how-to/messaging/slack/",
         title: "Slack Integration",
         description: " BluBracket integration with Slack can alert teams about code risks in new commits in real time.\n  Requirements # Integration with Slack requires the following:\n   Create a BluBracket Slack App and install on your workspace    Create a Slack connection    Create a Slack subscription   ",
@@ -1285,7 +1273,7 @@ Source:
       })
       .add(
       {
-        id: 73,
+        id: 72,
         href: "/how-to/ci-checks/",
         title: "CI checks",
         description: "Integrating BluBracket into the CI code review process.",
@@ -1308,12 +1296,12 @@ Source:
           
         
         
-        content: "integrationsworkflowsCIcontinuous integrationCI secret scanning for Azure Pipelines – BluBracketCI secret scanning for GitLab – BluBracketBluBracket integrates into the CI workflow to automatically check pull requests before they are merged.\nBluBracket can be configured to warn or block pull requests when it finds risks in code. Most teams prefer only to warn when risks are detected in code, and data shows those warnings are effective in helping those teams recognize and prevent new risks from being merged in PRs.\nBluBracket has full support for:\n  GitHub Checks   Bitbucket Code Insights   Additionally, the CI API can be used to extend CI checks into nearly any workflow.\n"
+        content: "integrationsworkflowsCIcontinuous integrationCI secret scanning for Azure Pipelines – BluBracketCI secret scanning for GitLab – BluBracketBluBracket integrates into the CI workflow to automatically check pull requests before they are merged.\nBluBracket can be configured to warn or block pull requests when it finds risks in code. Most teams prefer only to warn when risks are detected in code, and data shows those warnings are effective in helping those teams recognize and prevent new risks from being merged in PRs.\nBluBracket has full support for:\n  GitHub Checks   Bitbucket Code Insights   "
         
       })
       .add(
       {
-        id: 74,
+        id: 73,
         href: "/intro/integrations/",
         title: "Integrations",
         description: "Local workflow tools #  The BluBracket CLI tool can identify and block secrets before they\u0026rsquo;re committed.\n  Available local tools and integrations\n  CLI  IntelliJ (via CLI, full plugin coming soon) Visual Studio Code (via CLI)  Usage guide: installing and using the CLI .\nCode servers #  BluBracket scans repositories hosted in GitHub, GitLab, Bitbucket, and others.\n  Certified \u0026amp; supported code servers:",
@@ -1329,7 +1317,7 @@ Source:
       })
       .add(
       {
-        id: 75,
+        id: 74,
         href: "/how-to/ticketing/jira/",
         title: "JIRA",
         description: "JIRA Integration #  BluBracket can automatically create a Jira ticket when risks are found in new commits.\n  Requirements #    Atlassian API Token    JIRA Base URL    JIRA Project for events and alerts to be added to.   If you are interested in integrating JIRA into your BluBracket workflow please contact support. ",
@@ -1349,7 +1337,7 @@ Source:
       })
       .add(
       {
-        id: 76,
+        id: 75,
         href: "/contact-support/",
         title: "Contact support",
         description: "",
@@ -1361,7 +1349,7 @@ Source:
       })
       .add(
       {
-        id: 77,
+        id: 76,
         href: "/release-notes/",
         title: "Release notes",
         description: "",
@@ -1373,7 +1361,7 @@ Source:
       })
       .add(
       {
-        id: 78,
+        id: 77,
         href: "/how-to/messaging/",
         title: "Messaging",
         description: "Messaging security team members and developers when risks are found in code in the real-time commit scans can help increase visibility of risks and reduce the time to remediate risks.\nOut of the box, BluBracket supports messaging via Slack and Microsoft Teams, and additional integrations are possible via the flexible APIs.",
@@ -1391,7 +1379,7 @@ Source:
       })
       .add(
       {
-        id: 79,
+        id: 78,
         href: "/how-to/ticketing/",
         title: "Ticketing",
         description: "Automatic ticketing of detected issues gives security and developer teams visibility into security issues in the tools they\u0026rsquo;re using to plan, track, and report work. No need to sign into or use another too.\nOut of the box, BluBracket supports Jira and ServiceNow, and additional integrations are possible via the flexible APIs.",
@@ -1409,7 +1397,7 @@ Source:
       })
       .add(
       {
-        id: 80,
+        id: 79,
         href: "/authoring-documentation/",
         title: "Authoring documentation",
         description: "How do write and edits the docs in this site.",
@@ -1421,7 +1409,7 @@ Source:
       })
       .add(
       {
-        id: 81,
+        id: 80,
         href: "/how-to/architecture/",
         title: "Integration architecture",
         description: "How BluBracket connects to your world",
@@ -1433,7 +1421,7 @@ Source:
       })
       .add(
       {
-        id: 82,
+        id: 81,
         href: "/release-notes/2022-06/",
         title: "2022-06 release",
         description: "New features, enhancements, and bug fixes #  SOC 2 Type II compliance for SaaS services, recognizing the rigorous operational and security practices across the organization for safe and reliable handling of customer data CLI: new open-source recipes for scanning S3, syslog, and Confluence wiki pages New risk severity for all events gives detailed information to identify and prioritize risk across your codebase The new filtering experience is now enabled for all customers  ",
@@ -1445,7 +1433,7 @@ Source:
       })
       .add(
       {
-        id: 83,
+        id: 82,
         href: "/release-notes/2022-05/",
         title: "2022-05 release",
         description: "New features, enhancements, and bug fixes #  New alert search and filtering experience improves workflows and findability of actionable Support for git repositories on Gerrit code servers Ongoing false positive improvements, including more nuanced inspection and reporting for multi-part secrets (such as AWS keys and secret keys) New OAuth signup/sign-in support CLI: offline scan, which operates entirely without network interaction, is now the default  ",
@@ -1457,7 +1445,7 @@ Source:
       })
       .add(
       {
-        id: 84,
+        id: 83,
         href: "/release-notes/2022-04/",
         title: "2022-04 release",
         description: "New features, enhancements, and bug fixes #  Redesigned and re-imagined views of alerts optimized around quick triage and remediation workflows New support for tracking detailed branch info Snyk integration beta for tracking and reporting dependency vulnerabilities for a complete view of the external and internal code supply chain CLI: searching inside archive files, including .tar, .zip, and others CLI: support for scanning a specific file or files  ",
@@ -1469,7 +1457,7 @@ Source:
       })
       .add(
       {
-        id: 85,
+        id: 84,
         href: "/release-notes/2022-03/",
         title: "2022-03 release",
         description: "New features, enhancements, and bug fixes #  Track and manage your work by marking the triaged state of each alert Event reconciliation on pattern/logic changes New settings page outlining available integrations New support for tracking commit info, including tip of main branch Refactored user management in preparation for OAuth and RBAC New documentation website (this site, yay!)  ",
@@ -1481,7 +1469,7 @@ Source:
       })
       .add(
       {
-        id: 86,
+        id: 85,
         href: "/release-notes/2022-02/",
         title: "2022-02 release",
         description: "New features, enhancements, and bug fixes #  Improved false positive rejection Periodic scans re-process data with the latest rules, and catch pushes missed in case the git host dropped the webhook Support for filtering by commit time Big fixes and improvements to the BluPrint report New report: most used secrets across your code base (calculated by hash, BluBracket does not store your code or any secrets)  ",
@@ -1493,7 +1481,7 @@ Source:
       })
       .add(
       {
-        id: 87,
+        id: 86,
         href: "/",
         title: "BluBracket Documentation",
         description: "Track what's in your code, who has access, and where it goes.",
@@ -1505,7 +1493,7 @@ Source:
       })
       .add(
       {
-        id: 88,
+        id: 87,
         href: "/release-notes/2022-01/",
         title: "2022-01 release",
         description: "New features, enhancements, and bug fixes #  Initial support for repos in Azure DevOps Bitbucket Insights support gives developers guidance about risks in their code during the review process, eliminating unnecessary alerts Scalability improvements around integrations Scalability improvements for git host webhook processing and job queueing  ",
@@ -1517,7 +1505,7 @@ Source:
       })
       .add(
       {
-        id: 89,
+        id: 88,
         href: "/release-notes/2021-12/",
         title: "2021-12 release",
         description: "New features, enhancements, and bug fixes #  Self-hosted (VPC/on-prem) installer improvements, including support for Terraform Bulk code server import to import multiple GitHub Organizations, Bitbucket Workspaces, or GitLab Workspaces with a single click Activeness checks for multi-part secrets, such as AWS keys and secret keys CLI: Ability to scan an arbitrary directory outside a git repo  ",
@@ -1529,7 +1517,7 @@ Source:
       })
       .add(
       {
-        id: 90,
+        id: 89,
         href: "/release-notes/2021-11-22/",
         title: "2021-11-22 release",
         description: "New Features and Enhancements #  “Other” type has been added to the Secret Types pie chart on the BluPrint page. The pie chart should now show the top 6 secret types as well as a 7th that is composed of all of the remaining types. Clicking on any of the pie sections should take the user to a filtered table for the selected secret type. Many additional enhancements have been added to identify false positives where secrets are concerned.",
@@ -1541,7 +1529,7 @@ Source:
       })
       .add(
       {
-        id: 91,
+        id: 90,
         href: "/release-notes/2021-10-11/",
         title: "2021-10-11 release",
         description: "New Features and Enhancements #  New public API to return repo scan status Added infinite label filter to support scrolling through all labels.  Bug Fixes #  CORE-8192 URL of webhook was not displayed in the compliance alerts flyover details CORE-8343 Enhanced false positive detection where secret type is “token” CORE-8414 - Fixed Slack integration issue where deep link was not being displayed in message Fix table pagination loading bugs  ",
@@ -1553,7 +1541,7 @@ Source:
       })
       .add(
       {
-        id: 92,
+        id: 91,
         href: "/release-notes/2021-09-28/",
         title: "2021-09-28 release",
         description: "New Features and Enhancements #   Additional checks performed when user adds new code server. We now identify and show a message if the user does not have adequate organization level permissions, even if the Personal Access Token does have required permissions. Inadequate user permissions will result in incomplete repo risk calculations.\n  Code Leaks now filters out Public to Public alerts.\n  Code Leaks details now displays a deep link to the selected leaked file",
@@ -1565,7 +1553,7 @@ Source:
       })
       .add(
       {
-        id: 93,
+        id: 92,
         href: "/release-notes/2021-09-13/",
         title: "2021-09-13 release",
         description: "New Features and Enhancements #   New Repo Details Design. When clicking on a Repository, you will now see a new design that lists the risk rating and number of violations for each risk category. Clicking on the violations number will provide a filter view of all violations of that risk category type.\n    The terminology “Alerts” has been replaced with “All Violations”, which is a new tab next to Code Risks at top of screen.",
@@ -1577,7 +1565,7 @@ Source:
       })
       .add(
       {
-        id: 94,
+        id: 93,
         href: "/release-notes/2021-09-07/",
         title: "2021-09-07 release",
         description: "New Features and Enhancements #   Access Risk Categories now links to appropriate alerts in the repo details page.\n  Enhanced Code Server onboarding for Bitbucket and GitLab.\n  Updated Infrastructure Code Alerts and Events to be more descriptive.\n  Added breadcrumbs to repository details page in portal.\n  Updated support for global Ignore.yaml. If you place a folder labeled “.blubracket” into a repository, then create a file called ignore.",
@@ -1589,7 +1577,7 @@ Source:
       })
       .add(
       {
-        id: 95,
+        id: 94,
         href: "/release-notes/2021-08-16/",
         title: "2021-08-16 release",
         description: "New Features and Enhancements # Enterprise Edition # New Code Risks Categories\nBluBracket has added two additional Risk Categories to the repo detail view, PII and Non-inclusive language!\n  All newly created tenants will automatically have three Non-inclusive language regular expressions configured (blacklist, slave, master) and one PII regular expression for social security numbers.\nFor existing customers, if you would like to utilize the new PII and Non-inclusive Language categories, please follow the instructions below:",
@@ -1601,7 +1589,7 @@ Source:
       })
       .add(
       {
-        id: 96,
+        id: 95,
         href: "/release-notes/2021-07-21/",
         title: "2021-07-21 release",
         description: "New Features and Enhancements # Enterprise Edition # No new features or enhancements added to the Enterprise Edition with this release.\nCommunity Edition # No new features or enhancements added to the Community Edition with this release.\nBug Fixes #   CORE-7410 - Fix filtering issue when attempting to filter for a value that does not exist. Now returns “no events found” instead of returning all results.\n  CORE-7514 - Fix custom date range bug for Last Activity column in repository list view",
@@ -1613,7 +1601,7 @@ Source:
       })
       .add(
       {
-        id: 97,
+        id: 96,
         href: "/release-notes/2021-07-03/",
         title: "2021-07-03 release",
         description: "New Features and Enhancements # Enterprise Edition # Code Risks #   Within the repository details page the Code Risks tab now indicates the level of risk associated with any of the risk categories that BluBracket could potentially be identifying. As seen in the screenshot below, all categories are designated with a High/Medium/Low indicator and the number of violations associated with the risk category type. Clicking risk category type will navigate the user to a list view of the violations.",
@@ -1625,7 +1613,7 @@ Source:
       })
       .add(
       {
-        id: 98,
+        id: 97,
         href: "/release-notes/2021-06-05/",
         title: "2021-06-05 release",
         description: "New Features and Enhancements # Enterprise Edition # High Risks #  The BluPrint page now contains a new table that displays the most risky repos that are currently being monitored. The repository with the highest risk score is at the top of the list, descending to the 100th highest at the bottom. The Alert tiles have been moved to just below this table and are now, by default, in a collapsed state.",
@@ -1637,7 +1625,7 @@ Source:
       })
       .add(
       {
-        id: 99,
+        id: 98,
         href: "/release-notes/2021-05-03/",
         title: "2021-05-03 release",
         description: "New Features and Enhancements # Enterprise Edition # Event Tagging and Alert Enabling #   Event Tagging: For quite some time now BluBracket has been using tagging events with things like “Active Token”, “Inactive Token”, “Strong Password”, etc. These tags have been used to notify the user of specific information related to the event. It quickly became apparent that these could be useful for customers when integrating with other systems, or just for filtering purposes.",
@@ -1649,7 +1637,7 @@ Source:
       })
       .add(
       {
-        id: 100,
+        id: 99,
         href: "/release-notes/2021-04-27/",
         title: "2021-04-27 release",
         description: "New Features and Enhancements # Enterprise Edition # PCRE Library #  The PCRE library has now been added to the BluBracket regular expression feature. This is an extension to our previous library and will allow users to pattern match more regular expressions than previously.  Community Edition # Command Line Interface (CLI) Tool - PII Addition #  In addition to built-in secrets and custom secrets, CLI does support the ability to define a different group of “secrets” related to PII (Personally Identifiable Information) such as Social Security Numbers (SSN), emails, URLs, IP-addresses, etc.",
@@ -1661,7 +1649,7 @@ Source:
       })
       .add(
       {
-        id: 101,
+        id: 100,
         href: "/release-notes/2021-04-16/",
         title: "2021-04-16 release",
         description: "New Features and Enhancements # No new features in this release. # Bug Fixes #   CORE-6128 - CE - Incorrect count being displayed for duplicate alerts. Has been addressed.\n  CORE-5030 - Redundant URL being displayed in code copy details. Fixed.\n  CORE-5543 - Repository contribution table on BluPrint page is throwing an error when clicked. This is now fixed.\n  CORE-6284 - Issue with GitHub Checks app never completing scan if two users are both monitoring the same repository.",
@@ -1673,7 +1661,7 @@ Source:
       })
       .add(
       {
-        id: 102,
+        id: 101,
         href: "/release-notes/2021-03-26/",
         title: "2021-03-26 release",
         description: "New Features and Enhancements # Enterprise Edition # Rescan Repository #  It is now possible to rescan an entire repository, including all of the repository history, at the click of a button. Normally a full scan of a repository is done at the time of adding the code server that the repository belongs to, or whenever the repository is added. After that the initial scan the repository is monitored and all new commits are scanned and only periodically is the entire repository scanned.",
@@ -1685,7 +1673,7 @@ Source:
       })
       .add(
       {
-        id: 103,
+        id: 102,
         href: "/release-notes/2021-03-12/",
         title: "2021-03-12 release",
         description: "New Features and Enhancements # New Public APIs #   Two new APIs have been added to the list of public APIs available. The two new APIs allow users to dismiss alerts and re-enabled alerts that have been dismissed. This is especially important for users that have integrated with their CICD solutions and want to complete the loop. For example, a developer commits code that triggers a BluBracket alert, the user’s CICD integration recognizes the alert, creates a ticket and notification to the appropriate developer/administrator to remediate the issue, the developer/administrator remediates and closes the ticket, which triggers the API to dismissed the addressed alert in BluBracket.",
@@ -1697,7 +1685,7 @@ Source:
       })
       .add(
       {
-        id: 104,
+        id: 103,
         href: "/release-notes/2021-03-05/",
         title: "2021-03-05 release",
         description: "New Features # Command Line Interface (CLI) Tool Enhancements #   A number of significant changes have been added to the CLI tool this with this release of the Community Edition. All of these improvements, except for code signing of course, have been taken from the existing features within the enterprise version of the BluBracket solution.\n  Activeness Checks - The CLI tool now runs an activeness check on a number of the tokens, keys and IDs to eliminate false positives.",
@@ -1709,7 +1697,7 @@ Source:
       })
       .add(
       {
-        id: 105,
+        id: 104,
         href: "/release-notes/2021-02-12/",
         title: "2021-02-12 release",
         description: "New Features # Repo Details Slide Out #   Clicking on any row within the repository table will now expose a repository details slide out panel. Within this panel the user can see all of the unreviewed secrets that compose the Repo Risk Score for the specific repository. Users are still able to navigate to the GitHub repository, as was the previous action by clicking on a given repo, by clicking on the deep link within the slide out.",
@@ -1721,7 +1709,7 @@ Source:
       })
       .add(
       {
-        id: 106,
+        id: 105,
         href: "/release-notes/2021-02-02/",
         title: "2021-02-02 release",
         description: "New Features # Repo Risk Score and Secret Risk Score #   The BluBracket Community Edition has introduced the concepts of Repository Risk Score and Secret Risk Score to the interface as of this release. This feature is meant to give the user, at a glance, an idea of the potential risk involved with a specific repository.\n  The Repository Risk Score is a number that is meant to reflect the number of unreviewed secrets that exist within the repository as well as their potential severity.",
@@ -1733,7 +1721,7 @@ Source:
       })
       .add(
       {
-        id: 107,
+        id: 106,
         href: "/release-notes/2021-01-22/",
         title: "2021-01-22 release",
         description: "Bug Fixes #  CORE-5377 - Updated the Community Edition secrets table to include a loading spinner CORE-5468 - Fixed the incorrect URL for Secrets in Code documentation CORE-4744 - Sorting fix for the repository list view CORE-5357 - A number of minor UI fixes were taken care of in the Community Edition CORE-5370 - Fixed the Community Edition Safari issue with the insight tile sizing CORE-5371 - Topbar icon fix for Community Edition CORE-5485 - Addressed the Bitbucket push event when no nickname in payload  ",
@@ -1745,7 +1733,7 @@ Source:
       })
       .add(
       {
-        id: 108,
+        id: 107,
         href: "/contributors/",
         title: "Contributors",
         description: "",
