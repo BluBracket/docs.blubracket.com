@@ -18,7 +18,7 @@ After [selecting to add a Gerrit code server]({{< relref "/how-to/code-servers/a
 
 ### Enter the host/domain name
 
-Enter the hostname of the Gerrit code review server
+Enter the hostname of the Gerrit code review server.
 
 ### Enter the access token
 
