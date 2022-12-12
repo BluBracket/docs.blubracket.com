@@ -26,4 +26,3 @@ BluBracket has full support for:
 
 - [GitHub Checks](/how-to/ci-checks/github-checks/)
 - [Bitbucket Code Insights](/how-to/ci-checks/bitbucket-insights/)
-
