@@ -30,7 +30,6 @@ In order for BluBracket to access information on the Gerrit code review host, HT
 
 ![Password Example](password-example.png)
 
-
 #### Entering username and HTTP credentials
 
 A username and HTTP credentials are necessary for BluBracket to access the Gerrit code review host.
