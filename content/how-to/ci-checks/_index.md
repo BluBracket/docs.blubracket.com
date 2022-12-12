@@ -26,5 +26,3 @@ BluBracket has full support for:
 
 - [GitHub Checks](/how-to/ci-checks/github-checks/)
 - [Bitbucket Code Insights](/how-to/ci-checks/bitbucket-insights/)
-
-Additionally, [the CI API](/api/ci-checks/) can be used to extend CI checks into nearly any workflow.
