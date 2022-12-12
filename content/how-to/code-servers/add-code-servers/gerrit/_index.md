@@ -22,4 +22,7 @@ Enter the hostname of the Gerrit code review server
 
 ### Enter the access token
 
-A username and token is necessary for BluBracket to access the Gerrit code review host.
+A username and HTTP credentials are necessary for BluBracket to access the Gerrit code review host.
+
+[Instructions on generating and entering HTTP credentials.](/how-to/code-servers/add-code-servers/gerrit/generate-pat/)
+
