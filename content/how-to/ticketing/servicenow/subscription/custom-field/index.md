@@ -13,9 +13,11 @@ resources:
 ---
 
 ### Requirements
+
 - Begin creating a [ServiceNow subscription](/how-to/ticketing/servicenow/subscription/)
 
 ### ServiceNow Custom Fields
+
 BluBracket integration with ServiceNow supports adding custom fields that are used to create the tickets.
 
 {{< figure src="servicenow-custom-fields.png" >}}
