@@ -2,7 +2,7 @@
 title: "ServiceNow Subscription"
 description: ""
 lead: ""
-date: 2022-11-16
+date: 2023-01-08
 draft: false
 weight: 500
 toc: false
@@ -27,21 +27,11 @@ resources:
 
 3. Choose a name for the subscription as well as the saved filters you would like the subscription to be based on.
 
-4. Choose the connection for the subscription output and the ServiceNow channel.
+4. Choose the connection for the subscription output.
 
-5. Enter the ServiceNow project key
-    - The project key can be found after /projects/ in the url
-     example.atlassian.net/servicenow/software/c/projects/**ENG**
+5. (Optional) Enter any [custom field](/how-to/ticketing/servicenow/subscription/custom-field) you wish to supply
 
-6. Enter the ServiceNow issue type
-
-7. Enter the ServiceNow assignee id
-    - The assignee id can be found after selecting a user filter at the end of the url:
-    example.atlassian.net/.../assignee=**5e6e72063e42490c3801493c**
-
-8. Enter the Priority
-
-9. Click **SAVE**
+6. Click **SAVE**
 {{< figure src="servicenow-subscription-save.png" >}}
 
 BluBracket events matching your filters will create tickets in the specified ServiceNow project.

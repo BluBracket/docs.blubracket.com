@@ -2,7 +2,7 @@
 title: "ServiceNow Connection"
 description: ""
 lead: ""
-date: 2022-11-16
+date: 2023-01-08
 draft: false
 weight: 500
 toc: false
@@ -20,15 +20,15 @@ resources:
 2. Begin creating a BluBracket ServiceNow connection by clicking the **+ CONNECTION** button
 {{< figure src="servicenow-connect-start.png" >}}
 
-3. Create an [Atlassian API Token](https://support.atlassian.com/atlassian-account/docs/manage-api-tokens-for-your-atlassian-account/)
+3. Enter a unique name for the connection
 
-4. Paste the API token into the token input.
+4. Enter the username of a ServiceNow user with access to the desired account
 
-5. Enter the email of the user used to generate the [Atlassian API Token](https://support.atlassian.com/atlassian-account/docs/manage-api-tokens-for-your-atlassian-account/)
+5. Enter the password for the username in step 4
 
-6. Enter the [ServiceNow Base URL](https://confluence.atlassian.com/adminservicenowserver/configuring-the-base-url-938847830.html)
+6. Enter the base URL of the account
 
 7. Click **TEST & SAVE**.
-{{< figure src="servicenow-connection-save.png" >}}
+{{< figure src="servicenow-connect-save.png" >}}
 
 Now you're ready to [create subscriptions](/how-to/ticketing/servicenow/subscription/) for this connection and start seeing BluBracket tickets in ServiceNow.
