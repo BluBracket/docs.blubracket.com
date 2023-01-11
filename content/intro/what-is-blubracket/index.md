@@ -63,7 +63,7 @@ And BluBracket integrates at multiple points in the SDLC workflow:
 - [CI servers](/intro/integrations/#ci-servers), like GitHub Actions and Jenkins
 - [Identity, authentication, and authorization systems](/intro/integrations/#identity-authentication-and-authorization) like SAML and Active Directory
 - [Messaging systems](/intro/integrations/#messaging), like Slack
-- [Ticketing & incident management systems](/intro/integrations/#ticketing--incident-management), like PagerDuty and PagerDuty
+- [Ticketing & incident management systems](/intro/integrations/#ticketing--incident-management), like Jira and PagerDuty
 - [Build your own with APIs and webhooks](/intro/integrations/#build-your-own)
 
 ### How to get started with BluBracket
