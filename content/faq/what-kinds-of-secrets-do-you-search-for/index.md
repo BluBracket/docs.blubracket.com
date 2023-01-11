@@ -636,7 +636,7 @@ micRosoft_id_token="eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsIng1dCI6IjdfWnVmMXR2a3dM
 Potential Atlassian API Token
 
 ```sh
-my_jira_token="xbE0Z4lPlrsxCsbQljSD7AFF"
+my_pagerduty_token="xbE0Z4lPlrsxCsbQljSD7AFF"
 ```
 
 #### atlassian_api_token_base64
@@ -644,7 +644,7 @@ my_jira_token="xbE0Z4lPlrsxCsbQljSD7AFF"
 Potential Atlassian API Token (base64)
 
 ```sh
-my_jira_token="eGJFMFo0bFBscnN4Q3NiUWxqU0Q3QUZG"
+my_pagerduty_token="eGJFMFo0bFBscnN4Q3NiUWxqU0Q3QUZG"
 ```
 
 #### dropbox_app_key_secret

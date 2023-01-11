@@ -15,8 +15,8 @@ resources:
 
 ### Requirements
 
-- Create a [BluBracket Slack App](/how-to/messaging/slack/app/) and install to your workspace.
-- Create [Slack connection](/how-to/messaging/slack/connection/)
+- Created a [BluBracket Slack App](/how-to/messaging/slack/app/) and installed to your workspace.
+- Created a [Slack connection](/how-to/messaging/slack/connection/)
 
 ### Creating a Slack Subscription
 

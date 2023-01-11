@@ -15,7 +15,7 @@ resources:
 
 ### Requirements
 
-- Create [Jira connection](/how-to/ticketing/jira/connection/)
+- Created a [Jira connection](/how-to/ticketing/jira/connection/)
 
 ### Creating a Jira Subscription
 
@@ -27,7 +27,7 @@ resources:
 
 3. Choose a name for the subscription as well as the saved filters you would like the subscription to be based on.
 
-4. Choose the connection for the subscription output and the Jira channel.
+4. Choose the connection for the subscription output.
 
 5. Enter the Jira project key
     - The project key can be found after /projects/ in the url

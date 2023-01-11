@@ -15,7 +15,7 @@ resources:
 
 ### Requirements
 
-- Create [ServiceNow connection](/how-to/ticketing/servicenow/connection/)
+- Created a [ServiceNow connection](/how-to/ticketing/servicenow/connection/)
 
 ### Creating a ServiceNow Subscription
 
