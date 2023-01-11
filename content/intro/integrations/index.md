@@ -90,8 +90,8 @@ Certified & supported messaging integrations:
 Certified & supported ticketing & incident management integrations:
 
 - [Jira](/how-to/ticketing/jira/)
-- [ServiceNow](how-to/ticketing/servicenow)
-- PagerDuty
+- [ServiceNow](/how-to/ticketing/servicenow)
+- [PagerDuty](/how-to/incident-management/pagerduty)
 - Splunk
 
 ### Build your own
