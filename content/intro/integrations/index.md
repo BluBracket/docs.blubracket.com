@@ -92,7 +92,7 @@ Certified & supported ticketing & incident management integrations:
 - [Jira](/how-to/ticketing/jira/)
 - [ServiceNow](/how-to/ticketing/servicenow)
 - [PagerDuty](/how-to/incident-management/pagerduty)
-- Splunk
+- [Splunk](/how-to/incident-management/splunk)
 
 ### Build your own
 
