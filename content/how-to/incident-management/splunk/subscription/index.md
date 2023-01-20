@@ -29,9 +29,9 @@ resources:
 
 4. Choose the connection for the subscription output.
 
-5. Enter the splunk index.
+5. Enter the Splunk index.
 
-6. Enter a splunk source type.
+6. Enter a Splunk source type.
 
 7. Click **SAVE**
 {{< figure src="splunk-subscription-save.png" >}}
