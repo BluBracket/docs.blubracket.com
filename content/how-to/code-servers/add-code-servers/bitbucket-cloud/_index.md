@@ -21,13 +21,13 @@ Bitbucket uses the term "Bitbucket Cloud" to differentiate repositories hosted a
 
 Each Bitbucket workspace is a different code server in BluBracket ([see Bitbucket docs on workspaces](https://support.atlassian.com/bitbucket-cloud/docs/what-is-a-workspace/)).
 
-### Entering a workspace name
+### Entering a workspace ID
 
 The next thing to do is select a workspace to point the server to.  Workspaces are usually, but not always, set up as lines of business or projects.  For example, Google may have workspaces for Nest, Android, AdWords, etc., all under the same server.  It is possible to point a server at multiple workspaces. Enter the targeted workspace into the input field.
 
 ![generate token screenshot](generate-token.jpg)
 
-If you don’t know the workspace name you can find them in the Bitbucket administrator portal.  Log into your Bitbucket account as an administrator and navigate to the following location, https://bitbucket.org/account/workspaces/.  From this location, click Manage (under Actions) for one of the workspaces, and note the Workspace ID
+If you don’t know the workspace ID you can find them in the Bitbucket administrator portal.  Log into your Bitbucket account as an administrator and navigate to the following location, https://bitbucket.org/account/workspaces/.  From this location, click Manage (under Actions) for one of the workspaces, and note the Workspace ID
 
 ![workspace screenshot](workspace.jpg)
 
