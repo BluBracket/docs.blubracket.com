@@ -11,6 +11,29 @@ Hugo has its own [documentation](https://gohugo.io/documentation/) for the templ
 
 This theme is automated using Node.js and `npm`.
 
+### Install NVM
+
+Follow the lastest docs for setup on the [NVM repo](https://github.com/nvm-sh/nvm#install--update-script)
+
+Then run:
+
+```
+nvm --version
+```
+
+If you're seeing a command about NVM not found, add this to your terminal profile:
+```
+export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
+```
+Then reload the terminal source (or open a new terminal tab).
+
+### Install a specific version of Node
+
+```
+nvm install v14.21.2
+```
+
 ### Install dependencies
 
 ```
