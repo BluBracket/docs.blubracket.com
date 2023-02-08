@@ -10,7 +10,7 @@ tags:
   - microsoft teams
 resources:
   - src: microsoft-teams-subscription-start.png
-  - src:
+  - src: microsoft-teams-subscription-save.png
 ---
 
 ### Requirements
@@ -31,6 +31,6 @@ resources:
 4. Choose the connection for the subscription output.
 
 5. Click **SAVE**
-{{< figure src="" >}}
+{{< figure src="microsoft-teams-subscription-save.png" >}}
 
 BluBracket events matching your filters will be sent to your specified channel in Microsoft Teams.
