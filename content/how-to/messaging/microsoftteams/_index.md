@@ -20,6 +20,6 @@ resources:
 
 Integration with Microsoft Teams requires the following:
 
-2. [Create a Microsoft Teams connection](/how-to/messaging/microsoftteams/connection/)
+1. [Create a Microsoft Teams connection](/how-to/messaging/microsoftteams/connection/)
 
-3. [Create a Microsoft Teams subscription](/how-to/messaging/microsoftteams/subscription/)
+2. [Create a Microsoft Teams subscription](/how-to/messaging/microsoftteams/subscription/)
