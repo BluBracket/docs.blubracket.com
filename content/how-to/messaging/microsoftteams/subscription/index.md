@@ -11,6 +11,7 @@ tags:
 resources:
   - src: microsoft-teams-subscription-start.png
   - src: microsoft-teams-subscription-save.png
+  - src: microsoft-teams-integrations-location.png
 ---
 
 ### Requirements

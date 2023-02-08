@@ -9,9 +9,9 @@ toc: false
 tags:
   - microsoft teams
 resources:
-  - src:
-  - src:
-  - src:
+  - src: microsoft-teams-connection-start.png
+  - src: microsoft-teams-connection-save.png
+  - src: microsoft-teams-integrations-location.png
 ---
 ### Requirements
 
