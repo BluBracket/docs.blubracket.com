@@ -15,14 +15,18 @@ This theme is automated using Node.js and `npm`.
 
 Follow the lastest docs for setup on the [NVM repo](https://github.com/nvm-sh/nvm#install--update-script)
 
-You may need to add this to your terminal profile:
+Then run:
 
+```
+nvm --version
+```
+
+If you're seeing a command about NVM not found, add this to your terminal profile:
 ```
 export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
 ```
-
-And then reload the terminal source (or open a new terminal tab).
+Then reload the terminal source (or open a new terminal tab).
 
 ### Install a specific version of Node
 
