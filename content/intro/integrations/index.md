@@ -81,7 +81,7 @@ Certified & supported identity integrations:
 Certified & supported messaging integrations:
 
 - [Slack](/how-to/messaging/slack/)
-- Microsoft Teams
+- [Microsoft Teams](/how-to/messaging/microsoftteams)
 
 ### Ticketing & incident management
 
