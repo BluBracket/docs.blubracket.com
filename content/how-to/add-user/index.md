@@ -15,7 +15,7 @@ The first thing you might want to do is add your team members to assist with the
 
 1. Go to Settings.
 
-2. Click Account Tab.
+2. Click the Users Tab.
 
 ![portal screenshot](newportal.png)
 
