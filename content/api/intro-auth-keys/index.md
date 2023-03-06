@@ -20,7 +20,7 @@ In order to make requests into the event and alert APIs, you have to generate an
     {{< figure src="portal-generate-api-key.png" caption="Generating a key in the BluBracket web console." >}}
 1. Enter a name for the key
 1. Select Integration from the drop down
-1. Select Generate Key
+1. Select Create Key
 1. Save the JSON/CSV file to your desktop
 1. Open the JSON/CSV file and copy the value of the token
 

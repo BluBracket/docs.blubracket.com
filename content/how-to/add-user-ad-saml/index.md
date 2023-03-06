@@ -56,7 +56,7 @@ BluBracket requires an email attribute in order to successful identify and authe
 ### Set the SAML federation metadata document URL and client ID in BluBracket
 
 1. Navigate to `https://TENANT_NAME.blubracket.com/settings/auth` (Be sure to replace `TENANT_NAME` with the name of your tenant name provided by BluBracket).
-1. Expand Single Sign-On and enter the federation metadata document URL.
+1. Enter the federation metadata document URL.
   ![blubracket sso](blubracketsso.png)
 1. Enter the Application (client) ID from step 15
   ![blubracket authentication](blubracketclientid.png)
