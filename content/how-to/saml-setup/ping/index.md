@@ -27,40 +27,40 @@ BluBracket requires an email attribute in order to successful identify and authe
 2. Click Connections
 ![ping saml settings screenshot](ping-setup-1.png)
 
-2. Click + Add Application
+3. Click + Add Application
 ![ping saml settings screenshot](ping-setup-2.png)
 
-3. Click the Web App application type
+4. Click the Web App application type
 ![ping saml settings screenshot](ping-setup-3.png)
 
-4. Choose configure SAML
+5. Choose configure SAML
 ![ping saml settings screenshot](ping-setup-4.png)
 
-5. Add the company name and click next
+6. Add the company name and click next
 ![ping saml settings screenshot](ping-setup-5.png)
 
-6. Enter the ACS url for your account:
-  - `https://your-account-name.blubracket.com/api/saml/sso` (**be sure to replace** `your-account-name`)
+7. Enter the ACS url for your account:
+    - `https://your-account-name.blubracket.com/api/saml/sso` (**be sure to replace** `your-account-name`)
 ![ping saml settings screenshot](ping-setup-6.png)
 
-7. Scroll down and input the following fields and then click save and continue:
-  - Entity Id: `https://your-account-name.blubracket.com/entityId` (**be sure to replace** `your-account-name`)
+8. Scroll down and input the following fields and then click save and continue:
+    - Entity Id: `https://your-account-name.blubracket.com/entityId` (**be sure to replace** `your-account-name`)
 
-  - Assertion Validity Duration: `3600`
+    - Assertion Validity Duration: `3600`
 
-  - Target Application URL: `https://your-account-name.blubracket.com` (**be sure to replace** `your-account-name`)
+    - Target Application URL: `https://your-account-name.blubracket.com` (**be sure to replace** `your-account-name`)
 ![ping saml settings screenshot](ping-setup-7.png)
 
-8. Under Attribute Mapping choose Username and click Save and Close
+9. Under Attribute Mapping choose Username and click Save and Close
 ![ping saml settings screenshot](ping-setup-8.png)
 
-9. Toggle the new app as active
+10. Toggle the new app as active
 ![ping saml settings screenshot](ping-setup-9.png)
 
-10. Add users
+11. Add users
 ![ping saml settings screenshot](ping-setup-10.png)
 
-10. In the new application, click Compliance and copy the IDP Metadata URL listed
+12. In the new application, click Compliance and copy the IDP Metadata URL listed
 ![ping saml settings screenshot](ping-setup-11.png)
 
 ### Register the Ping configuration within BluBracket
@@ -71,7 +71,6 @@ In BluBracket, click the settings icon on the left nav, then click the SSO & Ide
 ### Add users in BluBracket
 
 Tenant administrators must add users to their BluBracket tenant prior to login via single sign-on. [Full details are here](/how-to/add-user/).
-
 
 ### Test the Ping/SAML configuration
 

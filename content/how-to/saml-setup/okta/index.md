@@ -33,20 +33,20 @@ BluBracket requires an email attribute in order to successful identify and authe
   ![okta app name screenshot](okta-app-create-new-3.png)
 
 5. Input the following fields and click next:
-   - Single sign-on URL: `https://your-account-name.blubracket.com/api/saml/sso` (**be sure to replace** `your-account-name`)
+    - Single sign-on URL: `https://your-account-name.blubracket.com/api/saml/sso` (**be sure to replace** `your-account-name`)
 
-   - Use this for Recipient URL and Destination URL: `True`
+    - Use this for Recipient URL and Destination URL: `True`
 
-   - Audience URI: `https://your-account-name.blubracket.com/entityId` (**be sure to replace** `your-account-name`)
+    - Audience URI: `https://your-account-name.blubracket.com/entityId` (**be sure to replace** `your-account-name`)
 
-   - Name ID format: `EmailAddress`
+    - Name ID format: `EmailAddress`
 
-   - Application username: `Okta username`
+    - Application username: `Okta username`
    ![okta saml settings screenshot](okta-app-create-new-4.png)
 
 6. Select the following fields and click next:
-   - I'm an Okta customer adding an internal app
-   - This is an internal app that we have created
+    - I'm an Okta customer adding an internal app
+    - This is an internal app that we have created
   ![okta saml settings screenshot](okta-app-create-new-5.png)
 
 7. Click the Sign On tab and under SAML Signing Certificates and under SHA-2 click the actions button and then "View IdP metadata".
@@ -63,7 +63,6 @@ In BluBracket, click the settings icon on the left nav, then click the SSO & Ide
 ### Add users in BluBracket
 
 Tenant administrators must add users to their BluBracket tenant prior to login via single sign-on. [Full details are here](/how-to/add-user/).
-
 
 ### Test the Okta/SAML configuration
 
