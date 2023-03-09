@@ -22,6 +22,7 @@ BluBracket requires an email attribute in order to successful identify and authe
 ### Register the BluBracket app in Okta
 
 1. Login to Okta as an Administrator
+
 2. Select the Applications nav on the left and click "Create App Integration"
   ![okta create app screenshot](okta-app-create-new-1.png)
 
@@ -32,11 +33,11 @@ BluBracket requires an email attribute in order to successful identify and authe
   ![okta app name screenshot](okta-app-create-new-3.png)
 
 5. Input the following fields and click next:
-   - Single sign-on URL: `https://your-account-name.blubracket.com/api/saml/sso` (be sure to replace `your-account-name`)
+   - Single sign-on URL: `https://your-account-name.blubracket.com/api/saml/sso` (**be sure to replace** `your-account-name`)
 
    - Use this for Recipient URL and Destination URL: `True`
 
-   - Audience URI: `https://your-account-name.blubracket.com/entityId` (be sure to replace `your-account-name`)
+   - Audience URI: `https://your-account-name.blubracket.com/entityId` (**be sure to replace** `your-account-name`)
 
    - Name ID format: `EmailAddress`
 
@@ -54,7 +55,9 @@ BluBracket requires an email attribute in order to successful identify and authe
 8. Copy the url in your browser
   ![okta saml settings screenshot](okta-app-setup-metadata.png)
 
-9. In BluBracket click the settings icon, SSO & Identity Management and paste the url into the input. Then click outside of the input for the settings to take effect.
+### Register the Okta configuration within BluBracket
+
+In BluBracket, click the settings icon on the left nav, then click the SSO & Identity Management in the settings nav and paste the url into the input. Finally, click outside of the input for the settings to take effect.
   ![okta saml settings screenshot](okta-bb-metadata.png)
 
 ### Add users in BluBracket
@@ -62,8 +65,8 @@ BluBracket requires an email attribute in order to successful identify and authe
 Tenant administrators must add users to their BluBracket tenant prior to login via single sign-on. [Full details are here](/how-to/add-user/).
 
 
-### Test the Azure AD/SAML configuration
+### Test the Okta/SAML configuration
 
-Open `https://your-account-name.blubracket.com` in a new private browser window or open a different browser to test the Single Sign-on changes (Be sure to replace `your-account-name` with the name of your account name provided by BluBracket). The login page should automatically redirect to Azure AD, if Azure AD authentication is successful, the user will then be redirected back to BluBracket and logged into the tenant.
+Open `https://your-account-name.blubracket.com` in a new private browser window or open a different browser to test the Single Sign-on changes (Be sure to replace `your-account-name` with the name of your account name provided by BluBracket). The login page should automatically redirect to Okta, if Okta authentication is successful, the user will then be redirected back to BluBracket and logged into the tenant.
 
 Troubleshooting: use `https://your-account-name.blubracket.com/login?force=true` to login via local authentication
