@@ -6,9 +6,9 @@ date: 2022-01-12T02:48:57+00:00
 draft: false
 weight: 300
 toc: true
-resources:
-- src: azureactivedirectory.png
-- src: enterpriseapplications.png
+tags:
+  - SAML
+  - Azure Ad
 ---
 
 BluBracket supports single sign-on and federated identity services with Azure Active Directory using SAML. This article covers configuring the BluBracket app in Azure AD, configuring the Azure AD SAML federation in BluBracket, and managing users.
