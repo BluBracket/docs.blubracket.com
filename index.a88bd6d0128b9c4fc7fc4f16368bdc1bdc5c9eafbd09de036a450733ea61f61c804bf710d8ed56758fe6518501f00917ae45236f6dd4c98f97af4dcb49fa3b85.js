@@ -786,6 +786,30 @@ Source:
       .add(
       {
         id: 38,
+        href: "/how-to/saml-setup/",
+        title: "SAML Setup",
+        description: "BluBracket Enterprise supports identity provider SAML integration. Click one of the following guides below for help with setup.",
+        
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+        
+        
+        
+        content: "SAMLloginPingOktaAzure ADBluBracket Enterprise supports identity provider SAML integration. Click one of the following guides below for help with setup.\n"
+        
+      })
+      .add(
+      {
+        id: 39,
         href: "/how-to/role-based-access-control/",
         title: "Role Based Access Control",
         description: "Roles # A BluBracket user can be assigned any of the following roles: Manager, Member, Viewer.\nThe following table describes the features each role can access:\n   Feature Manager Member Viewer     View events ✅ ✅ ✅   Edit events (i.e. remedidate as Triaged, Not Important, Resolved) ✅ ✅    Add/Manage code servers ✅     Add/Manage integrations ✅     Add/Manage API keys ✅     Add/Manage Users ✅     Configure SSO/SAML ✅      Note: At the current time, the roles Member and Viewer are only available on tenants which have the Just-in-time (JIT) SAML user provisioning feature enabled.",
@@ -809,7 +833,7 @@ Source:
       })
       .add(
       {
-        id: 39,
+        id: 40,
         href: "/how-to/role-based-access-control/azure-ad/",
         title: "Setting up the SAML role on Azure AD",
         description: "This document will describe how to create and assign roles in Azure AD so that the role can be passed along during SAML login to BluBracket for the purpose of JIT user provisioning. If you are not interested in JIT user provisioning during SAML please skip this document. Special roles are not required for regular SAML login functionality.\nBefore proceeding with setting up SAML roles, please ensure that you have configured SAML login on your BluBracket tenant (please see Configure Azure AD for further details).",
@@ -831,7 +855,7 @@ Source:
       })
       .add(
       {
-        id: 40,
+        id: 41,
         href: "/api/system-audit/",
         title: "System Audit",
         description: "Auditing list of users who have accessed the BluBracket System",
@@ -843,7 +867,7 @@ Source:
       })
       .add(
       {
-        id: 41,
+        id: 42,
         href: "/how-to/cli/installation/",
         title: "CLI tool installation",
         description: "Instructions to install the CLI tool for Windows, macOS, and Linux",
@@ -855,7 +879,7 @@ Source:
       })
       .add(
       {
-        id: 42,
+        id: 43,
         href: "/how-to/code-servers/add-code-servers/bitbucket-cloud/",
         title: "Adding a Bitbucket Cloud code server",
         description: "How to add a Bitbucket Cloud server to your tenant",
@@ -867,7 +891,7 @@ Source:
       })
       .add(
       {
-        id: 43,
+        id: 44,
         href: "/how-to/code-servers/add-code-servers/gitlab-cloud/",
         title: "Adding a GitLab Cloud code server",
         description: "How to add a GitLab Cloud code server to your tenant",
@@ -879,7 +903,7 @@ Source:
       })
       .add(
       {
-        id: 44,
+        id: 45,
         href: "/how-to/code-servers/add-code-servers/",
         title: "Adding code servers",
         description: "How to add code servers to your tenant",
@@ -891,7 +915,7 @@ Source:
       })
       .add(
       {
-        id: 45,
+        id: 46,
         href: "/intro/use-cases/",
         title: "BluBracket use-cases",
         description: "Risks BluBracket solves and how.",
@@ -909,7 +933,7 @@ Source:
       })
       .add(
       {
-        id: 46,
+        id: 47,
         href: "/how-to/cli/",
         title: "CLI tool",
         description: "How to install and use the BluBracket CLI Tool.",
@@ -925,7 +949,7 @@ Source:
       })
       .add(
       {
-        id: 47,
+        id: 48,
         href: "/how-to/code-servers/",
         title: "Code servers",
         description: "Code lives in git repos, and git repos are hosted by code servers. Most git hosting providers structure git repos into collections such as GitHub\u0026rsquo;s Organizations and Bitbucket\u0026rsquo;s Workspaces. In BluBracket, each of those collections is a separate code server.\nSupported code servers in BluBracket #    GitHub GitLab Bitbucket Azure DevOps Gerrit     Cloud \u0026amp; Enterprise Cloud \u0026amp; on-prem Cloud \u0026amp; Server Cloud Self-hosted    Supported access \u0026amp; configuration risks   Supported access \u0026amp; configuration risks  Access \u0026amp; configuration risks not supported Access \u0026amp; configuration risks not supported Access \u0026amp; configuration risks not supported    GitHub Checks    Bitbucket Code Insights       Add a GitHub code server   Add a GitLab code server   Add a Bitbucket code server   Add an Azure DevOps code server   Add a Gerrit code server     ",
@@ -937,7 +961,7 @@ Source:
       })
       .add(
       {
-        id: 48,
+        id: 49,
         href: "/how-to/ignore-rules/",
         title: "Configure ignore rules",
         description: "Instructions on how to configure ignore fules for different levels, locally, per repo, and globally",
@@ -949,7 +973,7 @@ Source:
       })
       .add(
       {
-        id: 49,
+        id: 50,
         href: "/how-to/ignore-rules/global/",
         title: "Configuring global ignore rules",
         description: "How to setup global ignore rules for all users of a BluBracket account",
@@ -961,7 +985,7 @@ Source:
       })
       .add(
       {
-        id: 50,
+        id: 51,
         href: "/how-to/ignore-rules/per-repo/",
         title: "Configuring ignore rules per repo",
         description: "How to set ignore rules ignore rules for all users of a repository",
@@ -973,7 +997,7 @@ Source:
       })
       .add(
       {
-        id: 51,
+        id: 52,
         href: "/api/event-alert/",
         title: "Event \u0026 alert",
         description: "Reading and searching events and alerts.",
@@ -985,7 +1009,7 @@ Source:
       })
       .add(
       {
-        id: 52,
+        id: 53,
         href: "/how-to/code-servers/git-server-acccess-configuration/",
         title: "Git server access \u0026 configuration",
         description: "Supported access and configuration risks by code server.",
@@ -997,7 +1021,7 @@ Source:
       })
       .add(
       {
-        id: 53,
+        id: 54,
         href: "/how-to/code-servers/git-server-acccess-configuration/github/",
         title: "GitHub access \u0026 configuration risks",
         description: "BluBracket monitors and alerts on potential security security issues related to access and configuration of GitHub accounts. The following is a list of these configurations that BluBracket is currently monitoring. BluBracket will continue to add to this list and as we have support for other solutions we will add similar alerts.\nOrganization-level configuration risks #  Base level setting is too permissive: Base permissions to the organization’s repositories apply to all members and exclude outside collaborators.",
@@ -1009,7 +1033,7 @@ Source:
       })
       .add(
       {
-        id: 54,
+        id: 55,
         href: "/how-to/code-servers/git-server-acccess-configuration/gitlab/",
         title: "GitLab access \u0026 configuration risks",
         description: "BluBracket monitors and alerts on potential security security issues related to access and configuration of GitLab accounts. The following is a list of these configurations that BluBracket is currently monitoring. BluBracket will continue to add to this list and as we have support for other solutions we will add similar alerts.\nSystem-level configuration risks (on-prem only) # Note: these features can be enabled by request.\n Too many admins on system: Default is five.",
@@ -1021,7 +1045,7 @@ Source:
       })
       .add(
       {
-        id: 55,
+        id: 56,
         href: "/how-to/",
         title: "User guide",
         description: "",
@@ -1033,7 +1057,43 @@ Source:
       })
       .add(
       {
-        id: 56,
+        id: 57,
+        href: "/how-to/saml-setup/okta/",
+        title: "Configure Okta",
+        description: "How to configure Okta SAML and manage users",
+        
+          
+            
+          
+            
+          
+        
+        
+        
+        content: "SAMLOktaBluBracket supports single sign-on and federated identity services with Okta using SAML. This article covers configuring the BluBracket app in Okta, configuring the Okta SAML federation in BluBracket, and managing users.\nOnce single sign-on is configured as described below, authentication, passwords, and two-factor authentication are managed and configured in Okta.\nHowever unless role based access is enabled, users must be registered in both BluBracket and Okta. Removing a user from either Okta or BluBracket will terminate their access to BluBracket. Additionally, the email address for each user in BluBracket must match the email address in Okta.\nBluBracket requires an email attribute in order to successful identify and authenticate users; BluBracket looks for this value from the SAML identity claim http://schemas.xmlsoap.org/ws/2005/05/identity/claims/emailaddress.\nRegister the BluBracket app in Okta #   Login to Okta as an Administrator\n  Select the Applications nav on the left and click \u0026ldquo;Create App Integration\u0026rdquo;     Select SAML 2.0 and click next     Input a name for your app and click next     Input the following fields and click next:\n  Single sign-on URL: https://your-account-name.blubracket.com/api/saml/sso (be sure to replace your-account-name)\n  Use this for Recipient URL and Destination URL: True\n  Audience URI: https://your-account-name.blubracket.com/entityId (be sure to replace your-account-name)\n  Name ID format: EmailAddress\n  Application username: Okta username       Select the following fields and click next:\n I\u0026rsquo;m an Okta customer adding an internal app This is an internal app that we have created       Click the Sign On tab and under SAML Signing Certificates and under SHA-2 click the actions button and then \u0026ldquo;View IdP metadata\u0026rdquo;.     Copy the url in your browser     Register the Okta configuration within BluBracket # In BluBracket, click the settings icon on the left nav, then click the SSO \u0026amp; Identity Management in the settings nav and paste the url into the input. Finally, click outside of the input for the settings to take effect.   Add users in BluBracket # Tenant administrators must add users to their BluBracket tenant prior to login via single sign-on. Full details are here .\nTest the Okta/SAML configuration # Open https://your-account-name.blubracket.com in a new private browser window or open a different browser to test the Single Sign-on changes (Be sure to replace your-account-name with the name of your account name provided by BluBracket). The login page should automatically redirect to Okta, if Okta authentication is successful, the user will then be redirected back to BluBracket and logged into the tenant.\nTroubleshooting: use https://your-account-name.blubracket.com/login?force=true to login via local authentication\n"
+        
+      })
+      .add(
+      {
+        id: 58,
+        href: "/how-to/saml-setup/ping/",
+        title: "Configure Ping Identity",
+        description: "How to configure Ping SAML and manage users",
+        
+          
+            
+          
+            
+          
+        
+        
+        
+        content: "SAMLPing identityBluBracket supports single sign-on and federated identity services with Ping using SAML. This article covers configuring the BluBracket app in Ping, configuring the Ping SAML federation in BluBracket, and managing users.\nOnce single sign-on is configured as described below, authentication, passwords, and two-factor authentication are managed and configured in Ping.\nHowever unless role based access is enabled, users must be registered in both BluBracket and Ping. Removing a user from either Ping or BluBracket will terminate their access to BluBracket. Additionally, the email address for each user in BluBracket must match the email address in Ping.\nBluBracket requires an email attribute in order to successful identify and authenticate users; BluBracket looks for this value from the SAML identity claim http://schemas.xmlsoap.org/ws/2005/05/identity/claims/emailaddress.\nRegister the BluBracket app in Ping #   Login to Ping as an Administrator\n  Click Connections     Click + Add Application     Click the Web App application type     Choose configure SAML     Add the company name and click next     Enter the ACS url for your account:\n https://your-account-name.blubracket.com/api/saml/sso (be sure to replace your-account-name)       Scroll down and input the following fields and then click save and continue:\n  Entity Id: https://your-account-name.blubracket.com/entityId (be sure to replace your-account-name)\n  Assertion Validity Duration: 3600\n  Target Application URL: https://your-account-name.blubracket.com (be sure to replace your-account-name)       Under Attribute Mapping choose Username and click Save and Close     Toggle the new app as active     Add users     In the new application, click Compliance and copy the IDP Metadata URL listed     Register the Ping configuration within BluBracket # In BluBracket, click the settings icon on the left nav, then click the SSO \u0026amp; Identity Management in the settings nav and paste the url into the input. Finally, click outside of the input for the settings to take effect.   Add users in BluBracket # Tenant administrators must add users to their BluBracket tenant prior to login via single sign-on. Full details are here .\nTest the Ping/SAML configuration # Open https://your-account-name.blubracket.com in a new private browser window or open a different browser to test the Single Sign-on changes (Be sure to replace your-account-name with the name of your account name provided by BluBracket). The login page should automatically redirect to Ping, if Ping authentication is successful, the user will then be redirected back to BluBracket and logged into the tenant.\nTroubleshooting: use https://your-account-name.blubracket.com/login?force=true to login via local authentication\n"
+        
+      })
+      .add(
+      {
+        id: 59,
         href: "/how-to/ci-checks/bitbucket-insights/",
         title: "Configure BitBucket Code Insights",
         description: "Prerequisites # This integration depends on an API endpoint to fetch the pull request details from the commit . This API endpoint specifically requires pull request links to be indexed, which means that within the lifetime of the repository a user has to have clicked “go to pull request” from the per commit view of the Bitbucket Cloud UI at least once.\nEnable BitBucket Code Insights #  Contact the customer success team to enable BitBucket Code Insights.",
@@ -1045,7 +1105,7 @@ Source:
       })
       .add(
       {
-        id: 57,
+        id: 60,
         href: "/how-to/ci-checks/github-checks/",
         title: "Configure GitHub Checks",
         description: "Prerequisites # To install the BluBracket app for GitHub Checks, permissions to install a GitHub App on an org are required. This would be an organization owner or someone with admin level permissions in a repository .\nChoosing which app to install # The BluBracket app for GitHub Checks is available for all BluBracket editions, and multiple offerings of GitHub.\n    GitHub Cloud GitHub Enterprise\n(including Server)     BluBracket Community Edition  BluBracket Community \u0026amp; Team Edition  n/a   BluBracket Team Edition  BluBracket Community \u0026amp; Team Edition  n/a   BluBracket Enterprise Edition  BluBracket Enterprise Edition   BluBracket Enterprise Edition \u0026amp; GitHub Enterprise Server     GitHub Checks setup for GitHub Cloud and BluBracket Community \u0026amp; Team Edition accounts # BluBracket Community and Team Edition accounts are monitored by the BluBracket Community Edition app.",
@@ -1057,7 +1117,7 @@ Source:
       })
       .add(
       {
-        id: 58,
+        id: 61,
         href: "/how-to/cli/cli-docs/",
         title: "BluBracket CLI options and usage",
         description: "Options and usage for the BluBracket CLI",
@@ -1069,7 +1129,7 @@ Source:
       })
       .add(
       {
-        id: 59,
+        id: 62,
         href: "/how-to/add-user/",
         title: "Adding a BluBracket user",
         description: "How to add a BluBracket user",
@@ -1081,7 +1141,7 @@ Source:
       })
       .add(
       {
-        id: 60,
+        id: 63,
         href: "/how-to/code-servers/add-code-servers/azure-devops/",
         title: "Adding an Azure DevOps code server",
         description: "How to add an Azure DevOps code server to your tenant",
@@ -1093,7 +1153,7 @@ Source:
       })
       .add(
       {
-        id: 61,
+        id: 64,
         href: "/api/",
         title: "API",
         description: "How to access and use the BluBracket API.",
@@ -1105,19 +1165,25 @@ Source:
       })
       .add(
       {
-        id: 62,
-        href: "/how-to/add-user-ad-saml/",
+        id: 65,
+        href: "/how-to/saml-setup/azure-ad/",
         title: "Configure Azure AD",
         description: "How to configure Azure AD SAML and manage users",
         
+          
+            
+          
+            
+          
         
         
-        content: "BluBracket supports single sign-on and federated identity services with Azure Active Directory using SAML. This article covers configuring the BluBracket app in Azure AD, configuring the Azure AD SAML federation in BluBracket, and managing users.\nOnce single sign-on is configured as described below, authentication, passwords, and two-factor authentication are managed and configured in Azure AD.\nHowever, users must be registered in both BluBracket and Azure AD. Removing a user from either Azure or BluBracket will terminate their access to BluBracket. Additionally, the email address for each user in BluBracket must match the email address in Azure AD.\nBluBracket requires an email attribute in order to successful identify and authenticate users; BluBracket looks for this value from the SAML identity claim http://schemas.xmlsoap.org/ws/2005/05/identity/claims/emailaddress.\nRegister the BluBracket app in Azure Active Directory #  Login to Azure AD as an Administrator https://portal.azure.com  Select the Azure Active Directory service    Select Enterprise applications    Select + New application    Select Application you\u0026rsquo;re developing    Select the link Ok, take me to App Registrations to register my new application    Select + New registration.    Register the Application  App name: BluBracket Select the appropriate radio button for who can use this application Specify the Redirect URI  Type: Web URI: https://TENANT_NAME.blubracket.com/api/saml/sso (Be sure to replace TENANT_NAME with the name of your tenant name provided by BluBracket)   Select Register       Get the federation metadata document URL from Azure AD #  Navigate to Azure Active Directory portal . Under Manage, select App registrations, and then select Endpoints in the top menu, then copy and save the Federation metadata document.    Select the BluBracket application    Copy and save the Application (client) ID     Set the SAML federation metadata document URL and client ID in BluBracket #  Navigate to https://TENANT_NAME.blubracket.com/settings/auth (Be sure to replace TENANT_NAME with the name of your tenant name provided by BluBracket). Enter the federation metadata document URL.    Enter the Application (client) ID from step 15     Grant permissions to users in Azure AD to use BluBracket #  Navigate to Enterprise applications in the Azure portal.    Select the BluBracket application    Add users:    Select Users and groups, and then select Add user. On Add Assignment, select Users and groups to open the Users and groups selection list. Select as many groups or users as you want, then click or tap Select to add them to the Add Assignment list. You can also assign a role to a user at this stage. Select Assign to assign the users or groups to the selected enterprise application    Add users in BluBracket # Tenant administrators must add users to their BluBracket tenant prior to login via single sign-on. Full details are here .\n  Test the Azure AD/SAML configuration # Open https://TENANT_NAME.blubracket.com in a new private browser window or open a different browser to test the Single Sign-on changes (Be sure to replace TENANT_NAME with the name of your tenant name provided by BluBracket). The login page should automatically redirect to Azure AD, if Azure AD authentication is successful, the user will then be redirected back to BluBracket and logged into the tenant.\nTroubleshooting: use https://TENANT_NAME.blubracket.com/login?force=true to login via local authentication\n"
+        
+        content: "SAMLAzure AdBluBracket supports single sign-on and federated identity services with Azure Active Directory using SAML. This article covers configuring the BluBracket app in Azure AD, configuring the Azure AD SAML federation in BluBracket, and managing users.\nOnce single sign-on is configured as described below, authentication, passwords, and two-factor authentication are managed and configured in Azure AD.\nHowever, users must be registered in both BluBracket and Azure AD. Removing a user from either Azure or BluBracket will terminate their access to BluBracket. Additionally, the email address for each user in BluBracket must match the email address in Azure AD.\nBluBracket requires an email attribute in order to successful identify and authenticate users; BluBracket looks for this value from the SAML identity claim http://schemas.xmlsoap.org/ws/2005/05/identity/claims/emailaddress.\nRegister the BluBracket app in Azure Active Directory #  Login to Azure AD as an Administrator https://portal.azure.com  Select the Azure Active Directory service    Select Enterprise applications    Select + New application    Select Application you\u0026rsquo;re developing    Select the link Ok, take me to App Registrations to register my new application    Select + New registration.    Register the Application  App name: BluBracket Select the appropriate radio button for who can use this application Specify the Redirect URI  Type: Web URI: https://TENANT_NAME.blubracket.com/api/saml/sso (Be sure to replace TENANT_NAME with the name of your tenant name provided by BluBracket)   Select Register       Get the federation metadata document URL from Azure AD #  Navigate to Azure Active Directory portal . Under Manage, select App registrations, and then select Endpoints in the top menu, then copy and save the Federation metadata document.    Select the BluBracket application    Copy and save the Application (client) ID     Set the SAML federation metadata document URL and client ID in BluBracket #  Navigate to https://TENANT_NAME.blubracket.com/settings/auth (Be sure to replace TENANT_NAME with the name of your tenant name provided by BluBracket). Enter the federation metadata document URL.    Enter the Application (client) ID from step 15     Grant permissions to users in Azure AD to use BluBracket #  Navigate to Enterprise applications in the Azure portal.    Select the BluBracket application    Add users:    Select Users and groups, and then select Add user. On Add Assignment, select Users and groups to open the Users and groups selection list. Select as many groups or users as you want, then click or tap Select to add them to the Add Assignment list. You can also assign a role to a user at this stage. Select Assign to assign the users or groups to the selected enterprise application    Add users in BluBracket # Tenant administrators must add users to their BluBracket tenant prior to login via single sign-on. Full details are here .\n  Test the Azure AD/SAML configuration # Open https://TENANT_NAME.blubracket.com in a new private browser window or open a different browser to test the Single Sign-on changes (Be sure to replace TENANT_NAME with the name of your tenant name provided by BluBracket). The login page should automatically redirect to Azure AD, if Azure AD authentication is successful, the user will then be redirected back to BluBracket and logged into the tenant.\nTroubleshooting: use https://TENANT_NAME.blubracket.com/login?force=true to login via local authentication\n"
         
       })
       .add(
       {
-        id: 63,
+        id: 66,
         href: "/intro/getting-started/",
         title: "Getting started with BluBracket",
         description: "How to sign up and start using BluBracket for free",
@@ -1143,7 +1209,7 @@ Source:
       })
       .add(
       {
-        id: 64,
+        id: 67,
         href: "/how-to/remediate-alerts/",
         title: "Remediate alerts",
         description: "How to remediate alerts",
@@ -1155,7 +1221,7 @@ Source:
       })
       .add(
       {
-        id: 65,
+        id: 68,
         href: "/how-to/code-servers/add-code-servers/gerrit/generate-pat/",
         title: "Generate HTTP credentials in Gerrit",
         description: "In order for BluBracket to access information on the Gerrit code review host, HTTP credentials must be generated.\nGenerating HTTP credentials #  Once signed in to Gerrit, click the icon in the upper-right hand corner to see the settings dropdown.     Scroll down to the HTTP credentials section of the user settings page.     Click \u0026ldquo;Generate New Password\u0026rdquo; for the new HTTP credentials.    Entering username and HTTP credentials # A username and HTTP credentials are necessary for BluBracket to access the Gerrit code review host.",
@@ -1167,7 +1233,7 @@ Source:
       })
       .add(
       {
-        id: 66,
+        id: 69,
         href: "/how-to/cli/using-cli-with-git/",
         title: "Using the CLI tool in git workflows",
         description: "Details about how to use the CLI tool.",
@@ -1179,7 +1245,7 @@ Source:
       })
       .add(
       {
-        id: 67,
+        id: 70,
         href: "/how-to/code-servers/add-code-servers/gerrit/",
         title: "Adding a Gerrit code server",
         description: "How to add a Gerrit code server to your tenant",
@@ -1191,7 +1257,7 @@ Source:
       })
       .add(
       {
-        id: 68,
+        id: 71,
         href: "/faq/",
         title: "Frequently asked questions",
         description: "A searchable list of all FAQs.",
@@ -1209,7 +1275,7 @@ Source:
       })
       .add(
       {
-        id: 69,
+        id: 72,
         href: "/intro/key-workflows/",
         title: "Key workflows",
         description: "BluBracket code security tools are optimized to prevent risks from getting into code, and to promote the process of continuous improvement that reduces existing risks from code over time.\nPreventing risks in code # As developers, we depend on a quick feedback loop to understand if our code is working and does what is expected. BluBracket tools can offer automated security guidance as part of that feedback loop, in the IDE of your choice, pre-commit, and as part of the CI flow.",
@@ -1229,7 +1295,7 @@ Source:
       })
       .add(
       {
-        id: 70,
+        id: 73,
         href: "/how-to/messaging/microsoftteams/connection/",
         title: "Microsoft Teams Connection",
         description: "Requirements #  Generate a Microsoft Teams channel Incoming WebHook   Creating a Microsoft Teams Connection #   Navigate to Microsoft Teams integrations by clicking the Microsoft Teams link on the integrations page.    Begin creating a BluBracket Microsoft Teams connection by clicking the + CONNECTION button.    Copy the Incoming WebHook URL generated in Microsoft Teams App   Paste the Incoming WebHook URL into the token input and click TEST \u0026amp; SAVE.",
@@ -1245,7 +1311,7 @@ Source:
       })
       .add(
       {
-        id: 71,
+        id: 74,
         href: "/how-to/messaging/microsoftteams/",
         title: "Microsoft Teams Integration",
         description: " BluBracket integration with Microsoft Teams can alert teams about code risks in new commits in real time.\n  Requirements # Integration with Microsoft Teams requires the following:\n   Create a Microsoft Teams connection    Create a Microsoft Teams subscription   ",
@@ -1265,7 +1331,7 @@ Source:
       })
       .add(
       {
-        id: 72,
+        id: 75,
         href: "/how-to/messaging/microsoftteams/subscription/",
         title: "Microsoft Teams Subscription",
         description: "Requirements #  Generate a Microsoft Teams channel Incoming WebHook  Create a Microsoft Teams connection   Creating a Microsoft Teams Subscription #   Navigate to Microsoft Teams integrations by clicking the Microsoft Teams link on the integrations page    Click the + SUBSCRIPTION button to begin the creation process.    Choose a name for the subscription as well as the saved filters you would like the subscription to be based on.",
@@ -1281,7 +1347,7 @@ Source:
       })
       .add(
       {
-        id: 73,
+        id: 76,
         href: "/how-to/incident-management/splunk/connection/",
         title: "Splunk Connection",
         description: "Requirements #   Splunk integration token   Creating a Splunk Connection #   Navigate to Splunk integrations by clicking the Splunk link on the integrations page    Begin creating a BluBracket Splunk connection by clicking the + CONNECTION button    Enter a unique name for the connection.\n  Generate an integration token following the Splunk docs   Copy your integration token and paste it into the token field.",
@@ -1297,7 +1363,7 @@ Source:
       })
       .add(
       {
-        id: 74,
+        id: 77,
         href: "/how-to/incident-management/splunk/",
         title: "Splunk Integration",
         description: " BluBracket can automatically create a Splunk events when risks are found in new commits.\n  Requirements # Integration with Splunk requires the following:\n   Create a Splunk connection    Create a Splunk subscription   ",
@@ -1317,7 +1383,7 @@ Source:
       })
       .add(
       {
-        id: 75,
+        id: 78,
         href: "/how-to/incident-management/splunk/subscription/",
         title: "Splunk Subscription",
         description: "Requirements #  Created a Splunk connection   Creating a Splunk Subscription #   Navigate to Splunk integrations by clicking the Splunk link on the integrations page.    Click the + SUBSCRIPTION button to begin the creation process.    Choose a name for the subscription as well as the saved filters you would like the subscription to be based on.\n  Choose the connection for the subscription output.",
@@ -1333,7 +1399,7 @@ Source:
       })
       .add(
       {
-        id: 76,
+        id: 79,
         href: "/how-to/incident-management/pagerduty/connection/",
         title: "PagerDuty Connection",
         description: "Creating a PagerDuty Connection #   Navigate to PagerDuty integrations by clicking the PagerDuty link on the integrations page    Begin creating a BluBracket PagerDuty connection by clicking the + CONNECTION button    Enter a unique name for the connection\n  Generate an API access key following the PagerDuty docs   Copy your API key and paste it into the API access key field",
@@ -1349,7 +1415,7 @@ Source:
       })
       .add(
       {
-        id: 77,
+        id: 80,
         href: "/how-to/incident-management/pagerduty/subscription/integration-key/",
         title: "PagerDuty Service Integration Key",
         description: "PagerDuty Service Integration Key #   Navigate to Services by clicking the tab at the top of the page    Locate the service you want to integrate with and click the more dropdown    Select the View Integrations option    Locate and copy the Integration Key for the service    Now you\u0026rsquo;re ready to create subscriptions for this service.",
@@ -1365,7 +1431,7 @@ Source:
       })
       .add(
       {
-        id: 78,
+        id: 81,
         href: "/how-to/incident-management/pagerduty/subscription/",
         title: "PagerDuty Subscription",
         description: "Requirements #  Created a PagerDuty connection  Have an existing PagerDuty Service   Creating a PagerDuty Subscription #   Navigate to PagerDuty integrations by clicking the PagerDuty link on the integrations page.    Click the + SUBSCRIPTION button to begin the creation process.    Choose a name for the subscription as well as the saved filters you would like the subscription to be based on.",
@@ -1381,7 +1447,7 @@ Source:
       })
       .add(
       {
-        id: 79,
+        id: 82,
         href: "/how-to/ticketing/servicenow/connection/",
         title: "ServiceNow Connection",
         description: "Creating a ServiceNow Connection #   Navigate to ServiceNow integrations by clicking the ServiceNow link on the integrations page    Begin creating a BluBracket ServiceNow connection by clicking the + CONNECTION button    Enter a unique name for the connection\n  Enter the username of a ServiceNow user with access to the desired account\n  Enter the password for the username in step 4",
@@ -1397,7 +1463,7 @@ Source:
       })
       .add(
       {
-        id: 80,
+        id: 83,
         href: "/how-to/ticketing/servicenow/subscription/custom-field/",
         title: "ServiceNow Custom Fields",
         description: "Requirements #  Begin creating a ServiceNow subscription   ServiceNow Custom Fields # BluBracket integration with ServiceNow supports adding custom fields that are used to create the tickets.\n These key-value pairs are supplied directly to the ServiceNow API. By default BluBracket is already sending the following fields:\n short_description description contact_type category subcategory  For a list of potential fields to supply, view the ServiceNow incident docs ",
@@ -1413,7 +1479,7 @@ Source:
       })
       .add(
       {
-        id: 81,
+        id: 84,
         href: "/how-to/ticketing/servicenow/subscription/",
         title: "ServiceNow Subscription",
         description: "Requirements #  Created a ServiceNow connection   Creating a ServiceNow Subscription #   Navigate to ServiceNow integrations by clicking the ServiceNow link on the integrations page    Click the + SUBSCRIPTION button to begin the creation process.    Choose a name for the subscription as well as the saved filters you would like the subscription to be based on.\n  Choose the connection for the subscription output.",
@@ -1429,7 +1495,7 @@ Source:
       })
       .add(
       {
-        id: 82,
+        id: 85,
         href: "/how-to/messaging/slack/app/",
         title: "BluBracket Slack App",
         description: "Visit the Slack App creation page.\n  Click the Create New App button.    Click the From an app manifest option.    Select your workspace and click Next.    Copy and paste the following app manifest into the json input:\n{ \u0026quot;display_information\u0026quot;: { \u0026quot;name\u0026quot;: \u0026quot;BluBracket\u0026quot;, \u0026quot;description\u0026quot;: \u0026quot;Pipeline Security Tools\u0026quot;, \u0026quot;background_color\u0026quot;: \u0026quot;#2b2b2b\u0026quot;, \u0026quot;long_description\u0026quot;: \u0026quot;What if code security could be improved with the same techniques we use to improve code quality?",
@@ -1445,7 +1511,7 @@ Source:
       })
       .add(
       {
-        id: 83,
+        id: 86,
         href: "/how-to/ticketing/jira/connection/",
         title: "Jira Connection",
         description: "Requirements #    Atlassian API Token    Jira Base URL    Jira Project for events and alerts to be added to.   Creating a Jira Connection #   Navigate to Jira integrations by clicking the Jira link on the integrations page    Begin creating a BluBracket Jira connection by clicking the + CONNECTION button    Create an Atlassian API Token   Paste the API token into the token input.",
@@ -1461,7 +1527,7 @@ Source:
       })
       .add(
       {
-        id: 84,
+        id: 87,
         href: "/how-to/ticketing/jira/subscription/",
         title: "Jira Subscription",
         description: "Requirements #  Created a Jira connection   Creating a Jira Subscription #   Navigate to Jira integrations by clicking the Jira link on the integrations page    Click the + SUBSCRIPTION button to begin the creation process.    Choose a name for the subscription as well as the saved filters you would like the subscription to be based on.\n  Choose the connection for the subscription output.",
@@ -1477,7 +1543,7 @@ Source:
       })
       .add(
       {
-        id: 85,
+        id: 88,
         href: "/how-to/messaging/slack/connection/",
         title: "Slack Connection",
         description: "Requirements #  Create a BluBracket Slack App and install to your workspace.  Creating a Slack Connection #   Navigate to Slack integrations by clicking the Slack link on the integrations page    Begin creating a BluBracket Slack connection by clicking the + CONNECTION button    Visit the installations page in your BluBracket Slack App and copy the bot token presented on the screen.",
@@ -1493,7 +1559,7 @@ Source:
       })
       .add(
       {
-        id: 86,
+        id: 89,
         href: "/how-to/messaging/slack/subscription/",
         title: "Slack Subscription",
         description: "Requirements #  Created a BluBracket Slack App and installed to your workspace. Created a Slack connection   Creating a Slack Subscription #   Navigate to Slack integrations by clicking the Slack link on the integrations page    Click the + SUBSCRIPTION button to begin the creation process.    Choose a name for the subscription as well as the saved filters you would like the subscription to be based on.",
@@ -1509,7 +1575,7 @@ Source:
       })
       .add(
       {
-        id: 87,
+        id: 90,
         href: "/how-to/messaging/slack/",
         title: "Slack Integration",
         description: " BluBracket integration with Slack can alert teams about code risks in new commits in real time.\n  Requirements # Integration with Slack requires the following:\n   Create a BluBracket Slack App and install on your workspace    Create a Slack connection    Create a Slack subscription   ",
@@ -1529,7 +1595,7 @@ Source:
       })
       .add(
       {
-        id: 88,
+        id: 91,
         href: "/how-to/ci-checks/",
         title: "CI checks",
         description: "Integrating BluBracket into the CI code review process.",
@@ -1557,7 +1623,7 @@ Source:
       })
       .add(
       {
-        id: 89,
+        id: 92,
         href: "/intro/integrations/",
         title: "Integrations",
         description: "Local workflow tools #  The BluBracket CLI tool can identify and block secrets before they\u0026rsquo;re committed.\n  Available local tools and integrations\n  CLI  IntelliJ (via CLI, full plugin coming soon) Visual Studio Code (via CLI)  Usage guide: installing and using the CLI .\nCode servers #  BluBracket scans repositories hosted in GitHub, GitLab, Bitbucket, and others.\n  Certified \u0026amp; supported code servers:",
@@ -1573,7 +1639,7 @@ Source:
       })
       .add(
       {
-        id: 90,
+        id: 93,
         href: "/how-to/ticketing/jira/",
         title: "Jira Integration",
         description: " BluBracket can automatically create a Jira ticket when risks are found in new commits.\n  Requirements # Integration with Jira requires the following:\n   Create a Jira connection    Create a Jira subscription   ",
@@ -1593,7 +1659,7 @@ Source:
       })
       .add(
       {
-        id: 91,
+        id: 94,
         href: "/how-to/incident-management/pagerduty/",
         title: "PagerDuty Integration",
         description: " BluBracket can automatically create a PagerDuty incidents when risks are found in new commits.\n  Requirements # Integration with PagerDuty requires the following:\n   Create a PagerDuty connection    Create a PagerDuty subscription   ",
@@ -1613,7 +1679,7 @@ Source:
       })
       .add(
       {
-        id: 92,
+        id: 95,
         href: "/how-to/ticketing/servicenow/",
         title: "ServiceNow Integration",
         description: " BluBracket can automatically create a ServiceNow ticket when risks are found in new commits.\n  Requirements # Integration with ServiceNow requires the following:\n   Create a ServiceNow connection    Create a ServiceNow subscription   ",
@@ -1633,7 +1699,7 @@ Source:
       })
       .add(
       {
-        id: 93,
+        id: 96,
         href: "/contact-support/",
         title: "Contact support",
         description: "",
@@ -1645,7 +1711,7 @@ Source:
       })
       .add(
       {
-        id: 94,
+        id: 97,
         href: "/release-notes/",
         title: "Release notes",
         description: "",
@@ -1657,7 +1723,7 @@ Source:
       })
       .add(
       {
-        id: 95,
+        id: 98,
         href: "/how-to/messaging/",
         title: "Messaging",
         description: "Messaging security team members and developers when risks are found in code in the real-time commit scans can help increase visibility of risks and reduce the time to remediate risks.\nOut of the box, BluBracket supports messaging via Slack and Microsoft Teams, and additional integrations are possible via the flexible APIs.",
@@ -1675,7 +1741,7 @@ Source:
       })
       .add(
       {
-        id: 96,
+        id: 99,
         href: "/how-to/incident-management/",
         title: "Incident Management",
         description: "BluBracket supports PagerDuty integration to automatically create incidents for alerts matching filters you can specify.",
@@ -1693,7 +1759,7 @@ Source:
       })
       .add(
       {
-        id: 97,
+        id: 100,
         href: "/how-to/ticketing/",
         title: "Ticketing",
         description: "Automatic ticketing of detected issues gives security and developer teams visibility into security issues in the tools they\u0026rsquo;re using to plan, track, and report work. No need to sign into or use another too.\nOut of the box, BluBracket supports Jira and ServiceNow, and additional integrations are possible via the flexible APIs.",
@@ -1711,7 +1777,7 @@ Source:
       })
       .add(
       {
-        id: 98,
+        id: 101,
         href: "/authoring-documentation/",
         title: "Authoring documentation",
         description: "How do write and edits the docs in this site.",
@@ -1723,7 +1789,7 @@ Source:
       })
       .add(
       {
-        id: 99,
+        id: 102,
         href: "/how-to/architecture/",
         title: "Integration architecture",
         description: "How BluBracket connects to your world",
@@ -1735,7 +1801,7 @@ Source:
       })
       .add(
       {
-        id: 100,
+        id: 103,
         href: "/release-notes/2022-06/",
         title: "2022-06 release",
         description: "New features, enhancements, and bug fixes #  SOC 2 Type II compliance for SaaS services, recognizing the rigorous operational and security practices across the organization for safe and reliable handling of customer data CLI: new open-source recipes for scanning S3, syslog, and Confluence wiki pages New risk severity for all events gives detailed information to identify and prioritize risk across your codebase The new filtering experience is now enabled for all customers  ",
@@ -1747,7 +1813,7 @@ Source:
       })
       .add(
       {
-        id: 101,
+        id: 104,
         href: "/release-notes/2022-05/",
         title: "2022-05 release",
         description: "New features, enhancements, and bug fixes #  New alert search and filtering experience improves workflows and findability of actionable Support for git repositories on Gerrit code servers Ongoing false positive improvements, including more nuanced inspection and reporting for multi-part secrets (such as AWS keys and secret keys) New OAuth signup/sign-in support CLI: offline scan, which operates entirely without network interaction, is now the default  ",
@@ -1759,7 +1825,7 @@ Source:
       })
       .add(
       {
-        id: 102,
+        id: 105,
         href: "/release-notes/2022-04/",
         title: "2022-04 release",
         description: "New features, enhancements, and bug fixes #  Redesigned and re-imagined views of alerts optimized around quick triage and remediation workflows New support for tracking detailed branch info Snyk integration beta for tracking and reporting dependency vulnerabilities for a complete view of the external and internal code supply chain CLI: searching inside archive files, including .tar, .zip, and others CLI: support for scanning a specific file or files  ",
@@ -1771,7 +1837,7 @@ Source:
       })
       .add(
       {
-        id: 103,
+        id: 106,
         href: "/release-notes/2022-03/",
         title: "2022-03 release",
         description: "New features, enhancements, and bug fixes #  Track and manage your work by marking the triaged state of each alert Event reconciliation on pattern/logic changes New settings page outlining available integrations New support for tracking commit info, including tip of main branch Refactored user management in preparation for OAuth and RBAC New documentation website (this site, yay!)  ",
@@ -1783,7 +1849,7 @@ Source:
       })
       .add(
       {
-        id: 104,
+        id: 107,
         href: "/release-notes/2022-02/",
         title: "2022-02 release",
         description: "New features, enhancements, and bug fixes #  Improved false positive rejection Periodic scans re-process data with the latest rules, and catch pushes missed in case the git host dropped the webhook Support for filtering by commit time Big fixes and improvements to the BluPrint report New report: most used secrets across your code base (calculated by hash, BluBracket does not store your code or any secrets)  ",
@@ -1795,7 +1861,7 @@ Source:
       })
       .add(
       {
-        id: 105,
+        id: 108,
         href: "/",
         title: "BluBracket Documentation",
         description: "Track what's in your code, who has access, and where it goes.",
@@ -1807,7 +1873,7 @@ Source:
       })
       .add(
       {
-        id: 106,
+        id: 109,
         href: "/release-notes/2022-01/",
         title: "2022-01 release",
         description: "New features, enhancements, and bug fixes #  Initial support for repos in Azure DevOps Bitbucket Insights support gives developers guidance about risks in their code during the review process, eliminating unnecessary alerts Scalability improvements around integrations Scalability improvements for git host webhook processing and job queueing  ",
@@ -1819,7 +1885,7 @@ Source:
       })
       .add(
       {
-        id: 107,
+        id: 110,
         href: "/release-notes/2021-12/",
         title: "2021-12 release",
         description: "New features, enhancements, and bug fixes #  Self-hosted (VPC/on-prem) installer improvements, including support for Terraform Bulk code server import to import multiple GitHub Organizations, Bitbucket Workspaces, or GitLab Workspaces with a single click Activeness checks for multi-part secrets, such as AWS keys and secret keys CLI: Ability to scan an arbitrary directory outside a git repo  ",
@@ -1831,7 +1897,7 @@ Source:
       })
       .add(
       {
-        id: 108,
+        id: 111,
         href: "/release-notes/2021-11-22/",
         title: "2021-11-22 release",
         description: "New Features and Enhancements #  “Other” type has been added to the Secret Types pie chart on the BluPrint page. The pie chart should now show the top 6 secret types as well as a 7th that is composed of all of the remaining types. Clicking on any of the pie sections should take the user to a filtered table for the selected secret type. Many additional enhancements have been added to identify false positives where secrets are concerned.",
@@ -1843,7 +1909,7 @@ Source:
       })
       .add(
       {
-        id: 109,
+        id: 112,
         href: "/release-notes/2021-10-11/",
         title: "2021-10-11 release",
         description: "New Features and Enhancements #  New public API to return repo scan status Added infinite label filter to support scrolling through all labels.  Bug Fixes #  CORE-8192 URL of webhook was not displayed in the compliance alerts flyover details CORE-8343 Enhanced false positive detection where secret type is “token” CORE-8414 - Fixed Slack integration issue where deep link was not being displayed in message Fix table pagination loading bugs  ",
@@ -1855,7 +1921,7 @@ Source:
       })
       .add(
       {
-        id: 110,
+        id: 113,
         href: "/release-notes/2021-09-28/",
         title: "2021-09-28 release",
         description: "New Features and Enhancements #   Additional checks performed when user adds new code server. We now identify and show a message if the user does not have adequate organization level permissions, even if the Personal Access Token does have required permissions. Inadequate user permissions will result in incomplete repo risk calculations.\n  Code Leaks now filters out Public to Public alerts.\n  Code Leaks details now displays a deep link to the selected leaked file",
@@ -1867,7 +1933,7 @@ Source:
       })
       .add(
       {
-        id: 111,
+        id: 114,
         href: "/release-notes/2021-09-13/",
         title: "2021-09-13 release",
         description: "New Features and Enhancements #   New Repo Details Design. When clicking on a Repository, you will now see a new design that lists the risk rating and number of violations for each risk category. Clicking on the violations number will provide a filter view of all violations of that risk category type.\n    The terminology “Alerts” has been replaced with “All Violations”, which is a new tab next to Code Risks at top of screen.",
@@ -1879,7 +1945,7 @@ Source:
       })
       .add(
       {
-        id: 112,
+        id: 115,
         href: "/release-notes/2021-09-07/",
         title: "2021-09-07 release",
         description: "New Features and Enhancements #   Access Risk Categories now links to appropriate alerts in the repo details page.\n  Enhanced Code Server onboarding for Bitbucket and GitLab.\n  Updated Infrastructure Code Alerts and Events to be more descriptive.\n  Added breadcrumbs to repository details page in portal.\n  Updated support for global Ignore.yaml. If you place a folder labeled “.blubracket” into a repository, then create a file called ignore.",
@@ -1891,7 +1957,7 @@ Source:
       })
       .add(
       {
-        id: 113,
+        id: 116,
         href: "/release-notes/2021-08-16/",
         title: "2021-08-16 release",
         description: "New Features and Enhancements # Enterprise Edition # New Code Risks Categories\nBluBracket has added two additional Risk Categories to the repo detail view, PII and Non-inclusive language!\n  All newly created tenants will automatically have three Non-inclusive language regular expressions configured (blacklist, slave, master) and one PII regular expression for social security numbers.\nFor existing customers, if you would like to utilize the new PII and Non-inclusive Language categories, please follow the instructions below:",
@@ -1903,7 +1969,7 @@ Source:
       })
       .add(
       {
-        id: 114,
+        id: 117,
         href: "/release-notes/2021-07-21/",
         title: "2021-07-21 release",
         description: "New Features and Enhancements # Enterprise Edition # No new features or enhancements added to the Enterprise Edition with this release.\nCommunity Edition # No new features or enhancements added to the Community Edition with this release.\nBug Fixes #   CORE-7410 - Fix filtering issue when attempting to filter for a value that does not exist. Now returns “no events found” instead of returning all results.\n  CORE-7514 - Fix custom date range bug for Last Activity column in repository list view",
@@ -1915,7 +1981,7 @@ Source:
       })
       .add(
       {
-        id: 115,
+        id: 118,
         href: "/release-notes/2021-07-03/",
         title: "2021-07-03 release",
         description: "New Features and Enhancements # Enterprise Edition # Code Risks #   Within the repository details page the Code Risks tab now indicates the level of risk associated with any of the risk categories that BluBracket could potentially be identifying. As seen in the screenshot below, all categories are designated with a High/Medium/Low indicator and the number of violations associated with the risk category type. Clicking risk category type will navigate the user to a list view of the violations.",
@@ -1927,7 +1993,7 @@ Source:
       })
       .add(
       {
-        id: 116,
+        id: 119,
         href: "/release-notes/2021-06-05/",
         title: "2021-06-05 release",
         description: "New Features and Enhancements # Enterprise Edition # High Risks #  The BluPrint page now contains a new table that displays the most risky repos that are currently being monitored. The repository with the highest risk score is at the top of the list, descending to the 100th highest at the bottom. The Alert tiles have been moved to just below this table and are now, by default, in a collapsed state.",
@@ -1939,7 +2005,7 @@ Source:
       })
       .add(
       {
-        id: 117,
+        id: 120,
         href: "/release-notes/2021-05-03/",
         title: "2021-05-03 release",
         description: "New Features and Enhancements # Enterprise Edition # Event Tagging and Alert Enabling #   Event Tagging: For quite some time now BluBracket has been using tagging events with things like “Active Token”, “Inactive Token”, “Strong Password”, etc. These tags have been used to notify the user of specific information related to the event. It quickly became apparent that these could be useful for customers when integrating with other systems, or just for filtering purposes.",
@@ -1951,7 +2017,7 @@ Source:
       })
       .add(
       {
-        id: 118,
+        id: 121,
         href: "/release-notes/2021-04-27/",
         title: "2021-04-27 release",
         description: "New Features and Enhancements # Enterprise Edition # PCRE Library #  The PCRE library has now been added to the BluBracket regular expression feature. This is an extension to our previous library and will allow users to pattern match more regular expressions than previously.  Community Edition # Command Line Interface (CLI) Tool - PII Addition #  In addition to built-in secrets and custom secrets, CLI does support the ability to define a different group of “secrets” related to PII (Personally Identifiable Information) such as Social Security Numbers (SSN), emails, URLs, IP-addresses, etc.",
@@ -1963,7 +2029,7 @@ Source:
       })
       .add(
       {
-        id: 119,
+        id: 122,
         href: "/release-notes/2021-04-16/",
         title: "2021-04-16 release",
         description: "New Features and Enhancements # No new features in this release. # Bug Fixes #   CORE-6128 - CE - Incorrect count being displayed for duplicate alerts. Has been addressed.\n  CORE-5030 - Redundant URL being displayed in code copy details. Fixed.\n  CORE-5543 - Repository contribution table on BluPrint page is throwing an error when clicked. This is now fixed.\n  CORE-6284 - Issue with GitHub Checks app never completing scan if two users are both monitoring the same repository.",
@@ -1975,7 +2041,7 @@ Source:
       })
       .add(
       {
-        id: 120,
+        id: 123,
         href: "/release-notes/2021-03-26/",
         title: "2021-03-26 release",
         description: "New Features and Enhancements # Enterprise Edition # Rescan Repository #  It is now possible to rescan an entire repository, including all of the repository history, at the click of a button. Normally a full scan of a repository is done at the time of adding the code server that the repository belongs to, or whenever the repository is added. After that the initial scan the repository is monitored and all new commits are scanned and only periodically is the entire repository scanned.",
@@ -1987,7 +2053,7 @@ Source:
       })
       .add(
       {
-        id: 121,
+        id: 124,
         href: "/release-notes/2021-03-12/",
         title: "2021-03-12 release",
         description: "New Features and Enhancements # New Public APIs #   Two new APIs have been added to the list of public APIs available. The two new APIs allow users to dismiss alerts and re-enabled alerts that have been dismissed. This is especially important for users that have integrated with their CICD solutions and want to complete the loop. For example, a developer commits code that triggers a BluBracket alert, the user’s CICD integration recognizes the alert, creates a ticket and notification to the appropriate developer/administrator to remediate the issue, the developer/administrator remediates and closes the ticket, which triggers the API to dismissed the addressed alert in BluBracket.",
@@ -1999,7 +2065,7 @@ Source:
       })
       .add(
       {
-        id: 122,
+        id: 125,
         href: "/release-notes/2021-03-05/",
         title: "2021-03-05 release",
         description: "New Features # Command Line Interface (CLI) Tool Enhancements #   A number of significant changes have been added to the CLI tool this with this release of the Community Edition. All of these improvements, except for code signing of course, have been taken from the existing features within the enterprise version of the BluBracket solution.\n  Activeness Checks - The CLI tool now runs an activeness check on a number of the tokens, keys and IDs to eliminate false positives.",
@@ -2011,7 +2077,7 @@ Source:
       })
       .add(
       {
-        id: 123,
+        id: 126,
         href: "/release-notes/2021-02-12/",
         title: "2021-02-12 release",
         description: "New Features # Repo Details Slide Out #   Clicking on any row within the repository table will now expose a repository details slide out panel. Within this panel the user can see all of the unreviewed secrets that compose the Repo Risk Score for the specific repository. Users are still able to navigate to the GitHub repository, as was the previous action by clicking on a given repo, by clicking on the deep link within the slide out.",
@@ -2023,7 +2089,7 @@ Source:
       })
       .add(
       {
-        id: 124,
+        id: 127,
         href: "/release-notes/2021-02-02/",
         title: "2021-02-02 release",
         description: "New Features # Repo Risk Score and Secret Risk Score #   The BluBracket Community Edition has introduced the concepts of Repository Risk Score and Secret Risk Score to the interface as of this release. This feature is meant to give the user, at a glance, an idea of the potential risk involved with a specific repository.\n  The Repository Risk Score is a number that is meant to reflect the number of unreviewed secrets that exist within the repository as well as their potential severity.",
@@ -2035,7 +2101,7 @@ Source:
       })
       .add(
       {
-        id: 125,
+        id: 128,
         href: "/release-notes/2021-01-22/",
         title: "2021-01-22 release",
         description: "Bug Fixes #  CORE-5377 - Updated the Community Edition secrets table to include a loading spinner CORE-5468 - Fixed the incorrect URL for Secrets in Code documentation CORE-4744 - Sorting fix for the repository list view CORE-5357 - A number of minor UI fixes were taken care of in the Community Edition CORE-5370 - Fixed the Community Edition Safari issue with the insight tile sizing CORE-5371 - Topbar icon fix for Community Edition CORE-5485 - Addressed the Bitbucket push event when no nickname in payload  ",
@@ -2047,7 +2113,7 @@ Source:
       })
       .add(
       {
-        id: 126,
+        id: 129,
         href: "/contributors/",
         title: "Contributors",
         description: "",

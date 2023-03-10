@@ -2,9 +2,7 @@
 Go to Settings.
 Click the Users Tab.
 Click Add User Assign a unique username.
-Enter the user’s email address.</description></item><item><title>Configure Azure AD</title><link>https://docs.blubracket.com/how-to/add-user-ad-saml/</link><pubDate>Wed, 12 Jan 2022 02:48:57 +0000</pubDate><guid>https://docs.blubracket.com/how-to/add-user-ad-saml/</guid><description>BluBracket supports single sign-on and federated identity services with Azure Active Directory using SAML. This article covers configuring the BluBracket app in Azure AD, configuring the Azure AD SAML federation in BluBracket, and managing users.
-Once single sign-on is configured as described below, authentication, passwords, and two-factor authentication are managed and configured in Azure AD.
-However, users must be registered in both BluBracket and Azure AD. Removing a user from either Azure or BluBracket will terminate their access to BluBracket.</description></item><item><title>Remediate alerts</title><link>https://docs.blubracket.com/how-to/remediate-alerts/</link><pubDate>Wed, 12 Jan 2022 02:48:57 +0000</pubDate><guid>https://docs.blubracket.com/how-to/remediate-alerts/</guid><description>There are a number of best practices when it comes to handling secrets in code. Below are a few:
+Enter the user’s email address.</description></item><item><title>Remediate alerts</title><link>https://docs.blubracket.com/how-to/remediate-alerts/</link><pubDate>Wed, 12 Jan 2022 02:48:57 +0000</pubDate><guid>https://docs.blubracket.com/how-to/remediate-alerts/</guid><description>There are a number of best practices when it comes to handling secrets in code. Below are a few:
 Encrypt your secrets
 Use environmental variables
 Use a secret manager to store your secrets, like HashiCorp Vault, Azure Key Vault, etc.
