@@ -67,5 +67,3 @@ Tenant administrators must add users to their BluBracket tenant prior to login v
 ### Test the Okta/SAML configuration
 
 Open `https://your-account-name.blubracket.com` in a new private browser window or open a different browser to test the Single Sign-on changes (Be sure to replace `your-account-name` with the name of your account name provided by BluBracket). The login page should automatically redirect to Okta, if Okta authentication is successful, the user will then be redirected back to BluBracket and logged into the tenant.
-
-Troubleshooting: use `https://your-account-name.blubracket.com/login?force=true` to login via local authentication
