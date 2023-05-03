@@ -83,5 +83,3 @@ Tenant administrators must add users to their BluBracket tenant prior to login v
 ### Test the Azure AD/SAML configuration
 
 Open `https://TENANT_NAME.blubracket.com` in a new private browser window or open a different browser to test the Single Sign-on changes (Be sure to replace `TENANT_NAME` with the name of your tenant name provided by BluBracket). The login page should automatically redirect to Azure AD, if Azure AD authentication is successful, the user will then be redirected back to BluBracket and logged into the tenant.
-
-Troubleshooting: use `https://TENANT_NAME.blubracket.com/login?force=true` to login via local authentication
