@@ -58,7 +58,7 @@ copyRight = "Copyright (c) 2019-2021 BluBracket"
 # Alert
 alert = true
 alertDismissable = true
-alertText = "This documentation is in active development. <a class=\"alert-link stretched-link\" href=\"/contact-support/\">Please contact us</a> if you discover anything broken or missing, or have any questions."
+alertText = "BluBracket has been acquired by HashiCorp. <a class=\"alert-link stretched-link\" href=\"https://www.hashicorp.com/blog/announcing-acquisition-of-blubracket/\">Read more</a>"
 
 # Edit Page
 # repoHost [Github | Gitea | GitLab] is used for building the edit link based on git hoster

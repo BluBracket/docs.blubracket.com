@@ -20,7 +20,6 @@ BluBracket is most often used to identify risks in code, who has access, and whe
   - [Personally identifiable information (PII)](#pii)
   - [Non-inclusive language (NIL)](#inclusive-language)
   - [Code analysis (SAST)](#sast)
-  - [Infrastructure-as-code (IAC) risks](#iac)
   - [Dependency vulnerabilities](#sca)
 - [Monitoring who and what has access to your code](#access-auditing)
 - [Monitoring where your code goes](#code-leaks)
@@ -44,14 +43,6 @@ BluBracket's deep scans identify PII in git history, show teams the PII risk acr
 Companies and open source communities are both increasingly aware of the role inclusive language plays in attracting and retaining team members in all roles. Non-inclusive language creates both significant brand risks, as well as retention risks.
 
 BluBracket's tools help identify non-inclusive language throughout the development process, and guide teams to continuous improvement over time.
-
-## Infrastructure as code (IaC) risks (powered by Checkov) {#iac}
-
-Monitoring infrastructure-as-code for proper configuration before it's applied to the infrastructure reduces risk and improves productivity for teams of all sizes.
-
-BluBracket's tools automatically and continuously audit IaC throughout the development process, but teams value the guidance most when reviewing pull requests.
-
-[Learn more about how BluBracket has integrated Checkov](https://docs.blubracket.com/faq/how-does-blubracket-iac-scanning-compare-to-checkov/) and the unique features available when using Checkov inside BluBracket.
 
 ## Dependency vulnerabilities (powered by Snyk) {#sca}
 
