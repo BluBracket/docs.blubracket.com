@@ -360,24 +360,6 @@ Source:
       .add(
       {
         id: 15,
-        href: "/faq/how-does-blubracket-iac-scanning-compare-to-checkov/",
-        title: "How does BluBracket IaC scanning compare to Checkov?",
-        description: "Detection by Checkov. Workflow by BluBracket.",
-        
-          
-            
-          
-            
-          
-        
-        
-        
-        content: "infrastructure as codeIaCBluBracket\u0026rsquo;s IaC scanning is built on the open source Checkov scanner, combined with BluBracket\u0026rsquo;s workflow tools optimized to help development teams identify new risks before propagating in code, and knock down the risks already in their code through continuous improvement.\n    Checkov BluBracket IaC scanning     IaC scanning ✅ ✅   Graph-based queries ✅ On roadmap   IDE integration ✅ ✅   IaC policy violations ✅ ✅   Custom policies Requires customization On roadmap   Notifications ⛔️ ✅   Dashboards ⛔️ ✅   External dependencies/\nsupply chain tracking ⛔️ On roadmap   Compliance reporting ⛔️ ✅   Repo integration ⛔️ ✅   Central configuration ⛔️ ✅   REST API ⛔️ ✅   CI/CD integrations Limited ✅   Notifications ⛔️ ✅   Support level Community Enterprise    "
-        
-      })
-      .add(
-      {
-        id: 16,
         href: "/faq/what-does-blubracket-do-with-my-data/",
         title: "How does BluBracket use my data?",
         description: "First and foremost, BluBracket is committed to helping customers improve security. To that end, we minimize the data we have access to, minimize the data we store, and delete code and secrets from BluBracket systems after processing is complete.\nBluBracket only stores metadata about your code and git servers, and uses cryptographic hashes to track and compare files and secrets across different contexts—BluBracket never stores sensitive data after processing.\nThis metadata is retained exclusively for your use on our platform, and is deleted upon termination.",
@@ -401,7 +383,7 @@ Source:
       })
       .add(
       {
-        id: 17,
+        id: 16,
         href: "/faq/how-does-the-blubracket-checks-app-check-my-pull-requests/",
         title: "How does the BluBracket checks app check my pull requests?",
         description: "Overview of how the BluBracket checks app for GitHub works.",
@@ -423,7 +405,7 @@ Source:
       })
       .add(
       {
-        id: 18,
+        id: 17,
         href: "/faq/how-long-does-it-take-to-scan-new-commits/",
         title: "How long does it take for BB to scan new commits?",
         description: "The time it takes for BluBracket to scan new commits depends on the size of the commit. In most cases though the scan is perceived as immediate.",
@@ -443,7 +425,7 @@ Source:
       })
       .add(
       {
-        id: 19,
+        id: 18,
         href: "/faq/created-free-account-github-can-i-check-gitlab-bitbucket-repos/",
         title: "If I create a free account via GitHub, can I check code on GitLab or Bitbucket servers?",
         description: "Yes! After sign up, you can add repositories via any supported supported code server .",
@@ -467,7 +449,7 @@ Source:
       })
       .add(
       {
-        id: 20,
+        id: 19,
         href: "/api/intro-auth-keys/",
         title: "Intro to BluBracket APIs and API keys",
         description: "How to access and use the BluBracket API.",
@@ -483,7 +465,7 @@ Source:
       })
       .add(
       {
-        id: 21,
+        id: 20,
         href: "/intro/",
         title: "Introduction to BluBracket ",
         description: "",
@@ -495,7 +477,7 @@ Source:
       })
       .add(
       {
-        id: 22,
+        id: 21,
         href: "/faq/what-can-i-do-with-blubracket-apis/",
         title: "What can I do with BluBracket APIs?",
         description: "Use BluBracket APIs to integrate with your CI/DC solution. This will help make sure that there are no secrets accidentally checked in to code by any of your team members.\nYou may also leverage BluBracket APIs to export secret found events to other systems in addition to our support for Slack, Splunk, and others.",
@@ -511,7 +493,7 @@ Source:
       })
       .add(
       {
-        id: 23,
+        id: 22,
         href: "/faq/what-can-i-do-with-the-free-trial/",
         title: "What can I do with BluBracket Community Edition?",
         description: "BluBracket Community Edition has all the features of the BluBracket Team Edition , including:\n Risk detection for secrets , PII , non-inclusive language , and infrastructure-as-code , and other risks in code  Workflow support from pre-commit through historical risk remediation  Those tools can help you:\n Understand your overall code health and see the areas of highest risk Implement workflows to stop new risks from getting into code Monitor your code health and watch it improve with every commit   These docs walk through the sign-up process .",
@@ -527,7 +509,7 @@ Source:
       })
       .add(
       {
-        id: 24,
+        id: 23,
         href: "/faq/what-does-the-cli-tool-do/",
         title: "What does the BluBracket CLI tool do?",
         description: "The BluBracket CLI tool provides a number of developer conveniences, and is optimized to check for the following at git pre-commit:\n Secrets:the tool identifies hundreds of types of tokens, keys, IDs as well as passwords. Non-inclusive language: the tool identifies non-inclusive language like master, slave, dummy, and blacklist. Custom RegEx: you can configure your own regular expressions that the tool will identify and alert on. Commit Signing:the CLI can check that the commit is going to be signed or not.",
@@ -549,7 +531,7 @@ Source:
       })
       .add(
       {
-        id: 25,
+        id: 24,
         href: "/faq/what-permissions-do-you-require/",
         title: "What GitHub permissions does the BluBracket app require?",
         description: "When you authenticate into BluBracket using GitHub Oauth you will see and approve the following permissions:\n Read access to administration, code, members, metadata, organization administration, and pull requests Read and write access to checks, organization hooks, and repository hooks  These permissions allow BluBracket to monitor the repositories that you select and present you with any secrets found as well as contributor/commit information.",
@@ -567,7 +549,7 @@ Source:
       })
       .add(
       {
-        id: 26,
+        id: 25,
         href: "/faq/supported-ide/",
         title: "What IDEs are supported by the CLI tool?",
         description: "In our testing, any IDE (integrated developer environment) with built-in support for git and pre-commit hooks supports supports the feedback and alerts from the BluBracket CLI tool.\nBluBracket officially supports the following IDEs:\n IntelliJ VS Code  ",
@@ -585,7 +567,7 @@ Source:
       })
       .add(
       {
-        id: 27,
+        id: 26,
         href: "/faq/what-if-i-need-more-time-for-my-free-trial/",
         title: "What if I need more time for my free trial?",
         description: "The BluBracket Community Edition is free for individuals and teams of up to 50 developers, and has no time limits.\nFree trials of the BluBracket Team Edition have no time limit. Our goal is to build a product you want to use because it provides value to you.\nAs always, our customer success team is here to help .",
@@ -601,7 +583,7 @@ Source:
       })
       .add(
       {
-        id: 28,
+        id: 27,
         href: "/intro/what-is-blubracket/",
         title: "What is BluBracket?",
         description: "BluBracket is a code and git security suite that identifies risks in your code, monitors who and what has access to your code, and tracks where your code goes outside your git repos.\n  BluBracket use-cases #  Identifying, preventing, and removing risks in code   Secrets   Personally identifiable information (PII)   Non-inclusive language (NIL)   Code analysis (SAST)   Infrastructure-as-code (IAC) risks   Dependency vulnerabilities     Monitoring who and what has access to your code   Monitoring where your code goes   Who is BluBracket for?",
@@ -613,7 +595,7 @@ Source:
       })
       .add(
       {
-        id: 29,
+        id: 28,
         href: "/faq/what-sensitive-words-does-you-search-for/",
         title: "What non-inclusive language does the BluBracket search for?",
         description: "It has become increasingly important lately to make sure specific sensitive words are not included in code or documentation. These would be words like: master, slave, dummy, blacklist, etc. Just as with secrets, the BluBracket code scanner and CLI tool automatically search for these sensitive words and notifies the developer before they are committed to repositories.\nExample non-inclusive language includes the following words:\n master slave whitelist blacklist whitebox blackbox whitehat blackhat  Let us know if there are any others that you or your company think should be added to the list.",
@@ -635,7 +617,7 @@ Source:
       })
       .add(
       {
-        id: 30,
+        id: 29,
         href: "/faq/cli-supported-platforms/",
         title: "What platforms are supported by the BluBracket CLI tool?",
         description: "The BluBracket CLI tool is supported on the following platforms:\n Mac OSX 10.12 and later Linux  Alpine 5 and later Ubuntu 16.04 and later CentOS 7 and later   Windows 10  ",
@@ -657,7 +639,7 @@ Source:
       })
       .add(
       {
-        id: 31,
+        id: 30,
         href: "/faq/what-repositories-can-i-monitor/",
         title: "What repositories can I monitor?",
         description: "BluBracket can monitor any repositories on a supported code server that you have access to. Fully supported code servers include cloud and enterprise versions of:\n GitHub GitLab Bitbucket  Support for additional code servers is in development, and may be available in private beta.\nOn GitHub, for example, you can monitor repos in your personal GitHub org as well as company/group orgs where you have permission to add apps.",
@@ -677,7 +659,7 @@ Source:
       })
       .add(
       {
-        id: 32,
+        id: 31,
         href: "/faq/what-risks-can-code-vulnerabilities-uncover/",
         title: "What risks can the code vulnerabilty checks uncover?",
         description: "Default code vulnerability scanning policies and capabilities",
@@ -697,25 +679,7 @@ Source:
       })
       .add(
       {
-        id: 33,
-        href: "/faq/what-risks-can-the-iac-scans-find/",
-        title: "What risks can the infrastructure-as-code (IaC) checks uncover?",
-        description: "Default IaC scanning policies and capabilities",
-        
-          
-            
-          
-            
-          
-        
-        
-        
-        content: "infrastructure as codeIaCBluBracket\u0026rsquo;s infrastructure-as-code (IaC) scanning runs automatically on every repository. If there are any supported IaC-related files, they\u0026rsquo;ll be scanned for risks according to best-practices recommendations outlined below.\nWhat IaC file types are supported #  Terraform (for AWS, GCP, Azure and OCI) CloudFormation (including AWS SAM) Azure Resource Manager (ARM) Serverless framework Helm charts Kubernetes Docker  What rules are checked # AWS General #  AWS EBS Volumes are not encrypted AWS EBS Snapshots are not encrypted AWS EBS volumes do not have encrypted launch configurations AWS RDS DB cluster data is not encrypted at rest Data stored in SageMaker is not securely encrypted at rest AWS SNS topic server-side encryption is not enabled AWS SQS server-side encryption is not enabled Amazon DynamoDB Point-In-Time Recovery (PITR) is not enabled AWS ElastiCache Redis cluster data is not encrypted at rest AWS ElastiCache Redis cluster data in-transit is not encrypted AWS ElastiCache Replication Group data in-transit is not encrypted AWS Elastic File System (EFS) data is not encrypted at rest AWS Kinesis streams server-side encryption is not enabled Amazon Neptune storage is not securely encrypted Amazon DynamoDB Accelerator (DAX) is not securely encrypted at rest Amazon Elastic Container Registry (ECR) image tags are not immutable AWS Redshift cluster data is not encrypted at rest Amazon CloudFront distribution does not have Web Application Firewall (WAF) enabled Amazon DocumentDB data is not securely encrypted at rest AWS Athena Database is not securely encrypted at rest AWS CodeBuild project encryption is disabled AWS EC2 Instance Metadata Service version 1 (IMDSv1) is enabled Amazon Managed Streaming for Apache Kafka (MSK) cluster encryption at rest and in transit is not enabled AWS Athena workgroup does not prevent disabling encryption AWS Glue Data Catalog encryption is not enabled Amazon Aurora data is not securely encrypted at rest Elastic File System (EFS) volumes in ECS task definitions do not have encryption in transit enabled AWS SageMaker notebook instance data is not encrypted at rest AWS Glue security configuration encryption is not enabled Amazon Neptune cluster instance is publicly available AWS Load Balancer listener is not using TLS 1.2 AWS Load Balancer does not have deletion protection Amazon Elastic MapReduce (EMR) cluster is not configured with Kerberos authentication AWS Lambda function is not configured for function-level concurrent execution limit AWS Lambda does not have dead letter queue configured AWS Lambda Function is not assigned to access within VPC Amazon DynamoDB tables are not encrypted Elastic load balancers do not use SSL Certificates provided by AWS Certificate Manager AWS KMS Customer Managed key rotation is disabled AWS RDS instance does not have backup policy Amazon ElastiCache Redis clusters do not have automatic backup turned on AWS EC2 instance is not EBS optimized AWS Elastic Container Registry (ECR) repository encryption is disabled AWS RDS cluster/instance has deletion protection disabled AWS RDS Global Cluster data is not encrypted Amazon Redshit cluster version upgrades are disabled Amazon Redshit cluster data is not encrypted using AWS KMS AWS S3 bucket lock configuration is disabled AWS S3 bucket cross-region replication disabled AWS S3 bucket objects are not encrypted using AWS KMS AWS RDS instance does not have Multi-AZ enabled AWS Elastic Container Registry (ECR) image scan on push is not enabled AWS resource does not have any tags set EBS volume attached to AWS EC2 Instance is not encrypted Amazon GuardDuty is not enabled to specific org/region AWS RDS cluster does not have AWS Backup\u0026rsquo;s backup plan AWS EBS volume does not have AWS Backup\u0026rsquo;s backup plan AWS Redshift cluster does not have AWS Backup\u0026rsquo;s backup plan Amazon DynamoDB table does not have Auto Scaling enabled Amazon Elastic File System (EFS) does not have AWS Backup\u0026rsquo;s backup plan Dynamodb point in time recovery is not enabled for global tables Backup Vault is not encrypted at rest using KMS CMK Glacier Vault access policy is public and not restricted to specific services or principals SQS queue policy is public and access is not restricted to specific services or principals SNS topic policy is public and access is not restricted to specific services or principals QLDB ledger permissions mode is not set to STANDARD EMR cluster is not configured with SSE KMS for data at rest encryption (Amazon S3 with EMRFS) AWS Image Builder component not encrypted using Customer Managed Key AWS S3 Object Copy not encrypted using Customer Managed Key AWS Doc DB not encrypted using Customer Managed Key AWS EBS Snapshot Copy not encrypted using Customer Managed Key AWS Elastic File System (EFS) not encrypted using Customer Managed Key AWS Kinesis streams encryption using default KMS keys instead of Customer\u0026rsquo;s Managed Master Keys AWS S3 Object Copy not encrypted using Customer Managed Key AWS Sagemaker domain not encrypted using Customer Managed Key AWS Redshift Cluster not encrypted using Customer Managed Key AWS EBS Volume not encrypted using Customer Managed Key AWS Elasticache replication group not configured with CMK key** AWS Glue component has no security configuration associated Route53 A Record does not have Attached Resource  AWS Networking #  AWS Application Load Balancer (ALB) protocol is not HTTPS Not every Security Group rule has a description AWS Security Group allows all traffic on SSH port 22 Security Group allows ingress from 0.0.0.0/0 to port 3389 Amazon CloudFront distribution ViewerProtocolPolicy is not set to HTTPS Amazon DocumentDB Transport Layer Security (TLS) is disabled AWS SageMaker notebook instance is not configured with direct internet access feature AWS VPC endpoint service is not configured for manual acceptance AWS Application Load Balancer (ALB) does not drop HTTP headers AWS ElasticSearch cluster is not in a VPC AWS Elastic Load Balancer (ELB) has cross-zone load balancing disabled Not all Network Access Control Lists (NACLs) are attached to subnets Security Groups are not attached to EC2 instances or ENIs AWS S3 Bucket does not have public access blocks Amazon EMR cluster security groups are open to the world AWS Default Security Group does not restrict all traffic Auto scaling groups associated with a load balancer do not use elastic load balancing health checks AWS EC2 instance is not configured with VPC Not all Eastic IP addresses allocated to a VPC are attached to EC2 instances or NAT Gateways Application Load Balancer (ALB) does not redirect HTTP requests into HTTPS Transfer Server is publicly exposed CloudFront web distribution that allow TLS versions 1.0 or lower AWS WAF does not have associated rules WAF allows message lookup in Log4j2 Application Load Balancer (ALB) not configured with AWS Web Application Firewall v2 (AWS WAFv2) Public API gateway not configured with AWS Web Application Firewall v2 (AWS WAFv2)  AWS Logging #  AWS KMS Customer Managed Key (CMK) rotation is not enabled AWS CloudTrail logs are not encrypted using AWS KMS Customer Managed Key (CMK) AWS CloudTrail log validation is not enabled in all regions Amazon MQ Broker logging is not enabled Container insights are not enabled on ECS cluster AWS CloudWatch log groups do not specify retention days AWS CloudTrail is not enabled in all regions AWS Redshift database does not have audit logging enabled Amazon API Gateway does not have X-Ray tracing enabled AWS Global Accelerator does not have Flow logs enabled Amazon API Gateway does not have access logging enabled Amazon Managed Streaming for Apache Kafka (MSK) cluster logging is not enabled Amazon DocumentDB logging is not enabled Amazon CloudFront distribution has access logging disabled AWS Classic Elastic Load Balancer (ELB) does not have access logging enabled AWS Elastic Load Balancer (ELB) does not have access logging enabled Amazon Neptune logging is not enabled Enhanced monitoring for Amazon RDS instances is enabled AWS config is not enabled in all regions AWS CloudFormation stack configured without SNS topic Detailed monitoring for EC2 instances is disabled Amazon CloudWatch logs are not encrypted at rest using KMS CMKs Amazon API Gateway stage does not have logging level defined appropriately AWS CloudTrail trail is not integrated with CloudWatch Log AWS VPC Flow logs not enabled Postgres RDS does not have Query Logging enabled Postgres RDS does not have Query Logging enabled AWS WAF2 does not have a Logging Configuration  AWS IAM #  AWS IAM policy allows full administrative privileges AWS IAM password policy does not expire within 90 days AWS IAM password policy does not have a minimum of 14 characters AWS IAM password policy does not have a lowercase character AWS IAM password policy does not have a number AWS IAM password policy allows password reuse AWS IAM password policy does not have a symbol AWS IAM password policy does not have an uppercase character AWS IAM policies are not only attached to Groups and Roles AWS IAM policy documents allow * (asterisk) as a statement\u0026rsquo;s action AWS IAM role does not allow only specific services or principals to be assumed AWS IAM policy allows assume role permission across all services AWS IAM policy allows full administrative privileges AWS IAM policy documents allow * (asterisk) as a statement\u0026rsquo;s action AWS SQS policy documents allow * (asterisk) as a statement\u0026rsquo;s action AWS IAM policies allow credentials exposure for ECR AWS IAM policies allow data exfiltration without resource constraints AWS IAM policies allow modification of policies and exposes resources AWS IAM policies allow write access without constraint IAM authentication for Amazon RDS clusters is disabled Respective logs of Amazon RDS are disabled AWS IAM groups do not include at least one IAM user Not all AWS IAM users are members of at least one IAM group IAM User has access to the console  AWS ElasticSearch #  AWS Elasticsearch domain encryption for data at rest is disabled AWS Elasticsearch does not have node-to-node encryption enabled AWS Elasticsearch domains do not have enforce HTTPS AWS Elasticsearch domain logging is not enabled  AWS Public #  AWS RDS database instance is publicly accessible AWS ECR repository is exposed to public Amazon API gateway methods are publicly accessible Amazon MQ is publicly accessible AWS Redshift clusters should not be publicly accessible AWS EC2 instances with public IP and associated with security groups have Internet access AWS Database Migration Service (DMS) replication instance should be publicly accessible  AWS S3 #  AWS access logging is not enabled on S3 buckets Data stored in the AWS S3 bucket is not securely encrypted at rest AWS S3 Bucket ACL grants READ permission to everyone AWS S3 object versioning is disabled AWS S3 bucket has block public ACLs disabled AWS S3 bucket BlockPublicPolicy is not set to True AWS S3 bucket IgnorePublicAcls is not set to True AWS S3 bucket RestrictPublicBucket is not set to True AWS S3 bucket is publicly writable AWS S3 bucket allows an action with any Principal AWS S3 bucket policy locks out all but root user  AWS EKS #  AWS EKS control plane logging is disabled AWS EKS cluster security group overly permissive to all traffic AWS EKS cluster endpoint access is publicly enabled AWS EKS cluster does not have secrets encryption enabled AWS EKS node group does not have implicit SSH access from 0.0.0.0/0 AWS EKS Kubernetes secrets are not encrypted  AWS Secrets #  AWS access keys and secrets are hard coded in infrastructure AWS Lambda function\u0026rsquo;s environment variables expose secrets AWS EC2 Instance user data exposes secrets  AWS Serverless #  AWS Lambda functions do not have tracing enabled  Azure General #  Azure VM data disk is encrypted with the default encryption key instead of ADE/CMK Azure App Service Web app authentication is Off Standard pricing tier is not selected No security contact phone number is present Send email notification for high severity alerts is not enabled Send email notification for high severity alerts to admins is not enabled Azure SQL Server threat detection alerts are not enabled for all threat types Azure SQL server send alerts to field value is not set MSSQL servers do not have email service and co-administrators enabled Not all keys have an expiration date Azure key vault is not recoverable A retention period of less than 90 days is not specified Azure Linux scale set does not use an SSH key Virtual Machine extensions are installed Azure Security Center Defender is set to Off for servers Azure function app authentication is set to Off CORS allows resource to access app services Azure Security Center Defender is set to Off for app service CORS allows resources to access function apps Azure function app does not use HTTP 2.0 Azure Security Center Defender is set to Off for Azure SQL database servers Managed identity provider is not enabled for app services Remote debugging is enabled for app services Automation account variables are not encrypted Azure Data Explorer does not use disk encryption Azure Data Explorer does not use double encryption Azure Batch account does not use key vault to encrypt data FTP Deployments are enabled Azure Defender is set to Off for SQL servers on machines Azure App Service Web app does not use the latest .Net Core version Azure App Service Web app does not use the latest PHP version Azure App Service Web app does not use the latest Python version Azure App Service Web app does not use the latest Java version Azure Security Center Defender is set to Off for storage Azure Security Center Defender is set to Off for Kubernetes Azure Defender is set to Off for container registries Azure Security Center Defender set to Off for Key Vault App services do not use Azure files Azure Virtual Machines are not utilizing managed disks Managed disks do not use a specific set of disk encryption sets for customer-managed key encryption My SQL server disables geo-redundant backups Automatic OS image patching is disabled for Virtual Machine scale sets MySQL server disables infrastructure encryption Virtual Machine scale sets do not have encryption at host enabled Cosmos DB Accounts do not have CMKs encrypting data at rest PostgreSQL server disables geo-redundant backups Azure Data Factory does not use Git repository for source control Unencrypted Data Lake Store accounts Key vault disables purge protection Key vault does not enable soft delete Key vault key is not backed by HSM Key vault secrets do not have content_type set My SQL server does not enable Threat Detection policy PostgreSQL server does not enable Threat Detection policy MariaDB server does not enable geo-redundant backups PostgreSQL server does not enable infrastructure encryption Security contact emails are not set Storage for critical data are not encrypted with CMKs Azure SQL server ADS Vulnerability Assessment is disabled Azure SQL server ADS Vulnerability Assessment Periodic recurring scans is disabled Azure SQL server ADS VA Send scan reports to is not configured Azure SQL server ADS VA Also send email notifications to admins and subscription owners is disabled SQL servers do not have Azure Active Directory admin configured Azure Virtual Machines are not utilizing managed disks Microsoft Antimalware is not configured to automatically update Virtual Machines Azure Data Explorer encryption at rest does not use a CMK Virtual Machines are not backed up using Azure backup SQL servers do not enable data security policy Unattached disks are not encrypted Azure data factories are not encrypted with a CMK MySQL server does not enable CMKs for encryption PostgreSQL server does not enable CMKs for encryption Azure storage account encryption CMKs are disabled  Azure Logging #  Azure Network Watcher NSG flow logs retention is less than 90 days Azure SQL server auditing is disabled Azure SQL server audit log retention is less than 91 days Storage logging for queue service does not have read, write, and delete requests enabled Activity log retention is set to less than 365 days Log profile is not configured to capture all activities App service does not enable HTTP logging App service disables detailed error messages App service does not enable failed request tracing The storage container storing activity logs is publicly accessible Azure storage account logging for tables is disabled Azure storage account logging for blobs is disabled  Azure IAM #  App Service is not registered with an Azure Active Directory account Azure subscriptions with custom roles are overly permissive  Azure Networking #  Azure instance does not authenticate using SSH keys RDP Internet access is not restricted SSH Internet access is not restricted SQL databases allow ingress from 0.0.0.0/0 Azure App Service Web app does not redirect HTTP to HTTPS Web App does not use the latest version of TLS encryption Web App does not have incoming client certificates enabled Web App does not use the latest version of HTTP MySQL server databases do not have Enforce SSL connection enabled Azure PostgreSQL database server with SSL connection is disabled Azure PostgreSQL database server with log checkpoints parameter is disabled Azure PostgreSQL database server with log connections parameter is disabled Azure PostgreSQL database server with connection throttling parameter is disabled Public access level for Blob Containers is not set to private Azure Storage Account default network access is set to Allow Azure Storage Account Trusted Microsoft Services access is not enabled MariaDB servers do not have Enforce SSL connection enabled Azure Synapse Workspaces do not enable managed virtual networks Azure storage account allows blob container with public access Storage accounts without secure transfer enabled Azure file sync enables public network access PostgreSQL server does not disable public network access Function apps are not only accessible over HTTPS UDP Services are not restricted from the Internet Azure cache for Redis has public network access enabled My SQL server enables public network access Not only SSL are enabled for cache for Redis Azure container container group is not deployed into a virtual network Cosmos DB accounts do not have restricted access Azure Cosmos DB enables public network access Azure Data factory public network access is enabled Azure Event Grid domain public network access is enabled API management services do not use virtual networks* Azure IoT Hub enables public network access Key vault does not allow firewall rules settings SQL Server is enabled for public network access Azure virtual machine NIC has IP forwarding enabled Network interfaces use public IPs Azure application gateway does not have WAF enabled Azure front door does not have WAF enabled Application gateway does not use WAF in Detection or Prevention modes Azure front door does not use WAF in Detection or Prevention modes Azure cognitive search does not disable public network access Azure Synapse workspaces have IP firewall rules attached Front Door WAF allows message lookup in Log4j2 Cognitive Services does not disable public network access Application Gateway WAF allows message lookup in Log4j2  Azure Storage #  Secure transfer required is not enabled Storage account does not use the latest version of TLS encryption CosmosDB account enables privileged escalation by not restricting management plane changes Cognitive Services account encryption CMKs are disabled  Azure Kubernetes Service #  Azure AKS cluster monitoring is not enabled Azure AKS enable RBAC not enforced AKS API server does not define authorized IP ranges AKS cluster network policies are not enforced Kubernetes dashboard is not disabled AKS is not enabled for private clusters AKS does not use Azure policies add-on AKS does not use disk encryption set  Azure Secrets #  AKV secrets do not have an expiration date set AKV secrets do not have an expiration date set  Azure Public #  MariaDB servers do not have public network access enabled set to False  Google Kubernetes Engine #  Stackdriver logging on Kubernetes engine clusters is disabled ABAC authorization on Kubernetes engine clusters is enabled GCP Kubernetes engine clusters have stackdriver logging disabled GCP Kubernetes cluster node auto-repair configuration is disabled GCP Kubernetes cluster node auto-upgrade configuration is disabled GCP Kubernetes engine clusters have network policy disabled GCP Kubernetes engine clusters have client certificate disabled GKE control plane is public GCP Kubernetes engine clusters have basic authentication enabled Master authorized networks are not enabled in GKE clusters GCP Kubernetes engine clusters do not have any label information GCP Kubernetes engine clusters are not using Container-Optimized OS for node image Kubernetes clusters are not created with alias IP ranges enabled PodSecurityPolicy controller is not enabled on Kubernetes engine clusters Private cluster is disabled when creating Kubernetes clusters VPC flow logs and intranode visibility are disabled GCP Kubernetes Engine Clusters not configured with private nodes feature Kubernetes RBAC users are not managed with Google Groups for GKE Binary authorization is not used GCP Kubernetes engine clusters have legacy compute engine metadata endpoints enabled Secure boot for shielded GKE nodes is disabled The GKE metadata server is disabled Shielded GKE nodes are not enabled Integrity monitoring for shielded GKE nodes is not enabled GCP Kubernetes engine cluster nodes have default service account for project access  GCP Networking #  GCP Firewall rule allows all traffic on SSH port 22 GCP Firewall rule allows all traffic on RDP port 3389 GCP HTTPS load balancer is configured with SSL policy having TLS version 1.1 or lower Cloud SQL database instances are publicly accessible GCP Cloud DNS has DNSSEC disabled RSASHA1 is used for Zone-Signing and Key-Signing Keys in Cloud DNS DNSSEC Default network exists in a project GCP VM instances have block project-wide SSH keys feature disabled GCP projects have OS login disabled Project instance overrides the project setting enabling OSLogin GCP VM instances have serial port access enabled IP forwarding on instances is enabled GCP project is configured with legacy network Cloud Armor allows message lookup in Log4j2 GCP Firewall rule allows all traffic on MySQL port 3306  GCP General #  Incoming connections to Cloud SQL database instances do not use SSL Cloud SQL database instances do not have backup configuration enabled GCP BigQuery dataset is publicly accessible GCP VM disks not encrypted with CSEKs Boot disks for instances do not use CSEKs Compute instances launch without shielded VM enabled GCP KMS encryption key is not rotating every 90 days There are not only GCP-managed service account keys for each service account Cloud KMS cryptokeys are anonymously or publicly accessible GCP Memorystore for Redis has AUTH disabled  GCP Logging #  GCP VPC flow logs for the subnet is set to Off GCP log bucket retention policy is not configured using bucket lock GCP project audit logging is not configured properly across all services and all users in a project  GCP IAM #  Instances use default Compute Engine service account Instances use default service account with full access to cloud APIs IAM users are assigned Service Account User or Service Account Token creator roles at project level Service Account has admin privileges Roles impersonate or manage Service Accounts used at folder level Roles impersonate or manage Service Accounts used at organizational level Default Service Account is used at project level Default Service Account is used at organization level Default Service Account is used at folder level Roles impersonate or manage Service Accounts used at project level A MySQL database instance allows anyone to connect with administrative privileges GCP Cloud KMS key ring is publicly accessible  Google Cloud Storage #  Google storage buckets are not encrypted GCP cloud storage bucket with uniform bucket-level access are disabled Bucket does not log access Bucket logs to itself  Google Cloud SQL #  GCP MySQL instance with local_infile database flag is not disabled Cloud SQL PostgreSQL instances have log_checkpoints database flag set to Off GCP PostgreSQL instance database flag log_connections is disabled GCP PostgreSQL instance database flag log_disconnections is disabled GCP PostgreSQL instance database flag log_lock_waits is disabled GCP PostgreSQL instance database flag log_min_messages is not set GCP PostgreSQL instance database flag log_temp_files is not set to 0 GCP PostgreSQL instance database flag log_min_duration_statement is not set to -1 Cloud SQL SQL server instance database flag cross db ownership chaining is set to On Cloud SQL SQL server instance contained database authentication database flag is set to On Cloud SQL database instances have public IPs  GCP Public #  GCP storage bucket is publicly accessible to all authenticated users Google Compute Engine (GCE) instances have public IP addresses GCP Vertex AI Workbench has a public IPs GCP Cloud Dataflow job has public IPs GCP Dataproc cluster is anonymously or publicly accessible GCP Pub/Sub Topic is anonymously or publicly accessible GCP BigQuery table is publicly accessible Artifact Registry repository is anonymously or publicly accessible GCP Cloud Run service is anonymously or publicly accessible GCP Dataproc cluster has a public IP Google Container Registry repository is anonymously or publicly accessible  Dockerfile #  Port 22 is exposed Healthcheck instructions have not been added to container images A user for the container has not been created Copy is not used instead of Add in Dockerfiles Update instructions are used alone in a Dockerfile LABEL maintainer is not used instead of MAINTAINER (deprecated) Base image uses a latest version tag Last USER is root  Kubernetes #  Containers wishing to share host process ID namespace admitted Privileged containers are admitted Containers wishing to share host IPC namespace admitted Containers wishing to share host network namespace admitted Containers run with AllowPrivilegeEscalation Root containers admitted Containers with NET_RAW capability admitted Liveness probe is not configured Readiness probe is not configured CPU request is not set CPU limits are not set Memory requests are not set Memory limits are not set Image tag is not set to Fixed Image pull policy is not set to Always Container is privileged Containers share host process ID namespace Containers share host IPC namespace Containers share the host network namespace Containers run with AllowPrivilegeEscalation Default namespace is used Read-Only filesystem for containers is not used Admission of root containers not minimized Containers with added capability are allowed Admission of containers with added capability is not minimized hostPort is specified Mounting Docker socket daemon in a container is not limited Admission of containers with NET_RAW capability is not minimized securityContext is not applied to pods and containers securityContext is not applied to pods and containers seccomp is not set to Docker/Default or Runtime/Default seccomp profile is not set to Docker/Default or Runtime/Default Kubernetes dashboard is deployed Tiller (Helm V2) is deployed Secrets used as environment variables Admission of containers with capabilities assigned is not limited Admission of containers with capabilities assigned is not limited Service account tokens are not mounted where necessary CAP_SYS_ADMIN Linux capability is used Containers do not run with a high UID Default service accounts are actively used Default service accounts are actively used Images are not selected using a digest Tiller (Helm v2) service is not deleted Tiller (Helm V2) deployment is accessible from within the cluster The --anonymous-auth argument is not set to False The --basic-auth-file argument is Set The --token-auth-file argument is Set The --kubelet-https argument is not set to True The --kubelet-client-certificate and --kubelet-client-key arguments are not set appropriately The --kubelet-certificate-authority argument is not set appropriately The --authorization-mode argument is set to AlwaysAllow The --authorization-mode argument does not include node The --authorization-mode argument does not include RBAC The admission control plugin EventRateLimit is not set The admission control plugin AlwaysAdmit is set The admission control plugin AlwaysPullImages is not set The admission control plugin SecurityContextDeny is set if PodSecurityPolicy is used The admission control plugin ServiceAccount is not set The admission control plugin NamespaceLifecycle is not set The admission control plugin PodSecurityPolicy is not set The admission control plugin NodeRestriction is not set The --insecure-bind-address argument is set The --insecure-port argument is not set to 0 The --secure-port argument is set to 0 The --profiling argument is not set to False The --audit-log-path argument is not set The --audit-log-maxage argument is not set appropriately The --audit-log-maxbackup argument is not set appropriately The --audit-log-maxsize argument is not set appropriately The --request-timeout argument is not set appropriately The --service-account-lookup argument is not set to True The --service-account-key-file argument is not set appropriately The --etcd-certfile and --etcd-keyfile arguments are not set appropriately The --tls-cert-file and --tls-private-key-file arguments are not set appropriately The --etcd-cafile argument is not set appropriately Encryption providers are not appropriately configured The API server does not make use of strong cryptographic ciphers The --terminated-pod-gc-threshold argument for controller managers is not set appropriately The --profiling argument for controller managers is not set to False The --use-service-account-credentials argument for controller managers is not set to True The --service-account-private-key-file argument for controller managers is not set appropriately The --root-ca-file argument for controller managers is not set appropriately The RotateKubeletServerCertificate argument for controller managers is not set to True The --bind-address argument for controller managers is not set to 127.0.0.1 The --profiling argument is not set to False The --bind-address argument is not set to 127.0.0.1 The --cert-file and --key-file arguments are not set appropriately The --client-cert-auth argument is not set to True The --auto-tls argument is set to True The --peer-cert-file and --peer-key-file arguments are not set appropriately The --peer-client-cert-auth argument is not set to True The --anonymous-auth argument is not set to False The --authorization-mode argument is set to AlwaysAllow The --client-ca-file argument for API Servers is not set appropriately The --read-only-port argument is not set to 0 The --streaming-connection-idle-timeout argument is set to 0 The --protect-kernel-defaults argument is not set to True The --make-iptables-util-chains argument is not set to True The --hostname-override argument is set The --event-qps argument is not set to a level that ensures appropriate event capture The --tls-cert-file and --tls-private-key-file arguments are not set appropriately The --rotate-certificates argument is set to False Kubelet does not use strong cryptographic ciphers ClusterRoles that grant control over validating or mutating admission webhook configurations are not minimized ClusterRoles that grant permissions to approve CertificateSigningRequests are not minimized Roles and ClusterRoles that grant permissions to bind RoleBindings or ClusterRoleBindings are not minimized Roles and ClusterRoles that grant permissions to escalate Roles or ClusterRole are not minimized  Bridgecrew #  Bridgecrew provider has hard-coded API token  Oracle Cloud Infrastructure #  OCI private keys are hard coded in the provider OCI Block Storage Block Volume has backup is disabled OCI Block Storage Block Volumes are not encrypted with a Customer Managed Key (CMK) OCI Compute Instance boot volume has in-transit data encryption is disabled OCI Compute Instance has Legacy MetaData service endpoint enabled OCI Compute Instance has monitoring disabled OCI Object Storage bucket does not emit object events OCI Object Storage Bucket has object Versioning disabled OCI Object Storage Bucket is not encrypted with a Customer Managed Key (CMK) OCI Object Storage bucket is publicly accessible OCI IAM password policy for local (non-federated) users does not have a lowercase character OCI IAM password policy for local (non-federated) users does not have a number OCI IAM password policy for local (non-federated) users does not have a symbol OCI IAM password policy for local (non-federated) users does not have an uppercase character] OCI File Storage File Systems are not encrypted with a Customer Managed Key (CMK) OCI VCN has no inbound security list OCI VCN Security list has stateful security rules OCI IAM password policy for local (non-federated) users does not have minimum 14 characters  OpenAPI #  OpenAPI securityDefinitions is not defined or is empty If the security scheme is not of type \u0026lsquo;oauth2\u0026rsquo;, the array value must be empty Security scheme allows cleartext credentials over unencrypted channels Security object needs to have defined rules in its array and rules should be defined in the securityScheme Security object for operations, if defined, must define a security scheme, otherwise it should be considered an error Security requirement not defined in the security definitions  Implementation # BluBracket\u0026rsquo;s IaC scanning is powered by the open source Checkov library , and adds BluBracket workflow and reporting.\n"
-        
-      })
-      .add(
-      {
-        id: 34,
+        id: 32,
         href: "/faq/what-kinds-of-secrets-do-you-search-for/",
         title: "What types of secrets does BluBracket search for?",
         description: "What we can find and how we find it.",
@@ -735,7 +699,7 @@ Source:
       })
       .add(
       {
-        id: 35,
+        id: 33,
         href: "/faq/why-is-env-file-blocked/",
         title: "Why is my .env file blocked?",
         description: "Alarming on .env files, database files and dumps, and even Terraform state files are among the most controversial policies that BluBracket supports by default.\nContents\n  Risk background   Best practices background   But you really want to commit that .env, what can you do   Understanding the risk of .env files # The majority of our users have asked us to alert them about these in their code because they represent risks they\u0026rsquo;re trying to eliminate.",
@@ -753,7 +717,7 @@ Source:
       })
       .add(
       {
-        id: 36,
+        id: 34,
         href: "/faq/why-should-i-use-blubracket-discover-secrets/",
         title: "Why should I use the BluBracket to discover secrets in code when there are so many other tools available?",
         description: "Best in class secret detection # Testing demonstrates that BluBracket can identify more tokens, keys and IDs than the other tools. Additionally, it supports user-defined custom patterns so you can match whatever is important to you.\nFewest false positives # Expansive detection is critical to ensuring secrets are found, but BluBracket’s rules engine also actively eliminates potential false positives allowing developers to focus on the most important findings.\nComprehensive threat detection # In addition to secrets, BluBracket scans for the following risks in code:",
@@ -773,7 +737,7 @@ Source:
       })
       .add(
       {
-        id: 37,
+        id: 35,
         href: "/how-to/code-servers/add-code-servers/github-cloud/",
         title: "Adding a GitHub Cloud code server on BluBracket Enterprise Edition",
         description: "After selecting to add a GitHub Cloud code server , follow the instructions below to add a GitHub Organization as a code server in BluBracket.\nGitHub uses the term \u0026ldquo;GitHub Cloud\u0026rdquo; to differentiate repositories hosted at github.com from their self-hosted enterprise offering.\nEach GitHub Organization is a different code server in BluBracket ( see GitHub\u0026rsquo;s docs on Organizations ).\nEntering the organization name #   Enter the short form of the GitHub Organization name.",
@@ -785,7 +749,7 @@ Source:
       })
       .add(
       {
-        id: 38,
+        id: 36,
         href: "/how-to/saml-setup/",
         title: "SAML Setup",
         description: "BluBracket Enterprise supports identity provider SAML integration. Click one of the following guides below for help with setup.",
@@ -809,7 +773,7 @@ Source:
       })
       .add(
       {
-        id: 39,
+        id: 37,
         href: "/how-to/role-based-access-control/",
         title: "Role Based Access Control",
         description: "Roles # A BluBracket user can be assigned any of the following roles: Manager, Member, Viewer.\nThe following table describes the features each role can access:\n   Feature Manager Member Viewer     View events ✅ ✅ ✅   Edit events (i.e. remedidate as Triaged, Not Important, Resolved) ✅ ✅    Add/Manage code servers ✅     Add/Manage integrations ✅     Add/Manage API keys ✅     Add/Manage Users ✅     Configure SSO/SAML ✅      Note: At the current time, the roles Member and Viewer are only available on tenants which have the Just-in-time (JIT) SAML user provisioning feature enabled.",
@@ -833,7 +797,7 @@ Source:
       })
       .add(
       {
-        id: 40,
+        id: 38,
         href: "/how-to/role-based-access-control/azure-ad/",
         title: "Setting up the SAML role on Azure AD",
         description: "This document will describe how to create and assign roles in Azure AD so that the role can be passed along during SAML login to BluBracket for the purpose of JIT user provisioning. If you are not interested in JIT user provisioning during SAML please skip this document. Special roles are not required for regular SAML login functionality.\nBefore proceeding with setting up SAML roles, please ensure that you have configured SAML login on your BluBracket tenant (please see Configure Azure AD for further details).",
@@ -855,7 +819,7 @@ Source:
       })
       .add(
       {
-        id: 41,
+        id: 39,
         href: "/api/system-audit/",
         title: "System Audit",
         description: "Auditing list of users who have accessed the BluBracket System",
@@ -867,7 +831,7 @@ Source:
       })
       .add(
       {
-        id: 42,
+        id: 40,
         href: "/how-to/cli/installation/",
         title: "CLI tool installation",
         description: "Instructions to install the CLI tool for Windows, macOS, and Linux",
@@ -879,7 +843,7 @@ Source:
       })
       .add(
       {
-        id: 43,
+        id: 41,
         href: "/how-to/code-servers/add-code-servers/bitbucket-cloud/",
         title: "Adding a Bitbucket Cloud code server",
         description: "How to add a Bitbucket Cloud server to your tenant",
@@ -891,7 +855,7 @@ Source:
       })
       .add(
       {
-        id: 44,
+        id: 42,
         href: "/how-to/code-servers/add-code-servers/gitlab-cloud/",
         title: "Adding a GitLab Cloud code server",
         description: "How to add a GitLab Cloud code server to your tenant",
@@ -903,7 +867,7 @@ Source:
       })
       .add(
       {
-        id: 45,
+        id: 43,
         href: "/how-to/code-servers/add-code-servers/",
         title: "Adding code servers",
         description: "How to add code servers to your tenant",
@@ -915,7 +879,7 @@ Source:
       })
       .add(
       {
-        id: 46,
+        id: 44,
         href: "/intro/use-cases/",
         title: "BluBracket use-cases",
         description: "Risks BluBracket solves and how.",
@@ -928,12 +892,12 @@ Source:
           
         
         
-        content: "Scanning End Points for Code Copies Using the BluBracket Scanner – BluBracketWhy should I use the BluBracket Free Trial to discover secrets in code when there are so many other tools available? – BluBracketBluBracket is most often used to identify risks in code, who has access, and where it goes:\n Identifying, preventing, and removing risks in code   Secrets   Personally identifiable information (PII)   Non-inclusive language (NIL)   Code analysis (SAST)   Infrastructure-as-code (IAC) risks   Dependency vulnerabilities     Monitoring who and what has access to your code   Monitoring where your code goes   Secrets in code # Passwords, keys, and other secrets in code are no longer secret when code is shared across teams, repos are made public, or when employees leave with copies of the code.\nBluBracket\u0026rsquo;s tools identify and help eliminate secrets throughout the development workflow (before commit, review on pull request, and alert on commits to monitored repos), and make it easy to triage and mitigate secrets previously committed.\nBluBracket\u0026rsquo;s deep scans identify secrets in git history, and can even identify active secrets so you know which ones are most important.\nPersonally identifiable information (PII) # Unlike secrets, personally identifiable information can\u0026rsquo;t be changed or rotated. As companies face growing liability for mishandling PII, finding and excising it from code is becoming a growing need.\nBluBracket\u0026rsquo;s deep scans identify PII in git history, show teams the PII risk across their codebase, and help remediate. Just as with BluBracket\u0026rsquo;s secret detection tools, BluBracket can block commits of new PII, block PRs with PII, and alert teams any time PII is committed to monitored repos.\nNon-inclusive language (NIL) # Companies and open source communities are both increasingly aware of the role inclusive language plays in attracting and retaining team members in all roles. Non-inclusive language creates both significant brand risks, as well as retention risks.\nBluBracket\u0026rsquo;s tools help identify non-inclusive language throughout the development process, and guide teams to continuous improvement over time.\nInfrastructure as code (IaC) risks (powered by Checkov) # Monitoring infrastructure-as-code for proper configuration before it\u0026rsquo;s applied to the infrastructure reduces risk and improves productivity for teams of all sizes.\nBluBracket\u0026rsquo;s tools automatically and continuously audit IaC throughout the development process, but teams value the guidance most when reviewing pull requests.\n Learn more about how BluBracket has integrated Checkov and the unique features available when using Checkov inside BluBracket.\nDependency vulnerabilities (powered by Snyk) # 👉  This feature is an available option for Enterprise customers.   BluBracket\u0026rsquo;s core tools give security teams and developers comprehensive visibility to their internal code supply chain. And now, integrated dependency vulnerability reports powered by Snyk Open Source add visibility to the external code supply chain.\nThe combined power of BluBracket and Snyk offers the only end-to-end code supply chain security solution available today.\nCode analysis (powered by Semgrep) # 👉  This feature is only available to Enterprise customers.   Spotting SQL injection, XSS, insecure crypto, and other OWASP top ten risks, as well as performance and maintainability best practices helps runtime security and overall code quality.\nCode analysis recommendations are presented side-by-side other code risks, giving developers and security teams a comprehensive view of code health.\nMonitoring git access \u0026amp; configuration # 👉  This feature is only available to Enterprise customers.   Knowing who and what systems have access to code is critical to supporting modern workflows that often require broad access across the organization, while also protecting organizations and teams against stale permissions and misconfigurations that can emerge over time.\nIdentifying who has access to what, and calling out the best-practice configuration of everything from git hooks to branch protection rules helps guide teams to continuous improvement and ongoing operational security. When teams know they can automatically and continuously audit access, they\u0026rsquo;re both more productive because they can more easily grant access, and more secure because they have tools to\nCode leaks # 👉  This feature is only available to Enterprise customers.   Productive teams need to share code, but when code leaks outside the organization it can risk revealing key details attackers can leverage against the app, or worse.\nMost code leaks are unintentional—private code can be accidentally committed to open source projects or in gists to discuss a problem—but the pathways code moves through frustrates developers and hampers productivity. BluBracket can identify code leaks so they can be remediated before they cause significant harm.\n"
+        content: "Scanning End Points for Code Copies Using the BluBracket Scanner – BluBracketWhy should I use the BluBracket Free Trial to discover secrets in code when there are so many other tools available? – BluBracketBluBracket is most often used to identify risks in code, who has access, and where it goes:\n Identifying, preventing, and removing risks in code   Secrets   Personally identifiable information (PII)   Non-inclusive language (NIL)   Code analysis (SAST)   Dependency vulnerabilities     Monitoring who and what has access to your code   Monitoring where your code goes   Secrets in code # Passwords, keys, and other secrets in code are no longer secret when code is shared across teams, repos are made public, or when employees leave with copies of the code.\nBluBracket\u0026rsquo;s tools identify and help eliminate secrets throughout the development workflow (before commit, review on pull request, and alert on commits to monitored repos), and make it easy to triage and mitigate secrets previously committed.\nBluBracket\u0026rsquo;s deep scans identify secrets in git history, and can even identify active secrets so you know which ones are most important.\nPersonally identifiable information (PII) # Unlike secrets, personally identifiable information can\u0026rsquo;t be changed or rotated. As companies face growing liability for mishandling PII, finding and excising it from code is becoming a growing need.\nBluBracket\u0026rsquo;s deep scans identify PII in git history, show teams the PII risk across their codebase, and help remediate. Just as with BluBracket\u0026rsquo;s secret detection tools, BluBracket can block commits of new PII, block PRs with PII, and alert teams any time PII is committed to monitored repos.\nNon-inclusive language (NIL) # Companies and open source communities are both increasingly aware of the role inclusive language plays in attracting and retaining team members in all roles. Non-inclusive language creates both significant brand risks, as well as retention risks.\nBluBracket\u0026rsquo;s tools help identify non-inclusive language throughout the development process, and guide teams to continuous improvement over time.\nDependency vulnerabilities (powered by Snyk) # 👉  This feature is an available option for Enterprise customers.   BluBracket\u0026rsquo;s core tools give security teams and developers comprehensive visibility to their internal code supply chain. And now, integrated dependency vulnerability reports powered by Snyk Open Source add visibility to the external code supply chain.\nThe combined power of BluBracket and Snyk offers the only end-to-end code supply chain security solution available today.\nCode analysis (powered by Semgrep) # 👉  This feature is only available to Enterprise customers.   Spotting SQL injection, XSS, insecure crypto, and other OWASP top ten risks, as well as performance and maintainability best practices helps runtime security and overall code quality.\nCode analysis recommendations are presented side-by-side other code risks, giving developers and security teams a comprehensive view of code health.\nMonitoring git access \u0026amp; configuration # 👉  This feature is only available to Enterprise customers.   Knowing who and what systems have access to code is critical to supporting modern workflows that often require broad access across the organization, while also protecting organizations and teams against stale permissions and misconfigurations that can emerge over time.\nIdentifying who has access to what, and calling out the best-practice configuration of everything from git hooks to branch protection rules helps guide teams to continuous improvement and ongoing operational security. When teams know they can automatically and continuously audit access, they\u0026rsquo;re both more productive because they can more easily grant access, and more secure because they have tools to\nCode leaks # 👉  This feature is only available to Enterprise customers.   Productive teams need to share code, but when code leaks outside the organization it can risk revealing key details attackers can leverage against the app, or worse.\nMost code leaks are unintentional—private code can be accidentally committed to open source projects or in gists to discuss a problem—but the pathways code moves through frustrates developers and hampers productivity. BluBracket can identify code leaks so they can be remediated before they cause significant harm.\n"
         
       })
       .add(
       {
-        id: 47,
+        id: 45,
         href: "/how-to/cli/",
         title: "CLI tool",
         description: "How to install and use the BluBracket CLI Tool.",
@@ -949,7 +913,7 @@ Source:
       })
       .add(
       {
-        id: 48,
+        id: 46,
         href: "/how-to/code-servers/",
         title: "Code servers",
         description: "Code lives in git repos, and git repos are hosted by code servers. Most git hosting providers structure git repos into collections such as GitHub\u0026rsquo;s Organizations and Bitbucket\u0026rsquo;s Workspaces. In BluBracket, each of those collections is a separate code server.\nSupported code servers in BluBracket #    GitHub GitLab Bitbucket Azure DevOps Gerrit     Cloud \u0026amp; Enterprise Cloud \u0026amp; on-prem Cloud \u0026amp; Server Cloud Self-hosted    Supported access \u0026amp; configuration risks   Supported access \u0026amp; configuration risks  Access \u0026amp; configuration risks not supported Access \u0026amp; configuration risks not supported Access \u0026amp; configuration risks not supported    GitHub Checks    Bitbucket Code Insights       Add a GitHub code server   Add a GitLab code server   Add a Bitbucket code server   Add an Azure DevOps code server   Add a Gerrit code server     ",
@@ -961,7 +925,7 @@ Source:
       })
       .add(
       {
-        id: 49,
+        id: 47,
         href: "/how-to/ignore-rules/",
         title: "Configure ignore rules",
         description: "Instructions on how to configure ignore fules for different levels, locally, per repo, and globally",
@@ -973,7 +937,7 @@ Source:
       })
       .add(
       {
-        id: 50,
+        id: 48,
         href: "/how-to/ignore-rules/global/",
         title: "Configuring global ignore rules",
         description: "How to setup global ignore rules for all users of a BluBracket account",
@@ -985,7 +949,7 @@ Source:
       })
       .add(
       {
-        id: 51,
+        id: 49,
         href: "/how-to/ignore-rules/per-repo/",
         title: "Configuring ignore rules per repo",
         description: "How to set ignore rules ignore rules for all users of a repository",
@@ -997,7 +961,7 @@ Source:
       })
       .add(
       {
-        id: 52,
+        id: 50,
         href: "/api/event-alert/",
         title: "Event \u0026 alert",
         description: "Reading and searching events and alerts.",
@@ -1009,7 +973,7 @@ Source:
       })
       .add(
       {
-        id: 53,
+        id: 51,
         href: "/how-to/code-servers/git-server-acccess-configuration/",
         title: "Git server access \u0026 configuration",
         description: "Supported access and configuration risks by code server.",
@@ -1021,7 +985,7 @@ Source:
       })
       .add(
       {
-        id: 54,
+        id: 52,
         href: "/how-to/code-servers/git-server-acccess-configuration/github/",
         title: "GitHub access \u0026 configuration risks",
         description: "BluBracket monitors and alerts on potential security security issues related to access and configuration of GitHub accounts. The following is a list of these configurations that BluBracket is currently monitoring. BluBracket will continue to add to this list and as we have support for other solutions we will add similar alerts.\nOrganization-level configuration risks #  Base level setting is too permissive: Base permissions to the organization’s repositories apply to all members and exclude outside collaborators.",
@@ -1033,7 +997,7 @@ Source:
       })
       .add(
       {
-        id: 55,
+        id: 53,
         href: "/how-to/code-servers/git-server-acccess-configuration/gitlab/",
         title: "GitLab access \u0026 configuration risks",
         description: "BluBracket monitors and alerts on potential security security issues related to access and configuration of GitLab accounts. The following is a list of these configurations that BluBracket is currently monitoring. BluBracket will continue to add to this list and as we have support for other solutions we will add similar alerts.\nSystem-level configuration risks (on-prem only) # Note: these features can be enabled by request.\n Too many admins on system: Default is five.",
@@ -1045,7 +1009,7 @@ Source:
       })
       .add(
       {
-        id: 56,
+        id: 54,
         href: "/how-to/",
         title: "User guide",
         description: "",
@@ -1057,7 +1021,7 @@ Source:
       })
       .add(
       {
-        id: 57,
+        id: 55,
         href: "/how-to/saml-setup/okta/",
         title: "Configure Okta",
         description: "How to configure Okta SAML and manage users",
@@ -1075,7 +1039,7 @@ Source:
       })
       .add(
       {
-        id: 58,
+        id: 56,
         href: "/how-to/saml-setup/ping/",
         title: "Configure Ping Identity",
         description: "How to configure Ping SAML and manage users",
@@ -1093,7 +1057,7 @@ Source:
       })
       .add(
       {
-        id: 59,
+        id: 57,
         href: "/how-to/ci-checks/bitbucket-insights/",
         title: "Configure BitBucket Code Insights",
         description: "Prerequisites # This integration depends on an API endpoint to fetch the pull request details from the commit . This API endpoint specifically requires pull request links to be indexed, which means that within the lifetime of the repository a user has to have clicked “go to pull request” from the per commit view of the Bitbucket Cloud UI at least once.\nEnable BitBucket Code Insights #  Contact the customer success team to enable BitBucket Code Insights.",
@@ -1105,7 +1069,7 @@ Source:
       })
       .add(
       {
-        id: 60,
+        id: 58,
         href: "/how-to/ci-checks/github-checks/",
         title: "Configure GitHub Checks",
         description: "Prerequisites # To install the BluBracket app for GitHub Checks, permissions to install a GitHub App on an org are required. This would be an organization owner or someone with admin level permissions in a repository .\nChoosing which app to install # The BluBracket app for GitHub Checks is available for all BluBracket editions, and multiple offerings of GitHub.\n    GitHub Cloud GitHub Enterprise\n(including Server)     BluBracket Community Edition  BluBracket Community \u0026amp; Team Edition  n/a   BluBracket Team Edition  BluBracket Community \u0026amp; Team Edition  n/a   BluBracket Enterprise Edition  BluBracket Enterprise Edition   BluBracket Enterprise Edition \u0026amp; GitHub Enterprise Server     GitHub Checks setup for GitHub Cloud and BluBracket Community \u0026amp; Team Edition accounts # BluBracket Community and Team Edition accounts are monitored by the BluBracket Community Edition app.",
@@ -1117,7 +1081,7 @@ Source:
       })
       .add(
       {
-        id: 61,
+        id: 59,
         href: "/how-to/cli/cli-docs/",
         title: "BluBracket CLI options and usage",
         description: "Options and usage for the BluBracket CLI",
@@ -1129,7 +1093,7 @@ Source:
       })
       .add(
       {
-        id: 62,
+        id: 60,
         href: "/how-to/add-user/",
         title: "Adding a BluBracket user",
         description: "How to add a BluBracket user",
@@ -1141,7 +1105,7 @@ Source:
       })
       .add(
       {
-        id: 63,
+        id: 61,
         href: "/how-to/code-servers/add-code-servers/azure-devops/",
         title: "Adding an Azure DevOps code server",
         description: "How to add an Azure DevOps code server to your tenant",
@@ -1153,7 +1117,7 @@ Source:
       })
       .add(
       {
-        id: 64,
+        id: 62,
         href: "/api/",
         title: "API",
         description: "How to access and use the BluBracket API.",
@@ -1165,7 +1129,7 @@ Source:
       })
       .add(
       {
-        id: 65,
+        id: 63,
         href: "/how-to/saml-setup/azure-ad/",
         title: "Configure Azure AD",
         description: "How to configure Azure AD SAML and manage users",
@@ -1183,7 +1147,7 @@ Source:
       })
       .add(
       {
-        id: 66,
+        id: 64,
         href: "/intro/getting-started/",
         title: "Getting started with BluBracket",
         description: "How to sign up and start using BluBracket for free",
@@ -1209,7 +1173,7 @@ Source:
       })
       .add(
       {
-        id: 67,
+        id: 65,
         href: "/how-to/remediate-alerts/",
         title: "Remediate alerts",
         description: "How to remediate alerts",
@@ -1221,7 +1185,7 @@ Source:
       })
       .add(
       {
-        id: 68,
+        id: 66,
         href: "/how-to/code-servers/add-code-servers/gerrit/generate-pat/",
         title: "Generate HTTP credentials in Gerrit",
         description: "In order for BluBracket to access information on the Gerrit code review host, HTTP credentials must be generated.\nGenerating HTTP credentials #  Once signed in to Gerrit, click the icon in the upper-right hand corner to see the settings dropdown.     Scroll down to the HTTP credentials section of the user settings page.     Click \u0026ldquo;Generate New Password\u0026rdquo; for the new HTTP credentials.    Entering username and HTTP credentials # A username and HTTP credentials are necessary for BluBracket to access the Gerrit code review host.",
@@ -1233,7 +1197,7 @@ Source:
       })
       .add(
       {
-        id: 69,
+        id: 67,
         href: "/how-to/cli/using-cli-with-git/",
         title: "Using the CLI tool in git workflows",
         description: "Details about how to use the CLI tool.",
@@ -1245,7 +1209,7 @@ Source:
       })
       .add(
       {
-        id: 70,
+        id: 68,
         href: "/how-to/code-servers/add-code-servers/gerrit/",
         title: "Adding a Gerrit code server",
         description: "How to add a Gerrit code server to your tenant",
@@ -1257,7 +1221,7 @@ Source:
       })
       .add(
       {
-        id: 71,
+        id: 69,
         href: "/faq/",
         title: "Frequently asked questions",
         description: "A searchable list of all FAQs.",
@@ -1275,7 +1239,7 @@ Source:
       })
       .add(
       {
-        id: 72,
+        id: 70,
         href: "/intro/key-workflows/",
         title: "Key workflows",
         description: "BluBracket code security tools are optimized to prevent risks from getting into code, and to promote the process of continuous improvement that reduces existing risks from code over time.\nPreventing risks in code # As developers, we depend on a quick feedback loop to understand if our code is working and does what is expected. BluBracket tools can offer automated security guidance as part of that feedback loop, in the IDE of your choice, pre-commit, and as part of the CI flow.",
@@ -1295,7 +1259,7 @@ Source:
       })
       .add(
       {
-        id: 73,
+        id: 71,
         href: "/how-to/messaging/microsoftteams/connection/",
         title: "Microsoft Teams Connection",
         description: "Requirements #  Generate a Microsoft Teams channel Incoming WebHook   Creating a Microsoft Teams Connection #   Navigate to Microsoft Teams integrations by clicking the Microsoft Teams link on the integrations page.    Begin creating a BluBracket Microsoft Teams connection by clicking the + CONNECTION button.    Copy the Incoming WebHook URL generated in Microsoft Teams App   Paste the Incoming WebHook URL into the token input and click TEST \u0026amp; SAVE.",
@@ -1311,7 +1275,7 @@ Source:
       })
       .add(
       {
-        id: 74,
+        id: 72,
         href: "/how-to/messaging/microsoftteams/",
         title: "Microsoft Teams Integration",
         description: " BluBracket integration with Microsoft Teams can alert teams about code risks in new commits in real time.\n  Requirements # Integration with Microsoft Teams requires the following:\n   Create a Microsoft Teams connection    Create a Microsoft Teams subscription   ",
@@ -1331,7 +1295,7 @@ Source:
       })
       .add(
       {
-        id: 75,
+        id: 73,
         href: "/how-to/messaging/microsoftteams/subscription/",
         title: "Microsoft Teams Subscription",
         description: "Requirements #  Generate a Microsoft Teams channel Incoming WebHook  Create a Microsoft Teams connection   Creating a Microsoft Teams Subscription #   Navigate to Microsoft Teams integrations by clicking the Microsoft Teams link on the integrations page    Click the + SUBSCRIPTION button to begin the creation process.    Choose a name for the subscription as well as the saved filters you would like the subscription to be based on.",
@@ -1347,7 +1311,7 @@ Source:
       })
       .add(
       {
-        id: 76,
+        id: 74,
         href: "/how-to/incident-management/splunk/connection/",
         title: "Splunk Connection",
         description: "Requirements #   Splunk integration token   Creating a Splunk Connection #   Navigate to Splunk integrations by clicking the Splunk link on the integrations page    Begin creating a BluBracket Splunk connection by clicking the + CONNECTION button    Enter a unique name for the connection.\n  Generate an integration token following the Splunk docs   Copy your integration token and paste it into the token field.",
@@ -1363,7 +1327,7 @@ Source:
       })
       .add(
       {
-        id: 77,
+        id: 75,
         href: "/how-to/incident-management/splunk/",
         title: "Splunk Integration",
         description: " BluBracket can automatically create a Splunk events when risks are found in new commits.\n  Requirements # Integration with Splunk requires the following:\n   Create a Splunk connection    Create a Splunk subscription   ",
@@ -1383,7 +1347,7 @@ Source:
       })
       .add(
       {
-        id: 78,
+        id: 76,
         href: "/how-to/incident-management/splunk/subscription/",
         title: "Splunk Subscription",
         description: "Requirements #  Created a Splunk connection   Creating a Splunk Subscription #   Navigate to Splunk integrations by clicking the Splunk link on the integrations page.    Click the + SUBSCRIPTION button to begin the creation process.    Choose a name for the subscription as well as the saved filters you would like the subscription to be based on.\n  Choose the connection for the subscription output.",
@@ -1399,7 +1363,7 @@ Source:
       })
       .add(
       {
-        id: 79,
+        id: 77,
         href: "/how-to/incident-management/pagerduty/connection/",
         title: "PagerDuty Connection",
         description: "Creating a PagerDuty Connection #   Navigate to PagerDuty integrations by clicking the PagerDuty link on the integrations page    Begin creating a BluBracket PagerDuty connection by clicking the + CONNECTION button    Enter a unique name for the connection\n  Generate an API access key following the PagerDuty docs   Copy your API key and paste it into the API access key field",
@@ -1415,7 +1379,7 @@ Source:
       })
       .add(
       {
-        id: 80,
+        id: 78,
         href: "/how-to/incident-management/pagerduty/subscription/integration-key/",
         title: "PagerDuty Service Integration Key",
         description: "PagerDuty Service Integration Key #   Navigate to Services by clicking the tab at the top of the page    Locate the service you want to integrate with and click the more dropdown    Select the View Integrations option    Locate and copy the Integration Key for the service    Now you\u0026rsquo;re ready to create subscriptions for this service.",
@@ -1431,7 +1395,7 @@ Source:
       })
       .add(
       {
-        id: 81,
+        id: 79,
         href: "/how-to/incident-management/pagerduty/subscription/",
         title: "PagerDuty Subscription",
         description: "Requirements #  Created a PagerDuty connection  Have an existing PagerDuty Service   Creating a PagerDuty Subscription #   Navigate to PagerDuty integrations by clicking the PagerDuty link on the integrations page.    Click the + SUBSCRIPTION button to begin the creation process.    Choose a name for the subscription as well as the saved filters you would like the subscription to be based on.",
@@ -1447,7 +1411,7 @@ Source:
       })
       .add(
       {
-        id: 82,
+        id: 80,
         href: "/how-to/ticketing/servicenow/connection/",
         title: "ServiceNow Connection",
         description: "Creating a ServiceNow Connection #   Navigate to ServiceNow integrations by clicking the ServiceNow link on the integrations page    Begin creating a BluBracket ServiceNow connection by clicking the + CONNECTION button    Enter a unique name for the connection\n  Enter the username of a ServiceNow user with access to the desired account\n  Enter the password for the username in step 4",
@@ -1463,7 +1427,7 @@ Source:
       })
       .add(
       {
-        id: 83,
+        id: 81,
         href: "/how-to/ticketing/servicenow/subscription/custom-field/",
         title: "ServiceNow Custom Fields",
         description: "Requirements #  Begin creating a ServiceNow subscription   ServiceNow Custom Fields # BluBracket integration with ServiceNow supports adding custom fields that are used to create the tickets.\n These key-value pairs are supplied directly to the ServiceNow API. By default BluBracket is already sending the following fields:\n short_description description contact_type category subcategory  For a list of potential fields to supply, view the ServiceNow incident docs ",
@@ -1479,7 +1443,7 @@ Source:
       })
       .add(
       {
-        id: 84,
+        id: 82,
         href: "/how-to/ticketing/servicenow/subscription/",
         title: "ServiceNow Subscription",
         description: "Requirements #  Created a ServiceNow connection   Creating a ServiceNow Subscription #   Navigate to ServiceNow integrations by clicking the ServiceNow link on the integrations page    Click the + SUBSCRIPTION button to begin the creation process.    Choose a name for the subscription as well as the saved filters you would like the subscription to be based on.\n  Choose the connection for the subscription output.",
@@ -1495,7 +1459,7 @@ Source:
       })
       .add(
       {
-        id: 85,
+        id: 83,
         href: "/how-to/messaging/slack/app/",
         title: "BluBracket Slack App",
         description: "Visit the Slack App creation page.\n  Click the Create New App button.    Click the From an app manifest option.    Select your workspace and click Next.    Copy and paste the following app manifest into the json input:\n{ \u0026quot;display_information\u0026quot;: { \u0026quot;name\u0026quot;: \u0026quot;BluBracket\u0026quot;, \u0026quot;description\u0026quot;: \u0026quot;Pipeline Security Tools\u0026quot;, \u0026quot;background_color\u0026quot;: \u0026quot;#2b2b2b\u0026quot;, \u0026quot;long_description\u0026quot;: \u0026quot;What if code security could be improved with the same techniques we use to improve code quality?",
@@ -1511,7 +1475,7 @@ Source:
       })
       .add(
       {
-        id: 86,
+        id: 84,
         href: "/how-to/ticketing/jira/connection/",
         title: "Jira Connection",
         description: "Requirements #    Atlassian API Token    Jira Base URL    Jira Project for events and alerts to be added to.   Creating a Jira Connection #   Navigate to Jira integrations by clicking the Jira link on the integrations page    Begin creating a BluBracket Jira connection by clicking the + CONNECTION button    Create an Atlassian API Token   Paste the API token into the token input.",
@@ -1527,7 +1491,7 @@ Source:
       })
       .add(
       {
-        id: 87,
+        id: 85,
         href: "/how-to/ticketing/jira/subscription/",
         title: "Jira Subscription",
         description: "Requirements #  Created a Jira connection   Creating a Jira Subscription #   Navigate to Jira integrations by clicking the Jira link on the integrations page    Click the + SUBSCRIPTION button to begin the creation process.    Choose a name for the subscription as well as the saved filters you would like the subscription to be based on.\n  Choose the connection for the subscription output.",
@@ -1543,7 +1507,7 @@ Source:
       })
       .add(
       {
-        id: 88,
+        id: 86,
         href: "/how-to/messaging/slack/connection/",
         title: "Slack Connection",
         description: "Requirements #  Create a BluBracket Slack App and install to your workspace.  Creating a Slack Connection #   Navigate to Slack integrations by clicking the Slack link on the integrations page    Begin creating a BluBracket Slack connection by clicking the + CONNECTION button    Visit the installations page in your BluBracket Slack App and copy the bot token presented on the screen.",
@@ -1559,7 +1523,7 @@ Source:
       })
       .add(
       {
-        id: 89,
+        id: 87,
         href: "/how-to/messaging/slack/subscription/",
         title: "Slack Subscription",
         description: "Requirements #  Created a BluBracket Slack App and installed to your workspace. Created a Slack connection   Creating a Slack Subscription #   Navigate to Slack integrations by clicking the Slack link on the integrations page    Click the + SUBSCRIPTION button to begin the creation process.    Choose a name for the subscription as well as the saved filters you would like the subscription to be based on.",
@@ -1575,7 +1539,7 @@ Source:
       })
       .add(
       {
-        id: 90,
+        id: 88,
         href: "/how-to/messaging/slack/",
         title: "Slack Integration",
         description: " BluBracket integration with Slack can alert teams about code risks in new commits in real time.\n  Requirements # Integration with Slack requires the following:\n   Create a BluBracket Slack App and install on your workspace    Create a Slack connection    Create a Slack subscription   ",
@@ -1595,7 +1559,7 @@ Source:
       })
       .add(
       {
-        id: 91,
+        id: 89,
         href: "/how-to/ci-checks/",
         title: "CI checks",
         description: "Integrating BluBracket into the CI code review process.",
@@ -1623,7 +1587,7 @@ Source:
       })
       .add(
       {
-        id: 92,
+        id: 90,
         href: "/intro/integrations/",
         title: "Integrations",
         description: "Local workflow tools #  The BluBracket CLI tool can identify and block secrets before they\u0026rsquo;re committed.\n  Available local tools and integrations\n  CLI  IntelliJ (via CLI, full plugin coming soon) Visual Studio Code (via CLI)  Usage guide: installing and using the CLI .\nCode servers #  BluBracket scans repositories hosted in GitHub, GitLab, Bitbucket, and others.\n  Certified \u0026amp; supported code servers:",
@@ -1639,7 +1603,7 @@ Source:
       })
       .add(
       {
-        id: 93,
+        id: 91,
         href: "/how-to/ticketing/jira/",
         title: "Jira Integration",
         description: " BluBracket can automatically create a Jira ticket when risks are found in new commits.\n  Requirements # Integration with Jira requires the following:\n   Create a Jira connection    Create a Jira subscription   ",
@@ -1659,7 +1623,7 @@ Source:
       })
       .add(
       {
-        id: 94,
+        id: 92,
         href: "/how-to/incident-management/pagerduty/",
         title: "PagerDuty Integration",
         description: " BluBracket can automatically create a PagerDuty incidents when risks are found in new commits.\n  Requirements # Integration with PagerDuty requires the following:\n   Create a PagerDuty connection    Create a PagerDuty subscription   ",
@@ -1679,7 +1643,7 @@ Source:
       })
       .add(
       {
-        id: 95,
+        id: 93,
         href: "/how-to/ticketing/servicenow/",
         title: "ServiceNow Integration",
         description: " BluBracket can automatically create a ServiceNow ticket when risks are found in new commits.\n  Requirements # Integration with ServiceNow requires the following:\n   Create a ServiceNow connection    Create a ServiceNow subscription   ",
@@ -1699,7 +1663,7 @@ Source:
       })
       .add(
       {
-        id: 96,
+        id: 94,
         href: "/contact-support/",
         title: "Contact support",
         description: "",
@@ -1711,7 +1675,7 @@ Source:
       })
       .add(
       {
-        id: 97,
+        id: 95,
         href: "/release-notes/",
         title: "Release notes",
         description: "",
@@ -1723,7 +1687,7 @@ Source:
       })
       .add(
       {
-        id: 98,
+        id: 96,
         href: "/how-to/messaging/",
         title: "Messaging",
         description: "Messaging security team members and developers when risks are found in code in the real-time commit scans can help increase visibility of risks and reduce the time to remediate risks.\nOut of the box, BluBracket supports messaging via Slack and Microsoft Teams, and additional integrations are possible via the flexible APIs.",
@@ -1741,7 +1705,7 @@ Source:
       })
       .add(
       {
-        id: 99,
+        id: 97,
         href: "/how-to/incident-management/",
         title: "Incident Management",
         description: "BluBracket supports PagerDuty integration to automatically create incidents for alerts matching filters you can specify.",
@@ -1759,7 +1723,7 @@ Source:
       })
       .add(
       {
-        id: 100,
+        id: 98,
         href: "/how-to/ticketing/",
         title: "Ticketing",
         description: "Automatic ticketing of detected issues gives security and developer teams visibility into security issues in the tools they\u0026rsquo;re using to plan, track, and report work. No need to sign into or use another too.\nOut of the box, BluBracket supports Jira and ServiceNow, and additional integrations are possible via the flexible APIs.",
@@ -1777,7 +1741,7 @@ Source:
       })
       .add(
       {
-        id: 101,
+        id: 99,
         href: "/authoring-documentation/",
         title: "Authoring documentation",
         description: "How do write and edits the docs in this site.",
@@ -1789,7 +1753,7 @@ Source:
       })
       .add(
       {
-        id: 102,
+        id: 100,
         href: "/how-to/architecture/",
         title: "Integration architecture",
         description: "How BluBracket connects to your world",
@@ -1801,7 +1765,7 @@ Source:
       })
       .add(
       {
-        id: 103,
+        id: 101,
         href: "/release-notes/2022-06/",
         title: "2022-06 release",
         description: "New features, enhancements, and bug fixes #  SOC 2 Type II compliance for SaaS services, recognizing the rigorous operational and security practices across the organization for safe and reliable handling of customer data CLI: new open-source recipes for scanning S3, syslog, and Confluence wiki pages New risk severity for all events gives detailed information to identify and prioritize risk across your codebase The new filtering experience is now enabled for all customers  ",
@@ -1813,7 +1777,7 @@ Source:
       })
       .add(
       {
-        id: 104,
+        id: 102,
         href: "/release-notes/2022-05/",
         title: "2022-05 release",
         description: "New features, enhancements, and bug fixes #  New alert search and filtering experience improves workflows and findability of actionable Support for git repositories on Gerrit code servers Ongoing false positive improvements, including more nuanced inspection and reporting for multi-part secrets (such as AWS keys and secret keys) New OAuth signup/sign-in support CLI: offline scan, which operates entirely without network interaction, is now the default  ",
@@ -1825,7 +1789,7 @@ Source:
       })
       .add(
       {
-        id: 105,
+        id: 103,
         href: "/release-notes/2022-04/",
         title: "2022-04 release",
         description: "New features, enhancements, and bug fixes #  Redesigned and re-imagined views of alerts optimized around quick triage and remediation workflows New support for tracking detailed branch info Snyk integration beta for tracking and reporting dependency vulnerabilities for a complete view of the external and internal code supply chain CLI: searching inside archive files, including .tar, .zip, and others CLI: support for scanning a specific file or files  ",
@@ -1837,7 +1801,7 @@ Source:
       })
       .add(
       {
-        id: 106,
+        id: 104,
         href: "/release-notes/2022-03/",
         title: "2022-03 release",
         description: "New features, enhancements, and bug fixes #  Track and manage your work by marking the triaged state of each alert Event reconciliation on pattern/logic changes New settings page outlining available integrations New support for tracking commit info, including tip of main branch Refactored user management in preparation for OAuth and RBAC New documentation website (this site, yay!)  ",
@@ -1849,7 +1813,7 @@ Source:
       })
       .add(
       {
-        id: 107,
+        id: 105,
         href: "/release-notes/2022-02/",
         title: "2022-02 release",
         description: "New features, enhancements, and bug fixes #  Improved false positive rejection Periodic scans re-process data with the latest rules, and catch pushes missed in case the git host dropped the webhook Support for filtering by commit time Big fixes and improvements to the BluPrint report New report: most used secrets across your code base (calculated by hash, BluBracket does not store your code or any secrets)  ",
@@ -1861,7 +1825,7 @@ Source:
       })
       .add(
       {
-        id: 108,
+        id: 106,
         href: "/",
         title: "BluBracket Documentation",
         description: "Track what's in your code, who has access, and where it goes.",
@@ -1873,7 +1837,7 @@ Source:
       })
       .add(
       {
-        id: 109,
+        id: 107,
         href: "/release-notes/2022-01/",
         title: "2022-01 release",
         description: "New features, enhancements, and bug fixes #  Initial support for repos in Azure DevOps Bitbucket Insights support gives developers guidance about risks in their code during the review process, eliminating unnecessary alerts Scalability improvements around integrations Scalability improvements for git host webhook processing and job queueing  ",
@@ -1885,7 +1849,7 @@ Source:
       })
       .add(
       {
-        id: 110,
+        id: 108,
         href: "/release-notes/2021-12/",
         title: "2021-12 release",
         description: "New features, enhancements, and bug fixes #  Self-hosted (VPC/on-prem) installer improvements, including support for Terraform Bulk code server import to import multiple GitHub Organizations, Bitbucket Workspaces, or GitLab Workspaces with a single click Activeness checks for multi-part secrets, such as AWS keys and secret keys CLI: Ability to scan an arbitrary directory outside a git repo  ",
@@ -1897,7 +1861,7 @@ Source:
       })
       .add(
       {
-        id: 111,
+        id: 109,
         href: "/release-notes/2021-11-22/",
         title: "2021-11-22 release",
         description: "New Features and Enhancements #  “Other” type has been added to the Secret Types pie chart on the BluPrint page. The pie chart should now show the top 6 secret types as well as a 7th that is composed of all of the remaining types. Clicking on any of the pie sections should take the user to a filtered table for the selected secret type. Many additional enhancements have been added to identify false positives where secrets are concerned.",
@@ -1909,7 +1873,7 @@ Source:
       })
       .add(
       {
-        id: 112,
+        id: 110,
         href: "/release-notes/2021-10-11/",
         title: "2021-10-11 release",
         description: "New Features and Enhancements #  New public API to return repo scan status Added infinite label filter to support scrolling through all labels.  Bug Fixes #  CORE-8192 URL of webhook was not displayed in the compliance alerts flyover details CORE-8343 Enhanced false positive detection where secret type is “token” CORE-8414 - Fixed Slack integration issue where deep link was not being displayed in message Fix table pagination loading bugs  ",
@@ -1921,7 +1885,7 @@ Source:
       })
       .add(
       {
-        id: 113,
+        id: 111,
         href: "/release-notes/2021-09-28/",
         title: "2021-09-28 release",
         description: "New Features and Enhancements #   Additional checks performed when user adds new code server. We now identify and show a message if the user does not have adequate organization level permissions, even if the Personal Access Token does have required permissions. Inadequate user permissions will result in incomplete repo risk calculations.\n  Code Leaks now filters out Public to Public alerts.\n  Code Leaks details now displays a deep link to the selected leaked file",
@@ -1933,7 +1897,7 @@ Source:
       })
       .add(
       {
-        id: 114,
+        id: 112,
         href: "/release-notes/2021-09-13/",
         title: "2021-09-13 release",
         description: "New Features and Enhancements #   New Repo Details Design. When clicking on a Repository, you will now see a new design that lists the risk rating and number of violations for each risk category. Clicking on the violations number will provide a filter view of all violations of that risk category type.\n    The terminology “Alerts” has been replaced with “All Violations”, which is a new tab next to Code Risks at top of screen.",
@@ -1945,7 +1909,7 @@ Source:
       })
       .add(
       {
-        id: 115,
+        id: 113,
         href: "/release-notes/2021-09-07/",
         title: "2021-09-07 release",
         description: "New Features and Enhancements #   Access Risk Categories now links to appropriate alerts in the repo details page.\n  Enhanced Code Server onboarding for Bitbucket and GitLab.\n  Updated Infrastructure Code Alerts and Events to be more descriptive.\n  Added breadcrumbs to repository details page in portal.\n  Updated support for global Ignore.yaml. If you place a folder labeled “.blubracket” into a repository, then create a file called ignore.",
@@ -1957,7 +1921,7 @@ Source:
       })
       .add(
       {
-        id: 116,
+        id: 114,
         href: "/release-notes/2021-08-16/",
         title: "2021-08-16 release",
         description: "New Features and Enhancements # Enterprise Edition # New Code Risks Categories\nBluBracket has added two additional Risk Categories to the repo detail view, PII and Non-inclusive language!\n  All newly created tenants will automatically have three Non-inclusive language regular expressions configured (blacklist, slave, master) and one PII regular expression for social security numbers.\nFor existing customers, if you would like to utilize the new PII and Non-inclusive Language categories, please follow the instructions below:",
@@ -1969,7 +1933,7 @@ Source:
       })
       .add(
       {
-        id: 117,
+        id: 115,
         href: "/release-notes/2021-07-21/",
         title: "2021-07-21 release",
         description: "New Features and Enhancements # Enterprise Edition # No new features or enhancements added to the Enterprise Edition with this release.\nCommunity Edition # No new features or enhancements added to the Community Edition with this release.\nBug Fixes #   CORE-7410 - Fix filtering issue when attempting to filter for a value that does not exist. Now returns “no events found” instead of returning all results.\n  CORE-7514 - Fix custom date range bug for Last Activity column in repository list view",
@@ -1981,7 +1945,7 @@ Source:
       })
       .add(
       {
-        id: 118,
+        id: 116,
         href: "/release-notes/2021-07-03/",
         title: "2021-07-03 release",
         description: "New Features and Enhancements # Enterprise Edition # Code Risks #   Within the repository details page the Code Risks tab now indicates the level of risk associated with any of the risk categories that BluBracket could potentially be identifying. As seen in the screenshot below, all categories are designated with a High/Medium/Low indicator and the number of violations associated with the risk category type. Clicking risk category type will navigate the user to a list view of the violations.",
@@ -1993,7 +1957,7 @@ Source:
       })
       .add(
       {
-        id: 119,
+        id: 117,
         href: "/release-notes/2021-06-05/",
         title: "2021-06-05 release",
         description: "New Features and Enhancements # Enterprise Edition # High Risks #  The BluPrint page now contains a new table that displays the most risky repos that are currently being monitored. The repository with the highest risk score is at the top of the list, descending to the 100th highest at the bottom. The Alert tiles have been moved to just below this table and are now, by default, in a collapsed state.",
@@ -2005,7 +1969,7 @@ Source:
       })
       .add(
       {
-        id: 120,
+        id: 118,
         href: "/release-notes/2021-05-03/",
         title: "2021-05-03 release",
         description: "New Features and Enhancements # Enterprise Edition # Event Tagging and Alert Enabling #   Event Tagging: For quite some time now BluBracket has been using tagging events with things like “Active Token”, “Inactive Token”, “Strong Password”, etc. These tags have been used to notify the user of specific information related to the event. It quickly became apparent that these could be useful for customers when integrating with other systems, or just for filtering purposes.",
@@ -2017,7 +1981,7 @@ Source:
       })
       .add(
       {
-        id: 121,
+        id: 119,
         href: "/release-notes/2021-04-27/",
         title: "2021-04-27 release",
         description: "New Features and Enhancements # Enterprise Edition # PCRE Library #  The PCRE library has now been added to the BluBracket regular expression feature. This is an extension to our previous library and will allow users to pattern match more regular expressions than previously.  Community Edition # Command Line Interface (CLI) Tool - PII Addition #  In addition to built-in secrets and custom secrets, CLI does support the ability to define a different group of “secrets” related to PII (Personally Identifiable Information) such as Social Security Numbers (SSN), emails, URLs, IP-addresses, etc.",
@@ -2029,7 +1993,7 @@ Source:
       })
       .add(
       {
-        id: 122,
+        id: 120,
         href: "/release-notes/2021-04-16/",
         title: "2021-04-16 release",
         description: "New Features and Enhancements # No new features in this release. # Bug Fixes #   CORE-6128 - CE - Incorrect count being displayed for duplicate alerts. Has been addressed.\n  CORE-5030 - Redundant URL being displayed in code copy details. Fixed.\n  CORE-5543 - Repository contribution table on BluPrint page is throwing an error when clicked. This is now fixed.\n  CORE-6284 - Issue with GitHub Checks app never completing scan if two users are both monitoring the same repository.",
@@ -2041,7 +2005,7 @@ Source:
       })
       .add(
       {
-        id: 123,
+        id: 121,
         href: "/release-notes/2021-03-26/",
         title: "2021-03-26 release",
         description: "New Features and Enhancements # Enterprise Edition # Rescan Repository #  It is now possible to rescan an entire repository, including all of the repository history, at the click of a button. Normally a full scan of a repository is done at the time of adding the code server that the repository belongs to, or whenever the repository is added. After that the initial scan the repository is monitored and all new commits are scanned and only periodically is the entire repository scanned.",
@@ -2053,7 +2017,7 @@ Source:
       })
       .add(
       {
-        id: 124,
+        id: 122,
         href: "/release-notes/2021-03-12/",
         title: "2021-03-12 release",
         description: "New Features and Enhancements # New Public APIs #   Two new APIs have been added to the list of public APIs available. The two new APIs allow users to dismiss alerts and re-enabled alerts that have been dismissed. This is especially important for users that have integrated with their CICD solutions and want to complete the loop. For example, a developer commits code that triggers a BluBracket alert, the user’s CICD integration recognizes the alert, creates a ticket and notification to the appropriate developer/administrator to remediate the issue, the developer/administrator remediates and closes the ticket, which triggers the API to dismissed the addressed alert in BluBracket.",
@@ -2065,7 +2029,7 @@ Source:
       })
       .add(
       {
-        id: 125,
+        id: 123,
         href: "/release-notes/2021-03-05/",
         title: "2021-03-05 release",
         description: "New Features # Command Line Interface (CLI) Tool Enhancements #   A number of significant changes have been added to the CLI tool this with this release of the Community Edition. All of these improvements, except for code signing of course, have been taken from the existing features within the enterprise version of the BluBracket solution.\n  Activeness Checks - The CLI tool now runs an activeness check on a number of the tokens, keys and IDs to eliminate false positives.",
@@ -2077,7 +2041,7 @@ Source:
       })
       .add(
       {
-        id: 126,
+        id: 124,
         href: "/release-notes/2021-02-12/",
         title: "2021-02-12 release",
         description: "New Features # Repo Details Slide Out #   Clicking on any row within the repository table will now expose a repository details slide out panel. Within this panel the user can see all of the unreviewed secrets that compose the Repo Risk Score for the specific repository. Users are still able to navigate to the GitHub repository, as was the previous action by clicking on a given repo, by clicking on the deep link within the slide out.",
@@ -2089,7 +2053,7 @@ Source:
       })
       .add(
       {
-        id: 127,
+        id: 125,
         href: "/release-notes/2021-02-02/",
         title: "2021-02-02 release",
         description: "New Features # Repo Risk Score and Secret Risk Score #   The BluBracket Community Edition has introduced the concepts of Repository Risk Score and Secret Risk Score to the interface as of this release. This feature is meant to give the user, at a glance, an idea of the potential risk involved with a specific repository.\n  The Repository Risk Score is a number that is meant to reflect the number of unreviewed secrets that exist within the repository as well as their potential severity.",
@@ -2101,7 +2065,7 @@ Source:
       })
       .add(
       {
-        id: 128,
+        id: 126,
         href: "/release-notes/2021-01-22/",
         title: "2021-01-22 release",
         description: "Bug Fixes #  CORE-5377 - Updated the Community Edition secrets table to include a loading spinner CORE-5468 - Fixed the incorrect URL for Secrets in Code documentation CORE-4744 - Sorting fix for the repository list view CORE-5357 - A number of minor UI fixes were taken care of in the Community Edition CORE-5370 - Fixed the Community Edition Safari issue with the insight tile sizing CORE-5371 - Topbar icon fix for Community Edition CORE-5485 - Addressed the Bitbucket push event when no nickname in payload  ",
@@ -2113,7 +2077,7 @@ Source:
       })
       .add(
       {
-        id: 129,
+        id: 127,
         href: "/contributors/",
         title: "Contributors",
         description: "",
